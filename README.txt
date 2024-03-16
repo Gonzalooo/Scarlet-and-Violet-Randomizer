@@ -5,6 +5,7 @@ Go to: https://github.com/Gonzalooo/Scarlet-and-Violet-Randomizer for latest Ver
 VIDEO TUTORIAL on how to use randomizer tool: https://youtu.be/eO10cWC6QT0
 Tutorial on how to use Generation Limiter: https://youtu.be/dCUUXFHNRcA
 Trinity Loader Nightly Version: https://github.com/pkZukan/gftool/releases/tag/nightly (Needed for the first steps - nightly version automatically updates so it has the stuff you need)
+New discord link to keep up with udpates btw: https://discord.gg/d7UBuXGrT2
 
 *** THIS RANDOMIZER WORKS ONLY WITH VERSION 3.0.1/3.0.0***
 PREFACE: Make sure you have at least Python 3.10 installed on your computer, anything lower will not work!
