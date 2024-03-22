@@ -500,7 +500,7 @@ def randomize(config):
         elif entry['trid'] == "professor_B_02":
             continue
         # Counter to see how many pokemon there are to randomize originally
-        counter = 1
+        counter = 0
         for j in range(0, 6):
             t = j+1
             if entry['poke' + str(t)]['devId'] != "DEV_NULL":

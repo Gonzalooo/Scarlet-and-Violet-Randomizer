@@ -7,12 +7,12 @@
         "is_enabled": "no",
         "_comment2": "fill out like this: 'generations_allowed': [1,2,3] - this will only allow gens 1-3 to be used",
         "_comment3": "as a fail safe if its enabled and empty then all generations will be used.",
-        "generations_allowed": [4],
+        "generations_allowed": [],
         "wild_limiter": "no",
         "trainer_limiter": "no",
         "static_limiter": "no",
         "starter_limiter": "no",
-        "teraRaid_limiter": "yes",
+        "teraRaid_limiter": "no",
         "_comment4": "limits for randomized evolutions if they are active.",
         "evolution_limiter": "no"
     },
@@ -26,7 +26,7 @@
         "only_legends_and_paradoxes": "no"
     },
     "bulk_creation": {
-        "is_enabled": "yes",
+        "is_enabled": "no",
         "_comment": "Default is 0 - if enabled and left at 0 then only 1 will be created",
         "number_of_unique_randomizers_to_create": 6
     },
@@ -34,9 +34,9 @@
         "_comment": "Updated for 3.0.0",
         "is_enabled": "yes",
         "force_6_pokemons_on_trainers": "no",
-        "give_trainers_extra_mons": "yes",
+        "give_trainers_extra_mons": "no",
         "force_perfect_ivs": "no",
-        "make_ai_smart_for_all_trainers": "yes",
+        "make_ai_smart_for_all_trainers": "no",
         "allow_all_trainers_to_terastalize": "yes",
         "randomize_fixed_tera_type": "yes",
         "randomize_all_tera_type": "yes",
@@ -47,6 +47,7 @@
         "only_paradox": "no",
         "only_legends_and_paradoxes": "no",
         "force_important_trainers_to6_pokemon": "no",
+        "force_gym_champion_elite_to6_pokemon": "no",
         "_comment0": "Note Raid_NPC are part of important trainers",
         "only_randomize_important_trainers": "no",
         "impo_trainers_only_legends": "no",
@@ -63,7 +64,7 @@
         "randomize_types": "no",
         "ban_wonder_guard": "yes",
         "randomize_movesets": "yes",
-        "randomize_stats_with_same_total": "yes",
+        "randomize_stats_with_same_total": "no",
         "randomize_stats_with_different_total": "no",
         "randomize_evolutions": "yes",
         "let_pokemon_evolve_every_level": "no"
@@ -71,8 +72,8 @@
     "starter_randomizer": {
         "_comment0": "Fully updated for 3.0",
         "is_enabled": "yes",
-        "all_shiny": "no",
-        "higher_shiny_chance": "yes",
+        "all_shiny": "yes",
+        "higher_shiny_chance": "no",
         "force_one_starter_to_be_shiny": "no",
         "randomize_all_gifts": "no",
         "randomize_tera_type": "yes",
@@ -88,7 +89,7 @@
         "_comment9": "However 1 0 2 4 is not a valid input for terapagos",
         "_comment10": "Similarly tera_paGos is not a valid input for terapagos",
         "force_starter_1": 0,
-        "force_starter_2": 0,
+        "force_starter_2": 1024,
         "force_starter_3": 0,
         "_comment": "Only current way of having shiny starters is by inverting the textures",
         "_comment2": "Therefore - only have this active if you wish to have inverted textures",
@@ -121,7 +122,7 @@
         "is_enabled": "yes",
         "only_legends": "no",
         "only_paradox": "no",
-        "only_legends_and_paradox": "no",
+        "only_legends_and_paradox": "yes",
         "force_shiny": "no",
         "increased_shiny_chance": "yes"
     }

@@ -13,15 +13,17 @@ import Randomizer.kitakamiTeraRaids.teraRandomizerTeal as KitakamiRaids
 import Randomizer.blueberryTeraRaids.teraRandomizerIndigo as BlueberryRaids
 import shutil
 import subprocess
+import platform
 
 
 # thanks zadenowen for the function
 def generateBinary(schema: str, json: str, path: str):
-    flatc = "flatc/flatc.exe"
+    iswindows = platform.system() == "Windows"
+    flatc = os.path.abspath("flatc/flatc.exe") if iswindows else "flatc"
     outpath = os.path.abspath("output/romfs/" + path)
     # print(outpath)
     proc = subprocess.run(
-        [os.path.abspath(flatc),
+        [flatc,
         "-b",
         "-o",
         outpath,
