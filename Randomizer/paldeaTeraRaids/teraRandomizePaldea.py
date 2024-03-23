@@ -624,7 +624,7 @@ def randomizePaldea(config, pokemonAllowed, legendsAllowed):
     if pokemonAllowed is None:
         pokemonAllowed = [i for i in range(1, 1026)]
     for i in range(1, 7):
-        paldeaTeraRaids = open(os.getcwd() + '\\Randomizer\\paldeaTeraRaids\\' + f'raid_enemy_0{str(i)}_array_clean.json', 'r')
+        paldeaTeraRaids = open(os.getcwd() + '/Randomizer/paldeaTeraRaids/' + f'raid_enemy_0{str(i)}_array_clean.json', 'r')
         paldeaRaids = json.load(paldeaTeraRaids)
         paldeaTeraRaids.close()
 
@@ -647,7 +647,7 @@ def randomizePaldea(config, pokemonAllowed, legendsAllowed):
 
 
         outdata = json.dumps(paldeaRaids, indent=4)
-        with open(os.getcwd() + '\\Randomizer\\paldeaTeraRaids\\' + f'raid_enemy_0{str(i)}_array.json', 'w') as outfile:
+        with open(os.getcwd() + '/Randomizer/paldeaTeraRaids/' + f'raid_enemy_0{str(i)}_array.json', 'w') as outfile:
             outfile.write(outdata)
         print(f"Randomisation of Raids Star {str(i)} Done !")
 
@@ -775,17 +775,17 @@ def limitPaldeaRaids(config, actualconfig):
 
 
 def randomizeTables():
-    lotteryItems = open(os.getcwd() + '\\Randomizer\\paldeaTeraRaids\\' + 'raid_lottery_reward_item_array_clean.json',
+    lotteryItems = open(os.getcwd() + '/Randomizer/paldeaTeraRaids/' + 'raid_lottery_reward_item_array_clean.json',
                            'r')
     lottery = json.load(lotteryItems)
     lotteryItems.close()
 
-    fixedItems = open(os.getcwd() + '\\Randomizer\\paldeaTeraRaids\\' + 'raid_fixed_reward_item_array_clean.json',
+    fixedItems = open(os.getcwd() + '/Randomizer/paldeaTeraRaids/' + 'raid_fixed_reward_item_array_clean.json',
                            'r')
     fixed = json.load(fixedItems)
     fixedItems.close()
 
-    item_info = open(os.getcwd() + '\\Randomizer\\Items\\' + 'pokemon_items_dev.json', 'r')
+    item_info = open(os.getcwd() + '/Randomizer/Items/' + 'pokemon_items_dev.json', 'r')
     itemData = json.load(item_info)
     item_info.close()
     # rate: 0 - 10000 (0% to 100%)
@@ -837,11 +837,11 @@ def randomizeTables():
             lottery['values'][i][f'reward_item_{testName}']['num'] = random.randint(1, 5)
             lottery['values'][i][f'reward_item_{testName}']['rate'] = random.randint(500, 10000)
     outdata = json.dumps(fixed, indent=2)
-    with open(os.getcwd() + '\\Randomizer\\paldeaTeraRaids\\' + f'raid_fixed_reward_item_array.json', 'w') as outfile:
+    with open(os.getcwd() + '/Randomizer/paldeaTeraRaids/' + f'raid_fixed_reward_item_array.json', 'w') as outfile:
         outfile.write(outdata)
 
     outdata = json.dumps(lottery, indent=2)
-    with open(os.getcwd() + '\\Randomizer\\paldeaTeraRaids\\' + f'raid_lottery_reward_item_array.json', 'w') as outfile:
+    with open(os.getcwd() + '/Randomizer/paldeaTeraRaids/' + f'raid_lottery_reward_item_array.json', 'w') as outfile:
         outfile.write(outdata)
     print(f"Randomisation of Tera Raid Tables Done !")
 

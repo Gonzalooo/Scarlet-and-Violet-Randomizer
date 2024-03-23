@@ -1205,21 +1205,21 @@ def flip_starter_texture(starter_num: int):
     # _14 - form3
     # _XY - formZ./pokemon_clean/{pokemon_file}
     # Copies files of pokemon needed. Right now gets all - later only form specific
-    shutil.copytree(os.getcwd() + "\\Randomizer\\Starters\\" +f'pokemon_clean\\{pokemon_file}',
-                 os.getcwd() + "\\Randomizer\\Starters\\" +f'output\\romfs\\pokemon\\data\\{pokemon_file}')
-    current_check = os.getcwd() + "\\Randomizer\\Starters\\" +f'output\\romfs\\pokemon\\data\\{pokemon_file}'
+    shutil.copytree(os.getcwd() + "/Randomizer/Starters/" +f'pokemon_clean/{pokemon_file}',
+                 os.getcwd() + "/Randomizer/Starters/" +f'output/romfs/pokemon/data/{pokemon_file}')
+    current_check = os.getcwd() + "/Randomizer/Starters/" +f'output/romfs/pokemon/data/{pokemon_file}'
     i = 0
     for pokemonfolder in os.listdir(current_check):
         # print(pokemonfolder)
-        pokemontextures_animations = current_check + "\\" + pokemonfolder
+        pokemontextures_animations = current_check + "/" + pokemonfolder
 
         for files in os.listdir(pokemontextures_animations):
             if "rare" in files:
                 # print(files)
                 # print(files.replace("_rare", ''))
                 replacedfile = files.replace("_rare", '')
-                ogfiledir = pokemontextures_animations + "\\" + f'{files}'
-                newfiledir =pokemontextures_animations + "\\" + f'{replacedfile}'
+                ogfiledir = pokemontextures_animations + "/" + f'{files}'
+                newfiledir =pokemontextures_animations + "/" + f'{replacedfile}'
                 #print(f'OG File Dir: {ogfiledir}')
                 #print(f'New File Dir: {newfiledir}')
                 shutil.copy2(ogfiledir, newfiledir)
@@ -1715,8 +1715,8 @@ def randomize(config, globalconfig):
             print("Limted Generation Randomisation Of Evos Done !")
         if (globalconfig['starter_randomizer']['is_enabled'] == "yes"
             and config['starter_limiter'] == "yes"):
-            if os.path.exists(os.getcwd() + "\\Randomizer\\Starters\\" + f'output'):
-                shutil.rmtree(os.getcwd() + "\\Randomizer\\Starters\\" + f'output')
+            if os.path.exists(os.getcwd() + "/Randomizer/Starters/" + f'output'):
+                shutil.rmtree(os.getcwd() + "/Randomizer/Starters/" + f'output')
 
             file = open(os.getcwd() + "/Randomizer/Starters/" + "eventAddPokemon_array_clean.json", "r")
             data = json.load(file)

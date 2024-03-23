@@ -4,17 +4,17 @@
         "_comment": "Note: this options are to limit the generation of pokemon that can be used in game",
         "_comment1": "If you wish to enable this for a specific randomizer only just change the no to yes",
         "_comment5": "Options are still depedent on the other settings.",
-        "is_enabled": "no",
+        "is_enabled": "yes",
         "_comment2": "fill out like this: 'generations_allowed': [1,2,3] - this will only allow gens 1-3 to be used",
         "_comment3": "as a fail safe if its enabled and empty then all generations will be used.",
-        "generations_allowed": [],
-        "wild_limiter": "no",
-        "trainer_limiter": "no",
-        "static_limiter": "no",
-        "starter_limiter": "no",
-        "teraRaid_limiter": "no",
+        "generations_allowed": [1],
+        "wild_limiter": "yes",
+        "trainer_limiter": "yes",
+        "static_limiter": "yes",
+        "starter_limiter": "yes",
+        "teraRaid_limiter": "yes",
         "_comment4": "limits for randomized evolutions if they are active.",
-        "evolution_limiter": "no"
+        "evolution_limiter": "yes"
     },
     "wild_randomizer": {
         "_comment": "Fully updated to 3.0",
@@ -32,7 +32,7 @@
     },
     "trainer_randomizer": {
         "_comment": "Updated for 3.0.0",
-        "is_enabled": "yes",
+        "is_enabled": "no",
         "force_6_pokemons_on_trainers": "no",
         "give_trainers_extra_mons": "no",
         "force_perfect_ivs": "no",
@@ -111,18 +111,18 @@
         "_comment": "Only works on hidden items - I can't find file for overworld items.",
         "is_enabled": "yes",
         "randomize_hidden_items": "yes",
-        "randomize_items_from_pickup_ability": "no",
+        "randomize_items_from_pickup_ability": "yes",
         "_comment2": "This could also be synchro machine",
         "randomize_synchro_items": "yes",
         "_comment1": "Following setting if active will make TMS uncraftable",
-        "randomize_pokemon_drops": "no"
+        "randomize_pokemon_drops": "yes"
     },
     "tera_raids_randomizer": {
         "_comment": "Still in Beta - Expect Issues",
         "is_enabled": "yes",
         "only_legends": "no",
         "only_paradox": "no",
-        "only_legends_and_paradox": "yes",
+        "only_legends_and_paradox": "no",
         "force_shiny": "no",
         "increased_shiny_chance": "yes"
     }

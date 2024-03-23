@@ -614,7 +614,7 @@ def randomizeBlueberry(config, pokemonAllowed, legendsAllowed):
     if pokemonAllowed is None:
         pokemonAllowed = [i for i in range(1, 1026)]
     for i in range(1, 7):
-        blueberryTeraRaids = open(os.getcwd() + '\\Randomizer\\blueberryTeraRaids\\' + f'su2_raid_enemy_0{str(i)}_array_clean.json', 'r')
+        blueberryTeraRaids = open(os.getcwd() + '/Randomizer/blueberryTeraRaids/' + f'su2_raid_enemy_0{str(i)}_array_clean.json', 'r')
         blueberryRaids = json.load(blueberryTeraRaids)
         blueberryTeraRaids.close()
 
@@ -636,7 +636,7 @@ def randomizeBlueberry(config, pokemonAllowed, legendsAllowed):
                 blueberryRaids = randomizeRaids(blueberryRaids, legendsAllowed)
 
         outdata = json.dumps(blueberryRaids, indent=4)
-        with open(os.getcwd() + '\\Randomizer\\blueberryTeraRaids\\' + f'su2_raid_enemy_0{str(i)}_array.json', 'w') as outfile:
+        with open(os.getcwd() + '/Randomizer/blueberryTeraRaids/' + f'su2_raid_enemy_0{str(i)}_array.json', 'w') as outfile:
             outfile.write(outdata)
         print(f"Randomisation of Blueberry Raids Star {str(i)} Done !")
 

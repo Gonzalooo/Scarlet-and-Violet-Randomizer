@@ -28,23 +28,23 @@ banned_items = [2311, 2313, 2314, 2315, 2316, 2317, 2318, 2319, 2320, 2321, 2322
 def randomizeHiddenItems():
     # emerge percent is % of it showing up
     # Get information on Items (using file to future proof for more options to check)
-    item_info = open(os.getcwd() + '\\Randomizer\\Items\\' + 'pokemon_items_dev.json', 'r')
+    item_info = open(os.getcwd() + '/Randomizer/Items/' + 'pokemon_items_dev.json', 'r')
     itemData = json.load(item_info)
     item_info.close()
 
-    paldeaHiddenItemsFile = open(os.getcwd() + '\\Randomizer\\Items\\' + 'hiddenItemDataTable_array_clean.json', 'r')
+    paldeaHiddenItemsFile = open(os.getcwd() + '/Randomizer/Items/' + 'hiddenItemDataTable_array_clean.json', 'r')
     paldeaItems = json.load(paldeaHiddenItemsFile)
     paldeaHiddenItemsFile.close()
 
-    TealHiddenItemsFile = open(os.getcwd() + '\\Randomizer\\Items\\' + 'hiddenItemDataTable_su1_array_clean.json', 'r')
+    TealHiddenItemsFile = open(os.getcwd() + '/Randomizer/Items/' + 'hiddenItemDataTable_su1_array_clean.json', 'r')
     kitakamiItems = json.load(TealHiddenItemsFile)
     TealHiddenItemsFile.close()
 
-    IndigoHiddenItemsFile = open(os.getcwd() + '\\Randomizer\\Items\\' + 'hiddenItemDataTable_su2_array_clean.json', 'r')
+    IndigoHiddenItemsFile = open(os.getcwd() + '/Randomizer/Items/' + 'hiddenItemDataTable_su2_array_clean.json', 'r')
     blueberryItems = json.load(IndigoHiddenItemsFile)
     IndigoHiddenItemsFile.close()
 
-    lcHiddenItemsFile = open(os.getcwd() + '\\Randomizer\\Items\\' + 'hiddenItemDataTable_lc_array_clean.json', 'r')
+    lcHiddenItemsFile = open(os.getcwd() + '/Randomizer/Items/' + 'hiddenItemDataTable_lc_array_clean.json', 'r')
     lcItems = json.load(lcHiddenItemsFile)
     lcHiddenItemsFile.close()
 
@@ -125,10 +125,10 @@ def randomizeHiddenItems():
 
 def randomizePickUpAbilityItems():
     # Under construction as I need to figure out how to weight the rates correctly
-    item_info = open(os.getcwd() + '\\Randomizer\\Items\\' + 'pokemon_items_dev.json', 'r')
+    item_info = open(os.getcwd() + '/Randomizer/Items/' + 'pokemon_items_dev.json', 'r')
     itemData = json.load(item_info)
     item_info.close()
-    pickupItemsFile = open(os.getcwd() + '\\Randomizer\\Items\\' + 'monohiroiItemData_array_clean.json', 'r')
+    pickupItemsFile = open(os.getcwd() + '/Randomizer/Items/' + 'monohiroiItemData_array_clean.json', 'r')
     pickitems = json.load(pickupItemsFile)
     pickupItemsFile.close()
 
@@ -158,10 +158,10 @@ def randomizePickUpAbilityItems():
 
 
 def randomizeLetsGoItems(): # rummagingItemDataTable
-    item_info = open(os.getcwd() + '\\Randomizer\\Items\\' + 'pokemon_items_dev.json', 'r')
+    item_info = open(os.getcwd() + '/Randomizer/Items/' + 'pokemon_items_dev.json', 'r')
     itemData = json.load(item_info)
     item_info.close()
-    pickupItemsFile = open(os.getcwd() + '\\Randomizer\\Items\\' + 'rummagingItemDataTable_array_clean.json', 'r')
+    pickupItemsFile = open(os.getcwd() + '/Randomizer/Items/' + 'rummagingItemDataTable_array_clean.json', 'r')
     pickitems = json.load(pickupItemsFile)
     pickupItemsFile.close()
 
@@ -190,10 +190,10 @@ def randomizeLetsGoItems(): # rummagingItemDataTable
 
 
 def randomizePokemonDrops():
-    item_info = open(os.getcwd() + '\\Randomizer\\Items\\' + 'pokemon_items_dev.json', 'r')
+    item_info = open(os.getcwd() + '/Randomizer/Items/' + 'pokemon_items_dev.json', 'r')
     itemData = json.load(item_info)
     item_info.close()
-    pickupItemsFile = open(os.getcwd() + '\\Randomizer\\Items\\' + 'dropitemdata_array_clean.json', 'r')
+    pickupItemsFile = open(os.getcwd() + '/Randomizer/Items/' + 'dropitemdata_array_clean.json', 'r')
     pickitems = json.load(pickupItemsFile)
     pickupItemsFile.close()
 
