@@ -32,7 +32,7 @@
     },
     "trainer_randomizer": {
         "_comment": "Updated for 3.0.0",
-        "is_enabled": "no",
+        "is_enabled": "yes",
         "force_6_pokemons_on_trainers": "no",
         "give_trainers_extra_mons": "no",
         "force_perfect_ivs": "no",

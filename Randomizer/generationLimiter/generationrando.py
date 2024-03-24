@@ -1690,7 +1690,7 @@ def randomize(config, globalconfig):
         if (globalconfig['personal_data_randomizer']['is_enabled'] == "yes" and
             globalconfig['personal_data_randomizer']['randomize_evolutions'] == "yes"
             and config['evolution_limiter'] == "yes"):
-            file = open(os.getcwd() + "/Randomizer/PersonalData/" + "personal_array.json", "r")
+            file = open(os.getcwd() + "/Randomizer/PersonalData/" + "personal_array_clean.json", "r")
             data = json.load(file)
             file.close()
             for pokemon in data['entry']:

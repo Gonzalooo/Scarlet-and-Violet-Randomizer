@@ -31,8 +31,27 @@ def check_updates():
 def generateBinary(schema: str, json: str, path: str):
     iswindows = platform.system() == "Windows"
     flatc = os.path.abspath("flatc/flatc.exe") if iswindows else "flatc"
-    outpath = os.path.abspath("output/romfs/" + path)
+    outpath = os.path.abspath("output/romfs/" + path + "/")
     # print(outpath)
+    folders = outpath.split('/')
+    index_value = 0
+    #print(outpath)
+    for i in range(0, len(folders)):
+        index_value = index_value + 1
+        if folders[i] == "output":
+            break
+
+    test = folders[index_value:]
+    foldertogetperms = "/"
+    for i in range(1, index_value):
+        foldertogetperms = foldertogetperms+f"{folders[i]}/"
+    #print(foldertogetperms)
+
+    for i in range(0, len(test)):
+        foldertogetperms = foldertogetperms + f"{test[i]}/"
+        #print(foldertogetperms)
+        os.makedirs(foldertogetperms, mode=0o777, exist_ok=True)
+
     proc = subprocess.run(
         [flatc,
         "-b",
@@ -40,9 +59,11 @@ def generateBinary(schema: str, json: str, path: str):
         outpath,
         os.path.abspath(schema),
         os.path.abspath(json)
-        ], capture_output=True
+        ], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
     )
-    #print(proc)
+    # print(proc.args)
+    # print(proc.stdout + "Here")
+    # print(proc.stderr)
     return proc
 
 
@@ -62,31 +83,31 @@ def create_modpack():
 
     if os.access("output/", mode=777) == True: #exists
         shutil.rmtree("output/")
-    os.makedirs("output/", mode=777, exist_ok=True)
+    os.makedirs("output/", mode=0o777, exist_ok=True)
 
 
 paths = {
-    "wilds": "world/data/encount/pokedata/pokedata",
-    "wilds_su1": "world/data/encount/pokedata/pokedata_su1",
-    "wilds_su2": "world/data/encount/pokedata/pokedata_su2",
-    "trainers": "world/data/trainer/trdata",
-    "gifts": "world/data/event/event_add_pokemon/eventAddPokemon",
-    "personal": "avalon/data",
-    "statics": "world/data/field/fixed_symbol/fixed_symbol_table",
-    "itemdata": "world/data/item/itemdata",
-    "hidden_paldea": "world/data/item/hiddenItemDataTable",
-    "hidden_lc": "world/data/item/hiddenItemDataTable_lc",
-    "hidden_kitakami": "world/data/item/hiddenItemDataTable_su1",
-    "hidden_blueberry": "world/data/item/hiddenItemDataTable_su2",
-    "dropitems": "world/data/item/dropitemdata",
-    "pickupitems": "world/data/item/monohiroilItemData",
-    "letsgo": "world/data/item/rummagingItemDataTable",
-    "catalog": "pokemon/catalog/catalog",
-    "scenes": "world/scene/parts/event/event_scenario/main_scenario/common_0070_",
+    "wilds": "world/data/encount/pokedata/pokedata/",
+    "wilds_su1": "world/data/encount/pokedata/pokedata_su1/",
+    "wilds_su2": "world/data/encount/pokedata/pokedata_su2/",
+    "trainers": "world/data/trainer/trdata/",
+    "gifts": "world/data/event/event_add_pokemon/eventAddPokemon/",
+    "personal": "avalon/data/",
+    "statics": "world/data/field/fixed_symbol/fixed_symbol_table/",
+    "itemdata": "world/data/item/itemdata/",
+    "hidden_paldea": "world/data/item/hiddenItemDataTable/",
+    "hidden_lc": "world/data/item/hiddenItemDataTable_lc/",
+    "hidden_kitakami": "world/data/item/hiddenItemDataTable_su1/",
+    "hidden_blueberry": "world/data/item/hiddenItemDataTable_su2/",
+    "dropitems": "world/data/item/dropitemdata/",
+    "pickupitems": "world/data/item/monohiroilItemData/",
+    "letsgo": "world/data/item/rummagingItemDataTable/",
+    "catalog": "pokemon/catalog/catalog/",
+    "scenes": "world/scene/parts/event/event_scenario/main_scenario/common_0070_/",
     "shiny_scenes": "pokemon/data/",
-    "item_fixed": "world/data/raid/raid_fixed_reward_item",
-    "item_lottery": "world/data/raid/raid_lottery_reward_item",
-    "trpfd": "arc"
+    "item_fixed": "world/data/raid/raid_fixed_reward_item/",
+    "item_lottery": "world/data/raid/raid_lottery_reward_item/",
+    "trpfd": "arc/"
 }
 
 
@@ -201,11 +222,29 @@ def randomize_based_on_config(config):
         PatchScene.patchScenes()
         generateBinary("Randomizer/Scenes/poke_resource_table.fbs", "Randomizer/Scenes/poke_resource_table.json",
                        paths['catalog'])
-        os.makedirs("output/romfs/" + paths['scenes'], mode=777, exist_ok=True)
+        test = os.path.abspath("output/romfs/" + paths['scenes'])
+        folders = test.split('/')
+        index_value = 0
+        for i in range(0, len(folders)):
+            index_value = index_value + 1
+            if folders[i] == "output":
+                break
+
+        test = folders[index_value:]
+        foldertogetperms = "/"
+        for i in range(1, index_value):
+            foldertogetperms = foldertogetperms + f"{folders[i]}/"
+        # print(foldertogetperms)
+
+        for i in range(0, len(test)):
+            foldertogetperms = foldertogetperms + f"{test[i]}/"
+            # print(foldertogetperms)
+            os.makedirs(foldertogetperms, mode=0o777, exist_ok=True)
+
         shutil.copyfile("Randomizer/Scenes/common_0070_always_0.trsog",
-                        "output/romfs/" + paths['scenes'] + '/common_0070_always_0.trsog')
+                        "output/romfs/" + paths['scenes'] + 'common_0070_always_0.trsog')
         shutil.copyfile("Randomizer/Scenes/common_0070_always_1.trsog",
-                        "output/romfs/" + paths['scenes'] + '/common_0070_always_1.trsog')
+                        "output/romfs/" + paths['scenes'] + 'common_0070_always_1.trsog')
 
 
 def randomize():
