@@ -33,6 +33,7 @@ def generateBinary(schema: str, json: str, path: str):
     flatc = os.path.abspath("flatc/flatc.exe") if iswindows else "flatc"
     outpath = os.path.abspath("output/romfs/" + path + "/")
     # print(outpath)
+    outpath = outpath.replace("\\", '/')
     folders = outpath.split('/')
     index_value = 0
     #print(outpath)
@@ -223,6 +224,7 @@ def randomize_based_on_config(config):
         generateBinary("Randomizer/Scenes/poke_resource_table.fbs", "Randomizer/Scenes/poke_resource_table.json",
                        paths['catalog'])
         test = os.path.abspath("output/romfs/" + paths['scenes'])
+        test = test.replace("\\", '/')
         folders = test.split('/')
         index_value = 0
         for i in range(0, len(folders)):
@@ -231,6 +233,7 @@ def randomize_based_on_config(config):
                 break
 
         test = folders[index_value:]
+
         foldertogetperms = "/"
         for i in range(1, index_value):
             foldertogetperms = foldertogetperms + f"{folders[i]}/"
