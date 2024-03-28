@@ -97,7 +97,7 @@
         "_comment4": "If you wish to play the game with a shiny starter without carrying about its overworld",
         "_comment5": "texture when picking it - then please have it as no. Else have it as yes.",
         "_comment6": "Does not work with randomize_all_gifts as it assumes you'll be playing the whole game.",
-        "shiny_overworld": "yes"
+        "shiny_overworld": "no"
     },
     "static_randomizer": {
 		"_comment": "Fully Updated to 3.0.0",
