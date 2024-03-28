@@ -1,0 +1,418 @@
+{
+  "auto-patch-romfs": "yes",
+  "use_paldea_settings_for_all": "no",
+  "kaizo_ironmon_mode": "no",
+  "bulk_creation": {
+    "is_enabled": "no",
+    "number_of_unique_randomizers_to_create": 6
+  },
+  "items_randomizer": {
+    "_comment": "Only works on hidden items - I can't find file for overworld items.",
+    "is_enabled": "no",
+    "randomize_hidden_items": "no",
+    "randomize_items_from_pickup_ability": "no",
+    "randomize_synchro_items": "no",
+    "randomize_pokemon_drops": "no"
+  },
+  "pokemon_stats_randomizer": {
+      "is_enabled": "no",
+      "randomize_abilities": "no",
+      "randomize_types": "no",
+      "ban_wonder_guard": "no",
+      "randomize_movesets": "no",
+      "randomize_stats_with_same_total": "no",
+      "randomize_stats_with_different_total": "no",
+      "randomize_evolutions": "no",
+      "let_pokemon_evolve_every_level": "no"
+    },
+  "starter_pokemon_randomizer":{
+      "is_enabled": "no",
+      "generation_limiter": [],
+      "force_shiny_starter": "no",
+      "make_all_starters_shiny": "no",
+      "higher_chance_shiny": "no",
+      "show_starters_in_overworld": "no",
+      "_comment1": "This next option should remain off if pokemon_clean is empty",
+      "show_shiny_starters_in_overworld": "no",
+      "ban_stage1_pokemon": "no",
+      "ban_stage2_pokemon": "no",
+      "ban_single_stage_pokemon": "no",
+      "ban_legendaries": "no",
+      "ban_paradox": "no",
+      "only_legendary_pokemon": "no",
+      "only_paradox_pokemon": "no",
+      "only_legendary_and_paradox": "no",
+      "_comment2": "As long as the force_starter is a dex number or a valid english pokemon name",
+      "_comment3": "Ex: 1024, Tera Pagos, teRapagos, t e r a pa gos are all valid for Terapagos",
+      "_comment4": "However 1 0 2 4 is not a valid input for terapagos",
+      "_comment5": "Similarly tera_paGos is not a valid input for terapagos",
+      "force_starter_1": 0,
+      "force_starter_2": 1024,
+      "force_starter_3": 0
+    },
+  "paldea_settings": {
+    "wild_randomizer": {
+      "is_enabled": "no",
+      "generation_limiter": [],
+      "exclude_legendary": "no",
+      "only_legendary_pokemon": "no",
+      "only_paradox_pokemon": "no",
+      "only_legends_and_paradox": "no",
+      "_comment1": "Working on option to keep similar BST on route"
+    },
+    "static_pokemon_randomizer": {
+      "is_enabled": "no",
+      "generation_limiter": [],
+      "randomize_tera_types": "no",
+      "exclude_legendary_pokemon": "no",
+      "only_legendary_pokemon": "no",
+      "only_paradox_pokemon": "no",
+      "only_legendary_and_paradox": "no",
+      "_comment": "working on similar BST feature"
+    },
+    "gift_pokemon_randomizer": {
+      "is_enabled": "no",
+      "generation_limiter": [],
+      "randomize_tera_types": "no",
+      "exclude_legendary_pokemon": "no",
+      "only_legendary_pokemon": "no",
+      "only_paradox_pokemon": "no",
+      "only_legendary_and_paradox": "no"
+    },
+    "legendary_pokemon_randomizer": {
+      "is_enabled": "no",
+      "generation_limiter": [],
+      "use_other_legendaries": "no",
+      "ban_stage1_pokemon": "no",
+      "ban_stage2_pokemon": "no",
+      "ban_single_stage_pokemon": "no"
+    },
+    "boss_pokemon_randomizer": {
+      "is_enabled": "no",
+      "generation_limiter": [],
+      "use_other_legendaries": "no",
+      "ban_stage1_pokemon": "no",
+      "ban_stage2_pokemon": "no",
+      "ban_single_stage_pokemon": "no"
+    },
+    "tera_raid_randomizer": {
+      "is_enabled": "no",
+      "generation_limiter": [],
+      "force_shiny": "no",
+      "increased_shiny_chance": "no",
+      "exclude_legendary_pokemon": "no",
+      "only_legendary_pokemon": "no",
+      "only_paradox_pokemon": "no",
+      "only_legendary_and_paradox": "no",
+      "ban_stage1_pokemon": "no",
+      "ban_stage2_pokemon": "no",
+      "ban_single_stage_pokemon": "no"
+    },
+    "trainers_randomizer": {
+      "all_trainers_settings": {
+        "generation_limiter": [],
+        "use_rival_randomizer_forall": "no",
+        "allow_terastalize_to_all": "no",
+        "randomize_tera_types": "no",
+        "allow_shiny_pokemon": "no",
+        "randomnly_choose_single_or_doubles": "no",
+        "only_double_battles": "no",
+        "_comment": "working on similar BST option"
+      },
+      "rival_randomizer": {
+        "force_6_pokemon": "no",
+        "add_extra_pokemon": "no",
+        "force_perfect_ivs": "no",
+        "make_ai_smart": "no",
+        "starter_follows_nemona": "no",
+        "starter_follows_clavell": "no",
+        "only_legendary_pokemon": "no",
+        "only_paradox_pokemon": "no",
+        "only_legendary_and_paradox": "no",
+        "ban_stage1_pokemon": "no",
+        "ban_stage2_pokemon": "no",
+        "ban_single_stage_pokemon": "no"
+      },
+      "route_trainers_randomizer": {
+        "force_6_pokemon": "no",
+        "add_extra_pokemon": "no",
+        "force_perfect_ivs": "no",
+        "make_ai_smart": "no",
+        "only_legendary_pokemon": "no",
+        "only_paradox_pokemon": "no",
+        "only_legendary_and_paradox": "no",
+        "ban_stage1_pokemon": "no",
+        "ban_stage2_pokemon": "no",
+        "ban_single_stage_pokemon": "no"
+      },
+      "gym_randomizer": {
+        "force_6_pokemon": "no",
+        "add_extra_pokemon": "no",
+        "force_perfect_ivs": "no",
+        "make_ai_smart": "no",
+        "only_legendary_pokemon": "no",
+        "only_paradox_pokemon": "no",
+        "only_legendary_and_paradox": "no",
+        "ban_stage1_pokemon": "no",
+        "ban_stage2_pokemon": "no",
+        "ban_single_stage_pokemon": "no"
+      },
+      "elite4_randomizer": {
+        "force_6_pokemon": "no",
+        "add_extra_pokemon": "no",
+        "force_perfect_ivs": "no",
+        "make_ai_smart": "no",
+        "only_legendary_pokemon": "no",
+        "only_paradox_pokemon": "no",
+        "only_legendary_and_paradox": "no",
+        "ban_stage1_pokemon": "no",
+        "ban_stage2_pokemon": "no",
+        "ban_single_stage_pokemon": "no"
+      },
+      "champion_randomizer": {
+        "force_6_pokemon": "no",
+        "add_extra_pokemon": "no",
+        "force_perfect_ivs": "no",
+        "make_ai_smart": "no",
+        "only_legendary_pokemon": "no",
+        "only_paradox_pokemon": "no",
+        "only_legendary_and_paradox": "no",
+        "ban_stage1_pokemon": "no",
+        "ban_stage2_pokemon": "no",
+        "ban_single_stage_pokemon": "no"
+      },
+      "raid_npc_randomizer": {
+        "force_perfect_ivs": "no",
+        "make_ai_smart": "no",
+        "only_legendary_pokemon": "no",
+        "only_paradox_pokemon": "no",
+        "only_legendary_and_paradox": "no",
+        "ban_stage1_pokemon": "no",
+        "ban_stage2_pokemon": "no",
+        "ban_single_stage_pokemon": "no"
+      }
+    }
+  },
+  "kitakami_settings": {
+    "wild_randomizer": {
+      "is_enabled": "no",
+      "generation_limiter": [],
+      "exclude_legendary": "no",
+      "only_legendary_pokemon": "no",
+      "only_paradox_pokemon": "no",
+      "only_legends_and_paradox": "no",
+      "_comment1": "Working on option to keep similar BST on route"
+    },
+    "static_pokemon_randomizer": {
+      "is_enabled": "no",
+      "generation_limiter": [],
+      "randomize_tera_types": "no",
+      "exclude_legendary_pokemon": "no",
+      "only_legendary_pokemon": "no",
+      "only_paradox_pokemon": "no",
+      "only_legendary_and_paradox": "no",
+      "_comment": "working on similar BST feature"
+    },
+    "gift_pokemon_randomizer": {
+      "is_enabled": "no",
+      "generation_limiter": [],
+      "randomize_tera_types": "no",
+      "exclude_legendary_pokemon": "no",
+      "only_legendary_pokemon": "no",
+      "only_paradox_pokemon": "no",
+      "only_legendary_and_paradox": "no"
+    },
+    "legendary_pokemon_randomizer": {
+      "is_enabled": "no",
+      "generation_limiter": [],
+      "use_other_legendaries": "no",
+      "ban_stage1_pokemon": "no",
+      "ban_stage2_pokemon": "no",
+      "ban_single_stage_pokemon": "no"
+    },
+    "boss_pokemon_randomizer": {
+      "is_enabled": "no",
+      "generation_limiter": [],
+      "use_other_legendaries": "no",
+      "ban_stage1_pokemon": "no",
+      "ban_stage2_pokemon": "no",
+      "ban_single_stage_pokemon": "no"
+    },
+    "tera_raid_randomizer": {
+      "is_enabled": "no",
+      "generation_limiter": [],
+      "force_shiny": "no",
+      "increased_shiny_chance": "no",
+      "exclude_legendary_pokemon": "no",
+      "only_legendary_pokemon": "no",
+      "only_paradox_pokemon": "no",
+      "only_legendary_and_paradox": "no",
+      "ban_stage1_pokemon": "no",
+      "ban_stage2_pokemon": "no",
+      "ban_single_stage_pokemon": "no"
+    },
+    "trainers_randomizer": {
+      "all_trainers_settings": {
+        "generation_limiter": [],
+        "use_rival_randomizer_forall": "no",
+        "allow_terastalize_to_all": "no",
+        "randomize_tera_types": "no",
+        "allow_shiny_pokemon": "no",
+        "randomnly_choose_single_or_doubles": "no",
+        "only_double_battles": "no",
+        "_comment": "working on similar BST option"
+      },
+      "rival_randomizer": {
+        "force_6_pokemon": "no",
+        "add_extra_pokemon": "no",
+        "force_perfect_ivs": "no",
+        "make_ai_smart": "no",
+        "only_legendary_pokemon": "no",
+        "only_paradox_pokemon": "no",
+        "only_legendary_and_paradox": "no",
+        "ban_stage1_pokemon": "no",
+        "ban_stage2_pokemon": "no",
+        "ban_single_stage_pokemon": "no"
+      },
+      "route_trainers_randomizer": {
+        "force_6_pokemon": "no",
+        "add_extra_pokemon": "no",
+        "force_perfect_ivs": "no",
+        "make_ai_smart": "no",
+        "only_legendary_pokemon": "no",
+        "only_paradox_pokemon": "no",
+        "only_legendary_and_paradox": "no",
+        "ban_stage1_pokemon": "no",
+        "ban_stage2_pokemon": "no",
+        "ban_single_stage_pokemon": "no"
+      },
+      "raid_npc_randomizer": {
+        "force_perfect_ivs": "no",
+        "make_ai_smart": "no",
+        "only_legendary_pokemon": "no",
+        "only_paradox_pokemon": "no",
+        "only_legendary_and_paradox": "no",
+        "ban_stage1_pokemon": "no",
+        "ban_stage2_pokemon": "no",
+        "ban_single_stage_pokemon": "no"
+      }
+    }
+  },
+  "blueberry_settings": {
+    "wild_randomizer": {
+      "is_enabled": "no",
+      "generation_limiter": [],
+      "exclude_legendary": "no",
+      "only_legendary_pokemon": "no",
+      "only_paradox_pokemon": "no",
+      "only_legends_and_paradox": "no",
+      "_comment1": "Working on option to keep similar BST on route"
+    },
+    "static_pokemon_randomizer": {
+      "is_enabled": "no",
+      "generation_limiter": [],
+      "randomize_tera_types": "no",
+      "exclude_legendary_pokemon": "no",
+      "only_legendary_pokemon": "no",
+      "only_paradox_pokemon": "no",
+      "only_legendary_and_paradox": "no",
+      "_comment": "working on similar BST feature"
+    },
+    "gift_pokemon_randomizer": {
+      "is_enabled": "no",
+      "generation_limiter": [],
+      "randomize_tera_types": "no",
+      "exclude_legendary_pokemon": "no",
+      "only_legendary_pokemon": "no",
+      "only_paradox_pokemon": "no",
+      "only_legendary_and_paradox": "no"
+    },
+    "legendary_pokemon_randomizer": {
+      "is_enabled": "no",
+      "generation_limiter": [],
+      "use_other_legendaries": "no",
+      "ban_stage1_pokemon": "no",
+      "ban_stage2_pokemon": "no",
+      "ban_single_stage_pokemon": "no"
+    },
+    "boss_pokemon_randomizer": {
+      "is_enabled": "no",
+      "generation_limiter": [],
+      "use_other_legendaries": "no",
+      "ban_stage1_pokemon": "no",
+      "ban_stage2_pokemon": "no",
+      "ban_single_stage_pokemon": "no"
+    },
+    "tera_raid_randomizer": {
+      "is_enabled": "no",
+      "generation_limiter": [],
+      "force_shiny": "no",
+      "increased_shiny_chance": "no",
+      "exclude_legendary_pokemon": "no",
+      "only_legendary_pokemon": "no",
+      "only_paradox_pokemon": "no",
+      "only_legendary_and_paradox": "no",
+      "ban_stage1_pokemon": "no",
+      "ban_stage2_pokemon": "no",
+      "ban_single_stage_pokemon": "no"
+    },
+    "trainers_randomizer": {
+      "all_trainers_settings": {
+        "generation_limiter": [],
+        "use_rival_randomizer_forall": "no",
+        "allow_terastalize_to_all": "no",
+        "randomize_tera_types": "no",
+        "allow_shiny_pokemon": "no",
+        "randomnly_choose_single_or_doubles": "no",
+        "only_double_battles": "no",
+        "_comment": "working on similar BST option"
+      },
+      "route_trainers_randomizer": {
+        "force_6_pokemon": "no",
+        "add_extra_pokemon": "no",
+        "force_perfect_ivs": "no",
+        "make_ai_smart": "no",
+        "only_legendary_pokemon": "no",
+        "only_paradox_pokemon": "no",
+        "only_legendary_and_paradox": "no",
+        "ban_stage1_pokemon": "no",
+        "ban_stage2_pokemon": "no",
+        "ban_single_stage_pokemon": "no"
+      },
+      "elite4_randomizer": {
+        "force_6_pokemon": "no",
+        "add_extra_pokemon": "no",
+        "force_perfect_ivs": "no",
+        "make_ai_smart": "no",
+        "only_legendary_pokemon": "no",
+        "only_paradox_pokemon": "no",
+        "only_legendary_and_paradox": "no",
+        "ban_stage1_pokemon": "no",
+        "ban_stage2_pokemon": "no",
+        "ban_single_stage_pokemon": "no"
+      },
+      "champion_randomizer": {
+        "force_6_pokemon": "no",
+        "add_extra_pokemon": "no",
+        "force_perfect_ivs": "no",
+        "make_ai_smart": "no",
+        "only_legendary_pokemon": "no",
+        "only_paradox_pokemon": "no",
+        "only_legendary_and_paradox": "no",
+        "ban_stage1_pokemon": "no",
+        "ban_stage2_pokemon": "no",
+        "ban_single_stage_pokemon": "no"
+      },
+      "raid_npc_randomizer": {
+        "force_perfect_ivs": "no",
+        "make_ai_smart": "no",
+        "only_legendary_pokemon": "no",
+        "only_paradox_pokemon": "no",
+        "only_legendary_and_paradox": "no",
+        "ban_stage1_pokemon": "no",
+        "ban_stage2_pokemon": "no",
+        "ban_single_stage_pokemon": "no"
+      }
+    }
+  }
+}
