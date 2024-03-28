@@ -614,7 +614,7 @@ def randomizeKitakami(config, pokemonAllowed, legendsAllowed):
     if pokemonAllowed is None:
         pokemonAllowed = [i for i in range(1, 1026)]
     for i in range(1, 7):
-        kitakamiTeraRaids = open(os.getcwd() + '\\Randomizer\\kitakamiTeraRaids\\' + f'su1_raid_enemy_0{str(i)}_array_clean.json', 'r')
+        kitakamiTeraRaids = open(os.getcwd() + '/Randomizer/kitakamiTeraRaids/' + f'su1_raid_enemy_0{str(i)}_array_clean.json', 'r')
         kitakamiRaids = json.load(kitakamiTeraRaids)
         kitakamiTeraRaids.close()
 
@@ -636,7 +636,7 @@ def randomizeKitakami(config, pokemonAllowed, legendsAllowed):
                 kitakamiRaids = randomizeRaids(kitakamiRaids, legendsAllowed)
 
         outdata = json.dumps(kitakamiRaids, indent=4)
-        with open(os.getcwd() + '\\Randomizer\\kitakamiTeraRaids\\' + f'su1_raid_enemy_0{str(i)}_array.json', 'w') as outfile:
+        with open(os.getcwd() + '/Randomizer/kitakamiTeraRaids/' + f'su1_raid_enemy_0{str(i)}_array.json', 'w') as outfile:
             outfile.write(outdata)
         print(f"Randomisation of Kitakami Raids Star {str(i)} Done !")
 

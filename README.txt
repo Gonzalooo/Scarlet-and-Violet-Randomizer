@@ -7,6 +7,7 @@ Tutorial on how to use Generation Limiter: https://youtu.be/dCUUXFHNRcA
 Trinity Loader Nightly Version: https://github.com/pkZukan/gftool/releases/tag/nightly (Needed for the first steps - nightly version automatically updates so it has the stuff you need)
 New discord link to keep up with udpates btw: https://discord.gg/d7UBuXGrT2
 Wiki for quick help: https://github.com/Gonzalooo/Scarlet-and-Violet-Randomizer/wiki
+MAC TUTORIAL: https://youtu.be/kFIp6EM-MMs
 
 *** THIS RANDOMIZER WORKS ONLY WITH VERSION 3.0.1/3.0.0***
 PREFACE: Make sure you have at least Python 3.10 installed on your computer, anything lower will not work!
