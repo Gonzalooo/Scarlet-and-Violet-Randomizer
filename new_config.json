@@ -1,6 +1,6 @@
 {
   "auto-patch-romfs": "yes",
-  "use_paldea_settings_for_all": "no",
+  "use_paldea_settings_for_all": "yes",
   "kaizo_ironmon_mode": "no",
   "bulk_creation": {
     "is_enabled": "no",
@@ -47,14 +47,15 @@
       "_comment4": "However 1 0 2 4 is not a valid input for terapagos",
       "_comment5": "Similarly tera_paGos is not a valid input for terapagos",
       "force_starter_1": 0,
-      "force_starter_2": 1024,
+      "force_starter_2": 0,
       "force_starter_3": 0
     },
   "paldea_settings": {
     "wild_randomizer": {
-      "is_enabled": "no",
+      "is_enabled": "yes",
       "generation_limiter": [],
-      "exclude_legendary": "no",
+      "exclude_legendaries": "no",
+      "_comment2": "Enabling the following settings with gen_limiter will lead to little to no spawns",
       "only_legendary_pokemon": "no",
       "only_paradox_pokemon": "no",
       "only_legends_and_paradox": "no",
@@ -198,6 +199,7 @@
       "is_enabled": "no",
       "generation_limiter": [],
       "exclude_legendary": "no",
+      "_comment2": "Enabling the following settings with gen_limiter will lead to little to no spawns",
       "only_legendary_pokemon": "no",
       "only_paradox_pokemon": "no",
       "only_legends_and_paradox": "no",
@@ -302,6 +304,7 @@
     "wild_randomizer": {
       "is_enabled": "no",
       "generation_limiter": [],
+      "_comment2": "Enabling the following settings with gen_limiter will lead to little to no spawns",
       "exclude_legendary": "no",
       "only_legendary_pokemon": "no",
       "only_paradox_pokemon": "no",

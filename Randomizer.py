@@ -1,6 +1,6 @@
 import json
 import os
-import Randomizer.WildEncounters.wildrando as WildRandomizer
+import Randomizer.WildEncounters.new_wild_randomizer as WildRandomizer
 import Randomizer.Trainers.trainerrando as TrainerRandomizer
 import Randomizer.PersonalData.personal_randomizer as PersonalRandomizer
 import Randomizer.Starters.randomize_starters as StarterRandomizer
@@ -30,7 +30,7 @@ def check_updates():
 
 # thanks zadenowen for the function
 def open_config():
-    file = open("config.json", "r")
+    file = open("new_config.json", "r")
     config = json.load(file)
     file.close()
     return config
@@ -78,6 +78,21 @@ def randomize_based_on_config(config):
     '''
     Add calls to each of the new checks
     '''
+
+    paldea_wild, kitakami_wild, blueberry_wild = WildRandomizer.randomize_wilderness(config)
+    if paldea_wild is True:
+        HelperFunctions.generate_binary("Randomizer/WildEncounters/pokedata_array.bfbs",
+                                        "Randomizer/WildEncounters/pokedata_array.json",
+                                        paths["wilds"])
+    if kitakami_wild is True:
+        HelperFunctions.generate_binary("Randomizer/WildEncounters/pokedata_su1_array.bfbs",
+                                        "Randomizer/WildEncounters/pokedata_su1_array.json",
+                                        paths["wilds_su1"])
+    if blueberry_wild is True:
+        HelperFunctions.generate_binary("Randomizer/WildEncounters/pokedata_su2_array.bfbs",
+                                        "Randomizer/WildEncounters/pokedata_su2_array.json",
+                                        paths["wilds_su2"])
+    exit(0)
     if config['starter_randomizer']['is_enabled'] == "yes" and config['starter_randomizer']['show_starters_in_overworld'] == "yes":  # Updated for 3.0.1
         PatchScene.patchScenes()
         HelperFunctions.generate_binary("Randomizer/Scenes/poke_resource_table.fbs", "Randomizer/Scenes/poke_resource_table.json",

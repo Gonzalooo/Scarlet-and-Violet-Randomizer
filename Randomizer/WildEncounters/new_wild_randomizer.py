@@ -1,258 +1,82 @@
 import json
 import random
 import os
+import Randomizer.helper_function as HelperFunctions
+import Randomizer.shared_Variables as SharedVariables
 
 chosen_biomes = []
-recreated_species = []
-recreated_altforms = []
+wilderness_paths = {
+    "wilds": "world/data/encount/pokedata/pokedata/",
+    "wilds_su1": "world/data/encount/pokedata/pokedata_su1/",
+    "wilds_su2": "world/data/encount/pokedata/pokedata_su2/",
+}
 
 
-def fetch_devname(index: int, csvdata):
-    pass # rewrite
-
-
-# find a way to merge these 3 functions
-def get_alt_form_paldea(index: int):
-    has_alt = []
-    if index in has_alt:
-        choice = 0
+def get_alt_form_list(index: int):
+    if index in SharedVariables.has_alternate_form:
         match index:
             case 25:
-                choice = [1,2,3,4,5,6,7,9]
-                # form 8 not in the game (Partner Let's Go Pikachu)
-                return choice
+                return [1, 2, 3, 4, 5, 6, 7, 9]
             case 52:
-                choice = [1,2]
-                return choice
+                return [1, 2]
             case 80:
-                choice = [2]
-                # form 1 not in the game (Mega Slowbro)
-                return choice
+                return [2]
             case 128:
-                choice = [0]
-                return choice
-            case 194:
-                choice = [0]
-                return choice
+                return [1, 2, 3]
             case 386:
-                choice = [1,2,3]
-                return choice
+                return [1, 2, 3]
             case 479:
-                choice = [1,2,3,4,5]
-                return choice
-            case 550:
-                choice = [2]
-                return choice
-            case 646:
-                choice = [1,2]
-                return choice
-            case 774:
-                choice = [1,2,3,4,5,6]
-                return choice
-            case 800:
-                choice = [1, 2]
-                return choice
-            case 869:
-                choice = [1,2,3,4,5,6,7,8]
-                return choice
-            case 898:
-                choice = [1,2]
-                return choice
-            case 952:
-                choice = [1,2]
-                return choice
-            case 960:
-                choice = [1,2,3]
-                return choice
-            case 1011:
-                choice = [1,2,3]
-                return choice
-            case _:
-                choice = [1]
-                return choice
-    else:
-        return [0]
-
-
-def get_alt_form_teal(index: int):
-    has_alt = []
-    if index in has_alt:
-        choice = 0
-        match index:
-            case 25:
-                choice = [1,2,3,4,5,6,7,8,9]
-                # form 8 not in the game (Partner Let's Go Pikachu)
-                return choice
-            case 52:
-                choice = [1,2]
-                return choice
-            case 80:
-                choice = [1,2]
-                # form 1 not in the game (Mega Slowbro)
-                return choice
-            case 128:
-                choice = [1,2,3]
-                return choice
-            case 194:
-                choice = [1]
-                return choice
-            case 386:
-                choice = [1,2,3]
-                return choice
-            case 479:
-                choice = [1,2,3,4,5]
-                return choice
-            case 550:
-                choice = [0, 1]
-                return choice
+                return [1, 2, 3, 4, 5]
+            case 493:
+                return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
             case 585:
-                choice = [1,2,3]
-                return choice
+                return [1, 2, 3]
             case 586:
-                choice = [1,2,3]
-                return choice
+                return [1, 2, 3]
             case 646:
-                choice = [1,2]
-                return choice
+                return [1, 2]
+            case 664:
+                return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+            case 665:
+                return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+            case 666:
+                return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
             case 669:
-                choice = [1,2,3,4]
-                return choice
+                return [1, 2, 3, 4]
             case 670:
-                choice = [1, 2, 3, 4]
-                return choice
+                return [1, 2, 3, 4]
             case 671:
-                choice = [1, 2, 3, 4]
-                return choice
-            case 774: # includes shield downs form
-                choice = [1,2,3,4,5,6]
-                return choice
-            case 800:
-                choice = [1, 2]
-                return choice
-            case 869:
-                choice = [1,2,3,4,5,6,7,8]
-                return choice
-            case 898:
-                choice = [1,2]
-                return choice
-            case 952:
-                choice = [1,2]
-                return choice
-            case 960:
-                choice = [1,2,3]
-                return choice
-            case 1011:
-                choice = [1,2,3]
-                return choice
-            case _:
-                choice = [1]
-                return choice
-    else:
-        return [0]
-
-
-def get_alt_form_indigo(index: int):
-    has_alt = []
-    if index in has_alt:
-        choice = 0
-        match index:
-            case 25:
-                choice = [1,2,3,4,5,6,7,8,9]
-                # form 8 not in the game (Partner Let's Go Pikachu)
-                return choice
-            case 27:
-                choice = [0]
-                return choice
-            case 28:
-                choice = [0]
-                return choice
-            case 29:
-                choice = [0]
-                return choice
-            case 30:
-                choice = [0]
-                return choice
-            case 50:
-                choice = [0]
-                return choice
-            case 51:
-                choice = [0]
-                return choice
-            case 52:
-                choice = [1,2]
-                return choice
-            case 74:
-                choice = [0]
-                return choice
-            case 75:
-                choice = [0]
-                return choice
-            case 76:
-                choice = [0]
-                return choice
-            case 79:
-                choice = [0]
-                return choice
-            case 80:
-                choice = [0]
-                # form 1 not in the game (Mega Slowbro)
-                return choice
-            case 103:
-                choice = [0]
-                return choice
-            case 128:
-                choice = [1,2,3]
-                return choice
-            case 211:
-                choice = [0]
-                return choice
-            case 386:
-                choice = [1,2,3]
-                return choice
-            case 479:
-                choice = [1,2,3,4,5]
-                return choice
-            case 550:
-                choice = [1,2]
-                return choice
-            case 646:
-                choice = [1,2]
-                return choice
-            case 669:
-                choice = [1,2,3,4]
-                return choice
-            case 670:
-                choice = [1, 2, 3, 4]
-                return choice
-            case 671:
-                choice = [1, 2, 3, 4]
-                return choice
+                return [1, 2, 3, 4]
+            case 741:
+                return [1, 2, 3]
             case 745:
-                choice = [1,2]
-                return choice
+                return [1, 2]
+            case 774:
+                return [1, 2, 3, 4, 5, 6]
+            case 778:
+                return []
             case 800:
-                choice = [1, 2]
-                return choice
+                return [1, 2]
+            case 845:
+                return []
             case 869:
-                choice = [1,2,3,4,5,6,7,8]
-                return choice
+                return [1, 2, 3, 4, 5, 6, 7, 8]
+            case 875:
+                return []
+            case 877:
+                return []
             case 898:
-                choice = [1,2]
-                return choice
-            case 952:
-                choice = [1,2]
-                return choice
-            case 960:
-                choice = [1,2,3]
-                return choice
-            case 1011:
-                choice = [1,2,3]
-                return choice
+                return [1, 2]
+            case 978:
+                return [1, 2]
+            case 931:
+                return [1, 2, 3]
+            case 1017:
+                return [1, 2, 3]
             case _:
-                choice = [1]
-                return choice
+                return [1]
     else:
-        return [0]
+        return []
 
 
 def pick_random_biome():
@@ -276,11 +100,12 @@ def generate_area():
 
 
 def generate_area_list():
-    return(str(generate_area()).replace('[','"').replace(']','"').replace(' ',''))
+    return str(generate_area()).replace('[', '"').replace(']', '"').replace(' ', '')
+
 
 # fix function to add item for item pokemon
-def make_template(new_template, index, csvdata, form=0):
-    new_template['devid'] = fetch_devname(index, csvdata)
+def make_template(new_template, index, form=0):
+    new_template['devid'] = HelperFunctions.fetch_developer_name(index)
     new_template['formno'] = form
     new_template['minlevel'] = 2
     new_template['maxlevel'] = 99
@@ -289,10 +114,10 @@ def make_template(new_template, index, csvdata, form=0):
     new_template['biome2'] = pick_random_biome()
     new_template['biome3'] = pick_random_biome()
     new_template['biome4'] = pick_random_biome()
-    new_template['lotvalue1'] = generate_lot_value_for_biome(new_template['biome1'])
-    new_template['lotvalue2'] = generate_lot_value_for_biome(new_template['biome2'])
-    new_template['lotvalue3'] = generate_lot_value_for_biome(new_template['biome3'])
-    new_template['lotvalue4'] = generate_lot_value_for_biome(new_template['biome4'])
+    new_template['lotvalue1'] = generate_lot_value_for_biome()
+    new_template['lotvalue2'] = generate_lot_value_for_biome()
+    new_template['lotvalue3'] = generate_lot_value_for_biome()
+    new_template['lotvalue4'] = generate_lot_value_for_biome()
     chosen_biomes.clear()
     new_template['area'] = generate_area_list()
     new_template['locationName'] = ""
@@ -306,8 +131,152 @@ def make_template(new_template, index, csvdata, form=0):
     new_template['timetable']['evening'] = True
     new_template['timetable']['night'] = True
     new_template['flagName'] = ""
+    if index == 625:
+        new_template['bandrate'] = 100
+        new_template['bandtype'] = "BOSS"
+        new_template['bandpoke'] = "DEV_KOMATANA"
     new_template['versiontable']['A'] = True
     new_template['versiontable']['B'] = True
-    new_template['bringItem']['itemID'] = "ITEMID_NONE"
-    new_template['bringItem']['bringRate'] = 0
+    item_obtained, rate_of_item = HelperFunctions.get_pokemon_item_form(index, form)
+    new_template['bringItem']['itemID'] = item_obtained
+    new_template['bringItem']['bringRate'] = rate_of_item
+
     return new_template
+
+
+def create_wilderness_file(region: str):
+    if region == "Paldea":
+        return "pokedata_array.json"
+    if region == "Kitakami":
+        return "pokedata_su1_array.json"
+    if region == "Blueberry":
+        return "pokedata_su2_array.json"
+
+    print("No Valid Region")
+    exit(0)
+
+
+def randomize_wild_encounters(config, region: str, allowed_pokemon: list):
+    poke_dict: dict[str, list] = {'values': []}
+
+    # Recreate whole json file to manually add every pokemon not banned.
+    for index in range(1, 1026):
+        if index in SharedVariables.banned_pokemon:
+            continue
+
+        if index not in allowed_pokemon:
+            continue
+
+        if config['exclude_legendaries'] == "yes":
+            if index in SharedVariables.legends:
+                continue
+
+        elif config['only_legendary_pokemon'] == "yes":
+            if index not in SharedVariables.legends:
+                continue
+
+        elif config['only_paradox_pokemon'] == "yes":
+            if index not in SharedVariables.paradox:
+                continue
+
+        elif config['only_legends_and_paradox'] == "yes":
+            if index not in SharedVariables.legends_and_paradox:
+                continue
+        template_entry = {
+            "devid": "",
+            "sex": "DEFAULT",
+            "formno": 0,
+            "minlevel": 2,
+            "maxlevel": 99,
+            "lotvalue": random.randint(1, 50),
+            "biome1": pick_random_biome(),
+            'lotvalue1': generate_lot_value_for_biome(),
+            "biome2": pick_random_biome(),
+            'lotvalue2': generate_lot_value_for_biome(),
+            "biome3": pick_random_biome(),
+            'lotvalue3': generate_lot_value_for_biome(),
+            "biome4": pick_random_biome(),
+            'lotvalue4': generate_lot_value_for_biome(),
+            'area': generate_area_list(),
+            'locationName': "",
+            "minheight": 0,
+            "maxheight": 0,
+            "enabletable": {
+                "land": True,
+                "up_water": True,
+                "underwater": True,
+                "air1": True,
+                "air2": True
+            },
+            "timetable": {
+                "morning": True,
+                "noon": True,
+                "evening": True,
+                "night": True
+            },
+            "flagName": "",
+            "bandrate": 0,
+            "bandtype": "NONE",
+            "bandpoke": "DEV_NULL",
+            "bandSex": "DEFAULT",
+            "bandFormno": 0,
+            "outbreakLotvalue": 10,
+            "pokeVoiceClassification": "ANIMAL_LITTLE",
+            "versiontable": {
+                "A": True,
+                "B": True
+            },
+            "bringItem": {
+                "itemID": "ITEMID_NONE",
+                "bringRate": 0
+            }
+        }
+        forms_entry = template_entry.copy()
+        new_template = make_template(template_entry, index)
+
+        poke_dict['values'].append(new_template)
+
+        forms = get_alt_form_list(index)
+        for form in forms:
+            new_template = make_template(forms_entry, index, form)
+
+            poke_dict['values'].append(new_template)
+
+    outdata = json.dumps(poke_dict, indent=2)
+    with open(os.getcwd() + "/Randomizer/WildEncounters/" + create_wilderness_file(region), 'w') as outfile:
+        outfile.write(outdata)
+    print(f"Randomization - {region} Wilderness Done!")
+
+
+def randomize_wilderness(config):
+    if config['use_paldea_settings_for_all'] == "yes":
+        usable_pokemon, useless = HelperFunctions.check_generation_limiter(config['paldea_settings']['wild_randomizer']
+                                                                  ['generation_limiter'])
+        randomize_wild_encounters(config['paldea_settings']['wild_randomizer'], "Paldea", usable_pokemon)
+        randomize_wild_encounters(config['paldea_settings']['wild_randomizer'], "Kitakami", usable_pokemon)
+        randomize_wild_encounters(config['paldea_settings']['wild_randomizer'], "Blueberry", usable_pokemon)
+        return True, True, True
+    else:
+        paldea_binary = False
+        kitakami_binary = False
+        blueberry_binary = False
+
+        if config['paldea_settings']['wild_randomizer']['is_enabled'] == "yes":
+            usable_pokemon, useless = HelperFunctions.check_generation_limiter(config['paldea_settings']['wild_randomizer']
+                                                                      ['generation_limiter'])
+            randomize_wild_encounters(config['paldea_settings']['wild_randomizer'], "Paldea", usable_pokemon)
+
+            paldea_binary = True
+        if config['kitakami_settings']['wild_randomizer']['is_enabled'] == "yes":
+            usable_pokemon, useless = HelperFunctions.check_generation_limiter(config['kitakami_settings']['wild_randomizer']
+                                                                      ['generation_limiter'])
+            randomize_wild_encounters(config['kitakami_settings']['wild_randomizer'], "Kitakami", usable_pokemon)
+
+            kitakami_binary = True
+        if config['blueberry_settings']['wild_randomizer']['is_enabled'] == "yes":
+            usable_pokemon, useless = HelperFunctions.check_generation_limiter(config['blueberry_settings']['wild_randomizer']
+                                                                      ['generation_limiter'])
+            randomize_wild_encounters(config['blueberry_settings']['wild_randomizer'], "Kitakami", usable_pokemon)
+            blueberry_binary = True
+
+        return paldea_binary, kitakami_binary, blueberry_binary
