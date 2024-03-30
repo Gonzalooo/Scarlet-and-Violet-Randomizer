@@ -15,8 +15,9 @@ legends_and_paradox = [
            809, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 905, 978, 979, 980, 981, 982, 983, 984, 985, 986,
            987, 988, 989, 990, 991, 992, 993, 1017, 1018, 1019, 1020, 994, 995, 996, 997, 998, 999, 1011, 1014, 1015,
            1016, 1021, 1022]
+
+
 def fetch_devname(index: int, csvdata):
-    #print(csvdata[index])
     return str.strip(csvdata[index])
 
 
@@ -526,10 +527,7 @@ def pick_random_biomerest():
 
 
 def generate_lot_value_for_biome(biome_type: str):
-    if biome_type == "NONE":
-        return 0
-    else:
-        return random.randint(1, 50)
+    return random.randint(1, 50)
 
 
 def generate_area():
