@@ -75,10 +75,7 @@ paths = {
 
 def randomize_based_on_config(config):
     create_modpack()
-    '''
-    Add calls to each of the new checks
-    '''
-
+    # Wild Pokemon Randomizer
     paldea_wild, kitakami_wild, blueberry_wild = WildRandomizer.randomize_wilderness(config)
     if paldea_wild is True:
         HelperFunctions.generate_binary("Randomizer/WildEncounters/pokedata_array.bfbs",
@@ -92,6 +89,13 @@ def randomize_based_on_config(config):
         HelperFunctions.generate_binary("Randomizer/WildEncounters/pokedata_su2_array.bfbs",
                                         "Randomizer/WildEncounters/pokedata_su2_array.json",
                                         paths["wilds_su2"])
+
+    # Pokemon Stats Randomizer
+    pokemon_randomized = PersonalRandomizer.randomize_pokemon_stats(config)
+    if pokemon_randomized is True:
+        HelperFunctions.generate_binary("Randomizer/PersonalData/personal_array.bfbs",
+                                        "Randomizer/PersonalData/personal_array.json",
+                                        paths["personal"])
     exit(0)
     if config['starter_randomizer']['is_enabled'] == "yes" and config['starter_randomizer']['show_starters_in_overworld'] == "yes":  # Updated for 3.0.1
         PatchScene.patchScenes()

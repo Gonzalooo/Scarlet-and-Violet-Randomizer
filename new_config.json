@@ -22,8 +22,11 @@
       "randomize_movesets": "no",
       "randomize_stats_with_same_total": "no",
       "randomize_stats_with_different_total": "no",
+      "_comment1": "Generation Limiter only affects potential evolutions",
+      "generation_limiter": [],
       "randomize_evolutions": "no",
-      "let_pokemon_evolve_every_level": "no"
+      "let_pokemon_evolve_every_level": "no",
+      "force_tera_blast_every_5_levels": "yes"
     },
   "starter_pokemon_randomizer":{
       "is_enabled": "no",

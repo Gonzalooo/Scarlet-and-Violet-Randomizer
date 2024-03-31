@@ -3,6 +3,107 @@ import platform
 import subprocess
 import json
 import Randomizer.shared_Variables as SharedVariables
+import random
+
+
+def get_alternate_form(index: int):
+    if index in SharedVariables.has_alternate_form: #previously, we just shuffled around. Now we include all species, so we need more edge cases
+        choice = 0
+        match index:
+            case 25:
+                choice = random.randint(0, 9)
+                # form 8 not in the game (Partner Let's Go Pikachu)
+                while choice == 8:
+                    choice = random.randint(0, 9)
+                return choice
+            case 52:
+                choice = random.randint(0, 2)
+                return choice
+            case 80:
+                choice = random.randint(0, 2)
+                # form 1 not in the game (Mega Slowbro)
+                while choice == 1:
+                    choice = random.randint(0, 2)
+                return choice
+            case 128:
+                choice = random.randint(0, 3)
+                return choice
+            case 386:
+                choice = random.randint(0, 3)
+                return choice
+            case 479:
+                choice = random.randint(0, 5)
+                return choice
+            case 493:
+                choice = random.randint(0, 17)
+                return choice
+            case 550:
+                choice = random.randint(0, 2)
+                return choice
+            case 585:
+                choice = random.randint(0, 3)
+                return choice
+            case 586:
+                choice = random.randint(0, 3)
+                return choice
+            case 646:
+                choice = random.randint(0, 2)
+                return choice
+            case 664:
+                choice = random.randint(0, 19)
+                return choice
+            case 665:
+                choice = random.randint(0, 19)
+                return choice
+            case 666:
+                choice = random.randint(0, 19)
+                return choice
+            case 669:
+                choice = random.randint(0, 4)
+                return choice
+            case 670:
+                choice = random.randint(0, 5)
+                while choice == 5:
+                    choice = random.randint(0, 5)
+                return choice
+            case 671:
+                choice = random.randint(0, 4)
+                return choice
+            case 741:
+                choice = random.randint(0, 3)
+                return choice
+            case 745:
+                choice = random.randint(0, 2)
+                return choice
+            case 774: # includes shield downs form
+                choice = random.randint(0, 13)
+                return choice
+            case 800:
+                choice = random.randint(0, 2)
+                return choice
+            case 845:
+                choice = random.randint(0, 2)
+                return choice
+            case 869:
+                choice = random.randint(0, 8)
+                return choice
+            case 898:
+                choice = random.randint(0, 2)
+                return choice
+            case 978:
+                choice = random.randint(0, 2)
+                return choice
+            case 931:
+                choice = random.randint(0, 3)
+                return choice
+            case 1017:
+                choice = random.randint(0, 3)
+                return choice
+            case _:
+                choice = random.randint(0, 1)
+                return choice
+    else:
+        return 0
 
 
 def check_generation_limiter(allowed_generations: list):
