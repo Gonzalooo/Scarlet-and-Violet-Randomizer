@@ -206,12 +206,24 @@ def randomizePokemonDrops():
     print("Randomized Items for Pokemon Drops!")
 
 
-def randomize(config):
-    if config['randomize_hidden_items'] == "yes":
-        randomizeHiddenItems()
-    if config['randomize_items_from_pickup_ability'] == "yes":
-        randomizePickUpAbilityItems()
-    if config['randomize_synchro_items'] == "yes":
-        randomizeLetsGoItems()
-    if config['randomize_pokemon_drops'] == "yes":
-        randomizePokemonDrops()
+def randomize_items(config):
+    if config['is_enabled'] == "yes":
+        hidden = False
+        pickup = False
+        synchro = False
+        drops = False
+        if config['randomize_hidden_items'] == "yes":
+            randomizeHiddenItems()
+            hidden = True
+        if config['randomize_items_from_pickup_ability'] == "yes":
+            randomizePickUpAbilityItems()
+            pickup = True
+        if config['randomize_synchro_items'] == "yes":
+            randomizeLetsGoItems()
+            synchro = True
+        if config['randomize_pokemon_drops'] == "yes":
+            randomizePokemonDrops()
+            drops = True
+
+        return hidden, pickup, synchro, drops
+    return False, False, False, False

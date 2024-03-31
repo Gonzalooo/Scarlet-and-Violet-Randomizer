@@ -9,13 +9,13 @@
   "items_randomizer": {
     "_comment": "Only works on hidden items - I can't find file for overworld items.",
     "is_enabled": "no",
-    "randomize_hidden_items": "no",
-    "randomize_items_from_pickup_ability": "no",
-    "randomize_synchro_items": "no",
-    "randomize_pokemon_drops": "no"
+    "randomize_hidden_items": "yes",
+    "randomize_items_from_pickup_ability": "yes",
+    "randomize_synchro_items": "yes",
+    "randomize_pokemon_drops": "yes"
   },
   "pokemon_stats_randomizer": {
-      "is_enabled": "yes",
+      "is_enabled": "no",
       "randomize_abilities": "yes",
       "randomize_types": "yes",
       "ban_wonder_guard": "yes",
@@ -29,19 +29,19 @@
       "force_tera_blast_every_5_levels": "no"
     },
   "starter_pokemon_randomizer":{
-      "is_enabled": "no",
+      "is_enabled": "yes",
       "generation_limiter": [],
       "force_shiny_starter": "no",
       "make_all_starters_shiny": "no",
       "higher_chance_shiny": "no",
       "show_starters_in_overworld": "no",
+      "randomize_starters_tera_type": "no",
+      "ball_for_starter": "Ultra Ball",
       "_comment1": "This next option should remain off if pokemon_clean is empty",
       "show_shiny_starters_in_overworld": "no",
       "ban_stage1_pokemon": "no",
       "ban_stage2_pokemon": "no",
       "ban_single_stage_pokemon": "no",
-      "ban_legendaries": "no",
-      "ban_paradox": "no",
       "only_legendary_pokemon": "no",
       "only_paradox_pokemon": "no",
       "only_legendary_and_paradox": "no",
@@ -55,7 +55,7 @@
     },
   "paldea_settings": {
     "wild_randomizer": {
-      "is_enabled": "yes",
+      "is_enabled": "no",
       "generation_limiter": [],
       "exclude_legendaries": "no",
       "_comment2": "Enabling the following settings with gen_limiter will lead to little to no spawns",

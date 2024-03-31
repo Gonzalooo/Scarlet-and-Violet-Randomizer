@@ -6,6 +6,87 @@ import Randomizer.shared_Variables as SharedVariables
 import random
 
 
+def check_dictlist_in_dict2(dict_list: list[dict], dict2: dict):
+    for d in dict_list:
+        if not all(dict2.get(key) == d.get(key) for key in d):
+            return False
+    return True
+
+
+def choose_tera_type(choice: int, form: int):
+    match choice:
+        case 1017:
+            match form:
+                case 0:
+                    return "KUSA"
+                case 1:
+                    return "MIZU"
+                case 2:
+                    return "HONOO"
+                case 3:
+                    return "IWA"
+        case 1024:
+            return "NIJI"
+        case _:
+            return SharedVariables.tera_types[random.randint(0, len(SharedVariables.tera_types) - 1)].upper()
+
+
+def get_pokeball_name(pokeball: str):
+    if pokeball == "Master Ball":
+        return "MASUTAABOORU", "ITEMID_MASUTAABOORU"
+    if pokeball == "Ultra Ball":
+        return "HAIPAABOORU", "ITEMID_HAIPAABOORU"
+    if pokeball == "Great Ball":
+        return "SUUPAABOORU", "ITEMID_SUUPAABOORU"
+    if pokeball == "Poke Ball":
+        return "MONSUTAABOORU", "ITEMID_MONSUTAABOORU"
+    if pokeball == "Safari Ball":
+        return "SAFARIBOORU", "ITEMID_SAFARIBOORU"
+    if pokeball == "Net Ball":
+        return "NETTOBOORU", "ITEMID_NETTOBOORU"
+    if pokeball == "Dive Ball":
+        return "DAIBUBOORU", "ITEMID_DAIBUBOORU"
+    if pokeball == "Nest Ball":
+        return "NESUTOBOORU", "ITEMID_NESUTOBOORU"
+    if pokeball == "Repeat Ball":
+        return "RIPIITOBOORU", "ITEMID_RIPIITOBOORU"
+    if pokeball == "Timer Ball":
+        return "TAIMAABOORU", "ITEMID_TAIMAABOORU"
+    if pokeball == "Luxury Ball":
+        return "GOOZYASUBOORU", "ITEMID_GOOZYASUBOORU"
+    if pokeball == "Premier Ball":
+        return "PUREMIABOORU", "ITEMID_PUREMIABOORU"
+    if pokeball == "Dusk Ball":
+        return "DAAKUBOORU", "ITEMID_DAAKUBOORU"
+    if pokeball == "Heal Ball":
+        return "HIIRUBOORU", "ITEMID_HIIRUBOORU"
+    if pokeball == "Quick Ball":
+        return "KUIKKUBOORU", "ITEMID_KUIKKUBOORU"
+    if pokeball == "Fast Ball":
+        return "SUPIIDOBOORU", "ITEMID_SUPIIDOBOORU"
+    if pokeball == "Level Ball":
+        return "REBERUBOORU", "ITEMID_REBERUBOORU"
+    if pokeball == "Lure Ball":
+        return "RUAABOORU", "ITEMID_RUAABOORU"
+    if pokeball == "Heavy Ball":
+        return "HEBIIBOORU", "ITEMID_HEBIIBOORU"
+    if pokeball == "Love Ball":
+        return "RABURABUBOORU", "ITEMID_RABURABUBOORU"
+    if pokeball == "Friend Ball":
+        return "HURENDOBOORU", "ITEMID_HURENDOBOORU"
+    if pokeball == "Moon Ball":
+        return "MUUNBOORU", "ITEMID_MUUNBOORU"
+    if pokeball == "Sport Ball":
+        return "KONPEBOORU", "ITEMID_KONPEBOORU"
+    if pokeball == "Dream Ball":
+        return "DORIIMUBOORU", "ITEMID_DORIIMUBOORU"
+    if pokeball == "Beast Ball":
+        return "URUTORABOORU", "ITEMID_URUTORABOORU"
+
+    print("Not a Valid Pokeball please to follow this template: {type of ball} Ball")
+    return "MONSUTAABOORU", "ITEMID_MONSUTAABOORU"
+
+
 def get_species_form(index: int):
     if index in SharedVariables.has_alternate_form:
         choice = 0

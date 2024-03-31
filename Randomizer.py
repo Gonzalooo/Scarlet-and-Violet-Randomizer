@@ -6,7 +6,6 @@ import Randomizer.PersonalData.personal_randomizer as PersonalRandomizer
 import Randomizer.Starters.randomize_starters as StarterRandomizer
 import Randomizer.StaticSpawns.statics as StaticRandomizer
 import Randomizer.Scenes.patchscene as PatchScene
-import Randomizer.generationLimiter.generationrando as GenerationLimiter
 import Randomizer.Items.itemrandomizer as ItemRandomizer
 import Randomizer.paldeaTeraRaids.teraRandomizePaldea as PaldeaRaids
 import Randomizer.kitakamiTeraRaids.teraRandomizerTeal as KitakamiRaids
@@ -63,7 +62,7 @@ paths = {
     "hidden_blueberry": "world/data/item/hiddenItemDataTable_su2/",
     "dropitems": "world/data/item/dropitemdata/",
     "pickupitems": "world/data/item/monohiroilItemData/",
-    "letsgo": "world/data/item/rummagingItemDataTable/",
+    "synchro": "world/data/item/rummagingItemDataTable/",
     "catalog": "pokemon/catalog/catalog/",
     "scenes": "world/scene/parts/event/event_scenario/main_scenario/common_0070_/",
     "shiny_scenes": "pokemon/data/",
@@ -93,14 +92,45 @@ def randomize_based_on_config(config):
     # Pokemon Stats Randomizer
     pokemon_randomized = PersonalRandomizer.randomize_pokemon_stats(config['pokemon_stats_randomizer'])
     if pokemon_randomized is True:
-        HelperFunctions.generate_binary("Randomizer/PersonalData/personal_array.bfbs",
+        HelperFunctions.generate_binary("Randomizer/PersonalData/personal_array.fbs",
                                         "Randomizer/PersonalData/personal_array.json",
                                         paths["personal"])
 
     # Item Randomizer
+    hidden_bin, pickup_bin, synchro_bin, drops_bin = ItemRandomizer.randomize_items(config['items_randomizer'])
+    if hidden_bin is True:
+        HelperFunctions.generate_binary("Randomizer/Items/hiddenItemDataTable_array.bfbs",
+                                        "Randomizer/Items/hiddenItemDataTable_array.json",
+                                        paths["hidden_paldea"])
+        HelperFunctions.generate_binary("Randomizer/Items/hiddenItemDataTable_su1_array.bfbs",
+                                        "Randomizer/Items/hiddenItemDataTable_su1_array.json",
+                                        paths["hidden_kitakami"])
+        HelperFunctions.generate_binary("Randomizer/Items/hiddenItemDataTable_su2_array.bfbs",
+                                        "Randomizer/Items/hiddenItemDataTable_su2_array.json",
+                                        paths["hidden_blueberry"])
+        HelperFunctions.generate_binary("Randomizer/Items/hiddenItemDataTable_lc_array.bfbs",
+                                        "Randomizer/Items/hiddenItemDataTable_lc_array.json",
+                                        paths["hidden_lc"])
+    if pickup_bin is True:
+        HelperFunctions.generate_binary("Randomizer/Items/monohiroiItemData_array.bfbs",
+                                        "Randomizer/Items/monohiroiItemData_array.json",
+                                        paths["pickupitems"])
+    if synchro_bin is True:
+        HelperFunctions.generate_binary("Randomizer/Items/rummagingItemDataTable_array.bfbs",
+                                        "Randomizer/Items/rummagingItemDataTable_array.json",
+                                        paths["synchro"])
+    if drops_bin is True:
+        HelperFunctions.generate_binary("Randomizer/Items/dropitemdata_array.bfbs",
+                                        "Randomizer/Items/dropitemdata_array.json",
+                                        paths["dropitems"])
 
-    exit(0)
-    if config['starter_randomizer']['is_enabled'] == "yes" and config['starter_randomizer']['show_starters_in_overworld'] == "yes":  # Updated for 3.0.1
+    # Starter Pokemon
+    starters_randomized = StarterRandomizer.randomize_all_starters(config['starter_pokemon_randomizer'])
+    if starters_randomized is True:
+        HelperFunctions.generate_binary("Randomizer/Starters/eventAddPokemon_array.bfbs",
+                                        "Randomizer/Starters/eventAddPokemon_array.json",
+                                        paths["gifts"])
+    if starters_randomized is True and config['starter_pokemon_randomizer']['show_starters_in_overworld'] == "yes":  # Updated for 3.0.1
         PatchScene.patchScenes()
         HelperFunctions.generate_binary("Randomizer/Scenes/poke_resource_table.fbs", "Randomizer/Scenes/poke_resource_table.json",
                        paths['catalog'])
@@ -111,6 +141,7 @@ def randomize_based_on_config(config):
                         "output/romfs/" + paths['scenes'] + 'common_0070_always_0.trsog')
         shutil.copyfile("Randomizer/Scenes/common_0070_always_1.trsog",
                         "output/romfs/" + paths['scenes'] + 'common_0070_always_1.trsog')
+    exit(0)
 
 
 def randomize():
