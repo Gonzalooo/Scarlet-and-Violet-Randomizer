@@ -96,6 +96,9 @@ def randomize_based_on_config(config):
         HelperFunctions.generate_binary("Randomizer/PersonalData/personal_array.bfbs",
                                         "Randomizer/PersonalData/personal_array.json",
                                         paths["personal"])
+
+    # Item Randomizer
+
     exit(0)
     if config['starter_randomizer']['is_enabled'] == "yes" and config['starter_randomizer']['show_starters_in_overworld'] == "yes":  # Updated for 3.0.1
         PatchScene.patchScenes()
