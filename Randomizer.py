@@ -91,7 +91,7 @@ def randomize_based_on_config(config):
                                         paths["wilds_su2"])
 
     # Pokemon Stats Randomizer
-    pokemon_randomized = PersonalRandomizer.randomize_pokemon_stats(config)
+    pokemon_randomized = PersonalRandomizer.randomize_pokemon_stats(config['pokemon_stats_randomizer'])
     if pokemon_randomized is True:
         HelperFunctions.generate_binary("Randomizer/PersonalData/personal_array.bfbs",
                                         "Randomizer/PersonalData/personal_array.json",

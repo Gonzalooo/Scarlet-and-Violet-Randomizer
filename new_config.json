@@ -15,18 +15,18 @@
     "randomize_pokemon_drops": "no"
   },
   "pokemon_stats_randomizer": {
-      "is_enabled": "no",
-      "randomize_abilities": "no",
-      "randomize_types": "no",
-      "ban_wonder_guard": "no",
-      "randomize_movesets": "no",
+      "is_enabled": "yes",
+      "randomize_abilities": "yes",
+      "randomize_types": "yes",
+      "ban_wonder_guard": "yes",
+      "randomize_movesets": "yes",
       "randomize_stats_with_same_total": "no",
-      "randomize_stats_with_different_total": "no",
+      "randomize_stats_with_different_total": "yes",
       "_comment1": "Generation Limiter only affects potential evolutions",
       "generation_limiter": [],
       "randomize_evolutions": "no",
       "let_pokemon_evolve_every_level": "no",
-      "force_tera_blast_every_5_levels": "yes"
+      "force_tera_blast_every_5_levels": "no"
     },
   "starter_pokemon_randomizer":{
       "is_enabled": "no",

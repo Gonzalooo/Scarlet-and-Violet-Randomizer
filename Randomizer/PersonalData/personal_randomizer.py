@@ -62,31 +62,32 @@ def randomize_pokemon_moves(pokemon):
             move['move'] = SharedVariables.allowed_moves[index]
             current_moves.append(SharedVariables.allowed_moves[index])
 
-        current_moves.clear()
-        for move in pokemon['reminder_moves']:
+        current_moves = []
+        for i in range(0, len(pokemon['reminder_moves'])):
             index = random.randint(0, len(SharedVariables.allowed_moves) - 1)
             while SharedVariables.allowed_moves[index] in current_moves:
                 index = random.randint(0, len(SharedVariables.allowed_moves) - 1)
-            pokemon['reminder_moves'].append(SharedVariables.allowed_moves[index])
             current_moves.append(SharedVariables.allowed_moves[index])
-        current_moves.clear()
+        pokemon['reminder_moves'] = []
+        pokemon['reminder_moves'].extend(current_moves)
 
+        current_moves = []
+        for i in range(0, len(pokemon['egg_moves'])):
+            index = random.randint(0, len(SharedVariables.allowed_moves) - 1)
+            while SharedVariables.allowed_moves[index] in current_moves:
+                index = random.randint(0, len(SharedVariables.allowed_moves) - 1)
+            current_moves.append(SharedVariables.allowed_moves[index])
         pokemon['egg_moves'] = []
-        for move in pokemon['egg_moves']:
-            index = random.randint(0, len(SharedVariables.allowed_moves) - 1)
-            while SharedVariables.allowed_moves[index] in current_moves:
-                index = random.randint(0, len(SharedVariables.allowed_moves) - 1)
-            current_moves.append(SharedVariables.allowed_moves[index])
-            pokemon['egg_moves'].append(SharedVariables.allowed_moves[index])
-        current_moves.clear()
+        pokemon['egg_moves'].extend(current_moves)
 
-        pokemon['tm_moves'] = []
-        for move in pokemon['tm_moves']:
+        current_moves = []
+        for i in range(0, len(pokemon['tm_moves'])):
             index = random.randint(0, len(SharedVariables.tm_moves) - 1)
             while SharedVariables.tm_moves[index] in current_moves:
                 index = random.randint(0, len(SharedVariables.tm_moves) - 1)
             current_moves.append(SharedVariables.tm_moves[index])
-            pokemon['tm_moves'].append(SharedVariables.tm_moves[index])
+        pokemon['tm_moves'] = []
+        pokemon['tm_moves'].extend(current_moves)
 
     return pokemon
 
@@ -105,7 +106,7 @@ def randomize_pokemon_evolutions(pokemon, allowed_mons: list):
         while choice in SharedVariables.banned_pokemon or choice not in allowed_mons:
             choice = random.randint(1, 1025)
         evo['species'] = choice
-        evo['form'] = HelperFunctions.get_alternate_form(choice)
+        evo['form'] = HelperFunctions.get_species_form(choice)
 
     return pokemon
 
@@ -146,7 +147,7 @@ def randomize_evolutions_every_level(allowed_mons: list):
         while species_choice in SharedVariables.banned_pokemon or species_choice not in allowed_mons:
             species_choice = random.randint(1, 1025)
         template_evolution['species'] = species_choice
-        template_evolution['form'] = HelperFunctions.get_alternate_form(species_choice)
+        template_evolution['form'] = HelperFunctions.get_species_form(species_choice)
         evoList.append(template_evolution)
 
         template_evolution = {
@@ -233,7 +234,7 @@ def randomize_base_stats_total(pokemon):
 
 
 def randomize_pokemon_stats(config):
-    if config['pokemon_stats_randomizer']['is_enabled'] == "yes":
+    if config['is_enabled'] == "yes":
         file = open(os.getcwd() + "/Randomizer/PersonalData/" +"personal_array_clean.json", "r")
         data = json.load(file)
         file.close()
