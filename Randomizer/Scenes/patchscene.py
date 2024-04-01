@@ -25,7 +25,6 @@ def patchIndividualScenes():
     violet_scene.close()
 
     #print(scarlet_scene_bytes)
-    #thats even more ugly but f it
     with open(os.getcwd() + "/Randomizer/Scenes/common_0070_always_0.trsog", "w+b") as file:
         file.write(scarlet_scene_bytes)
         file.seek(sprigattio_offset)

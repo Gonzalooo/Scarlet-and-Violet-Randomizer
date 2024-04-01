@@ -67,21 +67,25 @@
       "generation_limiter": [],
       "randomize_tera_types": "yes"
     },
-  "legendary_pokemon_randomizer": {
-      "is_enabled": "no",
-      "generation_limiter": [],
-      "use_other_legendaries": "no",
-      "ban_stage1_pokemon": "no",
-      "ban_stage2_pokemon": "no",
-      "ban_single_stage_pokemon": "no"
-    },
   "boss_pokemon_randomizer": {
       "is_enabled": "no",
       "generation_limiter": [],
-      "use_other_legendaries": "no",
+      "use_similar_BST": "no",
+      "only_legendary_pokemon": "no",
+      "only_paradox_pokemon": "no",
+      "only_legendary_and_paradox": "no",
       "ban_stage1_pokemon": "no",
       "ban_stage2_pokemon": "no",
-      "ban_single_stage_pokemon": "no"
+      "ban_single_stage_pokemon": "no",
+      "randomize_all": "yes",
+      "randomize_lechonk": "no",
+      "randomize_titans": "no",
+      "randomize_snackworth_legendaries": "no",
+      "randomize_areazero": "no",
+      "randomize_areazero_dlc2": "no",
+      "randomize_ogerpon": "no",
+      "randomize_ursaluna": "no",
+      "randomize_terapagos": "no"
     },
   "paldea_settings": {
     "wild_randomizer": {
