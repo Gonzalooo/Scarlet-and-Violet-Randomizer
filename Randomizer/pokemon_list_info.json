@@ -235,7 +235,7 @@
     {
       "devName": "DEV_NIDORAN_F",
       "id": 29,
-      "name": "Nidoran\u2640",
+      "name": "Nidoran-f",
       "forms": 1,
       "natdex": 29,
       "anim_file": "pm0029"
@@ -259,7 +259,7 @@
     {
       "devName": "DEV_NIDORAN_M",
       "id": 32,
-      "name": "Nidoran\u2642",
+      "name": "Nidoran-m",
       "forms": 1,
       "natdex": 32,
       "anim_file": "pm0032"
@@ -667,7 +667,7 @@
     {
       "devName": "DEV_KAMONEGI",
       "id": 83,
-      "name": "Farfetch\u2019d",
+      "name": "Farfetchd",
       "forms": 1,
       "natdex": 83,
       "anim_file": "pm0083"
@@ -5355,7 +5355,7 @@
     {
       "devName": "DEV_HURABEBE",
       "id": 669,
-      "name": "Flab\u00e9b\u00e9",
+      "name": "Flabebe",
       "forms": 5,
       "natdex": 669,
       "anim_file": "pm0713"
@@ -6923,7 +6923,7 @@
     {
       "devName": "DEV_NEGIGANAITO",
       "id": 865,
-      "name": "Sirfetch\u2019d",
+      "name": "Sirfetchd",
       "forms": 1,
       "natdex": 865,
       "anim_file": "pm0981"

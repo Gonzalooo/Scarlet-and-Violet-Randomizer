@@ -29,7 +29,7 @@
       "force_tera_blast_every_5_levels": "no"
     },
   "starter_pokemon_randomizer":{
-      "is_enabled": "yes",
+      "is_enabled": "no",
       "generation_limiter": [],
       "force_shiny_starter": "no",
       "make_all_starters_shiny": "no",
@@ -53,6 +53,41 @@
       "force_starter_2": 0,
       "force_starter_3": 0
     },
+  "static_pokemon_randomizer": {
+      "is_enabled": "no",
+      "generation_limiter": [],
+      "randomize_tera_types": "no",
+      "exclude_legendary_pokemon": "no",
+      "only_legendary_pokemon": "no",
+      "only_paradox_pokemon": "no",
+      "only_legendary_and_paradox": "no",
+      "_comment": "working on similar BST feature"
+    },
+  "gift_pokemon_randomizer": {
+      "is_enabled": "no",
+      "generation_limiter": [],
+      "randomize_tera_types": "no",
+      "exclude_legendary_pokemon": "no",
+      "only_legendary_pokemon": "no",
+      "only_paradox_pokemon": "no",
+      "only_legendary_and_paradox": "no"
+    },
+  "legendary_pokemon_randomizer": {
+      "is_enabled": "no",
+      "generation_limiter": [],
+      "use_other_legendaries": "no",
+      "ban_stage1_pokemon": "no",
+      "ban_stage2_pokemon": "no",
+      "ban_single_stage_pokemon": "no"
+    },
+  "boss_pokemon_randomizer": {
+      "is_enabled": "no",
+      "generation_limiter": [],
+      "use_other_legendaries": "no",
+      "ban_stage1_pokemon": "no",
+      "ban_stage2_pokemon": "no",
+      "ban_single_stage_pokemon": "no"
+    },
   "paldea_settings": {
     "wild_randomizer": {
       "is_enabled": "no",
@@ -63,41 +98,6 @@
       "only_paradox_pokemon": "no",
       "only_legends_and_paradox": "no",
       "_comment1": "Working on option to keep similar BST on route"
-    },
-    "static_pokemon_randomizer": {
-      "is_enabled": "no",
-      "generation_limiter": [],
-      "randomize_tera_types": "no",
-      "exclude_legendary_pokemon": "no",
-      "only_legendary_pokemon": "no",
-      "only_paradox_pokemon": "no",
-      "only_legendary_and_paradox": "no",
-      "_comment": "working on similar BST feature"
-    },
-    "gift_pokemon_randomizer": {
-      "is_enabled": "no",
-      "generation_limiter": [],
-      "randomize_tera_types": "no",
-      "exclude_legendary_pokemon": "no",
-      "only_legendary_pokemon": "no",
-      "only_paradox_pokemon": "no",
-      "only_legendary_and_paradox": "no"
-    },
-    "legendary_pokemon_randomizer": {
-      "is_enabled": "no",
-      "generation_limiter": [],
-      "use_other_legendaries": "no",
-      "ban_stage1_pokemon": "no",
-      "ban_stage2_pokemon": "no",
-      "ban_single_stage_pokemon": "no"
-    },
-    "boss_pokemon_randomizer": {
-      "is_enabled": "no",
-      "generation_limiter": [],
-      "use_other_legendaries": "no",
-      "ban_stage1_pokemon": "no",
-      "ban_stage2_pokemon": "no",
-      "ban_single_stage_pokemon": "no"
     },
     "tera_raid_randomizer": {
       "is_enabled": "no",
@@ -113,6 +113,7 @@
       "ban_single_stage_pokemon": "no"
     },
     "trainers_randomizer": {
+      "is_enabled": "no",
       "all_trainers_settings": {
         "generation_limiter": [],
         "use_rival_randomizer_forall": "no",
@@ -208,41 +209,6 @@
       "only_legends_and_paradox": "no",
       "_comment1": "Working on option to keep similar BST on route"
     },
-    "static_pokemon_randomizer": {
-      "is_enabled": "no",
-      "generation_limiter": [],
-      "randomize_tera_types": "no",
-      "exclude_legendary_pokemon": "no",
-      "only_legendary_pokemon": "no",
-      "only_paradox_pokemon": "no",
-      "only_legendary_and_paradox": "no",
-      "_comment": "working on similar BST feature"
-    },
-    "gift_pokemon_randomizer": {
-      "is_enabled": "no",
-      "generation_limiter": [],
-      "randomize_tera_types": "no",
-      "exclude_legendary_pokemon": "no",
-      "only_legendary_pokemon": "no",
-      "only_paradox_pokemon": "no",
-      "only_legendary_and_paradox": "no"
-    },
-    "legendary_pokemon_randomizer": {
-      "is_enabled": "no",
-      "generation_limiter": [],
-      "use_other_legendaries": "no",
-      "ban_stage1_pokemon": "no",
-      "ban_stage2_pokemon": "no",
-      "ban_single_stage_pokemon": "no"
-    },
-    "boss_pokemon_randomizer": {
-      "is_enabled": "no",
-      "generation_limiter": [],
-      "use_other_legendaries": "no",
-      "ban_stage1_pokemon": "no",
-      "ban_stage2_pokemon": "no",
-      "ban_single_stage_pokemon": "no"
-    },
     "tera_raid_randomizer": {
       "is_enabled": "no",
       "generation_limiter": [],
@@ -257,6 +223,7 @@
       "ban_single_stage_pokemon": "no"
     },
     "trainers_randomizer": {
+      "is_enabled": "no",
       "all_trainers_settings": {
         "generation_limiter": [],
         "use_rival_randomizer_forall": "no",
@@ -314,41 +281,6 @@
       "only_legends_and_paradox": "no",
       "_comment1": "Working on option to keep similar BST on route"
     },
-    "static_pokemon_randomizer": {
-      "is_enabled": "no",
-      "generation_limiter": [],
-      "randomize_tera_types": "no",
-      "exclude_legendary_pokemon": "no",
-      "only_legendary_pokemon": "no",
-      "only_paradox_pokemon": "no",
-      "only_legendary_and_paradox": "no",
-      "_comment": "working on similar BST feature"
-    },
-    "gift_pokemon_randomizer": {
-      "is_enabled": "no",
-      "generation_limiter": [],
-      "randomize_tera_types": "no",
-      "exclude_legendary_pokemon": "no",
-      "only_legendary_pokemon": "no",
-      "only_paradox_pokemon": "no",
-      "only_legendary_and_paradox": "no"
-    },
-    "legendary_pokemon_randomizer": {
-      "is_enabled": "no",
-      "generation_limiter": [],
-      "use_other_legendaries": "no",
-      "ban_stage1_pokemon": "no",
-      "ban_stage2_pokemon": "no",
-      "ban_single_stage_pokemon": "no"
-    },
-    "boss_pokemon_randomizer": {
-      "is_enabled": "no",
-      "generation_limiter": [],
-      "use_other_legendaries": "no",
-      "ban_stage1_pokemon": "no",
-      "ban_stage2_pokemon": "no",
-      "ban_single_stage_pokemon": "no"
-    },
     "tera_raid_randomizer": {
       "is_enabled": "no",
       "generation_limiter": [],
@@ -363,6 +295,7 @@
       "ban_single_stage_pokemon": "no"
     },
     "trainers_randomizer": {
+      "is_enabled": "no",
       "all_trainers_settings": {
         "generation_limiter": [],
         "use_rival_randomizer_forall": "no",

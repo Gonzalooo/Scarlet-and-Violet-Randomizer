@@ -12,8 +12,6 @@ import Randomizer.kitakamiTeraRaids.teraRandomizerTeal as KitakamiRaids
 import Randomizer.blueberryTeraRaids.teraRandomizerIndigo as BlueberryRaids
 import Randomizer.helper_function as HelperFunctions
 import shutil
-import subprocess
-import platform
 import requests
 
 
