@@ -13,8 +13,8 @@ json_output
 *.trpfd
 output/
 data.json
-Randomizer/Starters/pokemon_clean
-Randomizer/Starters/output
+Randomizer/StartersGifts/pokemon_clean
+Randomizer/StartersGifts/output
 .idea
 randomizer-patched/
 randomizer-patched-shiny/

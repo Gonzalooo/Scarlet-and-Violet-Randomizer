@@ -28,6 +28,15 @@
       "let_pokemon_evolve_every_level": "no",
       "force_tera_blast_every_5_levels": "no"
     },
+  "static_pokemon_randomizer": {
+      "is_enabled": "no",
+      "generation_limiter": [],
+      "randomize_tera_types": "no",
+      "only_legendary_pokemon": "no",
+      "only_paradox_pokemon": "no",
+      "only_legendary_and_paradox": "no",
+      "_comment": "working on similar BST feature"
+    },
   "starter_pokemon_randomizer":{
       "is_enabled": "no",
       "generation_limiter": [],
@@ -53,24 +62,10 @@
       "force_starter_2": 0,
       "force_starter_3": 0
     },
-  "static_pokemon_randomizer": {
-      "is_enabled": "no",
-      "generation_limiter": [],
-      "randomize_tera_types": "no",
-      "exclude_legendary_pokemon": "no",
-      "only_legendary_pokemon": "no",
-      "only_paradox_pokemon": "no",
-      "only_legendary_and_paradox": "no",
-      "_comment": "working on similar BST feature"
-    },
   "gift_pokemon_randomizer": {
       "is_enabled": "no",
       "generation_limiter": [],
-      "randomize_tera_types": "no",
-      "exclude_legendary_pokemon": "no",
-      "only_legendary_pokemon": "no",
-      "only_paradox_pokemon": "no",
-      "only_legendary_and_paradox": "no"
+      "randomize_tera_types": "yes"
     },
   "legendary_pokemon_randomizer": {
       "is_enabled": "no",

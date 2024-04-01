@@ -2,7 +2,6 @@ import json
 import random
 import os
 import shutil
-from Randomizer.shared_Variables import starters_used as picked_starters
 import Randomizer.shared_Variables as sharedVar
 import Randomizer.helper_function as HelperFunctions
 
@@ -29,10 +28,10 @@ bannedStages = []
 def flip_starter_texture(starter_num: int):
     pokemon_file = HelperFunctions.fetch_animation_file(starter_num)
 
-    shutil.copytree(os.getcwd() + "/Randomizer/Starters/" +f'pokemon_clean/{pokemon_file}',
-                    os.getcwd() + "/Randomizer/Starters/" +f'output/romfs/pokemon/data/{pokemon_file}')
+    shutil.copytree(os.getcwd() + "/Randomizer/StartersGifts/" +f'pokemon_clean/{pokemon_file}',
+                    os.getcwd() + "/Randomizer/StartersGifts/" +f'output/romfs/pokemon/data/{pokemon_file}')
 
-    current_check = os.getcwd() + "/Randomizer/Starters/" +f'output/romfs/pokemon/data/{pokemon_file}'
+    current_check = os.getcwd() + "/Randomizer/StartersGifts/" +f'output/romfs/pokemon/data/{pokemon_file}'
     i = 0
     for pokemonfolder in os.listdir(current_check):
         pokemontextures_animations = current_check + "/" + pokemonfolder
@@ -138,10 +137,10 @@ def randomize_starter(config, pokemon_entry, check_forced_shiny: int, allowed_po
 
 def randomize_all_starters(config):
     if config['is_enabled'] == "yes":
-        if os.path.exists(os.getcwd() + "/Randomizer/Starters/" + 'output'):
-            shutil.rmtree(os.getcwd() + "/Randomizer/Starters/" + 'output')
+        if os.path.exists(os.getcwd() + "/Randomizer/StartersGifts/" + 'output'):
+            shutil.rmtree(os.getcwd() + "/Randomizer/StartersGifts/" + 'output')
 
-        file = open(os.getcwd() + "/Randomizer/Starters/" + "eventAddPokemon_array_clean.json", "r")
+        file = open(os.getcwd() + "/Randomizer/StartersGifts/" + "eventAddPokemon_array_clean.json", "r")
         data = json.load(file)
         file.close()
 
@@ -181,7 +180,7 @@ def randomize_all_starters(config):
         print(sharedVar.current_starters_selected)
 
         outdata = json.dumps(data, indent=4)
-        with open(os.getcwd() + "/Randomizer/Starters/" +"eventAddPokemon_array.json", 'w') as outfile:
+        with open(os.getcwd() + "/Randomizer/StartersGifts/" +"eventAddPokemon_array.json", 'w') as outfile:
             outfile.write(outdata)
         print("Randomization Of Starter Pokemon Done!")
         return True

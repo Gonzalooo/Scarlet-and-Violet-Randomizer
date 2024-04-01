@@ -76,7 +76,7 @@ def patchCatalog(names: list, catalog, starters):
 
 def patchScenes():
     #load starters
-    starterfile = open(os.getcwd() + "/Randomizer/Starters/" +"eventAddPokemon_array.json", "r") #0 is fuecoco, 1 is sprigattio, 2 is quaxly
+    starterfile = open(os.getcwd() + "/Randomizer/StartersGifts/" +"eventAddPokemon_array.json", "r") #0 is fuecoco, 1 is sprigattio, 2 is quaxly
     starters = json.load(starterfile)
     starterfile.close()
 
@@ -86,7 +86,7 @@ def patchScenes():
     catalogfile.close()
 
     #load names
-    file = open(os.getcwd() + "/Randomizer/Starters/" +"pokemon_to_id.txt", "r")
+    file = open(os.getcwd() + "/Randomizer/StartersGifts/" +"pokemon_to_id.txt", "r")
     names = []
     for name in file:
         names.append(name)
