@@ -72,8 +72,6 @@
       "generation_limiter": [],
       "use_similar_BST": "no",
       "only_legendary_pokemon": "no",
-      "only_paradox_pokemon": "no",
-      "only_legendary_and_paradox": "no",
       "ban_stage1_pokemon": "no",
       "ban_stage2_pokemon": "no",
       "ban_single_stage_pokemon": "no",
