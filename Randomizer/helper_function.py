@@ -6,11 +6,86 @@ import Randomizer.shared_Variables as SharedVariables
 import random
 
 
-def check_dictlist_in_dict2(dict_list: list[dict], dict2: dict):
-    for d in dict_list:
-        if not all(dict2.get(key) == d.get(key) for key in d):
-            return False
-    return True
+def get_number_of_forms(pokemon_index: int):
+    if pokemon_index in SharedVariables.has_alternate_form:
+        match pokemon_index:
+            case 25:
+                return len([1, 2, 3, 4, 5, 6, 7, 9])+1
+            case 52:
+                return len([1, 2])+1
+            case 80:
+                return len([2])+1
+            case 128:
+                return len([1, 2, 3])+1
+            case 386:
+                return len([1, 2, 3])+1
+            case 479:
+                return len([1, 2, 3, 4, 5])+1
+            case 493:
+                return len([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17])+1
+            case 585:
+                return len([1, 2, 3])+1
+            case 586:
+                return len([1, 2, 3])+1
+            case 646:
+                return len([1, 2])+1
+            case 664:
+                return len([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19])+1
+            case 665:
+                return len([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19])+1
+            case 666:
+                return len([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19])+1
+            case 669:
+                return len([1, 2, 3, 4])+1
+            case 670:
+                return len([1, 2, 3, 4])+1
+            case 671:
+                return len([1, 2, 3, 4])+1
+            case 741:
+                return len([1, 2, 3])+1
+            case 745:
+                return len([1, 2])+1
+            case 774:
+                return len([1, 2, 3, 4, 5, 6])+1
+            case 778:
+                return len([])+1
+            case 800:
+                return len([1, 2])+1
+            case 845:
+                return len([])+1
+            case 869:
+                return len([1, 2, 3, 4, 5, 6, 7, 8])
+            case 875:
+                return len([])+1
+            case 877:
+                return len([])+1
+            case 898:
+                return len([1, 2])+1
+            case 978:
+                return len([1, 2])+1
+            case 931:
+                return len([1, 2, 3])+1
+            case 1017:
+                return len([1, 2, 3])+1
+            case _:
+                return len([1])+1
+    else:
+        return len([])+1
+
+
+def check_if_all_forms_are_used(key: str, pokemon_id: int, pokemon_dict: dict, pokemon_dict_list: list[dict]):
+    # Extract the value associated with the key in the single dictionary
+    value_to_check = pokemon_dict.get(key, None)
+
+    count = 0
+
+    for d in pokemon_dict_list:
+        if d.get(key) == value_to_check:
+            count = count + 1
+
+    if count == get_number_of_forms(pokemon_id):
+        return True
+    return False
 
 
 def choose_tera_type(choice: int, form: int):
@@ -290,6 +365,7 @@ def get_alternate_form(index: int):
 def check_generation_limiter(allowed_generations: list):
     allowed_pokemon = []
     allowed_legends = []
+    total_banned_pokemon = 0
     if len(allowed_generations) == 0:
         allowed_pokemon.extend(SharedVariables.gen1)
         allowed_legends.extend(SharedVariables.gen1_legends)
@@ -311,6 +387,7 @@ def check_generation_limiter(allowed_generations: list):
         allowed_pokemon.extend(SharedVariables.gen9)
         allowed_legends.extend(SharedVariables.paradox)
         allowed_legends.extend(SharedVariables.gen9_legends)
+        total_banned_pokemon = len(SharedVariables.banned_pokemon)
     else:
         in_array = [0] * 9
         for generations in allowed_generations:
@@ -322,6 +399,7 @@ def check_generation_limiter(allowed_generations: list):
                     allowed_pokemon.extend(SharedVariables.gen1)
                     allowed_legends.extend(SharedVariables.gen1_legends)
                     in_array[0] = 1
+                    total_banned_pokemon = total_banned_pokemon + SharedVariables.gen1bannedlength
                     continue
                 case 2:
                     if in_array[1] == 1:
@@ -330,6 +408,7 @@ def check_generation_limiter(allowed_generations: list):
                     allowed_pokemon.extend(SharedVariables.gen2)
                     allowed_legends.extend(SharedVariables.gen2_legends)
                     in_array[1] = 1
+                    total_banned_pokemon = total_banned_pokemon + SharedVariables.gen2bannedlength
                     continue
                 case 3:
                     if in_array[2] == 1:
@@ -338,6 +417,7 @@ def check_generation_limiter(allowed_generations: list):
                     allowed_pokemon.extend(SharedVariables.gen3)
                     allowed_legends.extend(SharedVariables.gen3_legends)
                     in_array[2] = 1
+                    total_banned_pokemon = total_banned_pokemon + SharedVariables.gen3bannedlength
                     continue
                 case 4:
                     if in_array[3] == 1:
@@ -346,6 +426,7 @@ def check_generation_limiter(allowed_generations: list):
                     allowed_pokemon.extend(SharedVariables.gen4)
                     allowed_legends.extend(SharedVariables.gen4_legends)
                     in_array[3] = 1
+                    total_banned_pokemon = total_banned_pokemon + SharedVariables.gen4bannedlength
                     continue
                 case 5:
                     if in_array[4] == 1:
@@ -354,6 +435,7 @@ def check_generation_limiter(allowed_generations: list):
                     allowed_pokemon.extend(SharedVariables.gen5)
                     allowed_legends.extend(SharedVariables.gen5_legends)
                     in_array[4] = 1
+                    total_banned_pokemon = total_banned_pokemon + SharedVariables.gen5bannedlength
                     continue
                 case 6:
                     if in_array[5] == 1:
@@ -362,6 +444,7 @@ def check_generation_limiter(allowed_generations: list):
                     allowed_pokemon.extend(SharedVariables.gen6)
                     allowed_legends.extend(SharedVariables.gen6_legends)
                     in_array[5] = 1
+                    total_banned_pokemon = total_banned_pokemon + SharedVariables.gen6bannedlength
                     continue
                 case 7:
                     if in_array[6] == 1:
@@ -371,6 +454,7 @@ def check_generation_limiter(allowed_generations: list):
                     allowed_legends.extend(SharedVariables.UB)
                     allowed_legends.extend(SharedVariables.gen7_legends)
                     in_array[6] = 1
+                    total_banned_pokemon = total_banned_pokemon + SharedVariables.gen7bannedlength
                     continue
                 case 8:
                     if in_array[7] == 1:
@@ -379,6 +463,7 @@ def check_generation_limiter(allowed_generations: list):
                     allowed_pokemon.extend(SharedVariables.gen8)
                     allowed_legends.extend(SharedVariables.gen8_legends)
                     in_array[7] = 1
+                    total_banned_pokemon = total_banned_pokemon + SharedVariables.gen8bannedlength
                     continue
                 case 9:
                     if in_array[8] == 1:
@@ -388,11 +473,14 @@ def check_generation_limiter(allowed_generations: list):
                     allowed_legends.extend(SharedVariables.paradox)
                     allowed_legends.extend(SharedVariables.gen9_legends)
                     in_array[8] = 1
+                    total_banned_pokemon = total_banned_pokemon + SharedVariables.gen9bannedlength
                     continue
                 case _:
                     print("Invalid Generation")
                     exit(0)
-    return allowed_pokemon, allowed_legends
+    allowed_pokemon = list(set(allowed_pokemon))
+    allowed_legends = list(set(allowed_legends))
+    return allowed_pokemon, allowed_legends, total_banned_pokemon
 
 
 def get_pokemon_item_form(index: int, form: int):
@@ -496,11 +584,11 @@ def get_pokemon_item_form(index: int, form: int):
         case 1017:
             match form:
                 case 1:
-                    return "ITEMID_ISHIDUENOMEN", 100
-                case 2:
                     return "ITEMID_IDONOMEN", 100
-                case 3:
+                case 2:
                     return "ITEMID_KAMADONOMEN", 100
+                case 3:
+                    return "ITEMID_ISHIDUENOMEN", 100
     return "ITEMID_NONE", 0
 
 

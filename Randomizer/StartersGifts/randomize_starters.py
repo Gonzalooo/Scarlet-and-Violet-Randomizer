@@ -45,7 +45,7 @@ def flip_starter_texture(starter_num: int):
 
 
 def select_forced_starter(config, pokedata, starter_choice: str):
-    choice = 1021
+    choice = 1024
     if isinstance(config[f'force_starter_{starter_choice}'], str) is True:
         pokeName = config[f'force_starter_{starter_choice}'].replace(" ", "")
         pokeName = pokeName.upper()
@@ -80,13 +80,13 @@ def randomize_starter(config, pokemon_entry, check_forced_shiny: int, allowed_po
     choice_dict = {"id": choice, "form": form_id}
     # if the choice is a banned pokemon or already used or not allowed - reroll
     while (choice in sharedVar.banned_pokemon or
-           HelperFunctions.check_dictlist_in_dict2(sharedVar.starters_used, choice_dict) is True
+            choice_dict in sharedVar.starters_used
            or choice not in allowed_pokemon or choice in bannedStages):
         choice = random.randint(1, 1025)
         choice_dict['id'] = choice
         choice_dict['form'] = form_id
 
-    if config[f'force_starter_{starter}'] != 0:
+    if config[f'force_starter_{str(starter)}'] != 0:
         choice = select_forced_starter(config, pokedata, starter)
         form_id = HelperFunctions.get_alternate_form(choice)
         choice_dict['id'] = choice
@@ -103,15 +103,16 @@ def randomize_starter(config, pokemon_entry, check_forced_shiny: int, allowed_po
     # Giving Starter choice of main abilities
     pokemon_entry['pokeData']['tokusei'] = "RANDOM_12"
 
-    # Changing Shiny-Chance
-    if config['make_all_starters_shiny'] == "yes":
-        pokemon_entry['pokeData']['rareType'] = "RARE"
-        if config['show_shiny_starters_in_overworld'] == "yes":
-            flip_starter_texture(choice)
-    elif config['force_shiny_starter'] == "yes" and check_forced_shiny == 1:
-        pokemon_entry['pokeData']['rareType'] = "RARE"
-        if config['show_shiny_starters_in_overworld'] == "yes":
-            flip_starter_texture(choice)
+    # Changing Shiny-Chance - except ogerpon for lack of textures
+    if choice != 1017:
+        if config['make_all_starters_shiny'] == "yes":
+            pokemon_entry['pokeData']['rareType'] = "RARE"
+            if config['show_shiny_starters_in_overworld'] == "yes":
+                flip_starter_texture(choice)
+        elif config['force_shiny_starter'] == "yes" and check_forced_shiny == 1:
+            pokemon_entry['pokeData']['rareType'] = "RARE"
+            if config['show_shiny_starters_in_overworld'] == "yes":
+                flip_starter_texture(choice)
 
     if (check_forced_shiny == 0 and config['make_all_starters_shiny'] != "yes"
             and config['higher_chance_shiny'] == "yes"):
@@ -145,7 +146,7 @@ def randomize_all_starters(config):
         file.close()
 
         shinyforced = [0] * 3
-        allowed_pokemon, allowed_legends = HelperFunctions.check_generation_limiter(config['generation_limiter'])
+        allowed_pokemon, allowed_legends, bpl  = HelperFunctions.check_generation_limiter(config['generation_limiter'])
         if config['only_legendary_and_paradox'] == "yes":
             allowed_pokemon = sharedVar.legends_and_paradox
         elif config['only_legendary_pokemon'] == "yes":
@@ -162,15 +163,16 @@ def randomize_all_starters(config):
         if config['force_shiny_starter'] == "yes":
             choice = random.randint(0, 2)
             shinyforced[choice] = 1
+        # sprigatito
+        sharedVar.current_starters_selected['kusa'] = randomize_starter(config, data['values'][1],
+                                                                        shinyforced[1], allowed_pokemon, 1)
+        sharedVar.starters_used.append(sharedVar.current_starters_selected['kusa'])
 
         # fuecoco
         sharedVar.current_starters_selected['hono'] = randomize_starter(config, data['values'][0],
-                                                                        shinyforced[0], allowed_pokemon, 1)
+                                                                        shinyforced[0], allowed_pokemon, 2)
         sharedVar.starters_used.append(sharedVar.current_starters_selected['hono'])
-        # sprigatito
-        sharedVar.current_starters_selected['kusa'] = randomize_starter(config, data['values'][1],
-                                                                        shinyforced[1], allowed_pokemon, 2)
-        sharedVar.starters_used.append(sharedVar.current_starters_selected['kusa'])
+
         # quaxly
         sharedVar.current_starters_selected['mizu'] = randomize_starter(config, data['values'][2],
                                                                         shinyforced[2], allowed_pokemon, 3)

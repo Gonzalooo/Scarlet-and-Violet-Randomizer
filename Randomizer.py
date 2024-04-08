@@ -1,3 +1,5 @@
+import requests
+import Randomizer.FileDescriptor.fileDescriptor as FileDescriptor
 import json
 import os
 import Randomizer.WildEncounters.new_wild_randomizer as WildRandomizer
@@ -8,12 +10,10 @@ import Randomizer.StartersGifts.gifts_randomizer as GiftsRandomizer
 import Randomizer.StaticSpawns.statics as StaticRandomizer
 import Randomizer.Scenes.patchscene as PatchScene
 import Randomizer.Items.itemrandomizer as ItemRandomizer
-import Randomizer.paldeaTeraRaids.teraRandomizePaldea as PaldeaRaids
-import Randomizer.kitakamiTeraRaids.teraRandomizerTeal as KitakamiRaids
-import Randomizer.blueberryTeraRaids.teraRandomizerIndigo as BlueberryRaids
+import Randomizer.StaticFights.randomize_fights as StaticFightsRandomizer
+import Randomizer.TeraRaids.tera_raids_randomizer as TeraRaidsRandomizer
 import Randomizer.helper_function as HelperFunctions
 import shutil
-import requests
 
 
 def check_updates():
@@ -52,6 +52,7 @@ paths = {
     "wilds_su2": "world/data/encount/pokedata/pokedata_su2/",
     "trainers": "world/data/trainer/trdata/",
     "gifts": "world/data/event/event_add_pokemon/eventAddPokemon/",
+    "boss": "world/data/battle/eventBattlePokemon",
     "personal": "avalon/data/",
     "statics": "world/data/field/fixed_symbol/fixed_symbol_table/",
     "itemdata": "world/data/item/itemdata/",
@@ -154,7 +155,39 @@ def randomize_based_on_config(config):
         HelperFunctions.generate_binary("Randomizer/StartersGifts/eventAddPokemon_array.bfbs",
                                         "Randomizer/StartersGifts/eventAddPokemon_array.json",
                                         paths["gifts"])
-    exit(0)
+
+    # Static Fights Pokemon
+    static_fights = StaticFightsRandomizer.randomize_static_fights(config['boss_pokemon_randomizer'])
+    if static_fights is True:
+        HelperFunctions.generate_binary("Randomizer/StaticFights/eventBattlePokemon_array.bfbs",
+                                        "Randomizer/StaticFights/eventBattlePokemon_array.json",
+                                        paths["boss"])
+
+    # Tera Raid Pokemon
+    paldea_raid, kitakami_raid, blueberry_raid = TeraRaidsRandomizer.randomize_tera_raids(config)
+    if paldea_raid is True:
+        for i in range(1,7):
+            HelperFunctions.generate_binary(f"Randomizer/TeraRaids/raid_enemy_0{str(i)}_array.bfbs",
+                                            f"Randomizer/TeraRaids/raid_enemy_0{str(i)}_array.json",
+                                            f"world/data/raid/raid_enemy_0{str(i)}")
+    if kitakami_raid is True:
+        for i in range(1,7):
+            HelperFunctions.generate_binary(f"Randomizer/TeraRaids/su1_raid_enemy_0{str(i)}_array.bfbs",
+                                            f"Randomizer/TeraRaids/su1_raid_enemy_0{str(i)}_array.json",
+                                            f"world/data/raid/su1_raid_enemy_0{str(i)}")
+    if blueberry_raid is True:
+        for i in range(1,7):
+            HelperFunctions.generate_binary(f"Randomizer/TeraRaids/su2_raid_enemy_0{str(i)}_array.bfbs",
+                                            f"Randomizer/TeraRaids/su2_raid_enemy_0{str(i)}_array.json",
+                                            f"world/data/raid/su2_raid_enemy_0{str(i)}")
+
+    if paldea_raid is True or kitakami_raid is True or blueberry_raid is True:
+        HelperFunctions.generate_binary(f"Randomizer/TeraRaids/raid_fixed_reward_item_array.bfbs",
+                       f"Randomizer/TeraRaids/raid_fixed_reward_item_array.json",
+                       paths["item_fixed"])
+        HelperFunctions.generate_binary(f"Randomizer/paldeaTeraRaids/raid_lottery_reward_item_array.bfbs",
+                       f"Randomizer/TeraRaids/raid_lottery_reward_item_array.json",
+                       paths["item_lottery"])
 
 
 def randomize():
@@ -168,15 +201,14 @@ def randomize():
         if os.path.exists(os.getcwd() + "/all-created-randomizer"):
             shutil.rmtree(os.getcwd() + "/all-created-randomizer")
         randomize_based_on_config(config)
-        if config['patch_trpfd'] == "yes":
-            import Randomizer.FileDescriptor.fileDescriptor as FileDescriptor
+        if config['auto-patch-romfs'] == "yes":
             FileDescriptor.patchFileDescriptor()
             HelperFunctions.generate_binary("Randomizer/FileDescriptor/data.fbs", "Randomizer/FileDescriptor/data.json", paths['trpfd'])
             if os.path.exists(os.getcwd() + "/randomizer-patched"):
                 shutil.rmtree(os.getcwd() + "/randomizer-patched")
             shutil.copytree('output/', 'randomizer-patched/')
             shutil.make_archive("randomizer-patched/randomizer", "zip", "output/")
-            if config['starter_randomizer']['is_enabled'] == "yes" and config['starter_randomizer']['shiny_overworld'] == "yes":
+            if config['starter_pokemon_randomizer']['is_enabled'] == "yes" and config['starter_pokemon_randomizer']['show_shiny_starters_in_overworld'] == "yes":
                 if os.path.exists(os.getcwd() + "/Randomizer/StartersGifts/" + f'output'):
                     shutil.copytree(os.getcwd() + "/Randomizer/StartersGifts/output/romfs/pokemon/data",
                                     "output/romfs/" + paths['shiny_scenes'])
@@ -190,7 +222,7 @@ def randomize():
         else:
             shutil.make_archive("output/randomizer", "zip", "output/romfs/")
 
-            if config['starter_randomizer']['shiny_overworld'] == "yes":
+            if config['starter_pokemon_randomizer']['show_shiny_starters_in_overworld'] == "yes":
                 if os.path.exists(os.getcwd() + "/Randomizer/StartersGifts/" + f'output'):
                     shutil.copytree(os.getcwd() + "/Randomizer/StartersGifts/output/romfs/pokemon/data",
                                     "output/romfs/" + paths['shiny_scenes'])
@@ -202,8 +234,7 @@ def randomize():
         print("Creating Multiple Randomizers")
         for i in range(0, config['bulk_creation']["number_of_unique_randomizers_to_create"]):
             randomize_based_on_config(config)
-            if config['patch_trpfd'] == "yes":
-                import Randomizer.FileDescriptor.fileDescriptor as FileDescriptor
+            if config['auto-patch-romfs'] == "yes":
                 shinyFile = False
                 FileDescriptor.patchFileDescriptor()
                 HelperFunctions.generate_binary("Randomizer/FileDescriptor/data.fbs", "Randomizer/FileDescriptor/data.json", paths['trpfd'])

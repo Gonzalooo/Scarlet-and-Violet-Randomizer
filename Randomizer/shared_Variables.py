@@ -230,6 +230,15 @@ no_evolution = [115, 127, 128, 131, 132, 142, 201, 213, 214, 225, 227, 235, 241,
 pokemon_with_item_only_form = [483, 484, 487, 493, 888, 889, 1017]
 raid_pokemon_with_item_forms = [483, 484, 487, 493, 888, 889]
 set_tera_type_pokemon = [1017, 1024]
+gen1bannedlength = 52
+gen2bannedlength = 18
+gen3bannedlength = 48
+gen4bannedlength = 22
+gen5bannedlength = 70
+gen6bannedlength = 25
+gen7bannedlength = 25
+gen8bannedlength = 31
+gen9bannedlength = 0
 has_alternate_form = [25,  # Pikachu - Caps + Partner
                       26,  # Raichu - Alolan
                       27,  # Sandscrew - Alolan

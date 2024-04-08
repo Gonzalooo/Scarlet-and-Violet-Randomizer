@@ -41,7 +41,7 @@ def randomize_gifts(config):
         data = json.load(file)
         file.close()
 
-        allowed_pokemon, allowed_legends = HelperFunctions.check_generation_limiter(config['generation_limiter'])
+        allowed_pokemon, allowed_legends, bpl  = HelperFunctions.check_generation_limiter(config['generation_limiter'])
         randomize_all_gifts(config, data['values'], allowed_pokemon)
 
         outdata = json.dumps(data, indent=2)

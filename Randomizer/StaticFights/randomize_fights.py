@@ -10,13 +10,24 @@ def make_static_legendary_available_to_all():
 
 
 def randomize_specific_fight(pokedata, allowed_pokemon: list):
-    pass
+    choice = random.randint(1, 1025)
+    while choice in SharedVariables.banned_pokemon or choice not in allowed_pokemon:
+        choice = random.randint(1, 1025)
+    pokedata['pokeData']['devId'] = HelperFunctions.fetch_developer_name(choice)
+    form_id = HelperFunctions.get_alternate_form(choice)
+    pokedata['pokeData']['formId'] = form_id
+    pokedata['pokeData']['sex'] = "DEFAULT"
+    pokedata['pokeData']['dropItem'] = HelperFunctions.get_pokemon_item_form(choice, form_id)[0]
+    pokedata['pokeData']['wazaType'] = "DEFAULT"
+    for i in range(1, 5):
+        pokedata['pokeData'][f'waza{str(i)}']['wazaId'] = "WAZA_NULL"
+    return pokedata
 
 
 def randomize_static_fights(config):
     make_static_legendary_available_to_all()
     if config['is_enabled'] == "yes":
-        file = open('eventBattlePokemon_array_clean.json', 'r')
+        file = open(os.getcwd() + "/Randomizer/StaticFights/" + 'eventBattlePokemon_array_clean.json', 'r')
         file_json = json.load(file)
         file.close()
         # Mappings for later features
@@ -68,11 +79,19 @@ def randomize_static_fights(config):
         # Terapagos - Stellar -> 88 (SDC02_0330_kodaikame)
         # 90+ Other Legends in the Game.
 
-        allowed_pokemon, allowed_legends = HelperFunctions.check_generation_limiter(config['generation_limiter'])
+        allowed_pokemon, allowed_legends, bpl  = HelperFunctions.check_generation_limiter(config['generation_limiter'])
         if config['randomize_all'] == "yes":
-            for i in range(0, len(file_json)):
+            for i in range(0, len(file_json['values'])):
                 randomize_specific_fight(file_json['values'][i], allowed_pokemon)
         else:
             if config['randomize_lechonk'] == "yes":
-                randomize_specific_fight(file_json['values'][0], allowed_pokemon)
+                file_json['values'][24] = randomize_specific_fight(file_json['values'][24], allowed_pokemon)
+
+        outdata = json.dumps(file_json, indent=2)
+        with open(os.getcwd() + "/Randomizer/StaticFights/" + "eventBattlePokemon_array.json", 'w') as outfile:
+            outfile.write(outdata)
+        print("Randomization Of Static Fights Pokemon Done!")
+        return True
+    return False
+
 

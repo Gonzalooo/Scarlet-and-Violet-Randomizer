@@ -36,9 +36,9 @@ def get_alt_form_list(index: int):
             case 646:
                 return [1, 2]
             case 664:
-                return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+                return [1]
             case 665:
-                return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+                return [1]
             case 666:
                 return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
             case 669:
@@ -251,7 +251,7 @@ def randomize_wild_encounters(config, region: str, allowed_pokemon: list):
 def randomize_wilderness(config):
     if config['use_paldea_settings_for_all'] == "yes":
         if config['paldea_settings']['wild_randomizer']['is_enabled'] == "yes":
-            usable_pokemon, useless = HelperFunctions.check_generation_limiter(config['paldea_settings']['wild_randomizer']
+            usable_pokemon, useless, bpl = HelperFunctions.check_generation_limiter(config['paldea_settings']['wild_randomizer']
                                                                       ['generation_limiter'])
             randomize_wild_encounters(config['paldea_settings']['wild_randomizer'], "Paldea", usable_pokemon)
             randomize_wild_encounters(config['paldea_settings']['wild_randomizer'], "Kitakami", usable_pokemon)
@@ -264,7 +264,7 @@ def randomize_wilderness(config):
         blueberry_binary = False
 
         if config['paldea_settings']['wild_randomizer']['is_enabled'] == "yes":
-            usable_pokemon, useless = HelperFunctions.check_generation_limiter(config['paldea_settings']['wild_randomizer']
+            usable_pokemon, useless, bpl  = HelperFunctions.check_generation_limiter(config['paldea_settings']['wild_randomizer']
                                                                       ['generation_limiter'])
             randomize_wild_encounters(config['paldea_settings']['wild_randomizer'], "Paldea", usable_pokemon)
 
