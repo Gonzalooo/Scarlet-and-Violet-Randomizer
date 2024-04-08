@@ -38,7 +38,7 @@
       "_comment": "working on similar BST feature"
     },
   "starter_pokemon_randomizer":{
-      "is_enabled": "yes",
+      "is_enabled": "no",
       "generation_limiter": [],
       "force_shiny_starter": "no",
       "make_all_starters_shiny": "yes",

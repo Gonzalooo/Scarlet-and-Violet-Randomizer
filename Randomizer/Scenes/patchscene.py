@@ -6,8 +6,10 @@ sprigattio_offset = 0x3D8A #6c 02
 fuecoco_offset = 0x158A #6d 02
 quaxly_offset = 0x2992 #6e 02
 
+
 def fetch_devname(index: int, csvdata):
     return str.strip(csvdata[index])
+
 
 def fetch_devname_index(name:str, csvdata):
     for index, current_name in enumerate(csvdata):
@@ -42,10 +44,12 @@ def patchIndividualScenes():
         file.seek(quaxly_offset)
         file.write(b'\x6E\x02')
 
+
 def retrieve_starter(starters, label):
     for entry in starters['values']:
         if entry['label'] == label:
             return entry
+
 
 def retrieve_catalog_entry(catalog: dict, species, form, fake_catalog_index):
     for entry in catalog['unk_1']:
@@ -60,7 +64,8 @@ def retrieve_catalog_entry(catalog: dict, species, form, fake_catalog_index):
                 for locator in return_entry['locators']:
                     locator['form_number'] = 0
             return return_entry
-        
+
+
 def patchCatalog(names: list, catalog, starters):
     starter_array_order = ['common_0065_kusa', 'common_0065_hono', 'common_0065_mizu'] #prevents me from writing a lot of useless code
     fake_catalog_species = 620
@@ -72,6 +77,7 @@ def patchCatalog(names: list, catalog, starters):
         catalog['unk_1'].append(catalog_entry)
         fake_catalog_species = fake_catalog_species + 1 #this goes until 622
     pass
+
 
 def patchScenes():
     #load starters
