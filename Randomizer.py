@@ -138,7 +138,7 @@ def randomize_based_on_config(config):
                                         "Randomizer/StartersGifts/eventAddPokemon_array.json",
                                         paths["gifts"])
     if starters_randomized is True and config['starter_pokemon_randomizer']['show_starters_in_overworld'] == "yes":  # Updated for 3.0.1
-        PatchScene.patchScenes()
+        PatchScene.patch_starter_selection_scenes()
         HelperFunctions.generate_binary("Randomizer/Scenes/poke_resource_table.fbs", "Randomizer/Scenes/poke_resource_table.json",
                        paths['catalog'])
 
