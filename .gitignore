@@ -8,6 +8,8 @@ MovesInGame/
 *_table.json
 *_0.trsog
 *_1.trsog
+*_0.trsot
+*_1.trsot
 flatc/*.bat
 json_output
 *.trpfd
