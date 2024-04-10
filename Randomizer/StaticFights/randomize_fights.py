@@ -9,12 +9,17 @@ import Randomizer.Scenes.patchscene as ChangeScenes
 
 paths = {
     "lechonk_scenes": "world/scene/parts/event/event_scenario/main_scenario/common_0100_/",
-    "coins_roaming": "\world\obj_template\parts\coin_symbol\coin_symbol_walk_",
-    "coins_chest": "\world\obj_template\parts\coin_symbol\coin_symbol_box_",
-    "glimmora_base": "\world\scene\parts\event\event_scenario\main_scenario\common_1055_",
+    "coins_roaming": "world\obj_template\parts\coin_symbol\coin_symbol_walk_",
+    "coins_chest": "world\obj_template\parts\coin_symbol\coin_symbol_box_",
+    "glimmora_base": "world\scene\parts\event\event_scenario\main_scenario\common_1055_",
     "scream_bundle": "world\scene\parts\event\event_scenario\main_scenario\common_1075_",
     "tusk_treads": "world\scene\parts\event\event_scenario\main_scenario\common_1095_",
-    "big_fight_before_tm": "world\scene\parts\event\event_scenario\main_scenario\common_1170_"
+    "big_fight_before_tm": "world\scene\parts\event\event_scenario\main_scenario\common_1170_",
+    "kora_mirai_titan_1": "world\scene\parts\event\event_scenario\main_scenario\legend_0020_",
+    "ting-lu": "world\scene\parts\event\event_scenario\sub_scenario\sub_014_",
+    "chien-pao": "world\scene\parts\event\event_scenario\sub_scenario\sub_015_",
+    "wo-chien": "world\scene\parts\event\event_scenario\sub_scenario\sub_016_",
+    "chi-yu": "world\scene\parts\event\event_scenario\sub_scenario\sub_017_"
 }
 
 
@@ -47,7 +52,7 @@ def randomize_static_fights(config):
         # area0 - 0->10 (1075_multi, 1055_multi_, 1095_multi_, 1180_multi_) - Obtained
         # gimmighoul - 11->23 (coin_976_01 ... _05 and then inc of 5) - Obtained
         # lechonk -> 24 (common_0100_) - Obtained
-        # Cave_Houndoom -> 25 (common_0150-) - don't
+        # Cave_Houndoom -> 25 (common_0150-) - Can't find (Ignore for now)
         # gym_sunfloras -> 26-30 (gym_kusa_020_KIMAWARI_0X)
         # Koraidon -> 31 (lastbattle_AIGUANA)
         # Miraidon -> 32 (lastbattle_BIGUANA)
@@ -57,12 +62,12 @@ def randomize_static_fights(config):
         # Tatsugiri_titan_fake -> 38-40 (nusi_952_dummy)
         # Bombardier_Titan -> 41-42 (nusi_959)
         # Klawf_Titan -> 43-44 (nusi_962)
-        # Great_Tusk -> 45-46 (nusi_978)
-        # Iron Treads -> 47-48 (nusi_986)
-        # Ting-Lu -> 49 (semi_legend_994)
-        # Chien-Pao -> 50 (semi_legend_995)
-        # Wo-Chien -> 51 (semi_legend_996)
-        # Chi-Yu -> 52 (semi_legend_997)
+        # Great_Tusk Titan -> 45-46 (nusi_978)
+        # Iron Treads Titan -> 47-48 (nusi_986)
+        # Ting-Lu -> 49 (semi_legend_994) - obtained
+        # Chien-Pao -> 50 (semi_legend_995) - obtained
+        # Wo-Chien -> 51 (semi_legend_996) - obtained
+        # Chi-Yu -> 52 (semi_legend_997) - obtained
         # Monkidori (cave-fight) -> 53/54 (sdc01_dokuzaru)
         # Okidogi  -> 55 (SDC01_get_dokuinu)
         # Fezandipiti -> 56 (SDC01_get_dokuinu)
@@ -90,7 +95,7 @@ def randomize_static_fights(config):
         # Pecharunt -> 86 (su2_dokutarou)
         # Terapagos - Kieran -> 87 (SDC02_0310_kodaikame)
         # Terapagos - Stellar -> 88 (SDC02_0330_kodaikame)
-        # 90+ Other Legends in the Game.
+        # 90+ Other Legends in the Game. - Koraidon/Miraidon (Obtained)
 
         allowed_pokemon, allowed_legends, bpl = HelperFunctions.check_generation_limiter(config['generation_limiter'])
         if config['randomize_all'] == "yes":
