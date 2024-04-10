@@ -68,7 +68,7 @@
       "randomize_tera_types": "yes"
     },
   "boss_pokemon_randomizer": {
-      "is_enabled": "no",
+      "is_enabled": "yes",
       "_comment": "Note: Models are automatically changed in overworld.",
       "generation_limiter": [],
       "use_similar_BST": "no",
@@ -76,8 +76,8 @@
       "ban_stage1_pokemon": "no",
       "ban_stage2_pokemon": "no",
       "ban_single_stage_pokemon": "no",
-      "randomize_all": "yes",
-      "randomize_lechonk": "no",
+      "randomize_all": "no",
+      "randomize_lechonk": "yes",
       "randomize_titans": "no",
       "randomize_snackworth_legendaries": "no",
       "randomize_areazero": "no",

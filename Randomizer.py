@@ -64,7 +64,7 @@ paths = {
     "pickupitems": "world/data/item/monohiroilItemData/",
     "synchro": "world/data/item/rummagingItemDataTable/",
     "catalog": "pokemon/catalog/catalog/",
-    "scenes": "world/scene/parts/event/event_scenario/main_scenario/common_0070_/",
+    "starters_scenes": "world/scene/parts/event/event_scenario/main_scenario/common_0070_/",
     "shiny_scenes": "pokemon/data/",
     "item_fixed": "world/data/raid/raid_fixed_reward_item/",
     "item_lottery": "world/data/raid/raid_lottery_reward_item/",
@@ -139,15 +139,13 @@ def randomize_based_on_config(config):
                                         paths["gifts"])
     if starters_randomized is True and config['starter_pokemon_randomizer']['show_starters_in_overworld'] == "yes":  # Updated for 3.0.1
         PatchScene.patch_starter_selection_scenes()
-        HelperFunctions.generate_binary("Randomizer/Scenes/poke_resource_table.fbs", "Randomizer/Scenes/poke_resource_table.json",
-                       paths['catalog'])
 
-        HelperFunctions.create_folder_hierarchy('output/romfs/'+paths["scenes"])
+        HelperFunctions.create_folder_hierarchy('output/romfs/'+paths['starters_scenes'])
 
-        shutil.copyfile("Randomizer/Scenes/common_0070_always_0.trsog",
-                        "output/romfs/" + paths['scenes'] + 'common_0070_always_0.trsog')
-        shutil.copyfile("Randomizer/Scenes/common_0070_always_1.trsog",
-                        "output/romfs/" + paths['scenes'] + 'common_0070_always_1.trsog')
+        shutil.copyfile("Randomizer/Scenes/starters_scenes/common_0070_always_0.trsog",
+                        "output/romfs/" + paths['starters_scenes'] + 'common_0070_always_0.trsog')
+        shutil.copyfile("Randomizer/Scenes/starters_scenes/common_0070_always_1.trsog",
+                        "output/romfs/" + paths['starters_scenes'] + 'common_0070_always_1.trsog')
 
     # Gift Pokemon
     gifts_randomized = GiftsRandomizer.randomize_gifts(config['gift_pokemon_randomizer'])

@@ -1,8 +1,21 @@
 import json
 import random
 import os
+import shutil
 import Randomizer.shared_Variables as SharedVariables
 import Randomizer.helper_function as HelperFunctions
+import Randomizer.Scenes.patchscene as ChangeScenes
+
+
+paths = {
+    "lechonk_scenes": "world/scene/parts/event/event_scenario/main_scenario/common_0100_/",
+    "coins_roaming": "\world\obj_template\parts\coin_symbol\coin_symbol_walk_",
+    "coins_chest": "\world\obj_template\parts\coin_symbol\coin_symbol_box_",
+    "glimmora_base": "\world\scene\parts\event\event_scenario\main_scenario\common_1055_",
+    "scream_bundle": "world\scene\parts\event\event_scenario\main_scenario\common_1075_",
+    "tusk_treads": "world\scene\parts\event\event_scenario\main_scenario\common_1095_",
+    "big_fight_before_tm": "world\scene\parts\event\event_scenario\main_scenario\common_1170_"
+}
 
 
 def make_static_legendary_available_to_all():
@@ -31,10 +44,10 @@ def randomize_static_fights(config):
         file_json = json.load(file)
         file.close()
         # Mappings for later features
-        # area0 - 0->10 (1075_multi, 1055_multi_, 1095_multi_, 1180_multi_)
-        # gimmighoul - 11->23 (coin_976_01 ... _05 and then inc of 5)
-        # lechonk -> 24 (common_0100_)
-        # Cave_Houndoom -> 25 (common_0150-)
+        # area0 - 0->10 (1075_multi, 1055_multi_, 1095_multi_, 1180_multi_) - Obtained
+        # gimmighoul - 11->23 (coin_976_01 ... _05 and then inc of 5) - Obtained
+        # lechonk -> 24 (common_0100_) - Obtained
+        # Cave_Houndoom -> 25 (common_0150-) - don't
         # gym_sunfloras -> 26-30 (gym_kusa_020_KIMAWARI_0X)
         # Koraidon -> 31 (lastbattle_AIGUANA)
         # Miraidon -> 32 (lastbattle_BIGUANA)
@@ -49,7 +62,7 @@ def randomize_static_fights(config):
         # Ting-Lu -> 49 (semi_legend_994)
         # Chien-Pao -> 50 (semi_legend_995)
         # Wo-Chien -> 51 (semi_legend_996)
-        # Chi-Yu -> 52 (semi_legend_997
+        # Chi-Yu -> 52 (semi_legend_997)
         # Monkidori (cave-fight) -> 53/54 (sdc01_dokuzaru)
         # Okidogi  -> 55 (SDC01_get_dokuinu)
         # Fezandipiti -> 56 (SDC01_get_dokuinu)
@@ -79,17 +92,29 @@ def randomize_static_fights(config):
         # Terapagos - Stellar -> 88 (SDC02_0330_kodaikame)
         # 90+ Other Legends in the Game.
 
-        allowed_pokemon, allowed_legends, bpl  = HelperFunctions.check_generation_limiter(config['generation_limiter'])
+        allowed_pokemon, allowed_legends, bpl = HelperFunctions.check_generation_limiter(config['generation_limiter'])
         if config['randomize_all'] == "yes":
             for i in range(0, len(file_json['values'])):
                 randomize_specific_fight(file_json['values'][i], allowed_pokemon)
+            outdata = json.dumps(file_json, indent=2)
+            with open(os.getcwd() + "/Randomizer/StaticFights/" + "eventBattlePokemon_array.json", 'w') as outfile:
+                outfile.write(outdata)
         else:
             if config['randomize_lechonk'] == "yes":
                 file_json['values'][24] = randomize_specific_fight(file_json['values'][24], allowed_pokemon)
 
-        outdata = json.dumps(file_json, indent=2)
-        with open(os.getcwd() + "/Randomizer/StaticFights/" + "eventBattlePokemon_array.json", 'w') as outfile:
-            outfile.write(outdata)
+                outdata = json.dumps(file_json, indent=2)
+                with open(os.getcwd() + "/Randomizer/StaticFights/" + "eventBattlePokemon_array.json", 'w') as outfile:
+                    outfile.write(outdata)
+
+                ChangeScenes.patch_lechonk_starting_scene()
+                HelperFunctions.create_folder_hierarchy(os.getcwd() + '/output/romfs/' + paths['lechonk_scenes'])
+
+                shutil.copyfile(os.getcwd() + "/Randomizer/Scenes/lechonk_scenes/common_0100_main_0.trsog",
+                                os.getcwd() + "/output/romfs/" + paths['lechonk_scenes'] + 'common_0100_main_0.trsog')
+                shutil.copyfile(os.getcwd() + "/Randomizer/Scenes/lechonk_scenes/common_0100_main_0.trsog",
+                                os.getcwd() + "/output/romfs/" + paths['lechonk_scenes'] + 'common_0100_main_0.trsog')
+
         print("Randomization Of Static Fights Pokemon Done!")
         return True
     return False

@@ -2,9 +2,10 @@ import os
 import json
 import copy
 
-sprigattio_offset = 0x3D8A #6c 02
-fuecoco_offset = 0x158A #6d 02
-quaxly_offset = 0x2992 #6e 02
+# get pokemon dictionary with hex values
+pokemon_dict_json = open(os.getcwd() + "/Randomizer/Scenes/" + "pokemon_dict_info.json", "r")
+pokemon_dict = json.load(pokemon_dict_json)
+pokemon_dict_json.close()
 
 
 def patch_starter_selection_scenes():
@@ -13,13 +14,8 @@ def patch_starter_selection_scenes():
     starters = json.load(starterfile)
     starterfile.close()
 
-    # get pokemon dictionary with hex values
-    pokemon_dict_json = open(os.getcwd() + "/Randomizer/Scenes/" + "pokemon_dict_info.json", "r")
-    pokemon_dict = json.load(pokemon_dict_json)
-    pokemon_dict_json.close()
-
-    scarlet_scene = open(os.getcwd() + "/Randomizer/Scenes/common_0070_always_0_clean.trsog", "rb")
-    violet_scene = open(os.getcwd() + "/Randomizer/Scenes/common_0070_always_1_clean.trsog", "rb")
+    scarlet_scene = open(os.getcwd() + "/Randomizer/Scenes/starters_scenes/common_0070_always_0_clean.trsog", "rb")
+    violet_scene = open(os.getcwd() + "/Randomizer/Scenes/starters_scenes/common_0070_always_1_clean.trsog", "rb")
     scarlet_scene_bytes = scarlet_scene.read()
     violet_scene_bytes = violet_scene.read()
     scarlet_scene.close()
@@ -29,17 +25,54 @@ def patch_starter_selection_scenes():
                   pokemon_dict['pokemons'][starters['values'][1]['pokeData']['devId']]['hex'],
                   pokemon_dict['pokemons'][starters['values'][2]['pokeData']['devId']]['hex']]
 
+    # sprigattio_offset = 0x3D8A  # 6c 02
+    # fuecoco_offset = 0x158A  # 6d 02
+    # quaxly_offset = 0x2992  # 6e 02
+    offset = [0x158A, 0x3D8A, 0x2992]
+
     for i in range(0, 2):
-        with open(os.getcwd() + f"/Randomizer/Scenes/common_0070_always_{str(i)}.trsog", "w+b") as file:
+        with open(os.getcwd() + f"/Randomizer/Scenes/starters_scenes/common_0070_always_{str(i)}.trsog", "w+b") as file:
             if i == 0:
                 file.write(scarlet_scene_bytes)
             elif i == 1:
                 file.write(violet_scene_bytes)
-            file.seek(sprigattio_offset)
-            file.write(bytearray.fromhex(hex_checks[1]))
-            file.seek(fuecoco_offset)
-            file.write(bytearray.fromhex(hex_checks[0]))
-            file.seek(quaxly_offset)
-            file.write(bytearray.fromhex(hex_checks[2]))
+            for j in range(0, len(offset)):
+                file.seek(offset[j])
+                file.write(bytearray.fromhex(hex_checks[j]))
 
     print("Patched starters in overworld")
+
+
+def patch_lechonk_starting_scene():
+    scarlet_scene = open(os.getcwd() + "/Randomizer/Scenes/lechonk_scenes/common_0100_main_clean_0.trsog", "rb")
+    violet_scene = open(os.getcwd() + "/Randomizer/Scenes/lechonk_scenes/common_0100_main_clean_1.trsog", "rb")
+    scarlet_scene_bytes = scarlet_scene.read()
+    violet_scene_bytes = violet_scene.read()
+    scarlet_scene.close()
+    violet_scene.close()
+
+    lechonk_file = open(os.getcwd() + "/Randomizer/StaticFights/" + "eventBattlePokemon_array.json", "r")
+    lechonk = json.load(lechonk_file)
+    lechonk_file.close()
+
+    hex_values_to_use = pokemon_dict['pokemons'][lechonk['values'][24]['pokeData']['devId']]['hex']
+
+    # 0 - fletching
+    # 1 - flecthing (2) [map out which exactly better later]
+    # 2 - Pawmi
+    # 3->6 - tarountula
+    # 7->11 - Lechonk
+    offset = [0xAB6, 0x1FE2, 0x350E, 0x4A3A, 0x5F62, 0x748A, 0x89B2, 0x9EDA, 0xB402, 0xC92A, 0xDE52, 0xF37A]
+
+    for i in range(0, 2):
+        with open(os.getcwd() + f"/Randomizer/Scenes/lechonk_scenes/common_0100_main_{str(i)}.trsog", "w+b") as file:
+            if i == 0:
+                file.write(scarlet_scene_bytes)
+            elif i == 1:
+                file.write(violet_scene_bytes)
+            for j in range(0, len(offset)):
+                file.seek(offset[j])
+                if j >= 7:
+                    file.write(bytearray.fromhex(hex_values_to_use))
+
+    print("Patched Lechonk in overworld")
