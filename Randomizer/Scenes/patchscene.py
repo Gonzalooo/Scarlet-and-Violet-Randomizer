@@ -1,6 +1,9 @@
 import os
 import json
 import copy
+import random
+import Randomizer.shared_Variables as SharedVariables
+import Randomizer.helper_function as HelperFunctions
 
 # get pokemon dictionary with hex values
 pokemon_dict_json = open(os.getcwd() + "/Randomizer/Scenes/" + "pokemon_dict_info.json", "r")
@@ -44,8 +47,8 @@ def patch_starter_selection_scenes():
 
 
 def patch_lechonk_starting_scene():
-    scarlet_scene = open(os.getcwd() + "/Randomizer/Scenes/lechonk_scenes/common_0100_main_clean_0.trsog", "rb")
-    violet_scene = open(os.getcwd() + "/Randomizer/Scenes/lechonk_scenes/common_0100_main_clean_1.trsog", "rb")
+    scarlet_scene = open(os.getcwd() + "/Randomizer/Scenes/lechonk_scenes/common_0100_main_0_clean.trsog", "rb")
+    violet_scene = open(os.getcwd() + "/Randomizer/Scenes/lechonk_scenes/common_0100_main_1_clean.trsog", "rb")
     scarlet_scene_bytes = scarlet_scene.read()
     violet_scene_bytes = violet_scene.read()
     scarlet_scene.close()
@@ -73,6 +76,13 @@ def patch_lechonk_starting_scene():
             for j in range(0, len(offset)):
                 file.seek(offset[j])
                 if j >= 7:
+                    file.write(bytearray.fromhex(hex_values_to_use))
+                else:
+                    # For now all other pokemon random until we find a way to map the areas and spawnpoints
+                    choice = random.randint(1, 1025)
+                    while choice in SharedVariables.banned_pokemon:
+                        choice = random.randint(1, 1025)
+                    hex_values_to_use = pokemon_dict['pokemons'][HelperFunctions.fetch_developer_name(choice)]['hex']
                     file.write(bytearray.fromhex(hex_values_to_use))
 
     print("Patched Lechonk in overworld")
