@@ -58,8 +58,6 @@ def patch_lechonk_starting_scene():
     lechonk = json.load(lechonk_file)
     lechonk_file.close()
 
-    hex_values_to_use = pokemon_dict['pokemons'][lechonk['values'][24]['pokeData']['devId']]['hex']
-
     # 0 - fletching
     # 1 - flecthing (2) [map out which exactly better later]
     # 2 - Pawmi
@@ -76,6 +74,7 @@ def patch_lechonk_starting_scene():
             for j in range(0, len(offset)):
                 file.seek(offset[j])
                 if j >= 7:
+                    hex_values_to_use = pokemon_dict['pokemons'][lechonk['values'][24]['pokeData']['devId']]['hex']
                     file.write(bytearray.fromhex(hex_values_to_use))
                 else:
                     # For now all other pokemon random until we find a way to map the areas and spawnpoints
@@ -86,3 +85,26 @@ def patch_lechonk_starting_scene():
                     file.write(bytearray.fromhex(hex_values_to_use))
 
     print("Patched Lechonk in overworld")
+
+
+def patch_gimmighoul_scene():
+    for i in range(0, 2):
+        game_scene = open(os.getcwd() + f"/Randomizer/Scenes/gimmighoul_scene/coin_symbol_box_{str(i)}_clean.trsot", "rb")
+        game_scene_bytes = game_scene.read()
+        game_scene.close()
+
+        ghoul_file = open(os.getcwd() + "/Randomizer/StaticFights/" + "eventBattlePokemon_array.json", "r")
+        gimmighoul = json.load(ghoul_file)
+        ghoul_file.close()
+
+        # 0 - Gimmighoul
+        offset = [0x656]
+
+        with open(os.getcwd() + f"/Randomizer/Scenes/gimmighoul_scene/coin_symbol_box_{str(i)}.trsot", "w+b") as file:
+            file.write(game_scene_bytes)
+            for j in range(0, len(offset)):
+                file.seek(offset[j])
+                hex_values_to_use = pokemon_dict['pokemons'][gimmighoul['values'][9]['pokeData']['devId']]['hex']
+                file.write(bytearray.fromhex(hex_values_to_use))
+
+    print("Patched Gimmighoul in overworld")

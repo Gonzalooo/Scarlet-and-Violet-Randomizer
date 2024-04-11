@@ -76,8 +76,8 @@
       "ban_stage1_pokemon": "no",
       "ban_stage2_pokemon": "no",
       "ban_single_stage_pokemon": "no",
-      "randomize_all": "no",
-      "randomize_lechonk": "yes",
+      "randomize_all": "yes",
+      "randomize_lechonk": "no",
       "randomize_titans": "no",
       "randomize_snackworth_legendaries": "no",
       "randomize_areazero": "no",
@@ -119,6 +119,8 @@
         "_comment": "working on similar BST option"
       },
       "rival_randomizer": {
+        "_comment": "Includes: Penny, All of TS, Arven, and Nemona",
+        "is_enabled": "no",
         "force_6_pokemon": "no",
         "add_extra_pokemon": "no",
         "force_perfect_ivs": "no",
@@ -133,10 +135,12 @@
         "ban_single_stage_pokemon": "no"
       },
       "route_trainers_randomizer": {
+        "is_enabled": "no",
         "force_6_pokemon": "no",
         "add_extra_pokemon": "no",
         "force_perfect_ivs": "no",
         "make_ai_smart": "no",
+        "allow_terastalization": "no",
         "only_legendary_pokemon": "no",
         "only_paradox_pokemon": "no",
         "only_legendary_and_paradox": "no",
@@ -145,6 +149,7 @@
         "ban_single_stage_pokemon": "no"
       },
       "gym_randomizer": {
+        "is_enabled": "no",
         "force_6_pokemon": "no",
         "add_extra_pokemon": "no",
         "force_perfect_ivs": "no",
@@ -157,6 +162,7 @@
         "ban_single_stage_pokemon": "no"
       },
       "elite4_randomizer": {
+        "is_enabled": "no",
         "force_6_pokemon": "no",
         "add_extra_pokemon": "no",
         "force_perfect_ivs": "no",
@@ -169,6 +175,7 @@
         "ban_single_stage_pokemon": "no"
       },
       "champion_randomizer": {
+        "is_enabled": "no",
         "force_6_pokemon": "no",
         "add_extra_pokemon": "no",
         "force_perfect_ivs": "no",
@@ -181,6 +188,7 @@
         "ban_single_stage_pokemon": "no"
       },
       "raid_npc_randomizer": {
+        "is_enabled": "no",
         "force_perfect_ivs": "no",
         "make_ai_smart": "no",
         "only_legendary_pokemon": "no",
@@ -224,11 +232,15 @@
         "only_double_battles": "no",
         "_comment": "working on similar BST option"
       },
-      "rival_randomizer": {
+      "important_trainers_randomizer": {
+        "_comment": "Includes: Kieran, Carmine, Perrin, Billy and O'Nare",
+        "is_enabled": "no",
         "force_6_pokemon": "no",
         "add_extra_pokemon": "no",
         "force_perfect_ivs": "no",
         "make_ai_smart": "no",
+        "starter_follows_nemona": "no",
+        "starter_follows_clavell": "no",
         "only_legendary_pokemon": "no",
         "only_paradox_pokemon": "no",
         "only_legendary_and_paradox": "no",
@@ -237,10 +249,26 @@
         "ban_single_stage_pokemon": "no"
       },
       "route_trainers_randomizer": {
+        "is_enabled": "no",
         "force_6_pokemon": "no",
         "add_extra_pokemon": "no",
         "force_perfect_ivs": "no",
         "make_ai_smart": "no",
+        "allow_terastalization": "no",
+        "only_legendary_pokemon": "no",
+        "only_paradox_pokemon": "no",
+        "only_legendary_and_paradox": "no",
+        "ban_stage1_pokemon": "no",
+        "ban_stage2_pokemon": "no",
+        "ban_single_stage_pokemon": "no"
+      },
+      "ogre_clan_randomizer": {
+        "is_enabled": "no",
+        "force_6_pokemon": "no",
+        "add_extra_pokemon": "no",
+        "force_perfect_ivs": "no",
+        "make_ai_smart": "no",
+        "allow_terastalization": "no",
         "only_legendary_pokemon": "no",
         "only_paradox_pokemon": "no",
         "only_legendary_and_paradox": "no",
@@ -249,6 +277,7 @@
         "ban_single_stage_pokemon": "no"
       },
       "raid_npc_randomizer": {
+        "is_enabled": "no",
         "force_perfect_ivs": "no",
         "make_ai_smart": "no",
         "only_legendary_pokemon": "no",
@@ -292,11 +321,29 @@
         "only_double_battles": "no",
         "_comment": "working on similar BST option"
       },
+      "important_trainers_randomizer": {
+        "_comment": "Includes: Kieran, Carmine, BBE4 ",
+        "is_enabled": "no",
+        "force_6_pokemon": "no",
+        "add_extra_pokemon": "no",
+        "force_perfect_ivs": "no",
+        "make_ai_smart": "no",
+        "starter_follows_nemona": "no",
+        "starter_follows_clavell": "no",
+        "only_legendary_pokemon": "no",
+        "only_paradox_pokemon": "no",
+        "only_legendary_and_paradox": "no",
+        "ban_stage1_pokemon": "no",
+        "ban_stage2_pokemon": "no",
+        "ban_single_stage_pokemon": "no"
+      },
       "route_trainers_randomizer": {
+        "is_enabled": "no",
         "force_6_pokemon": "no",
         "add_extra_pokemon": "no",
         "force_perfect_ivs": "no",
         "make_ai_smart": "no",
+        "allow_terastalization": "no",
         "only_legendary_pokemon": "no",
         "only_paradox_pokemon": "no",
         "only_legendary_and_paradox": "no",
@@ -304,23 +351,14 @@
         "ban_stage2_pokemon": "no",
         "ban_single_stage_pokemon": "no"
       },
-      "elite4_randomizer": {
+      "bb4_league_randomizer": {
+        "_comment": "All BB Club Fights",
+        "is_enabled": "no",
         "force_6_pokemon": "no",
         "add_extra_pokemon": "no",
         "force_perfect_ivs": "no",
         "make_ai_smart": "no",
-        "only_legendary_pokemon": "no",
-        "only_paradox_pokemon": "no",
-        "only_legendary_and_paradox": "no",
-        "ban_stage1_pokemon": "no",
-        "ban_stage2_pokemon": "no",
-        "ban_single_stage_pokemon": "no"
-      },
-      "champion_randomizer": {
-        "force_6_pokemon": "no",
-        "add_extra_pokemon": "no",
-        "force_perfect_ivs": "no",
-        "make_ai_smart": "no",
+        "allow_terastalization": "no",
         "only_legendary_pokemon": "no",
         "only_paradox_pokemon": "no",
         "only_legendary_and_paradox": "no",
@@ -329,6 +367,7 @@
         "ban_single_stage_pokemon": "no"
       },
       "raid_npc_randomizer": {
+        "is_enabled": "no",
         "force_perfect_ivs": "no",
         "make_ai_smart": "no",
         "only_legendary_pokemon": "no",
