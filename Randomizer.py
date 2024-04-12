@@ -74,8 +74,6 @@ paths = {
 
 def randomize_based_on_config(config):
     create_modpack()
-    TrainerRandomizer.randomize_trainers(config)
-    exit(0)
 
     # Wild Pokemon Randomizer
     paldea_wild, kitakami_wild, blueberry_wild = WildRandomizer.randomize_wilderness(config)
@@ -150,6 +148,8 @@ def randomize_based_on_config(config):
         shutil.copyfile("Randomizer/Scenes/starters_scenes/common_0070_always_1.trsog",
                         "output/romfs/" + paths['starters_scenes'] + 'common_0070_always_1.trsog')
 
+    TrainerRandomizer.randomize_trainers(config)
+    exit(0)
     # Gift Pokemon
     gifts_randomized = GiftsRandomizer.randomize_gifts(config['gift_pokemon_randomizer'])
     if gifts_randomized is True:

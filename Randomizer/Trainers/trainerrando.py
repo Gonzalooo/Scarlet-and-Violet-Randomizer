@@ -630,6 +630,13 @@ def get_pokemon_based_on_starter(starter: dict, trainer_name: str):
             item = HelperFunctions.get_pokemon_item_form(pokemon, form)[0]
             return pokemon, form, item
 
+    pokemon = random.randint(1, 1025)
+    while pokemon in SharedVariables.banned_pokemon:
+        pokemon = random.randint(1, 1025)
+    form = 0
+    item = "ITEMID_NONE"
+    return pokemon, form, item
+
 
 def make_poke(config, trainer_config, allowed_pokemon, banned_stages, trainer_list, trainers):
     for i in trainer_list:

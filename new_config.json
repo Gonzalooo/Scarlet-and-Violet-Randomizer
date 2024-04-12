@@ -68,7 +68,7 @@
       "randomize_tera_types": "yes"
     },
   "boss_pokemon_randomizer": {
-      "is_enabled": "yes",
+      "is_enabled": "no",
       "_comment": "Note: Models are automatically changed in overworld.",
       "generation_limiter": [],
       "use_similar_BST": "no",
