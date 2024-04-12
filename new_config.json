@@ -110,14 +110,15 @@
     "trainers_randomizer": {
       "is_enabled": "yes",
       "all_trainers_settings": {
-        "generation_limiter": [], // added
-        "use_rival_randomizer_forall": "yes", // added
-        "allow_terastalize_to_all": "no", // added
-        "randomize_tera_types": "no", // TBA
-        "allow_shiny_pokemon": "yes", // added
-        "randomnly_choose_single_or_doubles": "no", // TBA
-        "only_double_battles": "no", // TBA
-        "_comment": "working on similar BST option"
+        "generation_limiter": [],
+        "use_rival_randomizer_forall": "yes",
+        "allow_terastalize_to_all": "no",
+        "randomize_tera_types": "no",
+        "allow_shiny_pokemon": "yes",
+        "randomnly_choose_single_or_doubles": "no",
+        "only_double_battles": "no",
+        "_comment": "working on similar BST option",
+        "_comment1": "missing option to have rival starter evolve"
       },
       "rival_randomizer": {
         "_comment": "Includes: Penny, All of TS, Arven, Clavell, and Nemona",
@@ -125,15 +126,15 @@
         "force_6_pokemon": "no",
         "add_extra_pokemon": "no",
         "force_perfect_ivs": "yes",
-        "make_ai_smart": "no", // TBA
+        "make_ai_smart": "no",
         "_comment1": "If no in allow_tera - then those that can tera will still tera.",
         "allow_terastalization": "no",
-        "only_legendary_pokemon": "no", // TBA
-        "only_paradox_pokemon": "no", // TBA
-        "only_legendary_and_paradox": "no", // TBA
-        "ban_stage1_pokemon": "no", // TBA
-        "ban_stage2_pokemon": "no", // TBA
-        "ban_single_stage_pokemon": "no" // TBA
+        "only_legendary_pokemon": "no",
+        "only_paradox_pokemon": "no",
+        "only_legendary_and_paradox": "no",
+        "ban_stage1_pokemon": "no",
+        "ban_stage2_pokemon": "no",
+        "ban_single_stage_pokemon": "no"
       },
       "route_trainers_randomizer": {
         "is_enabled": "no",
@@ -197,7 +198,8 @@
         "only_legendary_and_paradox": "no",
         "ban_stage1_pokemon": "no",
         "ban_stage2_pokemon": "no",
-        "ban_single_stage_pokemon": "no"
+        "ban_single_stage_pokemon": "no",
+        "allow_terastalization": "no"
       }
     }
   },
@@ -225,7 +227,7 @@
       "is_enabled": "no",
       "all_trainers_settings": {
         "generation_limiter": [],
-        "use_rival_randomizer_forall": "no",
+        "use_important_trainers_randomizer_forall": "no",
         "allow_terastalize_to_all": "no",
         "randomize_tera_types": "no",
         "allow_shiny_pokemon": "no",
@@ -287,7 +289,8 @@
         "only_legendary_and_paradox": "no",
         "ban_stage1_pokemon": "no",
         "ban_stage2_pokemon": "no",
-        "ban_single_stage_pokemon": "no"
+        "ban_single_stage_pokemon": "no",
+        "allow_terastalization": "no"
       }
     }
   },
@@ -315,7 +318,7 @@
       "is_enabled": "no",
       "all_trainers_settings": {
         "generation_limiter": [],
-        "use_rival_randomizer_forall": "no",
+        "use_important_trainers_randomizer_forall": "no",
         "allow_terastalize_to_all": "no",
         "randomize_tera_types": "no",
         "allow_shiny_pokemon": "no",
@@ -378,7 +381,8 @@
         "only_legendary_and_paradox": "no",
         "ban_stage1_pokemon": "no",
         "ban_stage2_pokemon": "no",
-        "ban_single_stage_pokemon": "no"
+        "ban_single_stage_pokemon": "no",
+        "allow_terastalization": "no"
       }
     }
   }

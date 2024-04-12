@@ -1,4 +1,5 @@
 import Randomizer.helper_function as HelperFunctions
+import Randomizer.shared_Variables as SharedVariables
 import json
 import random
 import os
@@ -589,18 +590,75 @@ def count_missing_pokemon(trainer_to_check):
     return not_missing, missing
 
 
+def get_pokemon_based_on_starter(starter: dict, trainer_name: str):
+    if trainer_name == "Nemona":
+        if "hono" in starter['trid']:
+            # Gets sprigatito
+            pokemon = SharedVariables.current_starters_selected["kusa"]['id']
+            form = SharedVariables.current_starters_selected["kusa"]['form']
+            item = HelperFunctions.get_pokemon_item_form(pokemon, form)[0]
+            return pokemon, form, item
+        if "kusa" in starter['trid']:
+            # Gets Quaxly
+            pokemon = SharedVariables.current_starters_selected["mizu"]['id']
+            form = SharedVariables.current_starters_selected["mizu"]['form']
+            item = HelperFunctions.get_pokemon_item_form(pokemon, form)[0]
+            return pokemon, form, item
+        if "mizu" in starter['trid']:
+            # Gets Fuecoco
+            pokemon = SharedVariables.current_starters_selected["hono"]['id']
+            form = SharedVariables.current_starters_selected["hono"]['form']
+            item = HelperFunctions.get_pokemon_item_form(pokemon, form)[0]
+            return pokemon, form, item
+    if trainer_name == "Clavell":
+        if "hono" in starter['trid']:
+            # Gets Quaxly
+            pokemon = SharedVariables.current_starters_selected["mizu"]['id']
+            form = SharedVariables.current_starters_selected["mizu"]['form']
+            item = HelperFunctions.get_pokemon_item_form(pokemon, form)[0]
+            return pokemon, form, item
+        if "kusa" in starter['trid']:
+            # Gets Fuecoco
+            pokemon = SharedVariables.current_starters_selected["hono"]['id']
+            form = SharedVariables.current_starters_selected["hono"]['form']
+            item = HelperFunctions.get_pokemon_item_form(pokemon, form)[0]
+            return pokemon, form, item
+        if "mizu" in starter['trid']:
+            # Gets Sprigatito
+            pokemon = SharedVariables.current_starters_selected["kusa"]['id']
+            form = SharedVariables.current_starters_selected["kusa"]['form']
+            item = HelperFunctions.get_pokemon_item_form(pokemon, form)[0]
+            return pokemon, form, item
+
+
 def make_poke(config, trainer_config, allowed_pokemon, banned_stages, trainer_list, trainers):
     for i in trainer_list:
-        trainers[i]["isStrong"] = True
-
         # Change Tera
-        if trainer_config['all_trainers_settings']['allow_terastalize_to_all']:
-            trainers[i]["changeGem"] = True
-        elif config['allow_terastalization'] == "yes":
-            trainers[i]["changeGem"] = True
+        try:
+            if trainer_config['all_trainers_settings']['allow_terastalize_to_all'] == "yes":
+                trainers[i]["changeGem"] = True
+            elif config['allow_terastalization'] == "yes":
+                trainers[i]["changeGem"] = True
+        except KeyError:
+            if trainer_config['all_trainers_settings']['allow_terastalize_to_all'] == "yes":
+                trainers[i]["changeGem"] = True
 
-        trainers[i]["battleType"] = "_1vs1"
-        trainers[i]["battleType"] = "_2vs2"
+        # Change Fight Type
+        doubles = False
+        if (trainer_config['all_trainers_settings']['randomnly_choose_single_or_doubles'] == "yes" and
+                i not in SharedVariables.raid_npc_index and
+            i not in SharedVariables.multi_battles_index):
+            fight_choice = random.randint(1, 2)
+            trainers[i]["battleType"] = f"_{fight_choice}vs{fight_choice}"
+            if fight_choice == 2:
+                trainers[i]['aiDouble'] = True
+                doubles = True
+        elif (trainer_config['all_trainers_settings']['only_double_battles'] == "yes" and
+              i not in SharedVariables.raid_npc_index and i not in SharedVariables.raid_npc_index and
+            i not in SharedVariables.multi_battles_index):
+            trainers[i]["battleType"] = f"_2vs2"
+            trainers[i]['aiDouble'] = True
+            doubles = True
 
         # Checks for amount of pokemon to randomize
         max_amount, ignore = count_missing_pokemon(trainers[i])
@@ -614,30 +672,58 @@ def make_poke(config, trainer_config, allowed_pokemon, banned_stages, trainer_li
                 trainers_selection = random.randint(1, not_present)
                 max_amount = present + trainers_selection + 1
 
+        if doubles is True and max_amount < 3:
+            max_amount = 3
+
+        # Hard Code Rival Fight to always only have 1 pokemon - Single and No Tera
+        if (trainers[i]['trid'] == "rival_01_hono" or trainers[i]['trid'] == "rival_01_kusa"
+                or trainers[i]['trid'] == "rival_01_mizu"):
+            max_amount = 2
+            trainers[i]["battleType"] = f"_1vs1"
+            trainers[i]["changeGem"] = False
+            trainers[i]['aiDouble'] = False
+
         for j in range(1, max_amount):
+
+            pokemon_choice = random.randint(1, 1025)
+            while (pokemon_choice in SharedVariables.banned_pokemon or pokemon_choice not in allowed_pokemon
+                    or pokemon_choice in banned_stages):
+                pokemon_choice = random.randint(1, 1025)
+            form_choice = HelperFunctions.get_alternate_form(pokemon_choice)
+            item_choice = HelperFunctions.get_pokemon_item_form(pokemon_choice, form_choice)[0]
+
             if j == max_amount-1 and i in randomize_nemona():
-                trainers[i][f"poke{str(j)}"]["devId"] = 0
-                trainers[i][f"poke{str(j)}"]["formId"] = 0
-                trainers[i][f"poke{str(j)}"]["item"] = 0
+                pokemon_choice, form_choice, item_choice = get_pokemon_based_on_starter(trainers[i], "Nemona")
+                trainers[i][f"poke{str(j)}"]["devId"] = HelperFunctions.fetch_developer_name(pokemon_choice)
+                trainers[i][f"poke{str(j)}"]["formId"] = form_choice
+                trainers[i][f"poke{str(j)}"]["item"] = item_choice
             elif j == max_amount-1 and i in randomize_clavell():
-                trainers[i][f"poke{str(j)}"]["devId"] = 0
-                trainers[i][f"poke{str(j)}"]["formId"] = 0
-                trainers[i][f"poke{str(j)}"]["item"] = 0
+                pokemon_choice, form_choice, item_choice = get_pokemon_based_on_starter(trainers[i], "Clavell")
+                trainers[i][f"poke{str(j)}"]["devId"] = HelperFunctions.fetch_developer_name(pokemon_choice)
+                trainers[i][f"poke{str(j)}"]["formId"] = form_choice
+                trainers[i][f"poke{str(j)}"]["item"] = item_choice
             else:
-                trainers[i][f"poke{str(j)}"]["devId"] = 0
-                trainers[i][f"poke{str(j)}"]["formId"] = 0
-                trainers[i][f"poke{str(j)}"]["item"] = 0
+                trainers[i][f"poke{str(j)}"]["devId"] = HelperFunctions.fetch_developer_name(pokemon_choice)
+                trainers[i][f"poke{str(j)}"]["formId"] = form_choice
+                trainers[i][f"poke{str(j)}"]["item"] = item_choice
+
+            if trainers[i][f"poke{str(j)}"]["level"] == 0:
+                trainers[i][f"poke{str(j)}"]["level"] = trainers[i]["poke1"]["level"] + random.randint(1, 7)
 
             trainers[i][f"poke{str(j)}"]["wazaType"] = "DEFAULT"
+
             for k in range(1, 5):
                 trainers[i][f"poke{str(j)}"][f"waza{str(k)}"]['wazaId'] = "WAZA_DEFAULT"
                 trainers[i][f"poke{str(j)}"][f"waza{str(k)}"]['pointUp'] = 3
-            trainers[i][f"poke{str(j)}"]["gemType"] = 0
+
+            if trainer_config['all_trainers_settings']['randomize_tera_types'] == "yes":
+                trainers[i][f"poke{str(j)}"]["gemType"] = HelperFunctions.choose_tera_type(pokemon_choice, form_choice)
+
             trainers[i][f"poke{str(j)}"]["tokusei"] = "RANDOM_12"
-            trainers[i][f"poke{str(j)}"]["talentType"] = "VALUE"
 
             # Changes to IV
             if config['force_perfect_ivs']:
+                trainers[i][f"poke{str(j)}"]["talentType"] = "VALUE"
                 IVs = {
                     "hp": 31,
                     "atk": 31,
@@ -653,13 +739,13 @@ def make_poke(config, trainer_config, allowed_pokemon, banned_stages, trainer_li
                 shiny = random.randint(1, 10)
                 if shiny == 7:
                     trainers[i][f"poke{str(j)}"]["rareType"] = "RARE"
-
-        trainers[i]['aiBasic'] = True
-        trainers[i]['aiHigh'] = True
-        trainers[i]['aiExpert'] = True
-        trainers[i]['aiDouble'] = True
-        trainers[i]['aiItem'] = True
-        trainers[i]['aiChange'] = True
+        if config['make_ai_smart'] == "yes":
+            trainers[i]["isStrong"] = True
+            trainers[i]['aiBasic'] = True
+            trainers[i]['aiHigh'] = True
+            trainers[i]['aiExpert'] = True
+            trainers[i]['aiItem'] = True
+            trainers[i]['aiChange'] = True
 
 
 def randomize_trainers(config):
@@ -686,109 +772,6 @@ def randomize_trainers(config):
             make_poke(config['paldea_settings']['trainers_randomizer']['rival_randomizer'],
                       config['paldea_settings']['trainers_randomizer'], allowed_pokemon, [],
                       list_to_check, data['values'])
-
-        # for entry in data['values']:
-        #     if config['only_randomize_important_trainers'] == "yes":
-        #         if checkTrainerImportance(entry) is False:
-        #             continue
-        #
-        #     if entry['trainerType'] == "su2_brother_kodaigame":
-        #         continue
-        #     elif entry['trid'] == "professor_A_02":
-        #         continue
-        #     elif entry['trid'] == "professor_B_02":
-        #         continue
-        #     # Counter to see how many pokemon there are to randomize originally
-        #     counter = 0
-        #     for j in range(0, 6):
-        #         t = j+1
-        #         if entry['poke' + str(t)]['devId'] != "DEV_NULL":
-        #             counter = counter + 1
-        #     pokemon_to_randomize = counter
-        #
-        #     if config['give_trainers_extra_mons'] == "yes":
-        #         new_counter = 1
-        #         # Counter to see how many free slots there are
-        #         for j in range(2, 6):
-        #             if entry['poke' + str(j)]['devId'] == "DEV_NULL":
-        #                 new_counter = new_counter + 1
-        #         # If none then just randomize all 6
-        #         if new_counter == 0:
-        #             pokemon_to_randomize = 6
-        #         else:
-        #             # if some then choose a random number between 1 and itself
-        #             pokemon_to_randomize = random.randint(1, new_counter)
-        #             pokemon_to_randomize = pokemon_to_randomize + counter
-        #             if pokemon_to_randomize > 6:
-        #                 pokemon_to_randomize = 6
-        #     if config['force_6_pokemons_on_trainers'] == "yes":
-        #         # If user wants all 6 then set to all 6
-        #         pokemon_to_randomize = 6
-        #
-        #     # a way to prevent any errors
-        #     beginner = False
-        #     if pokemon_to_randomize > 6:
-        #         pokemon_to_randomize = 6
-        #     elif pokemon_to_randomize < 1:
-        #         # get exact number if its less than 1 (should never happen)
-        #         counter = 1
-        #         for j in range(0, 6):
-        #             t = j + 1
-        #             if entry['poke' + str(t)]['devId'] != "DEV_NULL":
-        #                 counter = counter + 1
-        #         pokemon_to_randomize = counter
-        #     temp_legends = config['only_legends']
-        #     temp_paradox = config['only_paradox']
-        #     temp_both = config['only_legends_and_paradoxes']
-        #     if checkTrainerImportance(entry) == "raid":
-        #         if config['tera_raid_trainers_only_legends'] == "yes":
-        #             config['only_legends'] = "yes"
-        #         if config['tera_raid_trainers_only_paradox'] == "yes":
-        #             config['only_paradox'] = "yes"
-        #         if config['tera_raid_trainers_only_both'] == "yes":
-        #             config['only_legends_and_paradoxes'] = "yes"
-        #     elif checkTrainerImportance(entry) is True:
-        #         if config["force_important_trainers_to6_pokemon"] == "yes":
-        #             pokemon_to_randomize = 6
-        #         if config['impo_trainers_only_legends'] == "yes":
-        #             config['only_legends'] = "yes"
-        #         if config['impo_trainers_only_paradox'] == "yes":
-        #             config['only_paradox'] = "yes"
-        #         if config['impo_trainers_only_both'] == "yes":
-        #             config['only_legends_and_paradoxes'] = "yes"
-        #     if entry['trid'] == "rival_01_hono" or entry['trid'] == "rival_01_kusa" or entry['trid'] == "rival_01_mizu":
-        #         pokemon_to_randomize = 1
-        #         beginner = True
-        #
-        #     i = 1
-        #     while i <= pokemon_to_randomize:
-        #         make_poke(entry, str(i), csvdata, config, beginner)
-        #         i = i + 1
-        #     config['only_legends'] = temp_legends
-        #     config['only_paradox'] = temp_paradox
-        #     config['only_legends_and_paradoxes'] = temp_both
-        #
-        #     if config['make_ai_smart_for_all_trainers'] == "yes" and beginner is False:
-        #         entry['aiBasic'] = True
-        #         entry['aiHigh'] = True
-        #         entry['aiExpert'] = True
-        #         entry['aiChange'] = True
-        #     if config['allow_all_trainers_to_terastalize'] == "yes" and beginner is False:
-        #         entry['changeGem'] = True
-        #     if "raid_assist_NPC" not in entry['trid']:
-        #         if config['randomnly_choose_single_or_double'] == "yes" and beginner is False:
-        #             battleformat = random.randint(1, 2)
-        #             if battleformat == 2 and pokemon_to_randomize < 2:
-        #                 make_poke(entry, str(2), csvdata, config, beginner)
-        #             if battleformat == 2:
-        #                 entry['aiDouble'] = True
-        #             type_of_battle = f"_{battleformat}vs{battleformat}"
-        #             entry['battleType'] = type_of_battle
-        #         if config['only_double'] == "yes" and beginner is False:
-        #             entry['battleType'] = "_2vs2"
-        #             entry['aiDouble'] = True
-        #             if pokemon_to_randomize < 2:
-        #                 make_poke(entry, str(2), csvdata, config, beginner)
 
         outdata = json.dumps(data, indent=4)
         with open(os.getcwd() + "/Randomizer/Trainers/" +"trdata_array.json", 'w') as outfile:
