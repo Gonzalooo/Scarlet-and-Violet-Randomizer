@@ -167,7 +167,7 @@ import os
 #   - "camera_01_01" - Fight
 # - : serebu (O'Nare)
 #   - "serebu_01" - First Fight
-#   - "serebu_01" - Second Fight
+#   - "serebu_02" - Second Fight
 # - : O'Nare Wife
 #   - "serevy_03" - First Fight
 # - : sister (Carmine)
@@ -320,27 +320,27 @@ import os
 # gym_normal_03 has index [420]
 # gym_normal_leader_01 has index [421]
 # gym_normal_leader_02 has index [422]
-# kihada_01 has index [423] - Not randomized
-# kihada_02 has index [424] - Not randomized
-# mimoza_01 has index [425] - Not randomized
+# kihada_01 has index [423]
+# kihada_02 has index [424]
+# mimoza_01 has index [425]
 # pepper_00 has index [426]
 # pepper_01 has index [427]
 # pepper_02 has index [428]
 # pepper_03 has index [429]
 # pepper_multi has index [430]
-# pepper_nusi_01 has index [431] - Not randomized
-# pepper_nusi_02 has index [432] - Not randomized
-# pepper_nusi_03 has index [433] - Not randomized
-# pepper_nusi_04 has index [434] - Not randomized
-# pepper_nusi_05 has index [435] - Not randomized
+# pepper_nusi_01 has index [431]
+# pepper_nusi_02 has index [432]
+# pepper_nusi_03 has index [433]
+# pepper_nusi_04 has index [434]
+# pepper_nusi_05 has index [435]
 # pepper_02_01 has index [701]
 # pepper_schoolwars has index [702]
 # professor_A_01 has index [436]
-# professor_A_02 has index [437] - Not randomized
+# professor_A_02 has index [437]
 # professor_B_01 has index [438]
-# professor_B_02 has index [439] - Not randomized
-# rehoru_01 has index [492] - Not randomized
-# richf_01 has index [493] - Not randomized
+# professor_B_02 has index [439]
+# rehoru_01 has index [492]
+# richf_01 has index [493] - Not fightable
 # rival_01 has index [494]
 # rival_02 has index [498]
 # rival_03 has index [502]
@@ -379,9 +379,9 @@ import os
 # rival_schoolwars_hono has index [706]
 # rival_schoolwars_kusa has index [707]
 # rival_schoolwars_mizu has index [708]
-# sawaro_01 has index [526]  - Not randomized
-# seizi_01 has index [527] - Not randomized
-# strong_01 has index [528] - Not randomized
+# sawaro_01 has index [526]
+# seizi_01 has index [527]
+# strong_01 has index [528] - Not fightable
 # brother_01_01 has index [585]
 # brother_01_02 has index [587]
 # brother_01_03 has index [589]
@@ -393,13 +393,13 @@ import os
 # brother_01_04_strong has index [592]
 # brother_01_05_strong has index [594]
 # brother_02_01 has index [679]
-# brother_02_02 has index [680] - Not Randomized
+# brother_02_02 has index [680]
 # brother_kodaigame has index [681]
 # s2_side_brother has index [682]
-# camera_01_01 has index [595] - Not Randomized
-# serebu_01 has index [596] - Not Randomized
-# serebu_01 has index [596] - Not Randomized
-# serevy_03 has index [598] - Not Randomized
+# camera_01_01 has index [595]
+# serebu_01 has index [596]
+# serebu_02 has index [597]
+# serevy_03 has index [598]
 # sister_01_01 has index [599]
 # sister_01_02 has index [601]
 # sister_01_03 has index [603]
@@ -501,7 +501,7 @@ def randomize_team_star():
 
 
 def randomize_e4_paldea():
-    return [386, 387, 388, 389, 390, 392]
+    return [386, 387, 388, 389, 390]
 
 
 def randomize_gym():
@@ -547,6 +547,39 @@ def randomize_carmine_su2():
 
 def randomize_ogre_clan():
     return [609, 610, 611, 612, 613, 614, 615, 616]
+
+
+def randomize_bb_e4():
+    return [683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700]
+
+
+def randomize_bb_league():
+    return [709, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731,
+            732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746]
+
+
+def randomize_school_professors():
+    return [423, 424, 425, 492, 526, 527, 747, 754, 755]
+
+
+def randomize_professor_dragon():
+    return [437, 439]
+
+
+def randomize_arven_titan():
+    return [431, 432, 433, 434, 435]
+
+
+def randomize_kieran_terapagos():
+    return [680]
+
+
+def randomize_perrin():
+    return [595]
+
+
+def randomize_billy_onare():
+    return [596, 597, 598]
 
 
 def randomize_trainers(config):
