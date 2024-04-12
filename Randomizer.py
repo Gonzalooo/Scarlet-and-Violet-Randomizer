@@ -74,6 +74,9 @@ paths = {
 
 def randomize_based_on_config(config):
     create_modpack()
+    TrainerRandomizer.randomize_trainers(config)
+    exit(0)
+
     # Wild Pokemon Randomizer
     paldea_wild, kitakami_wild, blueberry_wild = WildRandomizer.randomize_wilderness(config)
     if paldea_wild is True:

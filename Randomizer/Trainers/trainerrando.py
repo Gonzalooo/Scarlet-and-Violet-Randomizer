@@ -480,10 +480,6 @@ import os
 # NOTE: Ace Tournament and BBLeague Share Pokemon Teams
 
 
-def make_poke():
-    pass
-
-
 def randomize_penny():
     return [356, 357, 358, 677, 678]
 
@@ -582,12 +578,114 @@ def randomize_billy_onare():
     return [596, 597, 598]
 
 
+def count_missing_pokemon(trainer_to_check):
+    missing = 0
+    not_missing = 1
+    for i in range(1, 7):
+        if trainer_to_check[f"poke{str(i)}"]["devId"] == "DEV_NULL":
+            missing += 1
+        else:
+            not_missing += 1
+    return not_missing, missing
+
+
+def make_poke(config, trainer_config, allowed_pokemon, banned_stages, trainer_list, trainers):
+    for i in trainer_list:
+        trainers[i]["isStrong"] = True
+
+        # Change Tera
+        if trainer_config['all_trainers_settings']['allow_terastalize_to_all']:
+            trainers[i]["changeGem"] = True
+        elif config['allow_terastalization'] == "yes":
+            trainers[i]["changeGem"] = True
+
+        trainers[i]["battleType"] = "_1vs1"
+        trainers[i]["battleType"] = "_2vs2"
+
+        # Checks for amount of pokemon to randomize
+        max_amount, ignore = count_missing_pokemon(trainers[i])
+        if config['force_6_pokemon'] == "yes":
+            max_amount = 7
+        elif config['add_extra_pokemon'] == "yes":
+            present, not_present = count_missing_pokemon(trainers[i])
+            if not_present == 0:
+                max_amount = 7
+            else:
+                trainers_selection = random.randint(1, not_present)
+                max_amount = present + trainers_selection + 1
+
+        for j in range(1, max_amount):
+            if j == max_amount-1 and i in randomize_nemona():
+                trainers[i][f"poke{str(j)}"]["devId"] = 0
+                trainers[i][f"poke{str(j)}"]["formId"] = 0
+                trainers[i][f"poke{str(j)}"]["item"] = 0
+            elif j == max_amount-1 and i in randomize_clavell():
+                trainers[i][f"poke{str(j)}"]["devId"] = 0
+                trainers[i][f"poke{str(j)}"]["formId"] = 0
+                trainers[i][f"poke{str(j)}"]["item"] = 0
+            else:
+                trainers[i][f"poke{str(j)}"]["devId"] = 0
+                trainers[i][f"poke{str(j)}"]["formId"] = 0
+                trainers[i][f"poke{str(j)}"]["item"] = 0
+
+            trainers[i][f"poke{str(j)}"]["wazaType"] = "DEFAULT"
+            for k in range(1, 5):
+                trainers[i][f"poke{str(j)}"][f"waza{str(k)}"]['wazaId'] = "WAZA_DEFAULT"
+                trainers[i][f"poke{str(j)}"][f"waza{str(k)}"]['pointUp'] = 3
+            trainers[i][f"poke{str(j)}"]["gemType"] = 0
+            trainers[i][f"poke{str(j)}"]["tokusei"] = "RANDOM_12"
+            trainers[i][f"poke{str(j)}"]["talentType"] = "VALUE"
+
+            # Changes to IV
+            if config['force_perfect_ivs']:
+                IVs = {
+                    "hp": 31,
+                    "atk": 31,
+                    "def": 31,
+                    "spAtk": 31,
+                    "spDef": 31,
+                    "agi": 31
+                }
+                trainers[i][f"poke{str(j)}"]["talentValue"] = IVs
+
+            # Changes to shinyness
+            if trainer_config['all_trainers_settings']['allow_shiny_pokemon'] == "yes":
+                shiny = random.randint(1, 10)
+                if shiny == 7:
+                    trainers[i][f"poke{str(j)}"]["rareType"] = "RARE"
+
+        trainers[i]['aiBasic'] = True
+        trainers[i]['aiHigh'] = True
+        trainers[i]['aiExpert'] = True
+        trainers[i]['aiDouble'] = True
+        trainers[i]['aiItem'] = True
+        trainers[i]['aiChange'] = True
+
+
 def randomize_trainers(config):
-    if config['trainers_randomizer']['is_enabled'] == "yes" and config['use_paldea_settings_for_all'] == "yes":
+    if config['paldea_settings']['trainers_randomizer']['is_enabled'] == "yes" and config['use_paldea_settings_for_all'] == "yes":
         file = open(os.getcwd() + "/Randomizer/Trainers/" +"trdata_array_clean.json", "r")
         data = json.load(file)
         allowed_pokemon, allowed_legends, bpl = HelperFunctions.check_generation_limiter(
-                                                config['all_trainers_settings']['generation_limiter'])
+                                                config['paldea_settings']['trainers_randomizer']
+                                                ['all_trainers_settings']['generation_limiter'])
+
+        if config['paldea_settings']['trainers_randomizer']['rival_randomizer']['is_enabled'] == "yes":
+            list_to_check = randomize_nemona()
+            list_to_check.extend(randomize_arven())
+            list_to_check.extend(randomize_penny())
+            list_to_check.extend(randomize_clavell())
+            list_to_check.extend(randomize_team_star())
+            list_to_check.extend(randomize_kieran_su1())
+            list_to_check.extend(randomize_kieran_su2())
+            list_to_check.extend(randomize_carmine_su1())
+            list_to_check.extend(randomize_carmine_su2())
+            list_to_check.extend(randomize_perrin())
+            list_to_check.extend(randomize_billy_onare())
+            list_to_check.extend(randomize_bb_e4())
+            make_poke(config['paldea_settings']['trainers_randomizer']['rival_randomizer'],
+                      config['paldea_settings']['trainers_randomizer'], allowed_pokemon, [],
+                      list_to_check, data['values'])
 
         # for entry in data['values']:
         #     if config['only_randomize_important_trainers'] == "yes":
