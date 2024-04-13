@@ -17,16 +17,18 @@ import shutil
 
 
 def check_updates():
+    print("Checking for Updates")
     url = "https://api.github.com/repos/Gonzalooo/Scarlet-and-Violet-Randomizer/releases/latest"
     scrapped_response = requests.get(url)
     formated_response = scrapped_response.json()
     latest = formated_response['tag_name']
 
-    if latest != '1.0.7-Release':
+    if latest != '1.1.0-Beta':
         print(f"Version {latest} is NOW available please download it for best experience.")
+    else:
+        print("Already have the latest version of the randomizer.")
 
 
-# thanks zadenowen for the function
 def open_config():
     file = open("new_config.json", "r")
     config = json.load(file)
