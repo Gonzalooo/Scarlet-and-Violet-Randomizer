@@ -1,0 +1,6673 @@
+{
+  "values": [
+    {
+      "label": "1055_multi_01",
+      "pokeData": {
+        "devId": "DEV_KARUKAN2",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 62,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spAtk": 31,
+          "spDef": 31,
+          "agi": 31
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_PAWAAJEMU",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_BENOMUSYOKKU",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_GENSINOTIKARA",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_UTIOTOSU",
+          "pointUp": 0
+        },
+        "gemType": "DOKU",
+        "scaleType": "M",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "1075_multi_a_01",
+      "pokeData": {
+        "devId": "DEV_APURIN",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 62,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spAtk": 31,
+          "spDef": 31,
+          "agi": 31
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "M",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "1075_multi_b_01",
+      "pokeData": {
+        "devId": "DEV_BKOORI",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 62,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spAtk": 31,
+          "spDef": 31,
+          "agi": 31
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_REITOUBIIMU",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_UZUSIO",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_HURIIZUDORAI",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_DORIRUKUTIBASI",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "M",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "1095_multi_a_02",
+      "pokeData": {
+        "devId": "DEV_ADONFAN",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 62,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spAtk": 31,
+          "spDef": 31,
+          "agi": 31
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_HATAKIOTOSU",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_ZIDANDA",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_KAWARAWARI",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_KOUSOKUSUPIN",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "M",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "1095_multi_b_02",
+      "pokeData": {
+        "devId": "DEV_BDONFAN",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 62,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spAtk": 31,
+          "spDef": 31,
+          "agi": 31
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_HATAKIOTOSU",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_ZIDANDA",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_AIANHEDDO",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_KOUSOKUSUPIN",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "M",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "1180_multi_a_01",
+      "pokeData": {
+        "devId": "DEV_ADONFAN",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 64,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spAtk": 31,
+          "spDef": 31,
+          "agi": 31
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_ZIDANDA",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_KAWARAWARI",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_INFAITO",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_KOUSOKUSUPIN",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "M",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "1180_multi_a_02",
+      "pokeData": {
+        "devId": "DEV_AMOROBARERU",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 64,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spAtk": 31,
+          "spDef": 31,
+          "agi": 31
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "M",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "1180_multi_a_03",
+      "pokeData": {
+        "devId": "DEV_AMUUMA",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 64,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spAtk": 31,
+          "spDef": 31,
+          "agi": 31
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "M",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "1180_multi_b_01",
+      "pokeData": {
+        "devId": "DEV_BDONFAN",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 64,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spAtk": 31,
+          "spDef": 31,
+          "agi": 31
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_ZIDANDA",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_AIANHEDDO",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_WAIRUDOBORUTO",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_KOUSOKUSUPIN",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "M",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "1180_multi_b_02",
+      "pokeData": {
+        "devId": "DEV_BHARITEYAMA",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 64,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spAtk": 31,
+          "spDef": 31,
+          "agi": 31
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "M",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "1180_multi_b_03",
+      "pokeData": {
+        "devId": "DEV_BSAZANDORA",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 64,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 31,
+          "atk": 31,
+          "def": 31,
+          "spAtk": 31,
+          "spDef": 31,
+          "agi": 31
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "M",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "coin_976_01",
+      "pokeData": {
+        "devId": "DEV_KOIN1",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 1,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "RANDOM_12",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "RANDOM",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "coin_976_05",
+      "pokeData": {
+        "devId": "DEV_KOIN1",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 5,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "RANDOM_12",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "RANDOM",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "coin_976_10",
+      "pokeData": {
+        "devId": "DEV_KOIN1",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 10,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "RANDOM_12",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "RANDOM",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "coin_976_15",
+      "pokeData": {
+        "devId": "DEV_KOIN1",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 15,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "RANDOM_12",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "RANDOM",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "coin_976_20",
+      "pokeData": {
+        "devId": "DEV_KOIN1",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 20,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "RANDOM_12",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "RANDOM",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "coin_976_25",
+      "pokeData": {
+        "devId": "DEV_KOIN1",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 25,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "RANDOM_12",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "RANDOM",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "coin_976_30",
+      "pokeData": {
+        "devId": "DEV_KOIN1",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 30,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "RANDOM_12",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "RANDOM",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "coin_976_35",
+      "pokeData": {
+        "devId": "DEV_KOIN1",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 35,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "RANDOM_12",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "RANDOM",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "coin_976_40",
+      "pokeData": {
+        "devId": "DEV_KOIN1",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 40,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "RANDOM_12",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "RANDOM",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "coin_976_45",
+      "pokeData": {
+        "devId": "DEV_KOIN1",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 45,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "RANDOM_12",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "RANDOM",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "coin_976_50",
+      "pokeData": {
+        "devId": "DEV_KOIN1",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 50,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "RANDOM_12",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "RANDOM",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "coin_976_55",
+      "pokeData": {
+        "devId": "DEV_KOIN1",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 55,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "RANDOM_12",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "RANDOM",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "coin_976_60",
+      "pokeData": {
+        "devId": "DEV_KOIN1",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 60,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "RANDOM_12",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "RANDOM",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "common_0100_BUTA1",
+      "pokeData": {
+        "devId": "DEV_BUTA1",
+        "formId": 0,
+        "sex": "MALE",
+        "level": 3,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "RANDOM_12",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "M",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "common_0150_HERUGAA",
+      "pokeData": {
+        "devId": "DEV_HERUGAA",
+        "formId": 0,
+        "sex": "MALE",
+        "level": 40,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "RANDOM_12",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "XL",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "gym_kusa_020_KIMAWARI_01",
+      "pokeData": {
+        "devId": "DEV_KIMAWARI",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 12,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_OBONNOMI",
+        "dropItemNum": 1,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "RANDOM_12",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "M",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "gym_kusa_020_KIMAWARI_02",
+      "pokeData": {
+        "devId": "DEV_KIMAWARI",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 13,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_ORENNOMI",
+        "dropItemNum": 1,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "RANDOM_12",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "M",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "gym_kusa_020_KIMAWARI_03",
+      "pokeData": {
+        "devId": "DEV_KIMAWARI",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 14,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_TAIYOUNOISI",
+        "dropItemNum": 1,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "RANDOM_12",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "M",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "gym_kusa_020_KIMAWARI_04",
+      "pokeData": {
+        "devId": "DEV_KIMAWARI",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 13,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_TAIYOUNOISI",
+        "dropItemNum": 1,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "RANDOM_12",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "M",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "gym_kusa_020_KIMAWARI_05",
+      "pokeData": {
+        "devId": "DEV_KIMAWARI",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 12,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_SOZAI24",
+        "dropItemNum": 3,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "RANDOM_12",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "XL",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "lastbattle_AIGUANA",
+      "pokeData": {
+        "devId": "DEV_AIGUANA",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 68,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 31,
+          "atk": 31,
+          "def": 28,
+          "spAtk": 31,
+          "spDef": 28,
+          "agi": 31
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "KIMAGURE",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_KAENHOUSYA",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_AKUSERUBUREIKU",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_KORAERU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_TERABAASUTO",
+          "pointUp": 0
+        },
+        "gemType": "DRAGON",
+        "scaleType": "M",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "lastbattle_BIGUANA",
+      "pokeData": {
+        "devId": "DEV_BIGUANA",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 68,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 31,
+          "atk": 31,
+          "def": 28,
+          "spAtk": 31,
+          "spDef": 28,
+          "agi": 31
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "KIMAGURE",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_PAWAAJEMU",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_INAZUMADORAIBU",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_KORAERU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_TERABAASUTO",
+          "pointUp": 0
+        },
+        "gemType": "DRAGON",
+        "scaleType": "M",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "nusi_931_01",
+      "pokeData": {
+        "devId": "DEV_OYAKATA",
+        "formId": 0,
+        "sex": "MALE",
+        "level": 56,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 30,
+          "atk": 30,
+          "def": 30,
+          "spAtk": 30,
+          "spDef": 30,
+          "agi": 30
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "SUNAO",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_2",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_AKUATEERU",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NOSIKAKARI",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_MIZUNOHADOU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "M",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "nusi_931_02",
+      "pokeData": {
+        "devId": "DEV_OYAKATA",
+        "formId": 0,
+        "sex": "MALE",
+        "level": 56,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 30,
+          "atk": 30,
+          "def": 30,
+          "spAtk": 30,
+          "spDef": 30,
+          "agi": 30
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "SUNAO",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_2",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_AKUATEERU",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NOSIKAKARI",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_MIZUNOHADOU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_ITTYOUAGARI",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "M",
+        "scaleValue": 0,
+        "setRibbon": "TITAN_NUSHI"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "nusi_944_01",
+      "pokeData": {
+        "devId": "DEV_MIMIZU",
+        "formId": 0,
+        "sex": "MALE",
+        "level": 29,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 30,
+          "atk": 30,
+          "def": 30,
+          "spAtk": 30,
+          "spDef": 30,
+          "agi": 30
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "KIMAGURE",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_AIANTEERU",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_ZUTUKI",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_MAKITUKU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "M",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "nusi_944_02",
+      "pokeData": {
+        "devId": "DEV_MIMIZU",
+        "formId": 0,
+        "sex": "MALE",
+        "level": 29,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 30,
+          "atk": 30,
+          "def": 30,
+          "spAtk": 30,
+          "spDef": 30,
+          "agi": 30
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "KIMAGURE",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_AIANTEERU",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_ZUTUKI",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_MAKITUKU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_SUNAARASI",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "VALUE",
+        "scaleValue": 255,
+        "setRibbon": "TITAN_NUSHI"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "nusi_952_01",
+      "pokeData": {
+        "devId": "DEV_SUSIDORA",
+        "formId": 0,
+        "sex": "MALE",
+        "level": 57,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 30,
+          "atk": 30,
+          "def": 30,
+          "spAtk": 30,
+          "spDef": 30,
+          "agi": 30
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "REISEI",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_DAKURYUU",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_KOGOERUKAZE",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_TYOUHATU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_RYUUNOHADOU",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "VALUE",
+        "scaleValue": 255,
+        "setRibbon": "TITAN_NUSHI"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "nusi_952_dummy_pink",
+      "pokeData": {
+        "devId": "DEV_SUSIDORA",
+        "formId": 1,
+        "sex": "DEFAULT",
+        "level": 45,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "RANDOM_12",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "nusi_952_dummy_red",
+      "pokeData": {
+        "devId": "DEV_SUSIDORA",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 45,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "RANDOM_12",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "nusi_952_dummy_yellow",
+      "pokeData": {
+        "devId": "DEV_SUSIDORA",
+        "formId": 2,
+        "sex": "DEFAULT",
+        "level": 45,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "RANDOM_12",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "nusi_959_01",
+      "pokeData": {
+        "devId": "DEV_KOUNOTORI",
+        "formId": 0,
+        "sex": "FEMALE",
+        "level": 20,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 30,
+          "atk": 30,
+          "def": 30,
+          "spAtk": 30,
+          "spDef": 30,
+          "agi": 30
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "YOUKI",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_3",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_IWAOTOSI",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_TUBASADEUTU",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_TUIBAMU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "M",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "nusi_959_02",
+      "pokeData": {
+        "devId": "DEV_KOUNOTORI",
+        "formId": 0,
+        "sex": "FEMALE",
+        "level": 20,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 30,
+          "atk": 30,
+          "def": 30,
+          "spAtk": 30,
+          "spDef": 30,
+          "agi": 30
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "YOUKI",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_3",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_IWAOTOSI",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_TUBASADEUTU",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_TUIBAMU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_ITYAMON",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "VALUE",
+        "scaleValue": 255,
+        "setRibbon": "TITAN_NUSHI"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "nusi_962_01",
+      "pokeData": {
+        "devId": "DEV_KEGANI",
+        "formId": 0,
+        "sex": "FEMALE",
+        "level": 16,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 30,
+          "atk": 30,
+          "def": 30,
+          "spAtk": 30,
+          "spDef": 30,
+          "agi": 30
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "OTONASII",
+        "seikakuHosei": "OTONASII",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_HASAMU",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_IWAKUDAKI",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_TOOSENBOU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "M",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "nusi_962_02",
+      "pokeData": {
+        "devId": "DEV_KEGANI",
+        "formId": 0,
+        "sex": "FEMALE",
+        "level": 16,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 30,
+          "atk": 30,
+          "def": 30,
+          "spAtk": 30,
+          "spDef": 30,
+          "agi": 30
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "OTONASII",
+        "seikakuHosei": "OTONASII",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_HASAMU",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_IWAKUDAKI",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_TOOSENBOU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_GANSEKIHUUZI",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "VALUE",
+        "scaleValue": 255,
+        "setRibbon": "TITAN_NUSHI"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "nusi_978_01",
+      "pokeData": {
+        "devId": "DEV_ADONFAN",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 45,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 30,
+          "atk": 30,
+          "def": 30,
+          "spAtk": 30,
+          "spDef": 30,
+          "agi": 30
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "YANTYA",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_KOUSOKUSUPIN",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_KAWARAWARI",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_HATAKIOTOSU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "M",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "nusi_978_02",
+      "pokeData": {
+        "devId": "DEV_ADONFAN",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 45,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 30,
+          "atk": 30,
+          "def": 30,
+          "spAtk": 30,
+          "spDef": 30,
+          "agi": 30
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "YANTYA",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_KOUSOKUSUPIN",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_KAWARAWARI",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_HATAKIOTOSU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_ZIDANDA",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "VALUE",
+        "scaleValue": 255,
+        "setRibbon": "TITAN_NUSHI"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "nusi_986_01",
+      "pokeData": {
+        "devId": "DEV_BDONFAN",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 45,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 30,
+          "atk": 30,
+          "def": 30,
+          "spAtk": 30,
+          "spDef": 30,
+          "agi": 30
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "YANTYA",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_KOUSOKUSUPIN",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_AIANHEDDO",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_HATAKIOTOSU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "M",
+        "scaleValue": 0,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "nusi_986_02",
+      "pokeData": {
+        "devId": "DEV_BDONFAN",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 45,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 30,
+          "atk": 30,
+          "def": 30,
+          "spAtk": 30,
+          "spDef": 30,
+          "agi": 30
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "YANTYA",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_KOUSOKUSUPIN",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_AIANHEDDO",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_HATAKIOTOSU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_ZIDANDA",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "VALUE",
+        "scaleValue": 255,
+        "setRibbon": "TITAN_NUSHI"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "semi_legend_994_01",
+      "pokeData": {
+        "devId": "DEV_ZYUNDEN1",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 60,
+        "rareType": "NO_RARE",
+        "talentType": "V_NUM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "RANDOM_12",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "semi_legend_995_01",
+      "pokeData": {
+        "devId": "DEV_ZYUNDEN2",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 60,
+        "rareType": "NO_RARE",
+        "talentType": "V_NUM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "RANDOM_12",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "semi_legend_996_01",
+      "pokeData": {
+        "devId": "DEV_ZYUNDEN3",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 60,
+        "rareType": "NO_RARE",
+        "talentType": "V_NUM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "RANDOM_12",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "semi_legend_997_01",
+      "pokeData": {
+        "devId": "DEV_ZYUNDEN4",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 60,
+        "rareType": "NO_RARE",
+        "talentType": "V_NUM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "RANDOM_12",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DEFAULT",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "SDC01_dokuzaru_01",
+      "pokeData": {
+        "devId": "DEV_DOKUZARU",
+        "formId": 0,
+        "sex": "MALE",
+        "level": 30,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "GANBARIYA",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NENRIKI",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_SAIKEKOUSEN",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_URAMI",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_KURIASUMOGGU",
+          "pointUp": 0
+        },
+        "gemType": "DOKU",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "SDC01_dokuzaru_01_strong",
+      "pokeData": {
+        "devId": "DEV_DOKUZARU",
+        "formId": 0,
+        "sex": "MALE",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "GANBARIYA",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_SAIKOKINESISU",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_DOKUDUKI",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_WARUDAKUMI",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_URAMI",
+          "pointUp": 0
+        },
+        "gemType": "DOKU",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "SDC01_get_dokuinu",
+      "pokeData": {
+        "devId": "DEV_DOKUINU",
+        "formId": 0,
+        "sex": "MALE",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "V_NUM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DOKU",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "SDC01_get_dokukizi",
+      "pokeData": {
+        "devId": "DEV_DOKUKIZI",
+        "formId": 0,
+        "sex": "MALE",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "V_NUM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DOKU",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "SDC01_get_dokuzaru",
+      "pokeData": {
+        "devId": "DEV_DOKUZARU",
+        "formId": 0,
+        "sex": "MALE",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "V_NUM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DOKU",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "SDC01_kamenoni_1",
+      "pokeData": {
+        "devId": "DEV_KAMENONI",
+        "formId": 2,
+        "sex": "MALE",
+        "level": 20,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 31,
+          "atk": 31,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 31
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "SAMISIGARIYA",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_ONIKANABOO",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_TATAKITUKERU",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_SEITYOU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_TURUNOMUTI",
+          "pointUp": 0
+        },
+        "gemType": "HONOO",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "SDC01_kamenoni_1_strong",
+      "pokeData": {
+        "devId": "DEV_KAMENONI",
+        "formId": 2,
+        "sex": "MALE",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 31,
+          "atk": 31,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 31
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "SAMISIGARIYA",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_ONIKANABOO",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_KETAGURI",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_TATAKITUKERU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_GURASUFIIRUDO",
+          "pointUp": 0
+        },
+        "gemType": "HONOO",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "SDC01_kamenoni_2",
+      "pokeData": {
+        "devId": "DEV_KAMENONI",
+        "formId": 1,
+        "sex": "MALE",
+        "level": 20,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 31,
+          "atk": 31,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 31
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "SAMISIGARIYA",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_ONIKANABOO",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_TATAKITUKERU",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_SEITYOU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_TURUNOMUTI",
+          "pointUp": 0
+        },
+        "gemType": "MIZU",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "SDC01_kamenoni_2_strong",
+      "pokeData": {
+        "devId": "DEV_KAMENONI",
+        "formId": 1,
+        "sex": "MALE",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 31,
+          "atk": 31,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 31
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "SAMISIGARIYA",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_ONIKANABOO",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_KETAGURI",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_TATAKITUKERU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_GURASUFIIRUDO",
+          "pointUp": 0
+        },
+        "gemType": "MIZU",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "SDC01_kamenoni_3",
+      "pokeData": {
+        "devId": "DEV_KAMENONI",
+        "formId": 3,
+        "sex": "MALE",
+        "level": 20,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 31,
+          "atk": 31,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 31
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "SAMISIGARIYA",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_ONIKANABOO",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_TATAKITUKERU",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_SEITYOU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_TURUNOMUTI",
+          "pointUp": 0
+        },
+        "gemType": "IWA",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "SDC01_kamenoni_3_strong",
+      "pokeData": {
+        "devId": "DEV_KAMENONI",
+        "formId": 3,
+        "sex": "MALE",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 31,
+          "atk": 31,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 31
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "SAMISIGARIYA",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_ONIKANABOO",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_KETAGURI",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_TATAKITUKERU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_GURASUFIIRUDO",
+          "pointUp": 0
+        },
+        "gemType": "IWA",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "SDC01_kamenoni_4",
+      "pokeData": {
+        "devId": "DEV_KAMENONI",
+        "formId": 0,
+        "sex": "MALE",
+        "level": 20,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 31,
+          "atk": 31,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 31
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "SAMISIGARIYA",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_ONIKANABOO",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_TATAKITUKERU",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_SEITYOU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_TURUNOMUTI",
+          "pointUp": 0
+        },
+        "gemType": "KUSA",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "SDC01_kamenoni_4_strong",
+      "pokeData": {
+        "devId": "DEV_KAMENONI",
+        "formId": 0,
+        "sex": "MALE",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 31,
+          "atk": 31,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 31
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "SAMISIGARIYA",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_ONIKANABOO",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_KETAGURI",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_TATAKITUKERU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_GURASUFIIRUDO",
+          "pointUp": 0
+        },
+        "gemType": "KUSA",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "SDC01_midoriikenushi",
+      "pokeData": {
+        "devId": "DEV_MIROKAROSU",
+        "formId": 0,
+        "sex": "FEMALE",
+        "level": 30,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "GANBARIYA",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_TATUMAKI",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_MIZUNOHADOU",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_TYAAMUBOISU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_AMAGOI",
+          "pointUp": 0
+        },
+        "gemType": "GHOST",
+        "scaleType": "VALUE",
+        "scaleValue": 255,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "SDC01_midoriikenushi_strong",
+      "pokeData": {
+        "devId": "DEV_MIROKAROSU",
+        "formId": 0,
+        "sex": "FEMALE",
+        "level": 73,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "GANBARIYA",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_RYUUNOHADOU",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NAMINORI",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_REITOUBIIMU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_AMAGOI",
+          "pointUp": 0
+        },
+        "gemType": "GHOST",
+        "scaleType": "VALUE",
+        "scaleValue": 255,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "SDC01_onitaizi_dokuinu",
+      "pokeData": {
+        "devId": "DEV_DOKUINU",
+        "formId": 0,
+        "sex": "MALE",
+        "level": 35,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "GANBARIYA",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_KAMITUKU",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_DOKUDOKUNOKIBA",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_KETAGURI",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_BUNMAWASU",
+          "pointUp": 0
+        },
+        "gemType": "DOKU",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "SDC01_onitaizi_dokuinu_strong",
+      "pokeData": {
+        "devId": "DEV_DOKUINU",
+        "formId": 0,
+        "sex": "MALE",
+        "level": 85,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 252,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_TIIRANOMI",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "GANBARIYA",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_KAMIKUDAKU",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_INFAITO",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_BUNMAWASU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_DOKUDUKI",
+          "pointUp": 0
+        },
+        "gemType": "DOKU",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "SDC01_onitaizi_bird",
+      "pokeData": {
+        "devId": "DEV_DOKUKIZI",
+        "formId": 0,
+        "sex": "MALE",
+        "level": 35,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "GANBARIYA",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_DENKOUSEKKA",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_TUBASADEUTU",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_DOKUDUKI",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_MAZIKARUSYAIN",
+          "pointUp": 0
+        },
+        "gemType": "DOKU",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "SDC01_onitaizi_bird_strong",
+      "pokeData": {
+        "devId": "DEV_DOKUKIZI",
+        "formId": 0,
+        "sex": "MALE",
+        "level": 85,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 252,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "GANBARIYA",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_KUROSUPOIZUN",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_ZYARETUKU",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_DABURUUINGU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_MAZIKARUSYAIN",
+          "pointUp": 0
+        },
+        "gemType": "DOKU",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "SDC01_onitaizi_monkey",
+      "pokeData": {
+        "devId": "DEV_DOKUZARU",
+        "formId": 0,
+        "sex": "MALE",
+        "level": 35,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 0,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "GANBARIYA",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_NENRIKI",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_KURIASUMOGGU",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_SAIKEKOUSEN",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_URAMI",
+          "pointUp": 0
+        },
+        "gemType": "DOKU",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "SDC01_onitaizi_monkey_strong",
+      "pokeData": {
+        "devId": "DEV_DOKUZARU",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 85,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 252,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "GANBARIYA",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_SAIKOKINESISU",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_HEDOROWHEEBU",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_SYADOOBOORU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_WARUDAKUMI",
+          "pointUp": 0
+        },
+        "gemType": "DOKU",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "S1_SIDE02_ariados",
+      "pokeData": {
+        "devId": "DEV_ARIADOSU",
+        "formId": 0,
+        "sex": "MALE",
+        "level": 65,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "GANBARIYA",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "MUSHI",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "S1_SIDE02_himeguma3B",
+      "pokeData": {
+        "devId": "DEV_HIMEGUMA3",
+        "formId": 1,
+        "sex": "MALE",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "V_NUM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "GANBARIYA",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_BURADDOMUN",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_DAITINOTIKARA",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_KIRISAKU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_MEISOU",
+          "pointUp": 0
+        },
+        "gemType": "NORMAL",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "SDC02_sub_Aentei",
+      "pokeData": {
+        "devId": "DEV_AENTEI",
+        "formId": 0,
+        "sex": "MALE",
+        "level": 75,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "HONOO",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "SDC02_sub_Araikou",
+      "pokeData": {
+        "devId": "DEV_ARAIKOU",
+        "formId": 0,
+        "sex": "MALE",
+        "level": 75,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_TATUMAKI",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_MIZUNOHADOU",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_TYAAMUBOISU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_AMAGOI",
+          "pointUp": 0
+        },
+        "gemType": "DENKI",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "SDC02_area0_gaburiasu",
+      "pokeData": {
+        "devId": "DEV_GABURIASU",
+        "formId": 0,
+        "sex": "MALE",
+        "level": 80,
+        "rareType": "NO_RARE",
+        "talentType": "V_NUM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "NIJI",
+        "scaleType": "VALUE",
+        "scaleValue": 254,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "SDC02_area0_kirafuroru",
+      "pokeData": {
+        "devId": "DEV_KARUKAN2",
+        "formId": 0,
+        "sex": "MALE",
+        "level": 78,
+        "rareType": "NO_RARE",
+        "talentType": "V_NUM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "NIJI",
+        "scaleType": "VALUE",
+        "scaleValue": 254,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "SDC02_area0_onbaan",
+      "pokeData": {
+        "devId": "DEV_ONBAAN",
+        "formId": 0,
+        "sex": "MALE",
+        "level": 78,
+        "rareType": "NO_RARE",
+        "talentType": "V_NUM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "NIJI",
+        "scaleType": "VALUE",
+        "scaleValue": 254,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "SDC02_area0_sio",
+      "pokeData": {
+        "devId": "DEV_GANEN3",
+        "formId": 0,
+        "sex": "MALE",
+        "level": 80,
+        "rareType": "NO_RARE",
+        "talentType": "V_NUM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_AAMUHANMAA",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_HEBIIBONBAA",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_ZISIN",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_SUTOONEZZI",
+          "pointUp": 0
+        },
+        "gemType": "NIJI",
+        "scaleType": "VALUE",
+        "scaleValue": 254,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "SDC02_area0_sunanokegawa",
+      "pokeData": {
+        "devId": "DEV_AREAKOIRU",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 79,
+        "rareType": "NO_RARE",
+        "talentType": "V_NUM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "NIJI",
+        "scaleType": "VALUE",
+        "scaleValue": 254,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "SDC02_area0_tetunoibara",
+      "pokeData": {
+        "devId": "DEV_BBANGIRASU",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 79,
+        "rareType": "NO_RARE",
+        "talentType": "V_NUM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "NIJI",
+        "scaleType": "VALUE",
+        "scaleValue": 254,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "SDC02_sub_Bkobaruon",
+      "pokeData": {
+        "devId": "DEV_BKOBARUON",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 75,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_TATUMAKI",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_MIZUNOHADOU",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_TYAAMUBOISU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_AMAGOI",
+          "pointUp": 0
+        },
+        "gemType": "HAGANE",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "SDC02_sub_Bterakion",
+      "pokeData": {
+        "devId": "DEV_BTERAKION",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 75,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_TATUMAKI",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_MIZUNOHADOU",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_TYAAMUBOISU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_AMAGOI",
+          "pointUp": 0
+        },
+        "gemType": "IWA",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "su2_dokutarou",
+      "pokeData": {
+        "devId": "DEV_DOKUTAROU",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 88,
+        "rareType": "NO_RARE",
+        "talentType": "V_NUM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "OKUBYOU",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_WARUDAKUMI",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_DOKUDOKU",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_KUSARIENN",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_SYADOOBOORU",
+          "pointUp": 0
+        },
+        "gemType": "DOKU",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "SDC02_0310_kodaikame",
+      "pokeData": {
+        "devId": "DEV_KODAIGAME",
+        "formId": 1,
+        "sex": "MALE",
+        "level": 90,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "GANBARIYA",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_TATUMAKI",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_MIZUNOHADOU",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_TYAAMUBOISU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_AMAGOI",
+          "pointUp": 0
+        },
+        "gemType": "MIZU",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "SDC02_0330_kodaikame",
+      "pokeData": {
+        "devId": "DEV_KODAIGAME",
+        "formId": 2,
+        "sex": "MALE",
+        "level": 85,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 31,
+          "atk": 15,
+          "def": 31,
+          "spAtk": 31,
+          "spDef": 31,
+          "agi": 31
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "GANBARIYA",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_TERAKURASUTAA",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_SINENNOZUTUKI",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_DAITINOTIKARA",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_MIZUNOHADOU",
+          "pointUp": 0
+        },
+        "gemType": "NIJI",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": false
+    },
+    {
+      "label": "su2_legend_Cobalion",
+      "pokeData": {
+        "devId": "DEV_KOBARUON",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "KAKUTOU",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "su2_legend_Dkuma",
+      "pokeData": {
+        "devId": "DEV_AAMAA1",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 30,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "KAKUTOU",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "su2_legend_Entei",
+      "pokeData": {
+        "devId": "DEV_ENTEI",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "HONOO",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "su2_legend_freezer",
+      "pokeData": {
+        "devId": "DEV_HURIIZAA",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "KOORI",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "su2_legend_Glastrier",
+      "pokeData": {
+        "devId": "DEV_HAKUBA",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "KOORI",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "su2_legend_Groudon",
+      "pokeData": {
+        "devId": "DEV_GURAADON",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "HONOO",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "su2_legend_Houou",
+      "pokeData": {
+        "devId": "DEV_HOUOU",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "HONOO",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "su2_legend_Kyogre",
+      "pokeData": {
+        "devId": "DEV_KAIOOGA",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "MIZU",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "su2_legend_Kyurem",
+      "pokeData": {
+        "devId": "DEV_KYUREMU",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DRAGON",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "su2_legend_Latias",
+      "pokeData": {
+        "devId": "DEV_RATHIASU",
+        "formId": 0,
+        "sex": "FEMALE",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "ESPER",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "su2_legend_Latios",
+      "pokeData": {
+        "devId": "DEV_RATHIOSU",
+        "formId": 0,
+        "sex": "MALE",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_RASUTAAPAAZI",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_RYUUNOHADOU",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_SINENNOZUTUKI",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_RYUUNOIBUKI",
+          "pointUp": 0
+        },
+        "gemType": "ESPER",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "su2_legend_Lugia",
+      "pokeData": {
+        "devId": "DEV_RUGIA",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "MIZU",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "su2_legend_Lunala",
+      "pokeData": {
+        "devId": "DEV_RUNAAARA",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "ESPER",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "su2_legend_Moltres",
+      "pokeData": {
+        "devId": "DEV_FAIYAA",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "HONOO",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "su2_legend_Necrozma",
+      "pokeData": {
+        "devId": "DEV_NEKUROZUMA",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "ESPER",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "su2_legend_Raikou",
+      "pokeData": {
+        "devId": "DEV_RAIKOU",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DENKI",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "su2_legend_Rayquaza",
+      "pokeData": {
+        "devId": "DEV_REKKUUZA",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "HIKOU",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "su2_legend_Reshiram",
+      "pokeData": {
+        "devId": "DEV_RESIRAMU",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DRAGON",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "su2_legend_Solgaleo",
+      "pokeData": {
+        "devId": "DEV_SORUGAREO",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "ESPER",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "su2_legend_Spectrier",
+      "pokeData": {
+        "devId": "DEV_KOKUBA",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "GHOST",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "su2_legend_Suicune",
+      "pokeData": {
+        "devId": "DEV_SUIKUN",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "MIZU",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "su2_legend_Terrakion",
+      "pokeData": {
+        "devId": "DEV_TERAKION",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "KAKUTOU",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "su2_legend_Virizion",
+      "pokeData": {
+        "devId": "DEV_BIRIZION",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "KAKUTOU",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "su2_legend_Zapdos",
+      "pokeData": {
+        "devId": "DEV_SANDAA",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DENKI",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "su2_legend_Zekrom",
+      "pokeData": {
+        "devId": "DEV_ZEKUROMU",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "RANDOM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "DEFAULT",
+        "waza1": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_NULL",
+          "pointUp": 0
+        },
+        "gemType": "DRAGON",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "su2_sub_Meloetta",
+      "pokeData": {
+        "devId": "DEV_MEROETTA",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 70,
+        "rareType": "NO_RARE",
+        "talentType": "V_NUM",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 20,
+          "atk": 20,
+          "def": 20,
+          "spAtk": 20,
+          "spDef": 20,
+          "agi": 20
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "DEFAULT",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_INISIENOUTA",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_HAIPAABOISU",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_UTAU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_SAIKOKINESISU",
+          "pointUp": 0
+        },
+        "gemType": "KAKUTOU",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "sub018_AIGUANA",
+      "pokeData": {
+        "devId": "DEV_AIGUANA",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 72,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 25,
+          "atk": 31,
+          "def": 25,
+          "spAtk": 31,
+          "spDef": 25,
+          "agi": 31
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "IJIPPARI",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_GIGAINPAKUTO",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_BIRUDOAPPU",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_AKUSERUBUREIKU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_KAENHOUSYA",
+          "pointUp": 0
+        },
+        "gemType": "KAKUTOU",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    },
+    {
+      "label": "sub018_BIGUANA",
+      "pokeData": {
+        "devId": "DEV_BIGUANA",
+        "formId": 0,
+        "sex": "DEFAULT",
+        "level": 72,
+        "rareType": "NO_RARE",
+        "talentType": "VALUE",
+        "talentVnum": 3,
+        "talentValue": {
+          "hp": 25,
+          "atk": 31,
+          "def": 25,
+          "spAtk": 31,
+          "spDef": 25,
+          "agi": 31
+        },
+        "effortValue": {
+          "hp": 0,
+          "atk": 0,
+          "def": 0,
+          "spAtk": 0,
+          "spDef": 0,
+          "agi": 0
+        },
+        "item": "ITEMID_NONE",
+        "dropItem": "ITEMID_NONE",
+        "dropItemNum": 0,
+        "seikaku": "HIKAEME",
+        "seikakuHosei": "DEFAULT",
+        "tokusei": "SET_1",
+        "wazaType": "MANUAL",
+        "waza1": {
+          "wazaId": "WAZA_HAKAIKOUSEN",
+          "pointUp": 0
+        },
+        "waza2": {
+          "wazaId": "WAZA_ZYUUDEN",
+          "pointUp": 0
+        },
+        "waza3": {
+          "wazaId": "WAZA_INAZUMADORAIBU",
+          "pointUp": 0
+        },
+        "waza4": {
+          "wazaId": "WAZA_PAWAAJEMU",
+          "pointUp": 0
+        },
+        "gemType": "DENKI",
+        "scaleType": "VALUE",
+        "scaleValue": 128,
+        "setRibbon": "NONE"
+      },
+      "disableBattleOut": true,
+      "eventEncount": true
+    }
+  ]
+}

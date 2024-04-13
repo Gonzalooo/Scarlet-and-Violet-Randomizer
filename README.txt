@@ -1,16 +1,15 @@
---- Pokemon Scarlet and Violet Randomizer by XLuma updated by Gonzalo----
+--- Pokemon Scarlet and Violet Randomizer by Gonzalo originally by xLuma----
 Go to: https://github.com/Gonzalooo/Scarlet-and-Violet-Randomizer for latest Version.
 
-***IMPORTANT: GO TO Randomizer/Starters/pokemon_clean before running the randomizer***
-VIDEO TUTORIAL on how to use randomizer tool: https://youtu.be/eO10cWC6QT0
-Tutorial on how to use Generation Limiter: https://youtu.be/dCUUXFHNRcA
+***IMPORTANT: GO TO Randomizer/StartersGifts/pokemon_clean before running the randomizer***
 Trinity Loader Nightly Version: https://github.com/pkZukan/gftool/releases/tag/nightly (Needed for the first steps - nightly version automatically updates so it has the stuff you need)
 New discord link to keep up with udpates btw: https://discord.gg/d7UBuXGrT2
 Wiki for quick help: https://github.com/Gonzalooo/Scarlet-and-Violet-Randomizer/wiki
-MAC TUTORIAL: https://youtu.be/kFIp6EM-MMs
+New tutorials coming soon - Please Read release page in the mean time.
 
 *** THIS RANDOMIZER WORKS ONLY WITH VERSION 3.0.1/3.0.0***
 PREFACE: Make sure you have at least Python 3.10 installed on your computer, anything lower will not work!
+NOTE: Be sure you are dumping the files of the 3.0.0 or 3.0.1 version of the game.
 PS: If after installing, and running the randomize batch script you see the Microsoft store open instead, in your windows search bar type "Manage App Execution Aliases" and turn off the ones that have "python.exe" and "python3.exe" under them (They are named App Installer)
 
 ALTERNATE WAY HOW TO USE: (ONLY READ IF YOU DON'T WANT TO USE AUTO-PATCHER)
@@ -46,17 +45,8 @@ If you use this program for content, credits in the description is not required,
 
 KNOWM BUGS/ISSUES
 
-- Palafin and his alt form will not get their normal ability randomized, due to being absolute garbage without it (and then game crashing if the ability is given via PkHex). Thus, only the hidden ability is randomized. Furthermore, no other pokemon can obtain the Zero to Hero ability.
-- Terapagos will not have its ability randomized either and Tera-Shift has been banned as well to prevent others from using it
-    - Will add option to randomize Terapagos forms abilities later on (Same with Ogerpon).
-- Boss Pokemon Battles and Initial Lechonk battle are not yet randomized (Will be added later)
-- Snackworth's legendaries are not yet randomized - I know how but I haven't implemented it
-
-FUTURE FEATURES
-- Working on way to give more freedom on randomizer selection
-    - ie: having more options for starters, wild settings, etc...
-- Adding option to have item only forms to show up on overworld too
-    - Now in available in tera raid battles
+- Palafin will not have its ability randomized. It's alt form gets a new ability though
+- Boss Pokemon Battles and Snackworths Legendary are not yet Randomized - coming in full version
 
 
 For issues with 3.0.0/3.0.1 please make an issue and I'll fix it when I can.
