@@ -8,19 +8,19 @@
   },
   "items_randomizer": {
     "_comment": "Only works on hidden items - I can't find file for overworld items.",
-    "is_enabled": "no",
+    "is_enabled": "yes",
     "randomize_hidden_items": "yes",
     "randomize_items_from_pickup_ability": "yes",
     "randomize_synchro_items": "yes",
     "randomize_pokemon_drops": "no"
   },
   "pokemon_stats_randomizer": {
-      "is_enabled": "no",
+      "is_enabled": "yes",
       "randomize_abilities": "yes",
       "randomize_types": "no",
       "ban_wonder_guard": "yes",
       "randomize_movesets": "yes",
-      "randomize_stats_with_same_total": "yes",
+      "randomize_stats_with_same_total": "no",
       "randomize_stats_with_different_total": "no",
       "_comment1": "Generation Limiter only affects potential evolutions",
       "generation_limiter": [],
@@ -29,9 +29,9 @@
       "force_tera_blast_every_5_levels": "no"
     },
   "static_pokemon_randomizer": {
-      "is_enabled": "no",
+      "is_enabled": "yes",
       "generation_limiter": [],
-      "randomize_tera_types": "no",
+      "randomize_tera_types": "yes",
       "only_legendary_pokemon": "no",
       "only_paradox_pokemon": "no",
       "only_legendary_and_paradox": "no",
@@ -40,12 +40,12 @@
   "starter_pokemon_randomizer":{
       "is_enabled": "yes",
       "generation_limiter": [],
-      "force_shiny_starter": "no",
+      "force_shiny_starter": "yes",
       "make_all_starters_shiny": "no",
       "higher_chance_shiny": "no",
       "show_starters_in_overworld": "yes",
       "randomize_starters_tera_type": "no",
-      "ball_for_starter": "Beast Ball",
+      "ball_for_starter": "Ultra Ball",
       "_comment1": "This next option should remain off if pokemon_clean is empty",
       "show_shiny_starters_in_overworld": "no",
       "ban_stage1_pokemon": "no",
@@ -63,15 +63,14 @@
       "force_starter_3": 0
     },
   "gift_pokemon_randomizer": {
-      "is_enabled": "no",
+      "is_enabled": "yes",
       "generation_limiter": [],
       "randomize_tera_types": "yes"
     },
   "boss_pokemon_randomizer": {
-      "is_enabled": "no",
+      "is_enabled": "yes",
       "_comment": "Note: Models are automatically changed in overworld.",
       "generation_limiter": [],
-      "use_similar_BST": "no",
       "only_legendary_pokemon": "no",
       "ban_stage1_pokemon": "no",
       "ban_stage2_pokemon": "no",
@@ -79,6 +78,7 @@
       "randomize_all": "yes",
       "randomize_lechonk": "no",
       "randomize_gimmighoul": "no",
+      " _comment": "For beta anything below this will not be randomized",
       "randomize_titans": "no",
       "randomize_snackworth_legendaries": "no",
       "randomize_areazero": "no",
@@ -89,7 +89,7 @@
     },
   "paldea_settings": {
     "wild_randomizer": {
-      "is_enabled": "no",
+      "is_enabled": "yes",
       "generation_limiter": [],
       "exclude_legendaries": "no",
       "_comment2": "Enabling the following settings with gen_limiter will lead to little to no spawns",
@@ -99,11 +99,11 @@
       "_comment1": "Working on option to keep similar BST on route"
     },
     "tera_raid_randomizer": {
-      "is_enabled": "no",
-      "generation_limiter": [9],
+      "is_enabled": "yes",
+      "generation_limiter": [],
       "force_shiny": "no",
-      "increased_shiny_chance": "no",
-      "only_legendary_pokemon": "yes",
+      "increased_shiny_chance": "yes",
+      "only_legendary_pokemon": "no",
       "only_paradox_pokemon": "no",
       "only_legendary_and_paradox": "no"
     },
@@ -112,8 +112,8 @@
       "all_trainers_settings": {
         "generation_limiter": [],
         "use_rival_randomizer_forall": "yes",
-        "allow_terastalize_to_all": "no",
-        "randomize_tera_types": "no",
+        "allow_terastalize_to_all": "yes",
+        "randomize_tera_types": "yes",
         "allow_shiny_pokemon": "yes",
         "randomnly_choose_single_or_doubles": "no",
         "only_double_battles": "no",
@@ -126,9 +126,9 @@
         "force_6_pokemon": "no",
         "add_extra_pokemon": "no",
         "force_perfect_ivs": "yes",
-        "make_ai_smart": "no",
+        "make_ai_smart": "yes",
         "_comment1": "If no in allow_tera - then those that can tera will still tera.",
-        "allow_terastalization": "no",
+        "allow_terastalization": "yes",
         "only_legendary_pokemon": "no",
         "only_paradox_pokemon": "no",
         "only_legendary_and_paradox": "no",
@@ -237,6 +237,7 @@
       },
       "important_trainers_randomizer": {
         "_comment": "Includes: Kieran, Carmine, Perrin, Billy and O'Nare",
+        "_comment1": "Uses Rival Settings if paldea_settings for all is enabled",
         "is_enabled": "no",
         "force_6_pokemon": "no",
         "add_extra_pokemon": "no",
@@ -268,6 +269,7 @@
       },
       "ogre_clan_randomizer": {
         "is_enabled": "no",
+        "_comment": "Uses Paldea E4 settings if paldea_settings_forall is enabled",
         "force_6_pokemon": "no",
         "add_extra_pokemon": "no",
         "force_perfect_ivs": "no",
@@ -328,6 +330,7 @@
       },
       "important_trainers_randomizer": {
         "_comment": "Includes: Kieran, Carmine, BBE4 ",
+        "_comment1": "Uses Rival Settings if paldea_settings for all is enabled",
         "is_enabled": "no",
         "force_6_pokemon": "no",
         "add_extra_pokemon": "no",
@@ -359,6 +362,7 @@
       },
       "bb4_league_randomizer": {
         "_comment": "All BB Club Fights",
+        "_comment1": "Uses Champion settings if paldea_settings_forall is enabled",
         "is_enabled": "no",
         "force_6_pokemon": "no",
         "add_extra_pokemon": "no",

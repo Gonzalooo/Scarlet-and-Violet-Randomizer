@@ -755,35 +755,287 @@ def make_poke(config, trainer_config, allowed_pokemon, banned_stages, trainer_li
             trainers[i]['aiChange'] = True
 
 
+def set_allowed_pokemon(config, randomizer_check: str, og=1):
+    if config[f'{randomizer_check}']['only_legendary_and_paradox'] == "yes":
+        return SharedVariables.legends_and_paradox
+    elif config[f'{randomizer_check}']['only_legendary_pokemon'] == "yes":
+        return SharedVariables.legends
+    elif config[f'{randomizer_check}']['only_paradox_pokemon'] == "yes":
+        return SharedVariables.paradox
+    return og
+
+
+def set_banned_stages(config, banned_check: str):
+    list_of_banned = []
+    if config[f'{banned_check}']['ban_stage1_pokemon'] == "yes":
+        list_of_banned.extend(SharedVariables.gen9Stage1)
+    elif config[f'{banned_check}']['ban_stage2_pokemon'] == "yes":
+        list_of_banned.extend(SharedVariables.gen9Stage2)
+    elif config[f'{banned_check}']['ban_single_stage_pokemon'] == "yes":
+        list_of_banned.extend(SharedVariables.no_evolution)
+    return list_of_banned
+
+
 def randomize_trainers(config):
-    if config['paldea_settings']['trainers_randomizer']['is_enabled'] == "yes" and config['use_paldea_settings_for_all'] == "yes":
-        file = open(os.getcwd() + "/Randomizer/Trainers/" +"trdata_array_clean.json", "r")
+    if config['use_paldea_settings_for_all'] == "yes":
+        if config['paldea_settings']['trainers_randomizer']['is_enabled'] == "yes":
+            file = open(os.getcwd() + "/Randomizer/Trainers/" +"trdata_array_clean.json", "r")
+            data = json.load(file)
+            allowed_pokemon, allowed_legends, bpl = HelperFunctions.check_generation_limiter(
+                                                    config['paldea_settings']['trainers_randomizer']
+                                                    ['all_trainers_settings']['generation_limiter'])
+
+            allowed_pokemon = set_allowed_pokemon(config['paldea_settings']['trainers_randomizer'], 'rival_randomizer', allowed_pokemon)
+            banned_pokes = set_banned_stages(config['paldea_settings']['trainers_randomizer'], 'rival_randomizer')
+
+            if config['paldea_settings']['trainers_randomizer']['rival_randomizer']['is_enabled'] == "yes":
+                list_to_check = randomize_nemona()
+                list_to_check.extend(randomize_arven())
+                list_to_check.extend(randomize_penny())
+                list_to_check.extend(randomize_clavell())
+                list_to_check.extend(randomize_team_star())
+                list_to_check.extend(randomize_kieran_su1())
+                list_to_check.extend(randomize_kieran_su2())
+                list_to_check.extend(randomize_carmine_su1())
+                list_to_check.extend(randomize_carmine_su2())
+                list_to_check.extend(randomize_perrin())
+                list_to_check.extend(randomize_billy_onare())
+                list_to_check.extend(randomize_school_professors())
+                make_poke(config['paldea_settings']['trainers_randomizer']['rival_randomizer'],
+                          config['paldea_settings']['trainers_randomizer'], allowed_pokemon, banned_pokes,
+                          list_to_check, data['values'])
+
+            if config['paldea_settings']['trainers_randomizer']['route_trainers_randomizer']['is_enabled'] == "yes":
+                list_to_check = SharedVariables.wild_trainer_index
+
+                make_poke(config['paldea_settings']['trainers_randomizer']['route_trainers_randomizer'],
+                          config['paldea_settings']['trainers_randomizer'], allowed_pokemon, banned_pokes,
+                          list_to_check, data['values'])
+
+            if config['paldea_settings']['trainers_randomizer']['gym_randomizer']['is_enabled'] == "yes":
+                list_to_check = randomize_gym()
+
+                make_poke(config['paldea_settings']['trainers_randomizer']['gym_randomizer'],
+                          config['paldea_settings']['trainers_randomizer'], allowed_pokemon, banned_pokes,
+                          list_to_check, data['values'])
+
+            if config['paldea_settings']['trainers_randomizer']['elite4_randomizer']['is_enabled'] == "yes":
+                list_to_check = randomize_bb_e4()
+                list_to_check.extend(randomize_e4_paldea())
+                list_to_check.extend(randomize_ogre_clan())
+
+                make_poke(config['paldea_settings']['trainers_randomizer']['rival_randomizer'],
+                          config['paldea_settings']['trainers_randomizer'], allowed_pokemon, banned_pokes,
+                          list_to_check, data['values'])
+
+            if config['paldea_settings']['trainers_randomizer']['champion_randomizer']['is_enabled'] == "yes":
+                list_to_check = randomize_geeta()
+                list_to_check.extend(randomize_professors())
+                list_to_check.extend(randomize_bb_league())
+
+                make_poke(config['paldea_settings']['trainers_randomizer']['champion_randomizer'],
+                          config['paldea_settings']['trainers_randomizer'], allowed_pokemon, banned_pokes,
+                          list_to_check, data['values'])
+
+            if config['paldea_settings']['trainers_randomizer']['raid_npc_randomizer']['is_enabled'] == "yes":
+                list_to_check = SharedVariables.raid_npc_index
+
+                make_poke(config['paldea_settings']['trainers_randomizer']['raid_npc_randomizer'],
+                          config['paldea_settings']['trainers_randomizer'], allowed_pokemon, banned_pokes,
+                          list_to_check, data['values'])
+
+            outdata = json.dumps(data, indent=4)
+            with open(os.getcwd() + "/Randomizer/Trainers/" +"trdata_array.json", 'w') as outfile:
+                outfile.write(outdata)
+            print("Randomization of Trainers done !")
+            return True, True, True
+        return False, False, False
+    else:
+        paldea, kitakami, bluberry = False, False, False
+        file = open(os.getcwd() + "/Randomizer/Trainers/" + "trdata_array_clean.json", "r")
         data = json.load(file)
-        allowed_pokemon, allowed_legends, bpl = HelperFunctions.check_generation_limiter(
-                                                config['paldea_settings']['trainers_randomizer']
-                                                ['all_trainers_settings']['generation_limiter'])
 
-        if config['paldea_settings']['trainers_randomizer']['rival_randomizer']['is_enabled'] == "yes":
-            list_to_check = randomize_nemona()
-            list_to_check.extend(randomize_arven())
-            list_to_check.extend(randomize_penny())
-            list_to_check.extend(randomize_clavell())
-            list_to_check.extend(randomize_team_star())
-            list_to_check.extend(randomize_kieran_su1())
-            list_to_check.extend(randomize_kieran_su2())
-            list_to_check.extend(randomize_carmine_su1())
-            list_to_check.extend(randomize_carmine_su2())
-            list_to_check.extend(randomize_perrin())
-            list_to_check.extend(randomize_billy_onare())
-            list_to_check.extend(randomize_bb_e4())
-            make_poke(config['paldea_settings']['trainers_randomizer']['rival_randomizer'],
-                      config['paldea_settings']['trainers_randomizer'], allowed_pokemon, [],
-                      list_to_check, data['values'])
+        if config['paldea_settings']['trainers_randomizer']['is_enabled'] == "yes":
+            allowed_pokemon, allowed_legends, bpl = HelperFunctions.check_generation_limiter(
+                config['paldea_settings']['trainers_randomizer']
+                ['all_trainers_settings']['generation_limiter'])
 
-        outdata = json.dumps(data, indent=4)
-        with open(os.getcwd() + "/Randomizer/Trainers/" +"trdata_array.json", 'w') as outfile:
-            outfile.write(outdata)
+            if config['paldea_settings']['trainers_randomizer']['rival_randomizer']['is_enabled'] == "yes":
+                allowed_pokemon = set_allowed_pokemon(config['paldea_settings']['trainers_randomizer'],
+                                                      'rival_randomizer', allowed_pokemon)
+                banned_pokes = set_banned_stages(config['paldea_settings']['trainers_randomizer'], 'rival_randomizer')
+                list_to_check = randomize_nemona()
+                list_to_check.extend(randomize_arven())
+                list_to_check.extend(randomize_penny())
+                list_to_check.extend(randomize_clavell())
+                list_to_check.extend(randomize_team_star())
+                list_to_check.extend(randomize_school_professors())
+                make_poke(config['paldea_settings']['trainers_randomizer']['rival_randomizer'],
+                          config['paldea_settings']['trainers_randomizer'], allowed_pokemon, banned_pokes,
+                          list_to_check, data['values'])
+
+            if config['paldea_settings']['trainers_randomizer']['route_trainers_randomizer']['is_enabled'] == "yes":
+                list_to_check = SharedVariables.wild_trainer_index
+
+                allowed_pokemon = set_allowed_pokemon(config['paldea_settings']['trainers_randomizer'],
+                                                      'route_trainers_randomizer', allowed_pokemon)
+                banned_pokes = set_banned_stages(config['paldea_settings']['trainers_randomizer'], 'route_trainers_randomizer')
+
+                make_poke(config['paldea_settings']['trainers_randomizer']['route_trainers_randomizer'],
+                          config['paldea_settings']['trainers_randomizer'], allowed_pokemon, banned_pokes,
+                          list_to_check, data['values'])
+
+            if config['paldea_settings']['trainers_randomizer']['gym_randomizer']['is_enabled'] == "yes":
+                list_to_check = randomize_gym()
+
+                allowed_pokemon = set_allowed_pokemon(config['paldea_settings']['trainers_randomizer'],
+                                                      'gym_randomizer', allowed_pokemon)
+                banned_pokes = set_banned_stages(config['paldea_settings']['trainers_randomizer'], 'gym_randomizer')
+
+                make_poke(config['paldea_settings']['trainers_randomizer']['gym_randomizer'],
+                          config['paldea_settings']['trainers_randomizer'], allowed_pokemon, banned_pokes,
+                          list_to_check, data['values'])
+
+            if config['paldea_settings']['trainers_randomizer']['elite4_randomizer']['is_enabled'] == "yes":
+                list_to_check = randomize_e4_paldea()
+
+                allowed_pokemon = set_allowed_pokemon(config['paldea_settings']['trainers_randomizer'],
+                                                      'elite4_randomizer', allowed_pokemon)
+                banned_pokes = set_banned_stages(config['paldea_settings']['trainers_randomizer'], 'elite4_randomizer')
+
+                make_poke(config['paldea_settings']['trainers_randomizer']['elite4_randomizer'],
+                          config['paldea_settings']['trainers_randomizer'], allowed_pokemon, banned_pokes,
+                          list_to_check, data['values'])
+
+            if config['paldea_settings']['trainers_randomizer']['champion_randomizer']['is_enabled'] == "yes":
+                list_to_check = randomize_geeta()
+                list_to_check.extend(randomize_professors())
+
+                allowed_pokemon = set_allowed_pokemon(config['paldea_settings']['trainers_randomizer'],
+                                                      'champion_randomizer', allowed_pokemon)
+                banned_pokes = set_banned_stages(config['paldea_settings']['trainers_randomizer'], 'champion_randomizer')
+
+                make_poke(config['paldea_settings']['trainers_randomizer']['champion_randomizer'],
+                          config['paldea_settings']['trainers_randomizer'], allowed_pokemon, banned_pokes,
+                          list_to_check, data['values'])
+
+            if config['paldea_settings']['trainers_randomizer']['raid_npc_randomizer']['is_enabled'] == "yes":
+                list_to_check = SharedVariables.raid_npc_index
+
+                allowed_pokemon = set_allowed_pokemon(config['paldea_settings']['trainers_randomizer'],
+                                                      'raid_npc_randomizer', allowed_pokemon)
+                banned_pokes = set_banned_stages(config['paldea_settings']['trainers_randomizer'], 'raid_npc_randomizer')
+
+                make_poke(config['paldea_settings']['trainers_randomizer']['raid_npc_randomizer'],
+                          config['paldea_settings']['trainers_randomizer'], allowed_pokemon, banned_pokes,
+                          list_to_check, data['values'])
+            paldea = True
+        if config['kitakami_settings']['trainers_randomizer']['is_enabled'] == "yes":
+            allowed_pokemon, allowed_legends, bpl = HelperFunctions.check_generation_limiter(
+                config['kitakami_settings']['trainers_randomizer']
+                ['all_trainers_settings']['generation_limiter'])
+
+            if config['kitakami_settings']['trainers_randomizer']['important_trainers_randomizer']['is_enabled'] == "yes":
+                list_to_check = randomize_kieran_su1()
+                list_to_check.extend(randomize_carmine_su1())
+                list_to_check.extend(randomize_perrin())
+                list_to_check.extend(randomize_billy_onare())
+
+                allowed_pokemon = set_allowed_pokemon(config['kitakami_settings']['trainers_randomizer'],
+                                                      'important_trainers_randomizer', allowed_pokemon)
+                banned_pokes = set_banned_stages(config['kitakami_settings']['trainers_randomizer'], 'important_trainers_randomizer')
+
+                make_poke(config['kitakami_settings']['trainers_randomizer']['important_trainers_randomizer'],
+                          config['kitakami_settings']['trainers_randomizer'], allowed_pokemon, banned_pokes,
+                          list_to_check, data['values'])
+
+            if config['kitakami_settings']['trainers_randomizer']['route_trainers_randomizer']['is_enabled'] == "yes":
+                list_to_check = SharedVariables.wild_trainer_index
+
+                allowed_pokemon = set_allowed_pokemon(config['kitakami_settings']['trainers_randomizer'],
+                                                      'route_trainers_randomizer', allowed_pokemon)
+                banned_pokes = set_banned_stages(config['kitakami_settings']['trainers_randomizer'], 'route_trainers_randomizer')
+
+                make_poke(config['kitakami_settings']['trainers_randomizer']['route_trainers_randomizer'],
+                          config['kitakami_settings']['trainers_randomizer'], allowed_pokemon, [],
+                          list_to_check, data['values'])
+
+            if config['kitakami_settings']['trainers_randomizer']['ogre_clan_randomizer']['is_enabled'] == "yes":
+                list_to_check = randomize_ogre_clan()
+
+                allowed_pokemon = set_allowed_pokemon(config['kitakami_settings']['trainers_randomizer'],
+                                                      'ogre_clan_randomizer', allowed_pokemon)
+                banned_pokes = set_banned_stages(config['kitakami_settings']['trainers_randomizer'], 'ogre_clan_randomizer')
+
+                make_poke(config['kitakami_settings']['trainers_randomizer']['rival_randomizer'],
+                          config['kitakami_settings']['trainers_randomizer'], allowed_pokemon, [],
+                          list_to_check, data['values'])
+
+            if config['kitakami_settings']['trainers_randomizer']['raid_npc_randomizer']['is_enabled'] == "yes":
+                list_to_check = SharedVariables.raid_npc_index
+
+                allowed_pokemon = set_allowed_pokemon(config['kitakami_settings']['trainers_randomizer'],
+                                                      'raid_npc_randomizer', allowed_pokemon)
+                banned_pokes = set_banned_stages(config['kitakami_settings']['trainers_randomizer'],
+                                                 'raid_npc_randomizer')
+
+                make_poke(config['kitakami_settings']['trainers_randomizer']['raid_npc_randomizer'],
+                          config['kitakami_settings']['trainers_randomizer'], allowed_pokemon, banned_pokes,
+                          list_to_check, data['values'])
+
+            kitakami = True
+        if config['blueberry_settings']['trainers_randomizer']['is_enabled'] == "yes":
+            allowed_pokemon, allowed_legends, bpl = HelperFunctions.check_generation_limiter(
+                config['blueberry_settings']['trainers_randomizer']
+                ['all_trainers_settings']['generation_limiter'])
+
+            if config['blueberry_settings']['trainers_randomizer']['important_trainers_randomizer']['is_enabled'] == "yes":
+                list_to_check = randomize_kieran_su2()
+                list_to_check.extend(randomize_carmine_su2())
+                list_to_check.extend(randomize_bb_e4())
+
+                allowed_pokemon = set_allowed_pokemon(config['blueberry_settings']['trainers_randomizer'],
+                                                      'important_trainers_randomizer', allowed_pokemon)
+                banned_pokes = set_banned_stages(config['blueberry_settings']['trainers_randomizer'], 'important_trainers_randomizer')
+
+                make_poke(config['blueberry_settings']['trainers_randomizer']['important_trainers_randomizer'],
+                          config['blueberry_settings']['trainers_randomizer'], allowed_pokemon, banned_pokes,
+                          list_to_check, data['values'])
+
+            if config['blueberry_settings']['trainers_randomizer']['route_trainers_randomizer']['is_enabled'] == "yes":
+                list_to_check = SharedVariables.wild_trainer_index
+
+                allowed_pokemon = set_allowed_pokemon(config['blueberry_settings']['trainers_randomizer'],
+                                                      'route_trainers_randomizer', allowed_pokemon)
+                banned_pokes = set_banned_stages(config['blueberry_settings']['trainers_randomizer'], 'route_trainers_randomizer')
+
+                make_poke(config['paldea_settings']['trainers_randomizer']['route_trainers_randomizer'],
+                          config['paldea_settings']['trainers_randomizer'], allowed_pokemon, banned_pokes,
+                          list_to_check, data['values'])
+
+            if config['blueberry_settings']['trainers_randomizer']['bb4_league_randomizer']['is_enabled'] == "yes":
+                list_to_check = randomize_bb_league()
+
+                allowed_pokemon = set_allowed_pokemon(config['blueberry_settings']['trainers_randomizer'],
+                                                      'bb4_league_randomizer', allowed_pokemon)
+                banned_pokes = set_banned_stages(config['blueberry_settings']['trainers_randomizer'], 'bb4_league_randomizer')
+
+                make_poke(config['blueberry_settings']['trainers_randomizer']['bb4_league_randomizer'],
+                          config['blueberry_settings']['trainers_randomizer'], allowed_pokemon, banned_pokes,
+                          list_to_check, data['values'])
+
+            if config['blueberry_settings']['trainers_randomizer']['raid_npc_randomizer']['is_enabled'] == "yes":
+                list_to_check = SharedVariables.raid_npc_index
+
+                allowed_pokemon = set_allowed_pokemon(config['blueberry_settings']['trainers_randomizer'],
+                                                      'raid_npc_randomizer', allowed_pokemon)
+                banned_pokes = set_banned_stages(config['blueberry_settings']['trainers_randomizer'],
+                                                 'raid_npc_randomizer')
+
+                make_poke(config['blueberry_settings']['trainers_randomizer']['raid_npc_randomizer'],
+                          config['blueberry_settings']['trainers_randomizer'], allowed_pokemon, banned_pokes,
+                          list_to_check, data['values'])
+            bluberry = True
         print("Randomization of Trainers done !")
-        return True
-    return False
+        return paldea, kitakami, bluberry
 

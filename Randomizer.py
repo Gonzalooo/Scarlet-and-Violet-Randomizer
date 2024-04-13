@@ -138,6 +138,7 @@ def randomize_based_on_config(config):
         HelperFunctions.generate_binary("Randomizer/StartersGifts/eventAddPokemon_array.bfbs",
                                         "Randomizer/StartersGifts/eventAddPokemon_array.json",
                                         paths["gifts"])
+
     if starters_randomized is True and config['starter_pokemon_randomizer']['show_starters_in_overworld'] == "yes":  # Updated for 3.0.1
         PatchScene.patch_starter_selection_scenes()
 
@@ -148,8 +149,11 @@ def randomize_based_on_config(config):
         shutil.copyfile("Randomizer/Scenes/starters_scenes/common_0070_always_1.trsog",
                         "output/romfs/" + paths['starters_scenes'] + 'common_0070_always_1.trsog')
 
-    TrainerRandomizer.randomize_trainers(config)
-    exit(0)
+    paldea_fight, kita_fight, blue_fight = TrainerRandomizer.randomize_trainers(config)
+    if paldea_fight is True or kita_fight is True or blue_fight is True:
+        HelperFunctions.generate_binary("Randomizer/Trainers/trdata_array.bfbs",
+                                        "Randomizer/Trainers/trdata_array.json",
+                                        paths["trainers"])
     # Gift Pokemon
     gifts_randomized = GiftsRandomizer.randomize_gifts(config['gift_pokemon_randomizer'])
     if gifts_randomized is True:
