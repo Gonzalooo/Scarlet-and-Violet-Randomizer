@@ -720,8 +720,7 @@ def make_poke(config, trainer_config, allowed_pokemon, banned_stages, trainer_li
             trainers[i][f"poke{str(j)}"]["wazaType"] = "DEFAULT"
 
             for k in range(1, 5):
-                trainers[i][f"poke{str(j)}"][f"waza{str(k)}"]['wazaId'] = "WAZA_DEFAULT"
-                trainers[i][f"poke{str(j)}"][f"waza{str(k)}"]['pointUp'] = 3
+                trainers[i][f"poke{str(j)}"][f"waza{str(k)}"]['wazaId'] = "WAZA_NULL"
 
             if trainer_config['all_trainers_settings']['randomize_tera_types'] == "yes":
                 trainers[i][f"poke{str(j)}"]["gemType"] = HelperFunctions.choose_tera_type(pokemon_choice, form_choice)
