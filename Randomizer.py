@@ -142,10 +142,12 @@ def randomize_based_on_config(config):
                                         paths["gifts"])
 
     if starters_randomized is True and config['starter_pokemon_randomizer']['show_starters_in_overworld'] == "yes":  # Updated for 3.0.1
-        PatchScene.patch_starter_selection_scenes()
+        PatchScene.patchScenes()
 
         HelperFunctions.create_folder_hierarchy('output/romfs/'+paths['starters_scenes'])
-
+        HelperFunctions.create_folder_hierarchy('output/romfs/'+ paths['catalog'])
+        HelperFunctions.generate_binary("Randomizer/Scenes/poke_resource_table.fbs", "Randomizer/Scenes/poke_resource_table.json",
+         paths['catalog'])
         shutil.copyfile("Randomizer/Scenes/starters_scenes/common_0070_always_0.trsog",
                         "output/romfs/" + paths['starters_scenes'] + 'common_0070_always_0.trsog')
         shutil.copyfile("Randomizer/Scenes/starters_scenes/common_0070_always_1.trsog",
