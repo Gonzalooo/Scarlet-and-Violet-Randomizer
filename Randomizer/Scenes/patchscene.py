@@ -34,11 +34,11 @@ def patchIndividualScenes():
     with open(os.getcwd() + "/Randomizer/Scenes/starters_scenes/common_0070_always_0.trsog", "w+b") as file:
         file.write(scarlet_scene_bytes)
         file.seek(sprigattio_offset)
-        file.write(b'\x6C\x02')
+        file.write(b'\x0C\x27')
         file.seek(fuecoco_offset)
-        file.write(b'\x6D\x02')
+        file.write(b'\x0D\x27')
         file.seek(quaxly_offset)
-        file.write(b'\x6E\x02')
+        file.write(b'\x0E\x27')
     with open(os.getcwd() + "/Randomizer/Scenes/starters_scenes/common_0070_always_1.trsog", "w+b") as file:
         file.write(violet_scene_bytes)
         file.seek(sprigattio_offset)
@@ -73,7 +73,7 @@ def retrieve_catalog_entry(catalog: dict, species, form, fake_catalog_index):
 def patchCatalog(names: list, catalog, starters):
     starter_array_order = ['common_0065_kusa', 'common_0065_hono',
                            'common_0065_mizu']  # prevents me from writing a lot of useless code
-    fake_catalog_species = 620
+    fake_catalog_species = 9996
     for current_starter in starter_array_order:
         starter = retrieve_starter(starters, current_starter)
         species_index = fetch_devname_index(starter['pokeData']['devId'], names)

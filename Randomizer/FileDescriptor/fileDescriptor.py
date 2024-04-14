@@ -15,7 +15,7 @@ def patchFileDescriptor():
             name = item.__str__()
             name = name.replace("\\", "/")
             name = name.replace(prefix, "")
-            #test= GFFNVHash(name)
+            # test= GFFNVHash(name)
             # print(name.encode())
             hash = fnvhash.fnv1a_64(name.encode(), 0xCBF29CE484222645)
             # print(hash)

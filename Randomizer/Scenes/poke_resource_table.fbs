@@ -10,6 +10,7 @@ table VersionInfo {
 table SpeciesInfo {
     species_number: int16;
     form_number: int16;
+	gender: int8;
 }
 
 table AnimationInfo {
@@ -33,6 +34,7 @@ table CatalogEntry {
     animations: [AnimationInfo];
     locators: [LocatorInfo];
     iconname: string;
+	form: uint32;
 }
 
 table Catalog {

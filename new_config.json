@@ -45,7 +45,7 @@
       "higher_chance_shiny": "no",
       "show_starters_in_overworld": "yes",
       "randomize_starters_tera_type": "no",
-      "ball_for_starter": "Ultra Ball",
+      "ball_for_starter": "Beast Ball",
       "_comment1": "This next option should remain off if pokemon_clean is empty",
       "show_shiny_starters_in_overworld": "no",
       "ban_stage1_pokemon": "no",
@@ -100,10 +100,10 @@
     },
     "tera_raid_randomizer": {
       "is_enabled": "yes",
-      "generation_limiter": [],
+      "generation_limiter": [9],
       "force_shiny": "no",
       "increased_shiny_chance": "yes",
-      "only_legendary_pokemon": "no",
+      "only_legendary_pokemon": "yes",
       "only_paradox_pokemon": "no",
       "only_legendary_and_paradox": "no"
     },
@@ -111,7 +111,7 @@
       "is_enabled": "yes",
       "all_trainers_settings": {
         "generation_limiter": [],
-        "use_rival_randomizer_forall": "yes",
+        "use_rival_randomizer_forall": "no",
         "allow_terastalize_to_all": "yes",
         "randomize_tera_types": "yes",
         "allow_shiny_pokemon": "yes",
@@ -190,16 +190,16 @@
         "ban_single_stage_pokemon": "no"
       },
       "raid_npc_randomizer": {
-        "is_enabled": "no",
-        "force_perfect_ivs": "no",
-        "make_ai_smart": "no",
-        "only_legendary_pokemon": "no",
+        "is_enabled": "yes",
+        "force_perfect_ivs": "yes",
+        "make_ai_smart": "yes",
+        "only_legendary_pokemon": "yes",
         "only_paradox_pokemon": "no",
         "only_legendary_and_paradox": "no",
         "ban_stage1_pokemon": "no",
         "ban_stage2_pokemon": "no",
         "ban_single_stage_pokemon": "no",
-        "allow_terastalization": "no"
+        "allow_terastalization": "yes"
       }
     }
   },
