@@ -70,6 +70,9 @@ def select_forced_starter(config, pokedata, starter_choice: str):
 
 
 def randomize_starter(config, pokemon_entry, check_forced_shiny: int, allowed_pokemon: list, starter: int):
+    if os.path.exists(os.getcwd() + "/Randomizer/StartersGifts/output"):
+        shutil.rmtree(os.getcwd() + "/Randomizer/StartersGifts/output")
+
     file = open(os.getcwd() + "/Randomizer/pokemon_list_info.json", 'r')
     pokedata = json.load(file)
     file.close()
@@ -87,7 +90,7 @@ def randomize_starter(config, pokemon_entry, check_forced_shiny: int, allowed_po
         choice_dict['form'] = form_id
 
     if config[f'force_starter_{str(starter)}'] != 0:
-        choice = select_forced_starter(config, pokedata, starter)
+        choice = select_forced_starter(config, pokedata, str(starter))
         form_id = HelperFunctions.get_alternate_form(choice)
         choice_dict['id'] = choice
         choice_dict['form'] = form_id
@@ -104,15 +107,14 @@ def randomize_starter(config, pokemon_entry, check_forced_shiny: int, allowed_po
     pokemon_entry['pokeData']['tokusei'] = "RANDOM_12"
 
     # Changing Shiny-Chance - except ogerpon for lack of textures
-    if choice != 1017:
-        if config['make_all_starters_shiny'] == "yes":
-            pokemon_entry['pokeData']['rareType'] = "RARE"
-            if config['show_shiny_starters_in_overworld'] == "yes":
-                flip_starter_texture(choice)
-        elif config['force_shiny_starter'] == "yes" and check_forced_shiny == 1:
-            pokemon_entry['pokeData']['rareType'] = "RARE"
-            if config['show_shiny_starters_in_overworld'] == "yes":
-                flip_starter_texture(choice)
+    if config['make_all_starters_shiny'] == "yes":
+        pokemon_entry['pokeData']['rareType'] = "RARE"
+        if config['show_shiny_starters_in_overworld'] == "yes":
+            flip_starter_texture(choice)
+    elif config['force_shiny_starter'] == "yes" and check_forced_shiny == 1:
+        pokemon_entry['pokeData']['rareType'] = "RARE"
+        if config['show_shiny_starters_in_overworld'] == "yes":
+            flip_starter_texture(choice)
 
     if (check_forced_shiny == 0 and config['make_all_starters_shiny'] != "yes"
             and config['higher_chance_shiny'] == "yes"):
@@ -163,6 +165,7 @@ def randomize_all_starters(config):
         if config['force_shiny_starter'] == "yes":
             choice = random.randint(0, 2)
             shinyforced[choice] = 1
+
         # sprigatito
         sharedVar.current_starters_selected['kusa'] = randomize_starter(config, data['values'][1],
                                                                         shinyforced[1], allowed_pokemon, 1)
@@ -178,7 +181,7 @@ def randomize_all_starters(config):
                                                                         shinyforced[2], allowed_pokemon, 3)
         sharedVar.starters_used.append(sharedVar.current_starters_selected['mizu'])
 
-        # print(sharedVar.starters_used)
+        print(sharedVar.starters_used)
         print(sharedVar.current_starters_selected)
 
         outdata = json.dumps(data, indent=4)
