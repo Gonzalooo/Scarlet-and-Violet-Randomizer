@@ -3,6 +3,7 @@ import pathlib
 import os
 import fnvhash
 
+
 def patchFileDescriptor():
     file = open(os.getcwd()+ "/Randomizer/FileDescriptor/data_clean.json")
     data = json.load(file)
@@ -24,7 +25,7 @@ def patchFileDescriptor():
                data['file_hashes'].pop(index)
                data['files'].pop(index)
 
-    outdata = json.dumps(data, indent=4)
+    outdata = json.dumps(data, indent=2)
     with open(os.getcwd() + "/Randomizer/FileDescriptor/" +"data.json", 'w') as outfile:
        outfile.write(outdata)
     outfile.close()

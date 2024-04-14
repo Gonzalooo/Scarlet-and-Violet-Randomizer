@@ -679,6 +679,8 @@ def make_poke(config, trainer_config, allowed_pokemon, banned_stages, trainer_li
                 else:
                     trainers_selection = random.randint(1, not_present)
                     max_amount = present + trainers_selection + 1
+                    if max_amount > 7:
+                        max_amount = 7
         except KeyError:
             pass
 

@@ -2,57 +2,18 @@ import os
 import json
 import copy
 import random
+import shutil
 import Randomizer.shared_Variables as SharedVariables
 import Randomizer.helper_function as HelperFunctions
 
-sprigattio_offset = 0x3D8A  # 6c 02
-fuecoco_offset = 0x158A  # 6d 02
-quaxly_offset = 0x2992  # 6e 02
+# get pokemon dictionary with hex values
+pokemon_dict_json = open(os.getcwd() + "/Randomizer/Scenes/" + "pokemon_dict_info.json", "r")
+pokemon_dict = json.load(pokemon_dict_json)
+pokemon_dict_json.close()
 
-
-def fetch_devname(index: int, csvdata):
-    return str.strip(csvdata[index])
-
-
-def fetch_devname_index(name: str, csvdata):
-    for index, current_name in enumerate(csvdata):
-        if str.strip(current_name) == name:
-            return index
-
-
-def patchIndividualScenes():
-    # thats ugly but i have no inspiration rn
-    scarlet_scene = open(os.getcwd() + "/Randomizer/Scenes/starters_scenes/common_0070_always_0_clean.trsog", "rb")
-    violet_scene = open(os.getcwd() + "/Randomizer/Scenes/starters_scenes/common_0070_always_1_clean.trsog", "rb")
-    scarlet_scene_bytes = scarlet_scene.read()
-    violet_scene_bytes = violet_scene.read()
-    scarlet_scene.close()
-    violet_scene.close()
-
-    # print(scarlet_scene_bytes)
-    # thats even more ugly but f it
-    with open(os.getcwd() + "/Randomizer/Scenes/starters_scenes/common_0070_always_0.trsog", "w+b") as file:
-        file.write(scarlet_scene_bytes)
-        file.seek(sprigattio_offset)
-        file.write(b'\x0C\x27')
-        file.seek(fuecoco_offset)
-        file.write(b'\x0D\x27')
-        file.seek(quaxly_offset)
-        file.write(b'\x0E\x27')
-    with open(os.getcwd() + "/Randomizer/Scenes/starters_scenes/common_0070_always_1.trsog", "w+b") as file:
-        file.write(violet_scene_bytes)
-        file.seek(sprigattio_offset)
-        file.write(b'\x6C\x02')
-        file.seek(fuecoco_offset)
-        file.write(b'\x6D\x02')
-        file.seek(quaxly_offset)
-        file.write(b'\x6E\x02')
-
-
-def retrieve_starter(starters, label):
-    for entry in starters['values']:
-        if entry['label'] == label:
-            return entry
+catalogfile = open(os.getcwd() + "/Randomizer/Scenes/poke_resource_table_clean.json", "r")
+poke_catalog = json.load(catalogfile)
+catalogfile.close()
 
 
 def retrieve_catalog_entry(catalog: dict, species, form, fake_catalog_index):
@@ -70,54 +31,74 @@ def retrieve_catalog_entry(catalog: dict, species, form, fake_catalog_index):
             return return_entry
 
 
-def patchCatalog(names: list, catalog, starters):
-    starter_array_order = ['common_0065_kusa', 'common_0065_hono',
-                           'common_0065_mizu']  # prevents me from writing a lot of useless code
-    fake_catalog_species = 9996
-    for current_starter in starter_array_order:
-        starter = retrieve_starter(starters, current_starter)
-        species_index = fetch_devname_index(starter['pokeData']['devId'], names)
-        form_index = starter['pokeData']['formId']
-        catalog_entry = retrieve_catalog_entry(catalog, species_index, form_index,
-                                               fake_catalog_species)  # replace species index
-        catalog['unk_1'].append(catalog_entry)
-        fake_catalog_species = fake_catalog_species + 1  # this goes until 622
-    pass
+def create_new_file_for_shiny(catalog: dict, key_change: str, file_num: int):
+    new_file_name = catalog[f'{key_change}'].split('/')
+    new_file_name[0] = f'pm{file_num}'
+    new_file_name = '/'.join(new_file_name)
+    return new_file_name
 
 
-def patchScenes():
-    # load starters
-    starterfile = open(os.getcwd() + "/Randomizer/StartersGifts/" + "eventAddPokemon_array.json",
-                       "r")  # 0 is fuecoco, 1 is sprigattio, 2 is quaxly
-    starters = json.load(starterfile)
-    starterfile.close()
+def patch_poke_catalog(catalog: dict, poke_data: dict, fake_species_index: int, index_to_use: int, shiny=False):
+    pokemon_to_add = poke_data['values'][index_to_use]
+    species_index = pokemon_dict['pokemons'][pokemon_to_add['pokeData']['devId']]['id']
+    form_index = pokemon_to_add['pokeData']['formId']
+    catalog_entry = retrieve_catalog_entry(catalog, species_index, form_index,
+                                           fake_species_index)
+    if shiny is True:
+        file_exists = flip_starter_texture(pokemon_dict['pokemons'][pokemon_to_add['pokeData']['devId']]['natdex'],
+                             fake_species_index)
+        if file_exists is True:
+            catalog_entry['model'] = create_new_file_for_shiny(catalog_entry, 'model', fake_species_index)
+            catalog_entry['material'] = create_new_file_for_shiny(catalog_entry, 'material', fake_species_index)
+            catalog_entry['config'] = create_new_file_for_shiny(catalog_entry, 'config', fake_species_index)
+            catalog_entry['animations'][0]['anim_path'] = create_new_file_for_shiny(catalog_entry['animations'][0],
+                                                                                    'anim_path', fake_species_index)
+            catalog_entry['locators'][0]['loc_path'] = create_new_file_for_shiny(catalog_entry['locators'][0],
+                                                                                    'loc_path', fake_species_index)
+            catalog_entry['iconname'] = create_new_file_for_shiny(catalog_entry, 'iconname', fake_species_index)
 
-    # load model catalog
-    catalogfile = open(os.getcwd() + "/Randomizer/Scenes/poke_resource_table_clean.json", "r")
-    catalog = json.load(catalogfile)
-    catalogfile.close()
+    catalog['unk_1'].append(catalog_entry)
 
-    # load names
-    file = open(os.getcwd() + "/Randomizer/StartersGifts/" + "pokemon_to_id.txt", "r")
-    names = []
-    for name in file:
-        names.append(name)
-    file.close()
 
-    patchIndividualScenes()
-    patchCatalog(names, catalog, starters)
+def flip_starter_texture(starter_num: int, fake_entry: int):
+    pokemon_file = HelperFunctions.fetch_animation_file(starter_num)
+    try:
+        shutil.copytree(os.getcwd() + "/Randomizer/StartersGifts/" + f'pokemon_clean/{pokemon_file}',
+                        os.getcwd() + "/Randomizer/StartersGifts/" + f'output/romfs/pokemon/data/pm{fake_entry}')
 
-    outdata = json.dumps(catalog, indent=4)
+        current_check = os.getcwd() + "/Randomizer/StartersGifts/" + f'output/romfs/pokemon/data/pm{fake_entry}'
+
+        for pokemonfolder in os.listdir(current_check):
+            pokemontextures_animations = current_check + "/" + pokemonfolder
+
+            for files in os.listdir(pokemontextures_animations):
+                if "rare" in files:
+                    replacedfile = files.replace("_rare", '')
+                    ogfiledir = pokemontextures_animations + "/" + f'{files}'
+                    newfiledir =pokemontextures_animations + "/" + f'{replacedfile}'
+                    shutil.copy2(ogfiledir, newfiledir)
+        return True
+    except Exception:
+        print("ERROR - NO FILES IN POKEMON_CLEAN - SHINY STARTER WILL USE REGULAR TEXTURE - FIX FOR NEXT TIME.")
+    return False
+
+
+def patch_random_catalog(catalog: dict, fake_species_index: int, shiny=False):
+    pokemon_to_add = random.randint(1, 1025)
+    while pokemon_to_add in SharedVariables.banned_pokemon:
+        pokemon_to_add = random.randint(1, 1025)
+    pokemon_dev_name = HelperFunctions.fetch_developer_name(pokemon_to_add)
+    species_index = pokemon_dict['pokemons'][pokemon_dev_name]['id']
+    form_index = HelperFunctions.get_alternate_form(pokemon_to_add)
+    catalog_entry = retrieve_catalog_entry(catalog, species_index, form_index,
+                                           fake_species_index)
+    catalog['unk_1'].append(catalog_entry)
+
+
+def save_poke_catalog():
+    outdata = json.dumps(poke_catalog, indent=4)
     with open(os.getcwd() + "/Randomizer/Scenes/" + "poke_resource_table.json", 'w') as outfile:
         outfile.write(outdata)
-    print("Patched starters in overworld")
-    return True
-
-
-# get pokemon dictionary with hex values
-pokemon_dict_json = open(os.getcwd() + "/Randomizer/Scenes/" + "pokemon_dict_info.json", "r")
-pokemon_dict = json.load(pokemon_dict_json)
-pokemon_dict_json.close()
 
 
 def patch_starter_selection_scenes():
@@ -133,14 +114,29 @@ def patch_starter_selection_scenes():
     scarlet_scene.close()
     violet_scene.close()
 
-    hex_checks = [pokemon_dict['pokemons'][starters['values'][0]['pokeData']['devId']]['hex'],
-                  pokemon_dict['pokemons'][starters['values'][1]['pokeData']['devId']]['hex'],
-                  pokemon_dict['pokemons'][starters['values'][2]['pokeData']['devId']]['hex']]
+    shiny = False
+    fake_species_list = [9996, 9997, 9998]
+    # Sprigatito - Patch
+    if starters['values'][1]['pokeData']['rareType'] == "RARE":
+        shiny = True
+    patch_poke_catalog(poke_catalog, starters, 9996, 1, shiny)
+    shiny = False
+
+    # Fuecoco - Patch
+    if starters['values'][0]['pokeData']['rareType'] == "RARE":
+        shiny = True
+    patch_poke_catalog(poke_catalog, starters, 9997, 0, shiny)
+    shiny = False
+
+    # Quaxly - Patch
+    if starters['values'][2]['pokeData']['rareType'] == "RARE":
+        shiny = True
+    patch_poke_catalog(poke_catalog, starters, 9998, 2, shiny)
 
     # sprigattio_offset = 0x3D8A  # 6c 02
     # fuecoco_offset = 0x158A  # 6d 02
     # quaxly_offset = 0x2992  # 6e 02
-    offset = [0x158A, 0x3D8A, 0x2992]
+    offset = [0x3D8A, 0x158A, 0x2992]
 
     for i in range(0, 2):
         with open(os.getcwd() + f"/Randomizer/Scenes/starters_scenes/common_0070_always_{str(i)}.trsog", "w+b") as file:
@@ -150,9 +146,10 @@ def patch_starter_selection_scenes():
                 file.write(violet_scene_bytes)
             for j in range(0, len(offset)):
                 file.seek(offset[j])
-                file.write(bytearray.fromhex(hex_checks[j]))
+                file.write(bytearray.fromhex(int(fake_species_list[j]).to_bytes(2, byteorder='little').hex()))
 
     print("Patched starters in overworld")
+    save_poke_catalog()
 
 
 def patch_lechonk_starting_scene():
@@ -167,11 +164,15 @@ def patch_lechonk_starting_scene():
     lechonk = json.load(lechonk_file)
     lechonk_file.close()
 
-    # 0 - fletching
-    # 1 - flecthing (2) [map out which exactly better later]
+    # 0 ->1 - fletching
     # 2 - Pawmi
     # 3->6 - tarountula
     # 7->11 - Lechonk
+    fake_species_list = [9992, 9993, 9994, 9995]
+    patch_random_catalog(poke_catalog, 9992)
+    patch_random_catalog(poke_catalog, 9993)
+    patch_random_catalog(poke_catalog, 9994)
+    patch_poke_catalog(poke_catalog, lechonk, 9995, 24)
     offset = [0xAB6, 0x1FE2, 0x350E, 0x4A3A, 0x5F62, 0x748A, 0x89B2, 0x9EDA, 0xB402, 0xC92A, 0xDE52, 0xF37A]
 
     for i in range(0, 2):
@@ -182,31 +183,30 @@ def patch_lechonk_starting_scene():
                 file.write(violet_scene_bytes)
             for j in range(0, len(offset)):
                 file.seek(offset[j])
+                if 0 <= j <= 1:
+                    file.write(bytearray.fromhex(fake_species_list[0].to_bytes(2, byteorder='little').hex()))
+                if j == 2:
+                    file.write(bytearray.fromhex(fake_species_list[1].to_bytes(2, byteorder='little').hex()))
+                if 3 <= j <= 6:
+                    file.write(bytearray.fromhex(fake_species_list[2].to_bytes(2, byteorder='little').hex()))
                 if j >= 7:
-                    hex_values_to_use = pokemon_dict['pokemons'][lechonk['values'][24]['pokeData']['devId']]['hex']
-                    file.write(bytearray.fromhex(hex_values_to_use))
-                else:
-                    # For now all other pokemon random until we find a way to map the areas and spawnpoints
-                    choice = random.randint(1, 1025)
-                    while choice in SharedVariables.banned_pokemon:
-                        choice = random.randint(1, 1025)
-                    hex_values_to_use = pokemon_dict['pokemons'][HelperFunctions.fetch_developer_name(choice)]['hex']
-                    file.write(bytearray.fromhex(hex_values_to_use))
+                    file.write(bytearray.fromhex(fake_species_list[3].to_bytes(2, byteorder='little').hex()))
 
     print("Patched Lechonk in overworld")
+    save_poke_catalog()
 
 
 def patch_gimmighoul_scene():
+    ghoul_file = open(os.getcwd() + "/Randomizer/StaticFights/" + "eventBattlePokemon_array.json", "r")
+    gimmighoul = json.load(ghoul_file)
+    ghoul_file.close()
+
     for i in range(0, 2):
         game_scene = open(os.getcwd() + f"/Randomizer/Scenes/gimmighoul_scene/coin_symbol_box_{str(i)}_clean.trsot", "rb")
         game_scene_bytes = game_scene.read()
         game_scene.close()
 
-        ghoul_file = open(os.getcwd() + "/Randomizer/StaticFights/" + "eventBattlePokemon_array.json", "r")
-        gimmighoul = json.load(ghoul_file)
-        ghoul_file.close()
-
-        # 0 - Gimmighoul
+        # 0 - Gimmighoul-Chest-Form
         offset = [0x656]
 
         with open(os.getcwd() + f"/Randomizer/Scenes/gimmighoul_scene/coin_symbol_box_{str(i)}.trsot", "w+b") as file:
@@ -217,3 +217,4 @@ def patch_gimmighoul_scene():
                 file.write(bytearray.fromhex(hex_values_to_use))
 
     print("Patched Gimmighoul in overworld")
+    save_poke_catalog()
