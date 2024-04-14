@@ -25,25 +25,6 @@ bannedStages = []
 # Copies files of pokes needed. Right now gets all - later only form specific
 
 
-def flip_starter_texture(starter_num: int):
-    pokemon_file = HelperFunctions.fetch_animation_file(starter_num)
-
-    shutil.copytree(os.getcwd() + "/Randomizer/StartersGifts/" +f'pokemon_clean/{pokemon_file}',
-                    os.getcwd() + "/Randomizer/StartersGifts/" +f'output/romfs/pokemon/data/{pokemon_file}')
-
-    current_check = os.getcwd() + "/Randomizer/StartersGifts/" +f'output/romfs/pokemon/data/{pokemon_file}'
-    i = 0
-    for pokemonfolder in os.listdir(current_check):
-        pokemontextures_animations = current_check + "/" + pokemonfolder
-
-        for files in os.listdir(pokemontextures_animations):
-            if "rare" in files:
-                replacedfile = files.replace("_rare", '')
-                ogfiledir = pokemontextures_animations + "/" + f'{files}'
-                newfiledir =pokemontextures_animations + "/" + f'{replacedfile}'
-                shutil.copy2(ogfiledir, newfiledir)
-
-
 def select_forced_starter(config, pokedata, starter_choice: str):
     choice = 1024
     if isinstance(config[f'force_starter_{starter_choice}'], str) is True:
@@ -109,20 +90,14 @@ def randomize_starter(config, pokemon_entry, check_forced_shiny: int, allowed_po
     # Changing Shiny-Chance - except ogerpon for lack of textures
     if config['make_all_starters_shiny'] == "yes":
         pokemon_entry['pokeData']['rareType'] = "RARE"
-        if config['show_shiny_starters_in_overworld'] == "yes":
-            flip_starter_texture(choice)
     elif config['force_shiny_starter'] == "yes" and check_forced_shiny == 1:
         pokemon_entry['pokeData']['rareType'] = "RARE"
-        if config['show_shiny_starters_in_overworld'] == "yes":
-            flip_starter_texture(choice)
 
     if (check_forced_shiny == 0 and config['make_all_starters_shiny'] != "yes"
             and config['higher_chance_shiny'] == "yes"):
         shiny_chance = random.randint(1, 10)
         if shiny_chance == 7:
             pokemon_entry['pokeData']['rareType'] = "RARE"
-            if config['show_shiny_starters_in_overworld'] == "yes":
-                flip_starter_texture(choice)
 
     # Change Pokeball
     if len(config['ball_for_starter']) != 0:
