@@ -1,0 +1,8 @@
+Espeon
+0
+35
+65
+GRASS
+NONE
+NONE
+NONE

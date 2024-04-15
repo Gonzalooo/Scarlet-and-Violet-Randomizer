@@ -1,0 +1,16 @@
+Larvitar
+0
+16
+28
+CAVE
+NONE
+NONE
+NONE
+Bagon
+0
+16
+28
+CAVE
+NONE
+NONE
+NONE

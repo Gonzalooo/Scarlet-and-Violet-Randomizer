@@ -1,0 +1,8 @@
+Floatzel - BOSS
+0
+28
+60
+BEACH
+RIVER
+OSEAN
+NONE

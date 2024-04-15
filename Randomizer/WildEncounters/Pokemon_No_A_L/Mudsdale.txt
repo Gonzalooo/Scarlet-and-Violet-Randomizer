@@ -1,0 +1,8 @@
+Mudsdale - BOSS
+0
+30
+49
+MOUNTAIN
+SWAMP
+NONE
+NONE

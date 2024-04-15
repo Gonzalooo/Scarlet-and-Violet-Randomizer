@@ -1,0 +1,8 @@
+Mismagius - BOSS
+0
+40
+60
+LAKE
+NONE
+NONE
+NONE

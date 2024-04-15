@@ -1,0 +1,16 @@
+Frigibax
+0
+24
+39
+CAVE
+NONE
+NONE
+NONE
+Arctibax
+0
+35
+52
+CAVE
+NONE
+NONE
+NONE

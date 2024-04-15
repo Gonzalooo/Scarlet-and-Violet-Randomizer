@@ -1,0 +1,8 @@
+Pincurchin
+0
+20
+50
+BEACH
+NONE
+NONE
+NONE

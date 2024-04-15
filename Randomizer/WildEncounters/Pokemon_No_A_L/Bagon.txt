@@ -1,0 +1,8 @@
+Bagon
+0
+16
+38
+CAVE
+MINE
+NONE
+NONE

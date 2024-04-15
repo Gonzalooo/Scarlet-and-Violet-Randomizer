@@ -1,0 +1,16 @@
+Cryogonal
+0
+30
+65
+SNOW
+NONE
+NONE
+NONE
+Crabominable
+0
+38
+60
+SNOW
+NONE
+NONE
+NONE

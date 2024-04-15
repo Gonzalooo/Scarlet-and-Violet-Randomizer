@@ -1,0 +1,8 @@
+Altaria - BOSS
+0
+40
+56
+MOUNTAIN
+LAKE
+NONE
+NONE

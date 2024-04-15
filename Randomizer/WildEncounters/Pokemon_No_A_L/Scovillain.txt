@@ -1,0 +1,8 @@
+Scovillain
+0
+30
+60
+DESERT
+MOUNTAIN
+NONE
+NONE
