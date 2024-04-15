@@ -70,6 +70,8 @@ paths = {
     "shiny_scenes": "pokemon/data/",
     "item_fixed": "world/data/raid/raid_fixed_reward_item/",
     "item_lottery": "world/data/raid/raid_lottery_reward_item/",
+    "shops": "world/data/ui/shop/friendlyshop/friendlyshop_lineup_data/",
+    "tm-machine": "world/data/ui/shop/shop_wazamachine/shop_wazamachine_data/",
     "trpfd": "arc/"
 }
 

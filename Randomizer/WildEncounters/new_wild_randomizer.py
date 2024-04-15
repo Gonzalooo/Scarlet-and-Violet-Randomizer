@@ -105,10 +105,7 @@ def generate_area_list():
 
 # fix function to add item for item pokemon
 def make_template(new_template, index, form=0):
-    new_template['devid'] = HelperFunctions.fetch_developer_name(index)
     new_template['formno'] = form
-    new_template['minlevel'] = 2
-    new_template['maxlevel'] = 99
     new_template['lotvalue'] = random.randint(1, 50)
     new_template['biome1'] = pick_random_biome()
     new_template['biome2'] = pick_random_biome()
@@ -120,23 +117,6 @@ def make_template(new_template, index, form=0):
     new_template['lotvalue4'] = generate_lot_value_for_biome()
     chosen_biomes.clear()
     new_template['area'] = generate_area_list()
-    new_template['locationName'] = ""
-    new_template['enabletable']['land'] = True
-    new_template['enabletable']['up_water'] = True
-    new_template['enabletable']['underwater'] = True
-    new_template['enabletable']['air1'] = True
-    new_template['enabletable']['air2'] = True
-    new_template['timetable']['morning'] = True
-    new_template['timetable']['noon'] = True
-    new_template['timetable']['evening'] = True
-    new_template['timetable']['night'] = True
-    new_template['flagName'] = ""
-    if index == 625:
-        new_template['bandrate'] = 100
-        new_template['bandtype'] = "BOSS"
-        new_template['bandpoke'] = "DEV_KOMATANA"
-    new_template['versiontable']['A'] = True
-    new_template['versiontable']['B'] = True
     item_obtained, rate_of_item = HelperFunctions.get_pokemon_item_form(index, form)
     new_template['bringItem']['itemID'] = item_obtained
     new_template['bringItem']['bringRate'] = rate_of_item
@@ -183,7 +163,7 @@ def randomize_wild_encounters(config, region: str, allowed_pokemon: list):
             if index not in SharedVariables.legends_and_paradox:
                 continue
         template_entry = {
-            "devid": "",
+            "devid": HelperFunctions.fetch_developer_name(index),
             "sex": "DEFAULT",
             "formno": 0,
             "minlevel": 2,
@@ -232,9 +212,10 @@ def randomize_wild_encounters(config, region: str, allowed_pokemon: list):
             }
         }
         forms_entry = template_entry.copy()
-        new_template = make_template(template_entry, index)
+        new_template = template_entry.copy()
 
         poke_dict['values'].append(new_template)
+        chosen_biomes.clear()
 
         forms = get_alt_form_list(index)
         for form in forms:

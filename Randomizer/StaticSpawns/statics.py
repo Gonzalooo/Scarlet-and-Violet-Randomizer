@@ -47,11 +47,6 @@ def randomize_statics(config):
         file = open(os.getcwd() + "/Randomizer/StaticSpawns/fixed_symbol_table_array_clean.json", "r")
         data = json.load(file)
         file.close()
-        names = []
-        file = open(os.getcwd() + "/Randomizer/StaticSpawns/pokemon_to_id.txt", "r")
-        for x in file:
-            names.append(x)
-        file.close()
 
         for pokemon in data['values']:
             make_poke(pokemon, config)
