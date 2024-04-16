@@ -1,8 +1,0 @@
-Misdreavus
-0
-10
-40
-LAKE
-MOUNTAIN
-NONE
-NONE

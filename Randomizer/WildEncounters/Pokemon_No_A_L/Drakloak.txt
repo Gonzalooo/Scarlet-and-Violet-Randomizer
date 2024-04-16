@@ -1,8 +1,0 @@
-Drakloak - BOSS
-0
-50
-60
-LAKE
-RIVER
-UNDERGROUND
-NONE

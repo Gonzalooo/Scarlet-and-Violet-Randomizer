@@ -1,0 +1,8 @@
+Dunsparce
+0
+15
+40
+GRASS
+FOREST
+CAVE
+LAKE

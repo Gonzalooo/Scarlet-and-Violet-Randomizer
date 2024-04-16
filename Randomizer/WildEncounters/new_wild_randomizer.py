@@ -263,3 +263,56 @@ def randomize_wilderness(config):
             blueberry_binary = True
 
         return paldea_binary, kitakami_binary, blueberry_binary
+
+
+# Areas maping - Paldea
+# 1 - Los Platos / South Province (Area One)
+# 2 - Unused Area (MAYBE DLC2 ?????)
+# 3 - Pokemon League
+# 4 - South Province (Area Two)
+# 5 - South Province (Area Four)
+# 6 - South Province (Area Six)
+# 7 - South Province (Area Five)
+# 8 - South Province (Area Three)
+# 9 - West Province (Area One)
+#10 - Asado Desert
+#11 - West Province (Area Two)
+#12 - West Province (Area Three)
+#13 - Tagtree Thicket
+#14 - East Province (Area Three)
+#15 - East Province (Area One)
+#16 - East Province (Area Two)
+#17 - Dalizapa Passage
+#18 - Casseroya Lake
+#19 - Glaseado Mountain
+#20 - North Province (Area Three)
+#21 - North Province (Area One)
+#22 - North Province (Area Two)
+#23 - Area Zero
+#24 - South Paldean Sea
+#25 - West Paldean Sea
+#26 - East Paldean Sea
+#27 - North Paldean Sea
+
+# Area mapping - Kitakami
+# 1 - Kitakami Road
+# 2 - Apple Hills
+# 3 - Reveler's Road
+# 4 - Oni Mountain
+# 5 - Infernal Passage
+# 6 - Crystal Pool
+# 7 - Wistful Fields
+# 8 - Mossfell Confluence
+# 9 - Fellhorn Gorge
+#10 - Paradize Barrens
+#11 - kitakami wilds/timeless wood
+
+# Area Mapping - Blueberry
+# 1 - Savannah
+# 2 - Coastal
+# 3 - Polar
+# 4 - Mountain
+
+# paths to spawners info: world\data\encount\point_data\point_data\
+# paths to tera_raid info: world\data\encount\point_data\outbreak_point_data\
+# main path to field info: \world\data\field\area\....

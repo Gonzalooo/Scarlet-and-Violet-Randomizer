@@ -1,8 +1,0 @@
-Igglybuff
-0
-5
-9
-TOWN
-NONE
-NONE
-NONE

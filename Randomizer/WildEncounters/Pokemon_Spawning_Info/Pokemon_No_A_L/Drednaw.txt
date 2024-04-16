@@ -1,0 +1,8 @@
+Drednaw - BOSS
+0
+22
+41
+SWAMP
+LAKE
+RIVER
+NONE

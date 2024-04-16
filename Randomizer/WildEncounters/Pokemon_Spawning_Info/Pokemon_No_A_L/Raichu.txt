@@ -1,0 +1,8 @@
+Raichu
+0
+40
+60
+FOREST
+NONE
+NONE
+NONE

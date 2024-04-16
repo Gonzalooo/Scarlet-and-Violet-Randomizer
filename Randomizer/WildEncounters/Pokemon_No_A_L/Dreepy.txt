@@ -1,8 +1,0 @@
-Dreepy
-0
-20
-40
-LAKE
-RIVER
-SWAMP
-NONE

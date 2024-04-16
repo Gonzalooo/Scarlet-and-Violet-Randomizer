@@ -1,8 +1,0 @@
-Rabsca
-0
-35
-65
-DESERT
-NONE
-NONE
-NONE

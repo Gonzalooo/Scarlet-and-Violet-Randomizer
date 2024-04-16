@@ -1,8 +1,0 @@
-Applin
-0
-10
-35
-FOREST
-NONE
-NONE
-NONE

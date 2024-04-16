@@ -1,0 +1,8 @@
+Shroodle
+0
+5
+32
+FOREST
+BAMBOO
+NONE
+NONE

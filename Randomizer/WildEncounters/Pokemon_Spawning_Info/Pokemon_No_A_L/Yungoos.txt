@@ -1,0 +1,8 @@
+Yungoos
+0
+2
+24
+CAVE
+ROCKY
+NONE
+NONE

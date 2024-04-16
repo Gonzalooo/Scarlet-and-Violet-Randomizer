@@ -1,8 +1,0 @@
-Hawlucha
-0
-45
-65
-MOUNTAIN
-ROCKY
-NONE
-NONE

@@ -1,8 +1,0 @@
-Goomy
-0
-15
-39
-SWAMP
-LAKE
-NONE
-NONE

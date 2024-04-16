@@ -1,8 +1,0 @@
-Rellor
-0
-26
-40
-DESERT
-NONE
-NONE
-NONE

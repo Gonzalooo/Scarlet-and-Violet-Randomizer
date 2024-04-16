@@ -1,0 +1,8 @@
+Jumpluff - BOSS
+0
+33
+50
+GRASS
+FLOWER
+NONE
+NONE

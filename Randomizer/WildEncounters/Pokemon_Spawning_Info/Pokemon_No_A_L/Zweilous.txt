@@ -1,0 +1,8 @@
+Zweilous
+0
+50
+64
+CAVE
+UNDERGROUND
+NONE
+NONE

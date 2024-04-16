@@ -1,8 +1,0 @@
-Orthworm
-0
-22
-65
-DESERT
-MINE
-NONE
-NONE

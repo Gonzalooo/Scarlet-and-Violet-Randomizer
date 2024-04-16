@@ -1,0 +1,8 @@
+Vespiquen - BOSS
+0
+30
+50
+FLOWER
+NONE
+NONE
+NONE

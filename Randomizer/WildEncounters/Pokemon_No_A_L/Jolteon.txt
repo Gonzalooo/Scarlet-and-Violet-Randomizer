@@ -1,8 +1,0 @@
-Jolteon
-0
-35
-65
-FOREST
-NONE
-NONE
-NONE

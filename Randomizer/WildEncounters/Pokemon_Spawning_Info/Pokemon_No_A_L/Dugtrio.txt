@@ -1,0 +1,8 @@
+Dugtrio
+0
+26
+60
+MINE
+CAVE
+UNDERGROUND
+NONE

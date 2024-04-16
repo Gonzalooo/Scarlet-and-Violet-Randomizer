@@ -1,0 +1,8 @@
+Golduck
+0
+33
+56
+LAKE
+RIVER
+NONE
+NONE

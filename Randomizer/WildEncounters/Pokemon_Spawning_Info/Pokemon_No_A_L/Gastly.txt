@@ -1,0 +1,16 @@
+Gastly
+0
+2
+24
+MOUNTAIN
+MINE
+NONE
+NONE
+Gastly - SAME
+0
+2
+24
+RUINS
+NONE
+NONE
+NONE

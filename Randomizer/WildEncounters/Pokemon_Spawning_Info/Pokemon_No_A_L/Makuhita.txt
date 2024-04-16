@@ -1,0 +1,8 @@
+Makuhita
+0
+10
+25
+MINE
+ROCKY
+CAVE
+NONE

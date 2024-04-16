@@ -1,0 +1,8 @@
+Sableye
+0
+15
+55
+CAVE
+UNDERGROUND
+NONE
+NONE

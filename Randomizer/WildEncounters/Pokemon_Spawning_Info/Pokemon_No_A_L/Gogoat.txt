@@ -1,0 +1,8 @@
+Gogoat - BOSS
+0
+32
+60
+MOUNTAIN
+ROCKY
+NONE
+NONE
