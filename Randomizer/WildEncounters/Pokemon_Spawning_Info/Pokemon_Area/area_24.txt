@@ -6,6 +6,7 @@ OSEAN
 BEACH
 NONE
 NONE
+------------------------------
 Pelipper
 0
 32
@@ -14,6 +15,7 @@ OSEAN
 BEACH
 NONE
 NONE
+------------------------------
 Tynamo - SAME
 0
 25
@@ -22,6 +24,7 @@ OSEAN
 RIVER
 NONE
 NONE
+------------------------------
 Eelektrik - BOSS
 0
 39
@@ -30,6 +33,7 @@ OSEAN
 RIVER
 NONE
 NONE
+------------------------------
 Bruxish
 0
 20
@@ -38,3 +42,4 @@ OSEAN
 NONE
 NONE
 NONE
+------------------------------

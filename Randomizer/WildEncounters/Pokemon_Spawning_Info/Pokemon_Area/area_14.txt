@@ -6,6 +6,7 @@ GRASS
 TOWN
 MINE
 NONE
+------------------------------
 Growlithe
 0
 17
@@ -14,6 +15,7 @@ MINE
 ROCKY
 NONE
 NONE
+------------------------------
 Magnemite
 0
 16
@@ -22,6 +24,7 @@ GRASS
 TOWN
 NONE
 NONE
+------------------------------
 Voltorb
 0
 26
@@ -30,6 +33,7 @@ MINE
 TOWN
 NONE
 NONE
+------------------------------
 Electrode - BOSS
 0
 32
@@ -38,6 +42,7 @@ TOWN
 NONE
 NONE
 NONE
+------------------------------
 Shuppet
 0
 16
@@ -46,6 +51,7 @@ TOWN
 NONE
 NONE
 NONE
+------------------------------
 Gothita
 0
 18
@@ -54,6 +60,7 @@ TOWN
 NONE
 NONE
 NONE
+------------------------------
 Pawniard - SAME
 0
 22
@@ -62,6 +69,7 @@ RIVER
 ROCKY
 NONE
 NONE
+------------------------------
 Rookidee
 0
 5
@@ -70,6 +78,7 @@ MOUNTAIN
 GRASS
 TOWN
 ROCKY
+------------------------------
 Corvisquire - BOSS
 0
 18
@@ -78,6 +87,7 @@ MOUNTAIN
 GRASS
 TOWN
 ROCKY
+------------------------------
 Rolycoly
 0
 5
@@ -86,6 +96,7 @@ MINE
 CAVE
 NONE
 NONE
+------------------------------
 Carkol - BOSS
 0
 25
@@ -94,6 +105,7 @@ MINE
 NONE
 NONE
 NONE
+------------------------------
 Sinistea
 0
 28
@@ -102,6 +114,7 @@ RUINS
 TOWN
 NONE
 NONE
+------------------------------
 Varoom
 0
 27
@@ -110,6 +123,7 @@ MINE
 MOUNTAIN
 TOWN
 NONE
+------------------------------
 Revavroom - BOSS
 0
 40
@@ -118,6 +132,7 @@ ROCKY
 NONE
 NONE
 NONE
+------------------------------
 Fidough
 0
 5
@@ -126,6 +141,7 @@ TOWN
 NONE
 NONE
 NONE
+------------------------------
 Dachsbun - BOSS
 0
 26
@@ -134,6 +150,7 @@ TOWN
 NONE
 NONE
 NONE
+------------------------------
 Bramblin
 0
 25
@@ -142,3 +159,4 @@ MINE
 DESERT
 NONE
 NONE
+------------------------------

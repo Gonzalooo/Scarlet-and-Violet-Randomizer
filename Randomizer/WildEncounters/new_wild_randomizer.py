@@ -311,7 +311,7 @@ def randomize_wilderness(config):
 # 1 - Savannah
 # 2 - Coastal
 # 3 - Polar
-# 4 - Mountain
+# 4 - Canyon
 
 # paths to spawners info: world\data\encount\point_data\point_data\
 # paths to tera_raid info: world\data\encount\point_data\outbreak_point_data\

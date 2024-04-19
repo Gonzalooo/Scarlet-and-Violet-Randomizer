@@ -6,6 +6,7 @@ RIVER
 NONE
 NONE
 NONE
+------------------------------
 Flaaffy
 0
 37
@@ -14,6 +15,7 @@ MOUNTAIN
 NONE
 NONE
 NONE
+------------------------------
 Donphan - BOSS
 0
 25
@@ -22,6 +24,7 @@ MOUNTAIN
 NONE
 NONE
 NONE
+------------------------------
 Pupitar
 0
 42
@@ -30,6 +33,7 @@ CAVE
 NONE
 NONE
 NONE
+------------------------------
 Meditite
 0
 20
@@ -38,6 +42,7 @@ MOUNTAIN
 CAVE
 NONE
 NONE
+------------------------------
 Medicham - BOSS
 0
 40
@@ -46,6 +51,7 @@ MOUNTAIN
 CAVE
 NONE
 NONE
+------------------------------
 Banette
 0
 37
@@ -54,6 +60,7 @@ TOWN
 NONE
 NONE
 NONE
+------------------------------
 Shelgon
 0
 42
@@ -62,6 +69,7 @@ CAVE
 NONE
 NONE
 NONE
+------------------------------
 Shellos
 0
 16
@@ -70,6 +78,7 @@ BEACH
 NONE
 NONE
 NONE
+------------------------------
 Gastrodon - BOSS
 0
 30
@@ -78,6 +87,7 @@ BEACH
 NONE
 NONE
 NONE
+------------------------------
 Gible
 0
 10
@@ -86,6 +96,7 @@ CAVE
 NONE
 NONE
 NONE
+------------------------------
 Lucario - BOSS
 0
 45
@@ -94,6 +105,7 @@ ROCKY
 MOUNTAIN
 NONE
 NONE
+------------------------------
 Petilil - SAME
 0
 13
@@ -102,6 +114,7 @@ FLOWER
 NONE
 NONE
 NONE
+------------------------------
 Lilligant - BOSS
 0
 30
@@ -110,6 +123,7 @@ FLOWER
 NONE
 NONE
 NONE
+------------------------------
 Gothorita
 0
 32
@@ -118,6 +132,7 @@ TOWN
 NONE
 NONE
 NONE
+------------------------------
 Gothitelle - BOSS
 0
 41
@@ -126,6 +141,7 @@ TOWN
 NONE
 NONE
 NONE
+------------------------------
 Tynamo - SAME
 0
 25
@@ -134,6 +150,7 @@ OSEAN
 RIVER
 NONE
 NONE
+------------------------------
 Eelektrik - BOSS
 0
 39
@@ -142,6 +159,7 @@ OSEAN
 RIVER
 NONE
 NONE
+------------------------------
 Sylveon
 0
 35
@@ -150,6 +168,7 @@ TOWN
 NONE
 NONE
 NONE
+------------------------------
 Toxel
 0
 10
@@ -158,6 +177,7 @@ MOUNTAIN
 CAVE
 GRASS
 NONE
+------------------------------
 Toxtricity
 0
 30
@@ -166,6 +186,7 @@ MOUNTAIN
 CAVE
 NONE
 NONE
+------------------------------
 Toxtricity
 1
 30
@@ -174,6 +195,7 @@ MOUNTAIN
 CAVE
 NONE
 NONE
+------------------------------
 Sinistea
 0
 28
@@ -182,6 +204,7 @@ RUINS
 TOWN
 NONE
 NONE
+------------------------------
 Sinistea
 1
 28
@@ -190,6 +213,7 @@ TOWN
 NONE
 NONE
 NONE
+------------------------------
 Bombirdier
 0
 19
@@ -198,6 +222,7 @@ TOWN
 MOUNTAIN
 OSEAN
 NONE
+------------------------------
 Fidough
 0
 5
@@ -206,6 +231,7 @@ TOWN
 NONE
 NONE
 NONE
+------------------------------
 Dachsbun - BOSS
 0
 26
@@ -214,3 +240,4 @@ TOWN
 NONE
 NONE
 NONE
+------------------------------

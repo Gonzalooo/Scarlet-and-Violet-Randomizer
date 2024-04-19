@@ -5,7 +5,7 @@ pokemon_dict_json = open("/Users/gonzalo/Desktop/Scarlet-and-Violet-Randomizer" 
 pokemon_dict = json.load(pokemon_dict_json)
 pokemon_dict_json.close()
 
-paldea_json = open('pokedata_array_clean.json', 'r')
+paldea_json = open("/Users/gonzalo/Desktop/Scarlet-and-Violet-Randomizer" + "/Randomizer/WildEncounters/" + 'pokedata_su2_array_clean.json', 'r')
 paldea = json.load(paldea_json)
 paldea_json.close()
 
@@ -26,7 +26,7 @@ if area_check is True:
 
         test = entry['area'].replace("\"", "").split(',')
         for area in test:
-            if entry['bandtype'] == "BOSS":
+            if "BOSS" in entry['bandtype']:
                 values[area].append(pokemon_dict['pokemons'][entry['devid']]['name'] + " - BOSS")
                 values[area].append(entry['formno'])
                 values[area].append(entry['minlevel'])
@@ -35,7 +35,7 @@ if area_check is True:
                 values[area].append(entry['biome2'])
                 values[area].append(entry['biome3'])
                 values[area].append(entry['biome4'])
-            elif entry['bandtype'] == "SAME":
+            elif "SAME" in entry['bandtype']:
                 values[area].append(pokemon_dict['pokemons'][entry['devid']]['name'] + " - SAME")
                 values[area].append(entry['formno'])
                 values[area].append(entry['minlevel'])
@@ -55,17 +55,19 @@ if area_check is True:
                 values[area].append(entry['biome4'])
 
     for i in range(1, 28):
-        filename = f'Pokemon_Area/area_{str(i)}.txt'
+        filename = f'Pokemon_Area_Blueberry/blueberry_area_{str(i)}.txt'
         file_check = open(filename, 'w')
         for j in range(0, len(values[f'{str(i)}'])):
             print(values[f'{str(i)}'][j], file=file_check)
-        file_check.close()
+            if j % 8 == 7:
+                print("------------------------------", file=file_check)
 
-    filename = f'Pokemon_Area/area_4_5.txt'
+    filename = f'Pokemon_Area_Blueberry/blueberry_area_4_5.txt'
     file_check = open(filename, 'w')
     for j in range(0, len(values['4.5'])):
         print(values['4.5'][j], file=file_check)
-    file_check.close()
+        if j%8 == 7:
+            print("------------------------------", file=file_check)
 
 # ---------------------------------------------------------------------------------------------------------------------
 if location_check is True:
@@ -87,7 +89,7 @@ if location_check is True:
         location_names = entry['locationName'].split(',')
 
         for location in location_names:
-            if entry['bandtype'] == "BOSS":
+            if "BOSS" in entry['bandtype']:
                 location_values[location].append(pokemon_dict['pokemons'][entry['devid']]['name'] + " - BOSS")
                 location_values[location].append(entry['formno'])
                 location_values[location].append(entry['minlevel'])
@@ -96,7 +98,7 @@ if location_check is True:
                 location_values[location].append(entry['biome2'])
                 location_values[location].append(entry['biome3'])
                 location_values[location].append(entry['biome4'])
-            elif entry['bandtype'] == "SAME":
+            elif "SAME" in entry['bandtype']:
                 location_values[location].append(pokemon_dict['pokemons'][entry['devid']]['name'] + " - SAME")
                 location_values[location].append(entry['formno'])
                 location_values[location].append(entry['minlevel'])
@@ -116,10 +118,16 @@ if location_check is True:
                 location_values[location].append(entry['biome4'])
 
     for key, value in location_values.items():
-        filename = f'Pokemon_Location/{key}.txt'
+        filename = f'Pokemon_Location_Blueberry/{key}.txt'
         file_check = open(filename, 'w')
+        counter = 1
         for pokemon in value:
             print(f'{pokemon}', file=file_check)
+            if counter % 8 == 0:
+                print("------------------------------", file=file_check)
+                counter = 1
+            else:
+                counter += 1
 
 # ---------------------------------------------------------------------------------------------------------------------
 if no_area_location_check is True:
@@ -131,16 +139,16 @@ if no_area_location_check is True:
 
     for entry in paldea['values']:
         if entry['area'] == '' and entry['locationName'] == '':
-            if entry['bandtype'] == "BOSS":
-                location_area_values[pokemon_dict['pokemons'][entry['devid']]['name']].append(pokemon_dict['pokemons'][entry['devid']]['name'] + " - BOSS")
-                location_area_values[pokemon_dict['pokemons'][entry['devid']]['name']].append(entry['formno'])
-                location_area_values[pokemon_dict['pokemons'][entry['devid']]['name']].append(entry['minlevel'])
-                location_area_values[pokemon_dict['pokemons'][entry['devid']]['name']].append(entry['maxlevel'])
-                location_area_values[pokemon_dict['pokemons'][entry['devid']]['name']].append(entry['biome1'])
-                location_area_values[pokemon_dict['pokemons'][entry['devid']]['name']].append(entry['biome2'])
-                location_area_values[pokemon_dict['pokemons'][entry['devid']]['name']].append(entry['biome3'])
-                location_area_values[pokemon_dict['pokemons'][entry['devid']]['name']].append(entry['biome4'])
-            elif entry['bandtype'] == "SAME":
+            if "BOSS" in entry['bandtype']:
+                location_area_values[pokemon_dict['pokemons'][entry['devid']]['name'] + entry['formno']].append(pokemon_dict['pokemons'][entry['devid']]['name'] + " - BOSS")
+                location_area_values[pokemon_dict['pokemons'][entry['devid']]['name'] + entry['formno']].append(entry['formno'])
+                location_area_values[pokemon_dict['pokemons'][entry['devid']]['name'] + entry['formno']].append(entry['minlevel'])
+                location_area_values[pokemon_dict['pokemons'][entry['devid']]['name'] + entry['formno']].append(entry['maxlevel'])
+                location_area_values[pokemon_dict['pokemons'][entry['devid']]['name'] + entry['formno']].append(entry['biome1'])
+                location_area_values[pokemon_dict['pokemons'][entry['devid']]['name'] + entry['formno']].append(entry['biome2'])
+                location_area_values[pokemon_dict['pokemons'][entry['devid']]['name'] + entry['formno']].append(entry['biome3'])
+                location_area_values[pokemon_dict['pokemons'][entry['devid']]['name'] + entry['formno']].append(entry['biome4'])
+            elif "SAME" in entry['bandtype']:
                 location_area_values[pokemon_dict['pokemons'][entry['devid']]['name']].append(pokemon_dict['pokemons'][entry['devid']]['name'] + " - SAME")
                 location_area_values[pokemon_dict['pokemons'][entry['devid']]['name']].append(entry['formno'])
                 location_area_values[pokemon_dict['pokemons'][entry['devid']]['name']].append(entry['minlevel'])
@@ -160,7 +168,8 @@ if no_area_location_check is True:
                 location_area_values[pokemon_dict['pokemons'][entry['devid']]['name']].append(entry['biome4'])
 
     for key, value in location_area_values.items():
-        filename = f'Pokemon_No_A_L/{key}.txt'
+        filename = f'Pokemon_No_A_L_Blueberry/{key}.txt'
         file_check = open(filename, 'w')
         for pokemon in value:
             print(f'{pokemon}', file=file_check)
+        print("------------------------------", file=file_check)

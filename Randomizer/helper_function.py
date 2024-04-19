@@ -541,7 +541,7 @@ def get_pokemon_item_form(index: int, form: int):
                 return "ITEMID_DAIHAKKINDAMA", 100
         case 493:
             match form:
-                case 1:  # Fightning
+                case 1:  # Fighting
                     return "ITEMID_KOBUSINOPUREETO", 100
                 case 2:  # Flying
                     return "ITEMID_AOZORAPUREETO", 100

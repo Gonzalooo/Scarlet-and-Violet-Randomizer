@@ -6,6 +6,7 @@ GRASS
 MOUNTAIN
 NONE
 NONE
+------------------------------
 Phanpy
 0
 11
@@ -14,6 +15,7 @@ DESERT
 MOUNTAIN
 LAKE
 NONE
+------------------------------
 Wingull
 0
 2
@@ -22,6 +24,7 @@ OSEAN
 BEACH
 NONE
 NONE
+------------------------------
 Pelipper
 0
 32
@@ -30,6 +33,7 @@ OSEAN
 BEACH
 NONE
 NONE
+------------------------------
 Numel
 0
 18
@@ -38,6 +42,7 @@ MOUNTAIN
 NONE
 NONE
 NONE
+------------------------------
 Gible
 0
 10
@@ -46,6 +51,7 @@ CAVE
 NONE
 NONE
 NONE
+------------------------------
 Petilil - SAME
 0
 13
@@ -54,6 +60,7 @@ FLOWER
 NONE
 NONE
 NONE
+------------------------------
 Lilligant - BOSS
 0
 30
@@ -62,6 +69,7 @@ FLOWER
 NONE
 NONE
 NONE
+------------------------------
 Tynamo - SAME
 0
 25
@@ -70,6 +78,7 @@ OSEAN
 RIVER
 NONE
 NONE
+------------------------------
 Eelektrik - BOSS
 0
 39
@@ -78,6 +87,7 @@ OSEAN
 RIVER
 NONE
 NONE
+------------------------------
 Falinks
 0
 13
@@ -86,6 +96,7 @@ RUINS
 BAMBOO
 NONE
 NONE
+------------------------------
 Nymble
 0
 14
@@ -94,6 +105,7 @@ MOUNTAIN
 GRASS
 NONE
 NONE
+------------------------------
 Capsakid
 0
 16
@@ -102,6 +114,7 @@ DESERT
 MOUNTAIN
 NONE
 NONE
+------------------------------
 Bombirdier
 0
 19
@@ -110,3 +123,4 @@ TOWN
 MOUNTAIN
 OSEAN
 NONE
+------------------------------

@@ -6,6 +6,7 @@ FLOWER
 NONE
 NONE
 NONE
+------------------------------
 Floette - SAME
 1
 19
@@ -14,6 +15,7 @@ FLOWER
 NONE
 NONE
 NONE
+------------------------------
 Floette - SAME
 2
 19
@@ -22,6 +24,7 @@ FLOWER
 NONE
 NONE
 NONE
+------------------------------
 Floette - SAME
 3
 19
@@ -30,6 +33,7 @@ FLOWER
 NONE
 NONE
 NONE
+------------------------------
 Floette - SAME
 4
 19
@@ -38,6 +42,7 @@ FLOWER
 NONE
 NONE
 NONE
+------------------------------
 Floette - SAME
 0
 19
@@ -46,6 +51,7 @@ FLOWER
 NONE
 NONE
 NONE
+------------------------------
 Floette - SAME
 1
 19
@@ -54,6 +60,7 @@ FLOWER
 NONE
 NONE
 NONE
+------------------------------
 Floette - SAME
 2
 19
@@ -62,6 +69,7 @@ FLOWER
 NONE
 NONE
 NONE
+------------------------------
 Floette - SAME
 3
 19
@@ -70,3 +78,4 @@ FLOWER
 NONE
 NONE
 NONE
+------------------------------

@@ -6,3 +6,4 @@ DESERT
 MOUNTAIN
 MINE
 NONE
+------------------------------

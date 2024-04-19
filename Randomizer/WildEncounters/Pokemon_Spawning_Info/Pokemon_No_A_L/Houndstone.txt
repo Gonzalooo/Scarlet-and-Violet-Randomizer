@@ -6,3 +6,4 @@ RUINS
 MOUNTAIN
 SNOW
 UNDERGROUND
+------------------------------

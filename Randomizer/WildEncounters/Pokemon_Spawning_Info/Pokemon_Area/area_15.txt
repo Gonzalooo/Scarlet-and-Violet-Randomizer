@@ -6,6 +6,7 @@ FOREST
 NONE
 NONE
 NONE
+------------------------------
 Venonat
 0
 17
@@ -14,6 +15,7 @@ FOREST
 NONE
 NONE
 NONE
+------------------------------
 Venomoth
 0
 31
@@ -22,6 +24,7 @@ FOREST
 BAMBOO
 NONE
 NONE
+------------------------------
 Slowpoke
 0
 23
@@ -30,6 +33,7 @@ LAKE
 RIVER
 BEACH
 NONE
+------------------------------
 Tauros - SAME
 1
 22
@@ -38,6 +42,7 @@ GRASS
 NONE
 NONE
 NONE
+------------------------------
 Tauros - BOSS
 2
 25
@@ -46,6 +51,7 @@ GRASS
 NONE
 NONE
 NONE
+------------------------------
 Tauros - BOSS
 3
 25
@@ -54,6 +60,7 @@ GRASS
 NONE
 NONE
 NONE
+------------------------------
 Skiploom - BOSS
 0
 18
@@ -62,6 +69,7 @@ GRASS
 FLOWER
 NONE
 NONE
+------------------------------
 Teddiursa
 0
 16
@@ -70,6 +78,7 @@ FOREST
 NONE
 NONE
 NONE
+------------------------------
 Gulpin
 0
 12
@@ -78,6 +87,7 @@ TOWN
 GRASS
 NONE
 NONE
+------------------------------
 Shuppet
 0
 16
@@ -86,6 +96,7 @@ TOWN
 NONE
 NONE
 NONE
+------------------------------
 Shellos
 1
 16
@@ -94,6 +105,7 @@ BEACH
 NONE
 NONE
 NONE
+------------------------------
 Gastrodon - BOSS
 1
 30
@@ -102,6 +114,7 @@ BEACH
 NONE
 NONE
 NONE
+------------------------------
 Deerling - SAME
 1
 16
@@ -110,6 +123,7 @@ GRASS
 NONE
 NONE
 NONE
+------------------------------
 Sawsbuck - BOSS
 1
 34
@@ -118,6 +132,7 @@ GRASS
 NONE
 NONE
 NONE
+------------------------------
 Litleo
 0
 18
@@ -126,6 +141,7 @@ GRASS
 ROCKY
 MOUNTAIN
 NONE
+------------------------------
 Pyroar - BOSS
 0
 35
@@ -134,6 +150,7 @@ GRASS
 ROCKY
 MOUNTAIN
 NONE
+------------------------------
 Pyroar - BOSS
 0
 35
@@ -142,6 +159,7 @@ GRASS
 ROCKY
 MOUNTAIN
 NONE
+------------------------------
 Pyroar - BOSS
 0
 35
@@ -150,6 +168,7 @@ GRASS
 ROCKY
 MOUNTAIN
 NONE
+------------------------------
 Oricorio
 0
 10
@@ -158,6 +177,7 @@ FLOWER
 TOWN
 NONE
 NONE
+------------------------------
 Mareanie
 0
 16
@@ -166,6 +186,7 @@ OSEAN
 BEACH
 NONE
 NONE
+------------------------------
 Toxapex - BOSS
 0
 38
@@ -174,6 +195,7 @@ OSEAN
 BEACH
 NONE
 NONE
+------------------------------
 Fomantis
 0
 16
@@ -182,6 +204,7 @@ FLOWER
 NONE
 NONE
 NONE
+------------------------------
 Lurantis - BOSS
 0
 34
@@ -190,6 +213,7 @@ FLOWER
 NONE
 NONE
 NONE
+------------------------------
 Steenee
 0
 21
@@ -198,6 +222,7 @@ FOREST
 GRASS
 NONE
 NONE
+------------------------------
 Sandygast
 0
 16
@@ -206,6 +231,7 @@ BEACH
 NONE
 NONE
 NONE
+------------------------------
 Palossand - BOSS
 0
 42
@@ -214,6 +240,7 @@ BEACH
 NONE
 NONE
 NONE
+------------------------------
 Rookidee
 0
 5
@@ -222,6 +249,7 @@ MOUNTAIN
 GRASS
 TOWN
 ROCKY
+------------------------------
 Corvisquire - BOSS
 0
 18
@@ -230,6 +258,7 @@ MOUNTAIN
 GRASS
 TOWN
 ROCKY
+------------------------------
 Lechonk
 0
 2
@@ -238,6 +267,7 @@ GRASS
 FOREST
 NONE
 NONE
+------------------------------
 Oinkologne
 0
 18
@@ -246,6 +276,7 @@ GRASS
 FOREST
 NONE
 NONE
+------------------------------
 Oinkologne
 1
 18
@@ -254,6 +285,7 @@ GRASS
 FOREST
 NONE
 NONE
+------------------------------
 Spidops - BOSS
 0
 20
@@ -262,3 +294,4 @@ FOREST
 BAMBOO
 NONE
 NONE
+------------------------------

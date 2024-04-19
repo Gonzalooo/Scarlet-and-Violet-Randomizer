@@ -6,3 +6,4 @@ FOREST
 TOWN
 GRASS
 NONE
+------------------------------

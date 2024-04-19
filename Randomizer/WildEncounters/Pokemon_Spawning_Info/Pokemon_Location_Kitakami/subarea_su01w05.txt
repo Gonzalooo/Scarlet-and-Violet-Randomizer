@@ -1,0 +1,18 @@
+Koffing
+0
+7
+60
+ROCKY
+MOUNTAIN
+NONE
+NONE
+------------------------------
+Houndour - SAME
+0
+7
+60
+ROCKY
+GRASS
+DESERT
+NONE
+------------------------------

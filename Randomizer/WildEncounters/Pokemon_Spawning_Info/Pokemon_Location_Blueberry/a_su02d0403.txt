@@ -1,0 +1,27 @@
+Diglett - SAME
+1
+7
+80
+CAVE
+NONE
+NONE
+NONE
+------------------------------
+Vigoroth - SAME
+0
+7
+80
+CAVE
+NONE
+NONE
+NONE
+------------------------------
+Slaking - BOSS
+0
+7
+80
+CAVE
+NONE
+NONE
+NONE
+------------------------------

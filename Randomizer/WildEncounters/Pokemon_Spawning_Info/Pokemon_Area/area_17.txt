@@ -6,6 +6,7 @@ SNOW
 MOUNTAIN
 NONE
 NONE
+------------------------------
 Haunter - BOSS
 0
 25
@@ -14,6 +15,7 @@ MOUNTAIN
 SNOW
 RUINS
 NONE
+------------------------------
 Sneasel - SAME
 0
 15
@@ -22,6 +24,7 @@ SNOW
 MOUNTAIN
 NONE
 NONE
+------------------------------
 Ursaring - BOSS
 0
 30
@@ -30,6 +33,7 @@ FOREST
 MOUNTAIN
 BAMBOO
 NONE
+------------------------------
 Delibird - SAME
 0
 15
@@ -38,6 +42,7 @@ SNOW
 TOWN
 NONE
 NONE
+------------------------------
 Vigoroth
 0
 22
@@ -46,6 +51,7 @@ MOUNTAIN
 GRASS
 NONE
 NONE
+------------------------------
 Grumpig - BOSS
 0
 32
@@ -54,6 +60,7 @@ ROCKY
 MOUNTAIN
 NONE
 NONE
+------------------------------
 Snorunt - SAME
 0
 15
@@ -62,6 +69,7 @@ SNOW
 MOUNTAIN
 CAVE
 NONE
+------------------------------
 Gothita
 0
 18
@@ -70,6 +78,7 @@ TOWN
 NONE
 NONE
 NONE
+------------------------------
 Deerling - SAME
 3
 16
@@ -78,6 +87,7 @@ MOUNTAIN
 NONE
 NONE
 NONE
+------------------------------
 Sawsbuck - BOSS
 3
 34
@@ -86,6 +96,7 @@ SNOW
 MOUNTAIN
 NONE
 NONE
+------------------------------
 Axew
 0
 16
@@ -94,6 +105,7 @@ MOUNTAIN
 RIVER
 NONE
 NONE
+------------------------------
 Fraxure - BOSS
 0
 38
@@ -102,6 +114,7 @@ MOUNTAIN
 RIVER
 NONE
 NONE
+------------------------------
 Cubchoo
 0
 23
@@ -110,6 +123,7 @@ SNOW
 MOUNTAIN
 NONE
 NONE
+------------------------------
 Litleo
 0
 18
@@ -118,6 +132,7 @@ GRASS
 ROCKY
 MOUNTAIN
 NONE
+------------------------------
 Pyroar - BOSS
 0
 35
@@ -126,6 +141,7 @@ GRASS
 ROCKY
 MOUNTAIN
 NONE
+------------------------------
 Pyroar - BOSS
 0
 35
@@ -134,6 +150,7 @@ GRASS
 ROCKY
 MOUNTAIN
 NONE
+------------------------------
 Pyroar - BOSS
 0
 35
@@ -142,6 +159,7 @@ GRASS
 ROCKY
 MOUNTAIN
 NONE
+------------------------------
 Bergmite - SAME
 0
 23
@@ -150,6 +168,7 @@ SNOW
 OSEAN
 NONE
 NONE
+------------------------------
 Avalugg - BOSS
 0
 37
@@ -158,6 +177,7 @@ SNOW
 OSEAN
 NONE
 NONE
+------------------------------
 Fomantis
 0
 16
@@ -166,6 +186,7 @@ FLOWER
 NONE
 NONE
 NONE
+------------------------------
 Lurantis - BOSS
 0
 34
@@ -174,6 +195,7 @@ FLOWER
 NONE
 NONE
 NONE
+------------------------------
 Mimikyu
 0
 19
@@ -182,6 +204,7 @@ RUINS
 NONE
 NONE
 NONE
+------------------------------
 Snom
 0
 10
@@ -190,6 +213,7 @@ SNOW
 MOUNTAIN
 NONE
 NONE
+------------------------------
 Greavard
 0
 22
@@ -198,6 +222,7 @@ RUINS
 NONE
 NONE
 NONE
+------------------------------
 Greavard
 0
 25
@@ -206,6 +231,7 @@ MOUNTAIN
 SNOW
 NONE
 NONE
+------------------------------
 Revavroom - BOSS
 0
 40
@@ -214,6 +240,7 @@ ROCKY
 NONE
 NONE
 NONE
+------------------------------
 Cetoddle - SAME
 0
 20
@@ -222,6 +249,7 @@ SNOW
 MOUNTAIN
 NONE
 NONE
+------------------------------
 Frigibax
 0
 24
@@ -230,6 +258,7 @@ CAVE
 SNOW
 NONE
 NONE
+------------------------------
 Tinkatuff
 0
 34
@@ -238,3 +267,4 @@ MOUNTAIN
 NONE
 NONE
 NONE
+------------------------------

@@ -1,0 +1,27 @@
+Clefairy
+0
+5
+60
+CAVE
+NONE
+NONE
+NONE
+------------------------------
+Hoothoot - SAME
+0
+7
+60
+CAVE
+NONE
+NONE
+NONE
+------------------------------
+Cleffa
+0
+3
+60
+CAVE
+NONE
+NONE
+NONE
+------------------------------

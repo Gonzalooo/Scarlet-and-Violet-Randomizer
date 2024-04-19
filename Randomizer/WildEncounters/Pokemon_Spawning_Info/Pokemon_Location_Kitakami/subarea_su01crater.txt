@@ -1,0 +1,27 @@
+Sandshrew
+0
+5
+60
+ROCKY
+MOUNTAIN
+NONE
+NONE
+------------------------------
+Clefairy - SAME
+0
+5
+60
+ROCKY
+GRASS
+NONE
+NONE
+------------------------------
+Cleffa
+0
+3
+60
+ROCKY
+GRASS
+NONE
+NONE
+------------------------------

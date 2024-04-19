@@ -6,3 +6,4 @@ GRASS
 FOREST
 CAVE
 LAKE
+------------------------------

@@ -6,6 +6,7 @@ LAKE
 NONE
 NONE
 NONE
+------------------------------
 Avalugg - BOSS
 0
 37
@@ -14,3 +15,4 @@ LAKE
 NONE
 NONE
 NONE
+------------------------------

@@ -1,0 +1,1071 @@
+{
+  "area": [
+    {
+      "23": {
+        "name": "Area Zero",
+        "min": 57.0,
+        "max": 62.0,
+        "biomes": [
+          "RIVER",
+          "ROCKY",
+          "RUINS",
+          "CAVE",
+          "GRASS",
+          "UNDERGROUND"
+        ],
+        "pokemons": [
+          {
+            "name": "Drakloak - BOSS",
+            "locationname": "",
+            "form": "0",
+            "minlevel": "50",
+            "maxlevel": "60",
+            "biomes": [
+              "LAKE",
+              "RIVER",
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Naclstack - BOSS",
+            "locationname": "",
+            "form": "0",
+            "minlevel": "31",
+            "maxlevel": "60",
+            "biomes": [
+              "ROCKY",
+              "BEACH"
+            ]
+          },
+          {
+            "name": "Gogoat - BOSS",
+            "locationname": "",
+            "form": "0",
+            "minlevel": "32",
+            "maxlevel": "60",
+            "biomes": [
+              "MOUNTAIN",
+              "ROCKY"
+            ]
+          },
+          {
+            "name": "Gabite - BOSS",
+            "locationname": "",
+            "form": "0",
+            "minlevel": "32",
+            "maxlevel": "60",
+            "biomes": [
+              "CAVE",
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Pawmo - BOSS",
+            "locationname": "",
+            "form": "0",
+            "minlevel": "18",
+            "maxlevel": "58",
+            "biomes": [
+              "MOUNTAIN",
+              "GRASS"
+            ]
+          },
+          {
+            "name": "Floatzel - BOSS",
+            "locationname": "",
+            "form": "0",
+            "minlevel": "28",
+            "maxlevel": "60",
+            "biomes": [
+              "BEACH",
+              "RIVER",
+              "OSEAN"
+            ]
+          },
+          {
+            "name": "Espathra",
+            "locationname": "",
+            "form": "0",
+            "minlevel": "35",
+            "maxlevel": "60",
+            "biomes": [
+              "MOUNTAIN",
+              "DESERT",
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Dugtrio",
+            "locationname": "",
+            "form": "0",
+            "minlevel": "26",
+            "maxlevel": "60",
+            "biomes": [
+              "MINE",
+              "CAVE",
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Glimmora - BOSS",
+            "locationname": "",
+            "form": "0",
+            "minlevel": "35",
+            "maxlevel": "60",
+            "biomes": [
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Dudunsparce",
+            "locationname": "",
+            "form": "0",
+            "minlevel": "15",
+            "maxlevel": "60",
+            "biomes": [
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Sneasel - SAME",
+            "locationname": "a_w23_d03",
+            "form": "0",
+            "minlevel": "15",
+            "maxlevel": "60",
+            "biomes": [
+              "CAVE"
+            ]
+          },
+          {
+            "name": "Lycanroc",
+            "locationname": "a_w23_d03",
+            "form": "1",
+            "minlevel": "34",
+            "maxlevel": "60",
+            "biomes": [
+              "CAVE"
+            ]
+          },
+          {
+            "name": "Flutter Mane",
+            "locationname": "a_w23_d03",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "CAVE",
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Roaring Moon",
+            "locationname": "a_w23_d03",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "CAVE",
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Iron Jugulis",
+            "locationname": "a_w23_d03",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "CAVE",
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Iron Valiant",
+            "locationname": "a_w23_d03",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "CAVE",
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Sneasel - SAME",
+            "locationname": "a_w23_d02",
+            "form": "0",
+            "minlevel": "15",
+            "maxlevel": "60",
+            "biomes": [
+              "CAVE"
+            ]
+          },
+          {
+            "name": "Lycanroc",
+            "locationname": "a_w23_d02",
+            "form": "1",
+            "minlevel": "34",
+            "maxlevel": "60",
+            "biomes": [
+              "CAVE"
+            ]
+          },
+          {
+            "name": "Flutter Mane",
+            "locationname": "a_w23_d02",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "CAVE",
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Iron Jugulis",
+            "locationname": "a_w23_d02",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "CAVE",
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Sneasel - SAME",
+            "locationname": "a_w23_d01",
+            "form": "0",
+            "minlevel": "15",
+            "maxlevel": "60",
+            "biomes": [
+              "CAVE"
+            ]
+          },
+          {
+            "name": "Lycanroc",
+            "locationname": "a_w23_d01",
+            "form": "1",
+            "minlevel": "34",
+            "maxlevel": "60",
+            "biomes": [
+              "CAVE"
+            ]
+          },
+          {
+            "name": "Flutter Mane",
+            "locationname": "a_w23_d01",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "CAVE",
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Iron Jugulis",
+            "locationname": "a_w23_d01",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "CAVE",
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Sneasel - SAME",
+            "locationname": "a_w23_d04",
+            "form": "0",
+            "minlevel": "15",
+            "maxlevel": "60",
+            "biomes": [
+              "CAVE"
+            ]
+          },
+          {
+            "name": "Lycanroc",
+            "locationname": "a_w23_d04",
+            "form": "1",
+            "minlevel": "34",
+            "maxlevel": "60",
+            "biomes": [
+              "CAVE"
+            ]
+          },
+          {
+            "name": "Flutter Mane",
+            "locationname": "a_w23_d04",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "CAVE",
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Iron Jugulis",
+            "locationname": "a_w23_d04",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "CAVE",
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Raichu",
+            "locationname": "a_w23_field_1",
+            "form": "0",
+            "minlevel": "40",
+            "maxlevel": "60",
+            "biomes": [
+              "GRASS"
+            ]
+          },
+          {
+            "name": "Venomoth",
+            "locationname": "a_w23_field_1",
+            "form": "0",
+            "minlevel": "31",
+            "maxlevel": "60",
+            "biomes": [
+              "GRASS"
+            ]
+          },
+          {
+            "name": "Jumpluff - BOSS",
+            "locationname": "a_w23_field_1",
+            "form": "0",
+            "minlevel": "33",
+            "maxlevel": "60",
+            "biomes": [
+              "GRASS"
+            ]
+          },
+          {
+            "name": "Girafarig",
+            "locationname": "a_w23_field_1",
+            "form": "0",
+            "minlevel": "20",
+            "maxlevel": "60",
+            "biomes": [
+              "GRASS"
+            ]
+          },
+          {
+            "name": "Dunsparce",
+            "locationname": "a_w23_field_1",
+            "form": "0",
+            "minlevel": "15",
+            "maxlevel": "60",
+            "biomes": [
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Donphan - BOSS",
+            "locationname": "a_w23_field_1",
+            "form": "0",
+            "minlevel": "25",
+            "maxlevel": "60",
+            "biomes": [
+              "ROCKY"
+            ]
+          },
+          {
+            "name": "Altaria - BOSS",
+            "locationname": "a_w23_field_1",
+            "form": "0",
+            "minlevel": "40",
+            "maxlevel": "60",
+            "biomes": [
+              "RIVER"
+            ]
+          },
+          {
+            "name": "Volcarona",
+            "locationname": "a_w23_field_1",
+            "form": "0",
+            "minlevel": "59",
+            "maxlevel": "65",
+            "biomes": [
+              "GRASS"
+            ]
+          },
+          {
+            "name": "Talonflame",
+            "locationname": "a_w23_field_1",
+            "form": "0",
+            "minlevel": "17",
+            "maxlevel": "60",
+            "biomes": [
+              "ROCKY"
+            ]
+          },
+          {
+            "name": "Floette - SAME",
+            "locationname": "a_w23_field_1",
+            "form": "4",
+            "minlevel": "19",
+            "maxlevel": "60",
+            "biomes": [
+              "GRASS"
+            ]
+          },
+          {
+            "name": "Lycanroc",
+            "locationname": "a_w23_field_1",
+            "form": "0",
+            "minlevel": "34",
+            "maxlevel": "60",
+            "biomes": [
+              "ROCKY"
+            ]
+          },
+          {
+            "name": "Corviknight",
+            "locationname": "a_w23_field_1",
+            "form": "0",
+            "minlevel": "18",
+            "maxlevel": "60",
+            "biomes": [
+              "GRASS"
+            ]
+          },
+          {
+            "name": "Frosmoth",
+            "locationname": "a_w23_field_1",
+            "form": "0",
+            "minlevel": "42",
+            "maxlevel": "60",
+            "biomes": [
+              "GRASS"
+            ]
+          },
+          {
+            "name": "Farigiraf - BOSS",
+            "locationname": "a_w23_field_1",
+            "form": "0",
+            "minlevel": "20",
+            "maxlevel": "60",
+            "biomes": [
+              "GRASS"
+            ]
+          },
+          {
+            "name": "Flamigo",
+            "locationname": "a_w23_field_1",
+            "form": "0",
+            "minlevel": "24",
+            "maxlevel": "60",
+            "biomes": [
+              "RIVER"
+            ]
+          },
+          {
+            "name": "Garganacl",
+            "locationname": "a_w23_field_1",
+            "form": "0",
+            "minlevel": "31",
+            "maxlevel": "60",
+            "biomes": [
+              "ROCKY",
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Great Tusk",
+            "locationname": "a_w23_field_1",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Sandy Shocks",
+            "locationname": "a_w23_field_1",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "ROCKY"
+            ]
+          },
+          {
+            "name": "Scream Tail",
+            "locationname": "a_w23_field_1",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "UNDERGROUND",
+              "GRASS"
+            ]
+          },
+          {
+            "name": "Scream Tail",
+            "locationname": "a_w23_field_1",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Slither Wing",
+            "locationname": "a_w23_field_1",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "GRASS"
+            ]
+          },
+          {
+            "name": "Iron Treads",
+            "locationname": "a_w23_field_1",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Iron Moth",
+            "locationname": "a_w23_field_1",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "GRASS"
+            ]
+          },
+          {
+            "name": "Iron Hands",
+            "locationname": "a_w23_field_1",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "GRASS",
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Iron Thorns",
+            "locationname": "a_w23_field_1",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "ROCKY"
+            ]
+          },
+          {
+            "name": "Iron Bundle",
+            "locationname": "a_w23_field_1",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "UNDERGROUND",
+              "GRASS"
+            ]
+          },
+          {
+            "name": "Iron Bundle",
+            "locationname": "a_w23_field_1",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Raichu",
+            "locationname": "a_w23_field_2",
+            "form": "0",
+            "minlevel": "40",
+            "maxlevel": "60",
+            "biomes": [
+              "GRASS"
+            ]
+          },
+          {
+            "name": "Venomoth",
+            "locationname": "a_w23_field_2",
+            "form": "0",
+            "minlevel": "31",
+            "maxlevel": "60",
+            "biomes": [
+              "GRASS"
+            ]
+          },
+          {
+            "name": "Hypno",
+            "locationname": "a_w23_field_2",
+            "form": "0",
+            "minlevel": "28",
+            "maxlevel": "60",
+            "biomes": [
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Girafarig",
+            "locationname": "a_w23_field_2",
+            "form": "0",
+            "minlevel": "20",
+            "maxlevel": "60",
+            "biomes": [
+              "GRASS"
+            ]
+          },
+          {
+            "name": "Dunsparce",
+            "locationname": "a_w23_field_2",
+            "form": "0",
+            "minlevel": "15",
+            "maxlevel": "60",
+            "biomes": [
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Donphan - BOSS",
+            "locationname": "a_w23_field_2",
+            "form": "0",
+            "minlevel": "25",
+            "maxlevel": "60",
+            "biomes": [
+              "ROCKY"
+            ]
+          },
+          {
+            "name": "Masquerain",
+            "locationname": "a_w23_field_2",
+            "form": "0",
+            "minlevel": "23",
+            "maxlevel": "60",
+            "biomes": [
+              "RIVER"
+            ]
+          },
+          {
+            "name": "Camerupt - BOSS",
+            "locationname": "a_w23_field_2",
+            "form": "0",
+            "minlevel": "33",
+            "maxlevel": "60",
+            "biomes": [
+              "ROCKY"
+            ]
+          },
+          {
+            "name": "Altaria - BOSS",
+            "locationname": "a_w23_field_2",
+            "form": "0",
+            "minlevel": "40",
+            "maxlevel": "60",
+            "biomes": [
+              "RIVER"
+            ]
+          },
+          {
+            "name": "Volcarona",
+            "locationname": "a_w23_field_2",
+            "form": "0",
+            "minlevel": "59",
+            "maxlevel": "65",
+            "biomes": [
+              "GRASS"
+            ]
+          },
+          {
+            "name": "Talonflame",
+            "locationname": "a_w23_field_2",
+            "form": "0",
+            "minlevel": "17",
+            "maxlevel": "60",
+            "biomes": [
+              "ROCKY"
+            ]
+          },
+          {
+            "name": "Floette - SAME",
+            "locationname": "a_w23_field_2",
+            "form": "4",
+            "minlevel": "19",
+            "maxlevel": "60",
+            "biomes": [
+              "GRASS"
+            ]
+          },
+          {
+            "name": "Lycanroc",
+            "locationname": "a_w23_field_2",
+            "form": "0",
+            "minlevel": "34",
+            "maxlevel": "60",
+            "biomes": [
+              "ROCKY"
+            ]
+          },
+          {
+            "name": "Corviknight",
+            "locationname": "a_w23_field_2",
+            "form": "0",
+            "minlevel": "18",
+            "maxlevel": "60",
+            "biomes": [
+              "GRASS"
+            ]
+          },
+          {
+            "name": "Farigiraf - BOSS",
+            "locationname": "a_w23_field_2",
+            "form": "0",
+            "minlevel": "20",
+            "maxlevel": "60",
+            "biomes": [
+              "GRASS"
+            ]
+          },
+          {
+            "name": "Bellibolt - BOSS",
+            "locationname": "a_w23_field_2",
+            "form": "0",
+            "minlevel": "35",
+            "maxlevel": "60",
+            "biomes": [
+              "RIVER"
+            ]
+          },
+          {
+            "name": "Flamigo",
+            "locationname": "a_w23_field_2",
+            "form": "0",
+            "minlevel": "24",
+            "maxlevel": "60",
+            "biomes": [
+              "RIVER"
+            ]
+          },
+          {
+            "name": "Garganacl",
+            "locationname": "a_w23_field_2",
+            "form": "0",
+            "minlevel": "31",
+            "maxlevel": "60",
+            "biomes": [
+              "ROCKY",
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Great Tusk",
+            "locationname": "a_w23_field_2",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Brute Bonnet",
+            "locationname": "a_w23_field_2",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "GRASS",
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Sandy Shocks",
+            "locationname": "a_w23_field_2",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "ROCKY"
+            ]
+          },
+          {
+            "name": "Scream Tail",
+            "locationname": "a_w23_field_2",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "UNDERGROUND",
+              "GRASS"
+            ]
+          },
+          {
+            "name": "Scream Tail",
+            "locationname": "a_w23_field_2",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Iron Treads",
+            "locationname": "a_w23_field_2",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Iron Hands",
+            "locationname": "a_w23_field_2",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "GRASS",
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Iron Thorns",
+            "locationname": "a_w23_field_2",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "ROCKY"
+            ]
+          },
+          {
+            "name": "Iron Bundle",
+            "locationname": "a_w23_field_2",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "UNDERGROUND",
+              "GRASS"
+            ]
+          },
+          {
+            "name": "Iron Bundle",
+            "locationname": "a_w23_field_2",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Dunsparce",
+            "locationname": "a_w23_field_3",
+            "form": "0",
+            "minlevel": "15",
+            "maxlevel": "60",
+            "biomes": [
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Garganacl",
+            "locationname": "a_w23_field_3",
+            "form": "0",
+            "minlevel": "31",
+            "maxlevel": "60",
+            "biomes": [
+              "ROCKY",
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Great Tusk",
+            "locationname": "a_w23_field_3",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Brute Bonnet",
+            "locationname": "a_w23_field_3",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "GRASS",
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Sandy Shocks",
+            "locationname": "a_w23_field_3",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "ROCKY"
+            ]
+          },
+          {
+            "name": "Scream Tail",
+            "locationname": "a_w23_field_3",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "UNDERGROUND",
+              "GRASS"
+            ]
+          },
+          {
+            "name": "Scream Tail",
+            "locationname": "a_w23_field_3",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Flutter Mane",
+            "locationname": "a_w23_field_3",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "CAVE",
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Slither Wing",
+            "locationname": "a_w23_field_3",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "GRASS"
+            ]
+          },
+          {
+            "name": "Roaring Moon",
+            "locationname": "a_w23_field_3",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "CAVE",
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Iron Treads",
+            "locationname": "a_w23_field_3",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Iron Moth",
+            "locationname": "a_w23_field_3",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "GRASS"
+            ]
+          },
+          {
+            "name": "Iron Hands",
+            "locationname": "a_w23_field_3",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "GRASS",
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Iron Jugulis",
+            "locationname": "a_w23_field_3",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "CAVE",
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Iron Thorns",
+            "locationname": "a_w23_field_3",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "ROCKY"
+            ]
+          },
+          {
+            "name": "Iron Bundle",
+            "locationname": "a_w23_field_3",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "UNDERGROUND",
+              "GRASS"
+            ]
+          },
+          {
+            "name": "Iron Bundle",
+            "locationname": "a_w23_field_3",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "UNDERGROUND"
+            ]
+          },
+          {
+            "name": "Iron Valiant",
+            "locationname": "a_w23_field_3",
+            "form": "0",
+            "minlevel": "52",
+            "maxlevel": "60",
+            "biomes": [
+              "CAVE",
+              "UNDERGROUND"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -6,6 +6,7 @@ MINE
 ROCKY
 NONE
 NONE
+------------------------------
 Slakoth
 0
 7
@@ -14,6 +15,7 @@ GRASS
 NONE
 NONE
 NONE
+------------------------------
 Gulpin
 0
 12
@@ -22,6 +24,7 @@ TOWN
 GRASS
 NONE
 NONE
+------------------------------
 Spoink
 0
 10
@@ -30,6 +33,7 @@ ROCKY
 MOUNTAIN
 NONE
 NONE
+------------------------------
 Shuppet
 0
 16
@@ -38,6 +42,7 @@ TOWN
 NONE
 NONE
 NONE
+------------------------------
 Shinx - SAME
 0
 7
@@ -46,6 +51,7 @@ ROCKY
 NONE
 NONE
 NONE
+------------------------------
 Oricorio
 0
 10
@@ -54,6 +60,7 @@ FLOWER
 TOWN
 NONE
 NONE
+------------------------------
 Rookidee
 0
 5
@@ -62,6 +69,7 @@ MOUNTAIN
 GRASS
 TOWN
 ROCKY
+------------------------------
 Nymble
 0
 14
@@ -70,6 +78,7 @@ MOUNTAIN
 GRASS
 NONE
 NONE
+------------------------------
 Pawmi - SAME
 0
 2
@@ -78,6 +87,7 @@ GRASS
 ROCKY
 NONE
 NONE
+------------------------------
 Klawf
 0
 15
@@ -86,6 +96,7 @@ ROCKY
 NONE
 NONE
 NONE
+------------------------------
 Fidough
 0
 5
@@ -94,6 +105,7 @@ TOWN
 NONE
 NONE
 NONE
+------------------------------
 Dachsbun - BOSS
 0
 26
@@ -102,3 +114,4 @@ TOWN
 NONE
 NONE
 NONE
+------------------------------

@@ -6,6 +6,7 @@ GRASS
 NONE
 NONE
 NONE
+------------------------------
 Venomoth
 0
 31
@@ -14,6 +15,7 @@ GRASS
 NONE
 NONE
 NONE
+------------------------------
 Hypno
 0
 28
@@ -22,6 +24,7 @@ UNDERGROUND
 NONE
 NONE
 NONE
+------------------------------
 Girafarig
 0
 20
@@ -30,6 +33,7 @@ GRASS
 NONE
 NONE
 NONE
+------------------------------
 Dunsparce
 0
 15
@@ -38,6 +42,7 @@ UNDERGROUND
 NONE
 NONE
 NONE
+------------------------------
 Donphan - BOSS
 0
 25
@@ -46,6 +51,7 @@ ROCKY
 NONE
 NONE
 NONE
+------------------------------
 Masquerain
 0
 23
@@ -54,6 +60,7 @@ RIVER
 NONE
 NONE
 NONE
+------------------------------
 Camerupt - BOSS
 0
 33
@@ -62,6 +69,7 @@ ROCKY
 NONE
 NONE
 NONE
+------------------------------
 Altaria - BOSS
 0
 40
@@ -70,6 +78,7 @@ RIVER
 NONE
 NONE
 NONE
+------------------------------
 Bisharp - BOSS
 0
 52
@@ -78,6 +87,7 @@ RIVER
 NONE
 NONE
 NONE
+------------------------------
 Bisharp
 0
 52
@@ -86,6 +96,7 @@ RIVER
 NONE
 NONE
 NONE
+------------------------------
 Braviary - SAME
 0
 54
@@ -94,6 +105,7 @@ GRASS
 NONE
 ROCKY
 NONE
+------------------------------
 Volcarona
 0
 59
@@ -102,6 +114,7 @@ GRASS
 NONE
 NONE
 NONE
+------------------------------
 Talonflame
 0
 17
@@ -110,6 +123,7 @@ ROCKY
 NONE
 NONE
 NONE
+------------------------------
 Floette - SAME
 4
 19
@@ -118,6 +132,7 @@ GRASS
 NONE
 NONE
 NONE
+------------------------------
 Lycanroc
 0
 34
@@ -126,6 +141,7 @@ ROCKY
 NONE
 NONE
 NONE
+------------------------------
 Corviknight
 0
 18
@@ -134,6 +150,7 @@ GRASS
 NONE
 NONE
 NONE
+------------------------------
 Farigiraf - BOSS
 0
 20
@@ -142,6 +159,7 @@ GRASS
 NONE
 NONE
 NONE
+------------------------------
 Bellibolt - BOSS
 0
 35
@@ -150,6 +168,7 @@ RIVER
 NONE
 NONE
 NONE
+------------------------------
 Flamigo
 0
 24
@@ -158,6 +177,7 @@ RIVER
 NONE
 NONE
 NONE
+------------------------------
 Garganacl
 0
 31
@@ -166,6 +186,7 @@ ROCKY
 UNDERGROUND
 NONE
 NONE
+------------------------------
 Great Tusk
 0
 52
@@ -174,6 +195,7 @@ UNDERGROUND
 NONE
 NONE
 NONE
+------------------------------
 Brute Bonnet
 0
 52
@@ -182,6 +204,7 @@ GRASS
 UNDERGROUND
 NONE
 NONE
+------------------------------
 Sandy Shocks
 0
 52
@@ -190,6 +213,7 @@ ROCKY
 NONE
 NONE
 NONE
+------------------------------
 Scream Tail
 0
 52
@@ -198,6 +222,7 @@ UNDERGROUND
 GRASS
 NONE
 NONE
+------------------------------
 Scream Tail
 0
 52
@@ -206,6 +231,7 @@ UNDERGROUND
 NONE
 NONE
 NONE
+------------------------------
 Iron Treads
 0
 52
@@ -214,6 +240,7 @@ UNDERGROUND
 NONE
 NONE
 NONE
+------------------------------
 Iron Hands
 0
 52
@@ -222,6 +249,7 @@ GRASS
 UNDERGROUND
 NONE
 NONE
+------------------------------
 Iron Thorns
 0
 52
@@ -230,6 +258,7 @@ ROCKY
 NONE
 NONE
 NONE
+------------------------------
 Iron Bundle
 0
 52
@@ -238,6 +267,7 @@ UNDERGROUND
 GRASS
 NONE
 NONE
+------------------------------
 Iron Bundle
 0
 52
@@ -246,3 +276,4 @@ UNDERGROUND
 NONE
 NONE
 NONE
+------------------------------
