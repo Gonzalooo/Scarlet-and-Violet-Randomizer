@@ -1,9 +1,0 @@
-Sandaconda - BOSS
-0
-36
-55
-DESERT
-MINE
-NONE
-NONE
-------------------------------

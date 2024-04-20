@@ -1,9 +1,0 @@
-Houndstone - BOSS
-0
-42
-56
-RUINS
-MOUNTAIN
-SNOW
-UNDERGROUND
-------------------------------

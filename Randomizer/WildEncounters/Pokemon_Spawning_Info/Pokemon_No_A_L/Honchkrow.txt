@@ -1,9 +1,0 @@
-Honchkrow - BOSS
-0
-35
-65
-FOREST
-ROCKY
-MOUNTAIN
-NONE
-------------------------------

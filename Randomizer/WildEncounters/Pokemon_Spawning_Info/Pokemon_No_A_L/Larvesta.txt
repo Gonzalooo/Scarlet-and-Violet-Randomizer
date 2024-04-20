@@ -1,9 +1,0 @@
-Larvesta
-0
-24
-63
-DESERT
-NONE
-NONE
-NONE
-------------------------------

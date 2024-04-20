@@ -1,9 +1,0 @@
-Arrokuda
-0
-2
-30
-OSEAN
-RIVER
-NONE
-NONE
-------------------------------
