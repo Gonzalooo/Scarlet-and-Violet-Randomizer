@@ -1,0 +1,17 @@
+Flamigo
+0
+24
+48
+LAKE
+RIVER
+NONE
+NONE
+Flamigo - SAME
+0
+10
+50
+SWAMP
+NONE
+NONE
+NONE
+------------------------------

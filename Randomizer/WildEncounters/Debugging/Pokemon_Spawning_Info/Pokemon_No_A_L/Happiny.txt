@@ -1,0 +1,9 @@
+Happiny
+0
+5
+15
+GRASS
+FLOWER
+NONE
+NONE
+------------------------------

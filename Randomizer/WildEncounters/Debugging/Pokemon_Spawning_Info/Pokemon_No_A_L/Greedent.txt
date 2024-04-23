@@ -1,0 +1,9 @@
+Greedent - BOSS
+0
+24
+43
+FOREST
+MOUNTAIN
+NONE
+NONE
+------------------------------

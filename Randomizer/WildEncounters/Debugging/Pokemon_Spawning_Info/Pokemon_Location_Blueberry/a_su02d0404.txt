@@ -1,0 +1,27 @@
+Diglett - SAME
+1
+7
+80
+CAVE
+NONE
+NONE
+NONE
+------------------------------
+Cottonee
+0
+7
+80
+CAVE
+NONE
+NONE
+NONE
+------------------------------
+Whimsicott - BOSS
+0
+7
+80
+CAVE
+NONE
+NONE
+NONE
+------------------------------

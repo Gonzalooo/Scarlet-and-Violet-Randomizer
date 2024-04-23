@@ -1,0 +1,18 @@
+Cacnea
+0
+18
+36
+DESERT
+NONE
+NONE
+NONE
+------------------------------
+Cacturne - SAME
+0
+32
+51
+DESERT
+NONE
+NONE
+NONE
+------------------------------

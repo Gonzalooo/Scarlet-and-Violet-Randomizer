@@ -1,0 +1,9 @@
+Charcadet
+0
+13
+32
+FOREST
+MOUNTAIN
+CAVE
+ROCKY
+------------------------------

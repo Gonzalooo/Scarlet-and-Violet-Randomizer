@@ -1,0 +1,18 @@
+Noibat - SAME
+0
+7
+60
+GRASS
+ROCKY
+NONE
+NONE
+------------------------------
+Rockruff
+0
+7
+60
+ROCKY
+GRASS
+NONE
+NONE
+------------------------------

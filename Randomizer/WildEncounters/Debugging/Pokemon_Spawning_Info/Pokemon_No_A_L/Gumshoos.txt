@@ -1,0 +1,9 @@
+Gumshoos - BOSS
+0
+20
+39
+CAVE
+ROCKY
+NONE
+NONE
+------------------------------

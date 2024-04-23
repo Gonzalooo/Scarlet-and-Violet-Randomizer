@@ -1,0 +1,9 @@
+Murkrow - SAME
+0
+15
+40
+FOREST
+TOWN
+GRASS
+NONE
+------------------------------

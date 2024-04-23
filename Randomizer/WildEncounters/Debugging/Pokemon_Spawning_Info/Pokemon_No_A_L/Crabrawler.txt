@@ -1,0 +1,9 @@
+Crabrawler
+0
+10
+40
+BEACH
+SNOW
+NONE
+NONE
+------------------------------

@@ -13,7 +13,7 @@ MovesInGame/
 flatc/*.bat
 json_output
 *.trpfd
-output/
+output/*
 data.json
 Randomizer/StartersGifts/pokemon_clean
 Randomizer/StartersGifts/output
@@ -22,5 +22,4 @@ randomizer-patched/
 randomizer-patched-shiny/
 randomizer-shiny/
 .DS_store
-Randomizer/WildEncounters/Debugging
-Randomizer/PersonalData/Debugging
+

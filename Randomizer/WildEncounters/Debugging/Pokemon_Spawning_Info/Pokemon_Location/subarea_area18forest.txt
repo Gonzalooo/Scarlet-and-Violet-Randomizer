@@ -1,0 +1,18 @@
+Toedscool
+0
+18
+56
+FOREST
+NONE
+NONE
+NONE
+------------------------------
+Toedscruel - BOSS
+0
+30
+56
+FOREST
+NONE
+NONE
+NONE
+------------------------------

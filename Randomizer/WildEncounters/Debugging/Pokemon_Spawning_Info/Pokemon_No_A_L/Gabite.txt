@@ -1,0 +1,9 @@
+Gabite - BOSS
+0
+32
+60
+CAVE
+UNDERGROUND
+NONE
+NONE
+------------------------------

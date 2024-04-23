@@ -1,0 +1,27 @@
+Applin - SAME
+0
+7
+60
+GRASS
+FOREST
+NONE
+NONE
+------------------------------
+Flapple
+0
+7
+60
+GRASS
+FOREST
+NONE
+NONE
+------------------------------
+Appletun
+0
+7
+60
+GRASS
+FOREST
+NONE
+NONE
+------------------------------

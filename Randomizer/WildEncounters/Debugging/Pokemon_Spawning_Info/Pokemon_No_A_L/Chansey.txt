@@ -1,0 +1,9 @@
+Chansey
+0
+25
+55
+GRASS
+FLOWER
+MOUNTAIN
+NONE
+------------------------------

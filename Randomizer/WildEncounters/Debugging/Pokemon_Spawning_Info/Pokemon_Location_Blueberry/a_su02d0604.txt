@@ -1,0 +1,54 @@
+Sandshrew - SAME
+1
+7
+80
+SNOW
+CAVE
+NONE
+NONE
+------------------------------
+Vulpix - SAME
+1
+7
+80
+SNOW
+CAVE
+NONE
+NONE
+------------------------------
+Snubbull
+0
+7
+80
+SNOW
+CAVE
+NONE
+NONE
+------------------------------
+Granbull - BOSS
+0
+7
+80
+SNOW
+CAVE
+NONE
+NONE
+------------------------------
+Torchic - SAME
+0
+7
+80
+CAVE
+NONE
+NONE
+NONE
+------------------------------
+Duraludon
+0
+7
+80
+SNOW
+CAVE
+NONE
+NONE
+------------------------------

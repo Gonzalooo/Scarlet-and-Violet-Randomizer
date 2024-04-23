@@ -1,0 +1,9 @@
+Pawmo - BOSS
+0
+18
+58
+MOUNTAIN
+GRASS
+NONE
+NONE
+------------------------------

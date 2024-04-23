@@ -1,0 +1,162 @@
+Dunsparce
+0
+15
+60
+UNDERGROUND
+NONE
+NONE
+NONE
+------------------------------
+Garganacl
+0
+31
+60
+ROCKY
+UNDERGROUND
+NONE
+NONE
+------------------------------
+Great Tusk
+0
+52
+60
+UNDERGROUND
+NONE
+NONE
+NONE
+------------------------------
+Brute Bonnet
+0
+52
+60
+GRASS
+UNDERGROUND
+NONE
+NONE
+------------------------------
+Sandy Shocks
+0
+52
+60
+ROCKY
+NONE
+NONE
+NONE
+------------------------------
+Scream Tail
+0
+52
+60
+UNDERGROUND
+GRASS
+NONE
+NONE
+------------------------------
+Scream Tail
+0
+52
+60
+UNDERGROUND
+NONE
+NONE
+NONE
+------------------------------
+Flutter Mane
+0
+52
+60
+CAVE
+UNDERGROUND
+NONE
+NONE
+------------------------------
+Slither Wing
+0
+52
+60
+GRASS
+NONE
+NONE
+NONE
+------------------------------
+Roaring Moon
+0
+52
+60
+CAVE
+UNDERGROUND
+NONE
+NONE
+------------------------------
+Iron Treads
+0
+52
+60
+UNDERGROUND
+NONE
+NONE
+NONE
+------------------------------
+Iron Moth
+0
+52
+60
+GRASS
+NONE
+NONE
+NONE
+------------------------------
+Iron Hands
+0
+52
+60
+GRASS
+UNDERGROUND
+NONE
+NONE
+------------------------------
+Iron Jugulis
+0
+52
+60
+CAVE
+UNDERGROUND
+NONE
+NONE
+------------------------------
+Iron Thorns
+0
+52
+60
+ROCKY
+NONE
+NONE
+NONE
+------------------------------
+Iron Bundle
+0
+52
+60
+UNDERGROUND
+GRASS
+NONE
+NONE
+------------------------------
+Iron Bundle
+0
+52
+60
+UNDERGROUND
+NONE
+NONE
+NONE
+------------------------------
+Iron Valiant
+0
+52
+60
+CAVE
+UNDERGROUND
+NONE
+NONE
+------------------------------
