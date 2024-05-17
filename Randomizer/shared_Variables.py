@@ -385,3 +385,6 @@ has_alternate_form = [25,  # Pikachu - Caps + Partner
                       1012,  # Poltchageist - Marked
                       1013,  # Sinistcha - Marked
     ]
+
+area_zero_locations = ["a_w23_d01", "a_w23_d02", "a_w23_d03", "a_w23_d04", "a_w23_field_1",
+                       "a_w23_field_2", "a_w23_field_3"]

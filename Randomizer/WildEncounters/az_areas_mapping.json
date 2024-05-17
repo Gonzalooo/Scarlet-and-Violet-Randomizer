@@ -5,15 +5,6 @@
         "name": "Area Zero",
         "min": 57.0,
         "max": 62.0,
-        "allowed_locations": [
-          "a_w23_d01",
-          "a_w23_d02",
-          "a_w23_d03",
-          "a_w23_d04",
-          "a_w23_field_1",
-          "a_w23_field_2",
-          "a_w23_field_3"
-        ],
         "biomes": [
           "RIVER",
           "ROCKY",

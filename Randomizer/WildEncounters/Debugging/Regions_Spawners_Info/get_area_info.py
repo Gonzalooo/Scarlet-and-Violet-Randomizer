@@ -50,18 +50,18 @@ blueberry_mapping_name = {
 "3": "Polar",
 "4": "Canyon",
 }
-for filename in os.listdir('Kitakami-Spawners'):
+for filename in os.listdir('AZ-Spawners'):
     if filename.endswith('.txt'):
         min = []
         max = []
         biomes = []
         area_dict = {}
-        file = open('Kitakami-Spawners/'+filename, 'r')
+        file = open('AZ-Spawners/'+filename, 'r')
         number_area = filename[:2]
         if number_area[1] == "-":
             number_area = filename[:1]
         area_dict[f'{str(number_area)}'] = {}
-        area_dict[f'{str(number_area)}']['name'] = kitakami_mapping_name[number_area]
+        area_dict[f'{str(number_area)}']['name'] = paldea_mapping_name[number_area]
         for line in file:
             needed_information = line.split(',')[3:6]
             full_info = ",".join(needed_information)
@@ -93,7 +93,7 @@ for filename in os.listdir('Kitakami-Spawners'):
         area_dict[f'{str(number_area)}']['max'] = max[len(max)-1]
         area_dict[f'{str(number_area)}']['biomes'] = biomes
 
-        file_area = open(f'../Pokemon_Spawning_Info/Pokemon_Area_Kitakami/kitakami_area_{number_area}.txt', 'r')
+        file_area = open(f'../Pokemon_Spawning_Info/Pokemon_Area/area_{number_area}.txt', 'r')
         area_dict[f'{str(number_area)}']['pokemons'] = []
         counter = 0
         pokemon_dict_area = {}
@@ -153,9 +153,9 @@ for filename in os.listdir('Kitakami-Spawners'):
                 pokemon_dict_area = {}
                 counter = 0
 
-        for filename in os.listdir('../Pokemon_Spawning_Info/Pokemon_No_A_L_Kitakami'):
+        for filename in os.listdir('../Pokemon_Spawning_Info/Pokemon_No_A_L'):
             if filename.endswith('.txt'):
-                pokemon_file = open(f'../Pokemon_Spawning_Info/Pokemon_No_A_L_Kitakami/{filename}', 'r')
+                pokemon_file = open(f'../Pokemon_Spawning_Info/Pokemon_No_A_L/{filename}', 'r')
                 counter = 0
                 print(area_dict)
                 for line in pokemon_file:
@@ -215,10 +215,10 @@ for filename in os.listdir('Kitakami-Spawners'):
                         pokemon_dict_area = {}
                         counter = 0
 
-        for filename in os.listdir(f'../Pokemon_Spawning_Info/Pokemon_Location_Kitakami'):
-            if filename.endswith('.txt') and "a_w23_" not in filename:
-                file = open('../Pokemon_Spawning_Info/Pokemon_Location_Kitakami/' + filename, 'r')
-                if str(number_area) != "23":
+        for filename in os.listdir(f'../Pokemon_Spawning_Info/Pokemon_Location'):
+            if filename.endswith('.txt') and "a_w23_" in filename:
+                file = open('../Pokemon_Spawning_Info/Pokemon_Location/' + filename, 'r')
+                if str(number_area) == "23":
                     counter = 0
                     pokemon_dict_area = {}
                     for line in file:
@@ -280,10 +280,10 @@ for filename in os.listdir('Kitakami-Spawners'):
         area_dictionary['area'].append(area_dict)
 
 outdata = json.dumps(area_dictionary, indent=2)
-with open('kitakami_areas_mapping.json', 'w') as outfile:
+with open('az_areas_mapping.json', 'w') as outfile:
     outfile.write(outdata)
 
-second_check_json = open('kitakami_areas_mapping.json', 'r')
+second_check_json = open('az_areas_mapping.json', 'r')
 second_check = json.load(second_check_json)
 second_check_json.close()
 
@@ -303,7 +303,7 @@ for entry in second_check['area']:
         entry[areas]['pokemons'] = second_check_array
         second_check_array = []
 if True is True:
-    bst_file = open('../../PersonalData/pokemon_mapping.json', 'r')
+    bst_file = open('../../../pokemon_mapping.json', 'r')
     bstcheck = json.load(bst_file)
     bst_file.close()
     count_entry = 0
@@ -363,5 +363,5 @@ if True is True:
 
 
 outdata = json.dumps(second_check, indent=2)
-with open('kitakami_areas_mapping.json', 'w') as outfile:
+with open('az_areas_mapping.json', 'w') as outfile:
     outfile.write(outdata)

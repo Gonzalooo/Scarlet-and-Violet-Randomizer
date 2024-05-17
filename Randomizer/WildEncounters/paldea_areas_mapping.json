@@ -5,7 +5,6 @@
         "name": "South Province (Area One)",
         "min": 2.0,
         "max": 8.0,
-        "allowed_locations": [],
         "biomes": [
           "RUINS",
           "LAKE",
@@ -360,10 +359,6 @@
         "name": "Asado Desert",
         "min": 19.0,
         "max": 26.0,
-        "allowed_locations": [
-          "loc_desert_east",
-          "loc_desert_west"
-        ],
         "biomes": [
           "RUINS",
           "DESERT",
@@ -1033,9 +1028,6 @@
         "name": "West Province (Area Two)",
         "min": 22.0,
         "max": 29.0,
-        "allowed_locations": [
-          "a_d1108"
-        ],
         "biomes": [
           "BEACH",
           "OSEAN",
@@ -2068,9 +2060,6 @@
         "name": "West Province (Area Three)",
         "min": 32.0,
         "max": 31.0,
-        "allowed_locations": [
-          "a_d1202"
-        ],
         "biomes": [
           "RUINS",
           "LAKE",
@@ -2815,7 +2804,6 @@
         "name": "Tagtree Thicket",
         "min": 25.0,
         "max": 31.0,
-        "allowed_locations": [],
         "biomes": [
           "LAKE",
           "FOREST",
@@ -3558,7 +3546,6 @@
         "name": "East Province (Area Three)",
         "min": 22.0,
         "max": 29.0,
-        "allowed_locations": [],
         "biomes": [
           "LAKE",
           "OSEAN",
@@ -4439,7 +4426,6 @@
         "name": "East Province (Area One)",
         "min": 16.0,
         "max": 23.0,
-        "allowed_locations": [],
         "biomes": [
           "MOUNTAIN",
           "BEACH",
@@ -5309,7 +5295,6 @@
         "name": "East Province (Area Two)",
         "min": 19.0,
         "max": 26.0,
-        "allowed_locations": [],
         "biomes": [
           "RUINS",
           "BEACH",
@@ -6133,7 +6118,6 @@
         "name": "Dalizapa Passage",
         "min": 34.0,
         "max": 42.0,
-        "allowed_locations": [],
         "biomes": [
           "MOUNTAIN",
           "SNOW",
@@ -7095,11 +7079,6 @@
         "name": "Casseroya Lake",
         "min": 49.0,
         "max": 56.0,
-        "allowed_locations": [
-          "subarea_area18forest",
-          "loc_lake_east",
-          "loc_lake_south"
-        ],
         "biomes": [
           "RUINS",
           "LAKE",
@@ -7925,9 +7904,6 @@
         "name": "Glaseado Mountain",
         "min": 34.0,
         "max": 41.0,
-        "allowed_locations": [
-          "loc_snowymountain_01"
-        ],
         "biomes": [
           "RUINS",
           "SNOW",
@@ -9103,7 +9079,6 @@
         "name": "North Province (Area Three)",
         "min": 43.0,
         "max": 50.0,
-        "allowed_locations": [],
         "biomes": [
           "BEACH",
           "SNOW",
@@ -9839,7 +9814,6 @@
         "name": "North Province (Area One)",
         "min": 46.0,
         "max": 53.0,
-        "allowed_locations": [],
         "biomes": [
           "MOUNTAIN",
           "SNOW",
@@ -10892,7 +10866,6 @@
         "name": "North Province (Area Two)",
         "min": 49.0,
         "max": 56.0,
-        "allowed_locations": [],
         "biomes": [
           "RUINS",
           "LAKE",
@@ -11603,7 +11576,6 @@
         "name": "South Paldean Sea",
         "min": 5.0,
         "max": 23.0,
-        "allowed_locations": [],
         "biomes": [
           "OSEAN",
           "RIVER"
@@ -11838,7 +11810,6 @@
         "name": "West Paldean Sea",
         "min": 32.0,
         "max": 30.0,
-        "allowed_locations": [],
         "biomes": [
           "OSEAN"
         ],
@@ -12003,7 +11974,6 @@
         "name": "East Paldean Sea",
         "min": 14.0,
         "max": 31.0,
-        "allowed_locations": [],
         "biomes": [
           "BEACH",
           "OSEAN",
@@ -12458,7 +12428,6 @@
         "name": "North Paldean Sea",
         "min": 38.0,
         "max": 50.0,
-        "allowed_locations": [],
         "biomes": [
           "OSEAN"
         ],
@@ -12695,7 +12664,6 @@
         "name": "Pokemon League",
         "min": 7.0,
         "max": 14.0,
-        "allowed_locations": [],
         "biomes": [
           "FLOWER",
           "TOWN",
@@ -12965,7 +12933,6 @@
         "name": "South Province (Area Two)",
         "min": 7.0,
         "max": 14.0,
-        "allowed_locations": [],
         "biomes": [
           "RUINS",
           "MOUNTAIN",
@@ -13550,7 +13517,6 @@
         "name": "South Province (Area Four)",
         "min": 16.0,
         "max": 23.0,
-        "allowed_locations": [],
         "biomes": [
           "MOUNTAIN",
           "LAKE",
@@ -14473,7 +14439,6 @@
         "name": "South Province (Area Six)",
         "min": 37.0,
         "max": 44.0,
-        "allowed_locations": [],
         "biomes": [
           "MOUNTAIN",
           "RUINS",
@@ -15594,7 +15559,6 @@
         "name": "South Province (Area Five)",
         "min": 16.0,
         "max": 23.0,
-        "allowed_locations": [],
         "biomes": [
           "MOUNTAIN",
           "LAKE",
@@ -16622,7 +16586,6 @@
         "name": "South Province (Area Three)",
         "min": 7.0,
         "max": 17.0,
-        "allowed_locations": [],
         "biomes": [
           "RUINS",
           "RIVER",
@@ -17056,7 +17019,6 @@
         "name": "West Province (Area One)",
         "min": 13.0,
         "max": 20.0,
-        "allowed_locations": [],
         "biomes": [
           "MOUNTAIN",
           "RUINS",

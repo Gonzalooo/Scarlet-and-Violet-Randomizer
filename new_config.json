@@ -8,14 +8,14 @@
   },
   "items_randomizer": {
     "_comment": "Only works on hidden items - I can't find file for overworld items.",
-    "is_enabled": "yes",
+    "is_enabled": "no",
     "randomize_hidden_items": "yes",
     "randomize_items_from_pickup_ability": "yes",
     "randomize_synchro_items": "yes",
     "randomize_pokemon_drops": "no"
   },
   "pokemon_stats_randomizer": {
-      "is_enabled": "yes",
+      "is_enabled": "no",
       "randomize_abilities": "yes",
       "randomize_types": "no",
       "ban_wonder_guard": "yes",
@@ -29,7 +29,7 @@
       "force_tera_blast_every_5_levels": "no"
     },
   "static_pokemon_randomizer": {
-      "is_enabled": "yes",
+      "is_enabled": "no",
       "generation_limiter": [],
       "randomize_tera_types": "yes",
       "only_legendary_pokemon": "no",
@@ -38,7 +38,7 @@
       "_comment": "working on similar BST feature"
     },
   "starter_pokemon_randomizer":{
-      "is_enabled": "yes",
+      "is_enabled": "no",
       "generation_limiter": [],
       "force_shiny_starter": "no",
       "make_all_starters_shiny": "yes",
@@ -62,12 +62,12 @@
       "force_starter_3": 1017
     },
   "gift_pokemon_randomizer": {
-      "is_enabled": "yes",
+      "is_enabled": "no",
       "generation_limiter": [],
       "randomize_tera_types": "yes"
     },
   "boss_pokemon_randomizer": {
-      "is_enabled": "yes",
+      "is_enabled": "no",
       "_comment": "Note: Models are automatically changed in overworld.",
       "generation_limiter": [],
       "only_legendary_pokemon": "no",
@@ -95,7 +95,7 @@
       "only_legendary_pokemon": "no",
       "only_paradox_pokemon": "no",
       "only_legends_and_paradox": "no",
-      "_comment1": "Working on option to keep similar BST on route"
+      "balance_bst_per_area": "yes"
     },
     "tera_raid_randomizer": {
       "is_enabled": "yes",
@@ -211,7 +211,7 @@
       "only_legendary_pokemon": "no",
       "only_paradox_pokemon": "no",
       "only_legends_and_paradox": "no",
-      "_comment1": "Working on option to keep similar BST on route"
+      "balance_bst_per_area": "yes"
     },
     "tera_raid_randomizer": {
       "is_enabled": "no",
@@ -304,7 +304,7 @@
       "only_legendary_pokemon": "no",
       "only_paradox_pokemon": "no",
       "only_legends_and_paradox": "no",
-      "_comment1": "Working on option to keep similar BST on route"
+      "balance_bst_per_area": "yes"
     },
     "tera_raid_randomizer": {
       "is_enabled": "no",

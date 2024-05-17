@@ -95,18 +95,25 @@ def generate_lot_value_for_biome():
     return random.randint(1, 50)
 
 
-def generate_area():
-    return random.sample(range(1, 27), 10)
+def generate_area(region: str):
+    if region == "Paldea":
+        return random.sample(range(1, 27), 6)
+    elif region == "Kitakami":
+        return random.sample(range(1, 11), 5)
+    elif region == "Blueberry":
+        return random.sample(range(1, 4), 2)
 
 
-def generate_area_list():
-    return str(generate_area()).replace('[', '"').replace(']', '"').replace(' ', '')
+def generate_area_list(region: str):
+    return str(generate_area(region)).replace('[', '"').replace(']', '"').replace(' ', '')
 
 
 # fix function to add item for item pokemon
-def make_template(new_template, index, form=0):
+def make_template(new_template, index, region: str, form=0):
     new_template['formno'] = form
     new_template['lotvalue'] = random.randint(1, 50)
+    arealist = generate_area_list(region)
+    new_template['area'] = arealist
     new_template['biome1'] = pick_random_biome()
     new_template['biome2'] = pick_random_biome()
     new_template['biome3'] = pick_random_biome()
@@ -116,12 +123,110 @@ def make_template(new_template, index, form=0):
     new_template['lotvalue3'] = generate_lot_value_for_biome()
     new_template['lotvalue4'] = generate_lot_value_for_biome()
     chosen_biomes.clear()
-    new_template['area'] = generate_area_list()
     item_obtained, rate_of_item = HelperFunctions.get_pokemon_item_form(index, form)
     new_template['bringItem']['itemID'] = item_obtained
     new_template['bringItem']['bringRate'] = rate_of_item
 
     return new_template
+
+
+def balance_spawns(region: str, areas: str, entry: dict):
+    if region == "Paldea":
+
+        list_of_areas = ((areas.replace("\"", "")).replace(" ", "")).split(',')
+        location_areas = ""
+        if '23' in list_of_areas:
+            list_of_areas.remove('23')
+            choice = random.randint(0, 6)
+            if len(location_areas) == 0:
+                location_areas = SharedVariables.area_zero_locations[choice]
+            else:
+                location_areas = location_areas + SharedVariables.area_zero_locations[choice]
+            choice_second = random.randint(0, 6)
+            while choice_second == choice:
+                choice_second = random.randint(0, 6)
+            location_areas = location_areas + SharedVariables.area_zero_locations[choice_second]
+        entry['locationName'] = location_areas
+
+        return entry
+    pass
+
+
+def generate_pokemon_entry(pokemon_index: int, region: str):
+    '''
+            template_entry = {
+            "devid": HelperFunctions.fetch_developer_name(index),
+            "sex": "DEFAULT",
+            "formno": 0,
+            "minlevel": 2,
+            "maxlevel": 99,
+            "lotvalue": random.randint(1, 50),
+            "biome1": pick_random_biome(),
+            'lotvalue1': generate_lot_value_for_biome(),
+            "biome2": pick_random_biome(),
+            'lotvalue2': generate_lot_value_for_biome(),
+            "biome3": pick_random_biome(),
+            'lotvalue3': generate_lot_value_for_biome(),
+            "biome4": pick_random_biome(),
+            'lotvalue4': generate_lot_value_for_biome(),
+            'area': generate_area_list(region),
+            'locationName': "",
+            "minheight": 0,
+            "maxheight": 0,
+            "enabletable": {
+                "land": True,
+                "up_water": True,
+                "underwater": True,
+                "air1": True,
+                "air2": True
+            },
+            "timetable": {
+                "morning": True,
+                "noon": True,
+                "evening": True,
+                "night": True
+            },
+            "flagName": "",
+            "bandrate": 0,
+            "bandtype": "NONE",
+            "bandpoke": "DEV_NULL",
+            "bandSex": "DEFAULT",
+            "bandFormno": 0,
+            "outbreakLotvalue": 10,
+            "pokeVoiceClassification": "ANIMAL_LITTLE",
+            "versiontable": {
+                "A": True,
+                "B": True
+            },
+            "bringItem": {
+                "itemID": "ITEMID_NONE",
+                "bringRate": 0
+            }
+        }
+    '''
+
+    pokemon_entry = {
+        "devid": HelperFunctions.fetch_developer_name(pokemon_index),
+        'sex': "DEFAULT",
+        'formno': 0
+    }
+    areas = generate_area_list(region)
+    pokemon_entry = balance_spawns(region, areas, pokemon_entry)
+    print(pokemon_entry)
+    exit(0)
+
+    return 0
+
+
+def balanced_wild_encounters(config, region: str, allowed_pokemon: list):
+    for pokemon in range(0, 1026):
+        if pokemon in SharedVariables.banned_pokemon:
+            continue
+
+        if pokemon not in allowed_pokemon:
+            continue
+
+        randomized_pokemon = generate_pokemon_entry(pokemon, region)
 
 
 def create_wilderness_file(region: str):
@@ -177,7 +282,7 @@ def randomize_wild_encounters(config, region: str, allowed_pokemon: list):
             'lotvalue3': generate_lot_value_for_biome(),
             "biome4": pick_random_biome(),
             'lotvalue4': generate_lot_value_for_biome(),
-            'area': generate_area_list(),
+            'area': generate_area_list(region),
             'locationName': "",
             "minheight": 0,
             "maxheight": 0,
@@ -211,6 +316,7 @@ def randomize_wild_encounters(config, region: str, allowed_pokemon: list):
                 "bringRate": 0
             }
         }
+
         forms_entry = template_entry.copy()
         new_template = template_entry.copy()
 
@@ -219,7 +325,7 @@ def randomize_wild_encounters(config, region: str, allowed_pokemon: list):
 
         forms = get_alt_form_list(index)
         for form in forms:
-            new_template = make_template(forms_entry, index, form)
+            new_template = make_template(forms_entry, index, region, form)
 
             poke_dict['values'].append(new_template)
 
@@ -234,10 +340,17 @@ def randomize_wilderness(config):
         if config['paldea_settings']['wild_randomizer']['is_enabled'] == "yes":
             usable_pokemon, useless, bpl = HelperFunctions.check_generation_limiter(config['paldea_settings']['wild_randomizer']
                                                                       ['generation_limiter'])
-            randomize_wild_encounters(config['paldea_settings']['wild_randomizer'], "Paldea", usable_pokemon)
-            randomize_wild_encounters(config['paldea_settings']['wild_randomizer'], "Kitakami", usable_pokemon)
-            randomize_wild_encounters(config['paldea_settings']['wild_randomizer'], "Blueberry", usable_pokemon)
-            return True, True, True
+            balanced = False
+            if config['paldea_settings']['wild_randomizer']['balance_bst_per_area'] == "yes":
+                balanced = True
+            if balanced is not True:
+                randomize_wild_encounters(config['paldea_settings']['wild_randomizer'], "Paldea", usable_pokemon)
+                randomize_wild_encounters(config['paldea_settings']['wild_randomizer'], "Kitakami", usable_pokemon)
+                randomize_wild_encounters(config['paldea_settings']['wild_randomizer'], "Blueberry", usable_pokemon)
+            else:
+                print('Still a work in progress')
+                exit(0)
+
         return False, False, False
     else:
         paldea_binary = False
