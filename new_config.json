@@ -8,15 +8,17 @@
   },
   "items_randomizer": {
     "_comment": "Only works on hidden items - I can't find file for overworld items.",
-    "is_enabled": "no",
+    "is_enabled": "yes",
     "randomize_hidden_items": "yes",
     "randomize_items_from_pickup_ability": "yes",
     "randomize_synchro_items": "yes",
-    "randomize_pokemon_drops": "no"
+    "randomize_pokemon_drops": "no",
+    "randomize_tms": "yes",
+    "include_tms_without_animations": "no"
   },
   "pokemon_stats_randomizer": {
-      "is_enabled": "no",
-      "randomize_abilities": "yes",
+      "is_enabled": "yes",
+      "randomize_abilities": "no",
       "randomize_types": "no",
       "ban_wonder_guard": "yes",
       "randomize_movesets": "yes",
@@ -29,7 +31,7 @@
       "force_tera_blast_every_5_levels": "no"
     },
   "static_pokemon_randomizer": {
-      "is_enabled": "no",
+      "is_enabled": "yes",
       "generation_limiter": [],
       "randomize_tera_types": "yes",
       "only_legendary_pokemon": "no",
@@ -38,14 +40,14 @@
       "_comment": "working on similar BST feature"
     },
   "starter_pokemon_randomizer":{
-      "is_enabled": "no",
+      "is_enabled": "yes",
       "generation_limiter": [],
       "force_shiny_starter": "no",
       "make_all_starters_shiny": "yes",
       "higher_chance_shiny": "no",
       "show_starters_in_overworld": "yes",
       "randomize_starters_tera_type": "no",
-      "ball_for_starter": "Beast Ball",
+      "ball_for_starter": "Ultra Ball",
       "_comment1": "This next option should remain off if pokemon_clean is empty",
       "ban_stage1_pokemon": "no",
       "ban_stage2_pokemon": "no",
@@ -57,17 +59,17 @@
       "_comment3": "Ex: 1024, Tera Pagos, teRapagos, t e r a pa gos are all valid for Terapagos",
       "_comment4": "However 1 0 2 4 is not a valid input for terapagos",
       "_comment5": "Similarly tera_paGos is not a valid input for terapagos",
-      "force_starter_1": 493,
-      "force_starter_2": 1024,
-      "force_starter_3": 1017
+      "force_starter_1": 0,
+      "force_starter_2": 0,
+      "force_starter_3": 0
     },
   "gift_pokemon_randomizer": {
-      "is_enabled": "no",
+      "is_enabled": "yes",
       "generation_limiter": [],
       "randomize_tera_types": "yes"
     },
   "boss_pokemon_randomizer": {
-      "is_enabled": "no",
+      "is_enabled": "yes",
       "_comment": "Note: Models are automatically changed in overworld.",
       "generation_limiter": [],
       "only_legendary_pokemon": "no",
@@ -75,16 +77,8 @@
       "ban_stage2_pokemon": "no",
       "ban_single_stage_pokemon": "no",
       "randomize_all": "yes",
-      "randomize_lechonk": "no",
-      "randomize_gimmighoul": "no",
-      " _comment": "For beta anything below this will not be randomized",
-      "randomize_titans": "no",
-      "randomize_snackworth_legendaries": "no",
-      "randomize_areazero": "no",
-      "randomize_areazero_dlc2": "no",
-      "randomize_ogerpon": "no",
-      "randomize_ursaluna": "no",
-      "randomize_terapagos": "no"
+      "_comment1": "Getting softlocked so the following are not randomized: Professor Kora/Miraidon, Ogerpon and Terapagos",
+      "_comment2": "Note: Static Kora/Miraidon are randomized"
     },
   "paldea_settings": {
     "wild_randomizer": {
@@ -95,19 +89,19 @@
       "only_legendary_pokemon": "no",
       "only_paradox_pokemon": "no",
       "only_legends_and_paradox": "no",
-      "balance_bst_per_area": "yes"
+      "balance_bst_per_area": "no"
     },
     "tera_raid_randomizer": {
       "is_enabled": "yes",
-      "generation_limiter": [9],
+      "generation_limiter": [],
       "force_shiny": "no",
       "increased_shiny_chance": "yes",
-      "only_legendary_pokemon": "yes",
+      "only_legendary_pokemon": "no",
       "only_paradox_pokemon": "no",
       "only_legendary_and_paradox": "no"
     },
     "trainers_randomizer": {
-      "is_enabled": "yes",
+      "is_enabled": "no",
       "all_trainers_settings": {
         "generation_limiter": [],
         "use_rival_randomizer_forall": "no",

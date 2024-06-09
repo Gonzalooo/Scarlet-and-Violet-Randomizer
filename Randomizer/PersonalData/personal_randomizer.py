@@ -81,11 +81,25 @@ def randomize_pokemon_moves(pokemon):
         pokemon['egg_moves'].extend(current_moves)
 
         current_moves = []
-        for i in range(0, len(pokemon['tm_moves'])):
-            index = random.randint(0, len(SharedVariables.tm_moves) - 1)
-            while SharedVariables.tm_moves[index] in current_moves:
+        if len(SharedVariables.usedMoves) == 0:
+            for i in range(0, len(pokemon['tm_moves'])):
                 index = random.randint(0, len(SharedVariables.tm_moves) - 1)
-            current_moves.append(SharedVariables.tm_moves[index])
+                while SharedVariables.tm_moves[index] in current_moves:
+                    index = random.randint(0, len(SharedVariables.tm_moves) - 1)
+                current_moves.append(SharedVariables.tm_moves[index])
+        else:
+            if pokemon['species']['species'] == 151:
+                current_moves.extend(SharedVariables.usedMoves)
+            else:
+                for i in range(0, len(pokemon['tm_moves'])):
+                    index = random.randint(0, len(SharedVariables.usedMoves) - 1)
+                    # print(f'pokemon: {pokemon['species']}')
+                    # print(f'current moves length: {len(current_moves)}')
+                    # print(f'usedmoves length: {len(SharedVariables.usedMoves)}')
+                    # print(f'pokemon moves length: {len(pokemon['tm_moves'])}')
+                    while SharedVariables.usedMoves[index] in current_moves:
+                        index = random.randint(0, len(SharedVariables.usedMoves) - 1)
+                    current_moves.append(SharedVariables.usedMoves[index])
         pokemon['tm_moves'] = []
         pokemon['tm_moves'].extend(current_moves)
 
@@ -233,6 +247,142 @@ def randomize_base_stats_total(pokemon):
     return pokemon
 
 
+def fix_evolutions(pokemon, ind):
+    if pokemon['species']['species'] == 25:
+        template_evolution = {
+            "level": 36,
+            "condition": 4,
+            "parameter": 0,
+            "reserved3": 0,
+            "reserved4": 0,
+            "reserved5": 0,
+            "species": 26,
+            "form": 1
+        }
+        pokemon['evolutions'].append(template_evolution)
+    elif pokemon['species']['species'] == 102:
+        template_evolution = {
+            "level": 36,
+            "condition": 4,
+            "parameter": 0,
+            "reserved3": 0,
+            "reserved4": 0,
+            "reserved5": 0,
+            "species": 103,
+            "form": 1
+        }
+        pokemon['evolutions'].append(template_evolution)
+    elif pokemon['species']['species'] == 156:
+        template_evolution = {
+            "level": 36,
+            "condition": 4,
+            "parameter": 0,
+            "reserved3": 0,
+            "reserved4": 0,
+            "reserved5": 0,
+            "species": 157,
+            "form": 1
+        }
+        pokemon['evolutions'].append(template_evolution)
+    elif pokemon['species']['species'] == 234:
+        template_evolution = {
+            "level": 36,
+            "condition": 4,
+            "parameter": 0,
+            "reserved3": 0,
+            "reserved4": 0,
+            "reserved5": 0,
+            "species": 899,
+            "form": 0
+        }
+        pokemon['evolutions'].append(template_evolution)
+    elif pokemon['species']['species'] == 502:
+        template_evolution = {
+            "level": 36,
+            "condition": 4,
+            "parameter": 0,
+            "reserved3": 0,
+            "reserved4": 0,
+            "reserved5": 0,
+            "species": 503,
+            "form": 1
+        }
+        pokemon['evolutions'].append(template_evolution)
+    elif pokemon['species']['species'] == 723:
+        template_evolution = {
+            "level": 36,
+            "condition": 4,
+            "parameter": 0,
+            "reserved3": 0,
+            "reserved4": 0,
+            "reserved5": 0,
+            "species": 724,
+            "form": 1
+        }
+        pokemon['evolutions'].append(template_evolution)
+    elif pokemon['species']['species'] == 548:
+        template_evolution = {
+            "level": 36,
+            "condition": 4,
+            "parameter": 0,
+            "reserved3": 0,
+            "reserved4": 0,
+            "reserved5": 0,
+            "species": 549,
+            "form": 1
+        }
+        pokemon['evolutions'].append(template_evolution)
+    elif pokemon['species']['species'] == 627:
+        template_evolution = {
+            "level": 36,
+            "condition": 4,
+            "parameter": 0,
+            "reserved3": 0,
+            "reserved4": 0,
+            "reserved5": 0,
+            "species": 628,
+            "form": 1
+        }
+        pokemon['evolutions'].append(template_evolution)
+    elif pokemon['species']['species'] == 712:
+        template_evolution = {
+            "level": 36,
+            "condition": 4,
+            "parameter": 0,
+            "reserved3": 0,
+            "reserved4": 0,
+            "reserved5": 0,
+            "species": 713,
+            "form": 1
+        }
+        pokemon['evolutions'].append(template_evolution)
+    else:
+        if len(ind) == 1:
+            pokemon['evolutions'][ind[0]]['level'] = 36
+            pokemon['evolutions'][ind[0]]['condition'] = 33
+        elif len(ind) > 1:
+            if pokemon['species']['species'] == 217:
+                pokemon['evolutions'][ind[0]]['level'] = 36
+                pokemon['evolutions'][ind[0]]['condition'] = 32
+                template_evolution = {
+                        "level": 36,
+                        "condition": 4,
+                        "parameter": 0,
+                        "reserved3": 0,
+                        "reserved4": 0,
+                        "reserved5": 0,
+                        "species": 901,
+                        "form": 1
+                }
+                pokemon['evolutions'].append(template_evolution)
+            else:
+                pokemon['evolutions'][ind[0]]['level'] = 36
+                pokemon['evolutions'][ind[0]]['condition'] = 32
+                pokemon['evolutions'][ind[1]]['level'] = 36
+                pokemon['evolutions'][ind[1]]['condition'] = 33
+    return pokemon
+
+
 def randomize_pokemon_stats(config):
     if config['is_enabled'] == "yes":
         file = open(os.getcwd() + "/Randomizer/PersonalData/" +"personal_array_clean.json", "r")
@@ -245,6 +395,25 @@ def randomize_pokemon_stats(config):
             banned_abilities.append(25)
 
         for pokemon in data['entry']:
+
+            if pokemon['species']['species'] in SharedVariables.pokemon_with_regional_evolutions:
+                if pokemon['species']['species'] == 217:
+                    pokemon = fix_evolutions(pokemon, [0, 1])
+                else:
+                    if pokemon['species']['form'] == 0:
+                        pokemon = fix_evolutions(pokemon, [1])
+            elif pokemon['species']['species'] in SharedVariables.pokemon_with_trade_evolutions:
+                if pokemon['species']['species'] == 366:
+                    pokemon = fix_evolutions(pokemon, [0, 1])
+                else:
+                    match pokemon['species']['species']:
+                        case 61:
+                            pokemon = fix_evolutions(pokemon, [1])
+                        case 79:
+                            pokemon = fix_evolutions(pokemon, [1])
+                        case _:
+                            pokemon = fix_evolutions(pokemon, [0])
+
             if config['randomize_abilities'] == "yes":
                 pokemon = randomize_pokemon_abilities(pokemon)
             if config['randomize_types'] == "yes":

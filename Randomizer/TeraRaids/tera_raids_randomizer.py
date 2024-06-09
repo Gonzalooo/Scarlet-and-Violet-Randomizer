@@ -170,7 +170,7 @@ def new_region_file(region: str, index: int):
 def randomize_region(config, region: str, pokemonAllowed: list, allowed_legends: list, total_banned_length):
     for i in range(1, 7):
         file_to_open = region_file(region, i)
-        paldeaTeraRaids = open(os.getcwd() + '/Randomizer/teraRaids/' + file_to_open, 'r')
+        paldeaTeraRaids = open(os.getcwd() + '/Randomizer/TeraRaids/' + file_to_open, 'r')
         paldeaRaids = json.load(paldeaTeraRaids)
         paldeaTeraRaids.close()
         randomized = False

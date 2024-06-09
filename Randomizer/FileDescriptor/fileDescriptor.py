@@ -5,7 +5,7 @@ import fnvhash
 
 
 def patchFileDescriptor():
-    file = open(os.getcwd()+ "/Randomizer/FileDescriptor/data_clean.json")
+    file = open(os.getcwd() + "/Randomizer/FileDescriptor/data_clean.json")
     data = json.load(file)
     file.close()
 
