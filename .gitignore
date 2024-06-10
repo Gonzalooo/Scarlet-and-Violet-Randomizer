@@ -10,10 +10,12 @@ MovesInGame/
 *_1.trsog
 *_0.trsot
 *_1.trsot
+HikoNushi_0.trscn
+HikoNushi_1.trscn
 flatc/*.bat
 json_output
 *.trpfd
-output/
+output/*
 data.json
 Randomizer/StartersGifts/pokemon_clean
 Randomizer/StartersGifts/output
@@ -22,3 +24,9 @@ randomizer-patched/
 randomizer-patched-shiny/
 randomizer-shiny/
 .DS_store
+Randomizer/WildEncounters/Debugging
+Randomizer/PersonalData/Debugging
+Randomizer/WildEncounters/az_areas_mapping.json
+Randomizer/WildEncounters/blueberry_areas_mapping.json
+Randomizer/WildEncounters/kitakami_areas_mapping.json
+Randomizer/WildEncounters/paldea_areas_mapping.json

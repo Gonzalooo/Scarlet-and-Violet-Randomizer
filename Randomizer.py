@@ -13,6 +13,7 @@ import Randomizer.Items.itemrandomizer as ItemRandomizer
 import Randomizer.StaticFights.randomize_fights as StaticFightsRandomizer
 import Randomizer.TeraRaids.tera_raids_randomizer as TeraRaidsRandomizer
 import Randomizer.helper_function as HelperFunctions
+import Randomizer.TMs.randomize_tms as TMsRandomizer
 import shutil
 
 
@@ -23,7 +24,7 @@ def check_updates():
     formated_response = scrapped_response.json()
     latest = formated_response['tag_name']
 
-    if latest != '1.1.0-Beta-3':
+    if latest != '1.1.0-release':
         print(f"Version {latest} is NOW available please download it for best experience.")
     else:
         print("Already have the latest version of the randomizer.")
@@ -66,17 +67,31 @@ paths = {
     "pickupitems": "world/data/item/monohiroilItemData/",
     "synchro": "world/data/item/rummagingItemDataTable/",
     "catalog": "pokemon/catalog/catalog/",
-    "starters_scenes": "world/scene/parts/event/event_scenario/main_scenario/common_0070_/",
+    "starters_scenes_00": "world/scene/parts/event/event_scenario/main_scenario/common_0060_/",
+    "starters_scenes_01": "world/scene/parts/event/event_scenario/main_scenario/common_0070_/",
+    "starters_scenes_02": "world/scene/parts/event/event_scenario/main_scenario/common_0088_/",
+    "starters_scenes_03": "world/scene/parts/event/event_scenario/main_scenario/common_0090_/",
     "shiny_scenes": "pokemon/data/",
     "item_fixed": "world/data/raid/raid_fixed_reward_item/",
     "item_lottery": "world/data/raid/raid_lottery_reward_item/",
+    "shops": "world/data/ui/shop/friendlyshop/friendlyshop_lineup_data/",
+    "tm-machine": "world/data/ui/shop/shop_wazamachine/shop_wazamachine_data/",
     "trpfd": "arc/"
 }
 
 
 def randomize_based_on_config(config):
     create_modpack()
+    if config['items_randomizer']['randomize_tms'] == "yes" and config['pokemon_stats_randomizer']['randomize_movesets'] == "no":
+        print('Activate randomize movesents if you want to randomize tms too.')
+        exit(0)
 
+    # TMs Randomizer
+    tms = TMsRandomizer.randomize_tms(config['items_randomizer'])
+    if tms is True:
+        HelperFunctions.generate_binary("Randomizer/TMs/itemdata_array.bfbs",
+                                        "Randomizer/TMs/itemdata_array.json",
+                                        paths["itemdata"])
     # Wild Pokemon Randomizer
     paldea_wild, kitakami_wild, blueberry_wild = WildRandomizer.randomize_wilderness(config)
     if paldea_wild is True:
@@ -144,21 +159,38 @@ def randomize_based_on_config(config):
     if starters_randomized is True and config['starter_pokemon_randomizer']['show_starters_in_overworld'] == "yes":  # Updated for 3.0.1
         PatchScene.patch_starter_selection_scenes()
 
-        HelperFunctions.create_folder_hierarchy('output/romfs/' + paths['starters_scenes'])
+        for i in range(0, 4):
+            HelperFunctions.create_folder_hierarchy('output/romfs/' + paths[f'starters_scenes_0{i}'])
         HelperFunctions.create_folder_hierarchy('output/romfs/' + paths['catalog'])
 
         HelperFunctions.generate_binary("Randomizer/Scenes/poke_resource_table.fbs",
                                         "Randomizer/Scenes/poke_resource_table.json",
                                         paths['catalog'])
 
-        if os.path.exists(os.getcwd() + "/Randomizer/StartersGifts/" + f'output'):
-            shutil.copytree(os.getcwd() + "/Randomizer/StartersGifts/output/romfs/pokemon/data",
-                            "output/romfs/" + paths['shiny_scenes'])
+        shutil.copyfile("Randomizer/Scenes/starters_scenes/common_0060_always_0.trsog",
+                        "output/romfs/" + paths['starters_scenes_00'] + 'common_0060_always_0.trsog')
+        shutil.copyfile("Randomizer/Scenes/starters_scenes/common_0060_always_1.trsog",
+                        "output/romfs/" + paths['starters_scenes_00'] + 'common_0060_always_1.trsog')
+
+        shutil.copyfile("Randomizer/Scenes/starters_scenes/common_0060_main_0.trsog",
+                        "output/romfs/" + paths['starters_scenes_00'] + 'common_0060_main_0.trsog')
+        shutil.copyfile("Randomizer/Scenes/starters_scenes/common_0060_main_1.trsog",
+                        "output/romfs/" + paths['starters_scenes_00'] + 'common_0060_main_1.trsog')
 
         shutil.copyfile("Randomizer/Scenes/starters_scenes/common_0070_always_0.trsog",
-                        "output/romfs/" + paths['starters_scenes'] + 'common_0070_always_0.trsog')
+                        "output/romfs/" + paths['starters_scenes_01'] + 'common_0070_always_0.trsog')
         shutil.copyfile("Randomizer/Scenes/starters_scenes/common_0070_always_1.trsog",
-                        "output/romfs/" + paths['starters_scenes'] + 'common_0070_always_1.trsog')
+                        "output/romfs/" + paths['starters_scenes_01'] + 'common_0070_always_1.trsog')
+
+        shutil.copyfile("Randomizer/Scenes/starters_scenes/common_0088_always_0.trsog",
+                        "output/romfs/" + paths['starters_scenes_02'] + 'common_0088_always_0.trsog')
+        shutil.copyfile("Randomizer/Scenes/starters_scenes/common_0088_always_1.trsog",
+                        "output/romfs/" + paths['starters_scenes_02'] + 'common_0088_always_1.trsog')
+
+        shutil.copyfile("Randomizer/Scenes/starters_scenes/common_0090_main_0.trsog",
+                        "output/romfs/" + paths['starters_scenes_03'] + 'common_0090_main_0.trsog')
+        shutil.copyfile("Randomizer/Scenes/starters_scenes/common_0090_main_1.trsog",
+                        "output/romfs/" + paths['starters_scenes_03'] + 'common_0090_main_1.trsog')
 
     # Trainer Fight
     paldea_fight, kita_fight, blue_fight = TrainerRandomizer.randomize_trainers(config)
@@ -210,11 +242,17 @@ def randomize_based_on_config(config):
                        f"Randomizer/TeraRaids/raid_lottery_reward_item_array.json",
                        paths["item_lottery"])
 
+    if os.path.exists(os.getcwd() + "/Randomizer/StartersGifts/" + f'output') is True:
+        shutil.copytree(os.getcwd() + "/Randomizer/StartersGifts/output/romfs/pokemon/data", os.getcwd() +
+                        "/output/romfs/" + paths['shiny_scenes'])
+
 
 def randomize():
     check_updates()
     if os.path.exists(os.getcwd() + "/all-created-randomizer"):
         shutil.rmtree(os.getcwd() + "/all-created-randomizer")
+    if os.path.exists(os.getcwd() + "/output"):
+        shutil.rmtree(os.getcwd() + "/output")
     config = open_config()
     if (config['bulk_creation']['is_enabled'] == "no" or
             config['bulk_creation']["number_of_unique_randomizers_to_create"] <= 1):
