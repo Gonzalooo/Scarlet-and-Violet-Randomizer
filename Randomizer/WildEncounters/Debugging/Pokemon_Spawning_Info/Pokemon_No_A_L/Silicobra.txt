@@ -1,9 +1,0 @@
-Silicobra
-0
-22
-40
-DESERT
-MINE
-NONE
-NONE
-------------------------------

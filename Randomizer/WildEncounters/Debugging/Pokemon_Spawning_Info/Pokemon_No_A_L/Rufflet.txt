@@ -1,9 +1,0 @@
-Rufflet - SAME
-0
-21
-58
-DESERT
-MOUNTAIN
-MINE
-NONE
-------------------------------

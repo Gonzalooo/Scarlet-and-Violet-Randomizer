@@ -1,9 +1,0 @@
-Buizel
-0
-2
-30
-BEACH
-RIVER
-OSEAN
-NONE
-------------------------------

@@ -1,9 +1,0 @@
-Gallade
-0
-35
-65
-MOUNTAIN
-NONE
-NONE
-NONE
-------------------------------

@@ -1,9 +1,0 @@
-Vaporeon
-0
-35
-65
-LAKE
-RIVER
-NONE
-NONE
-------------------------------

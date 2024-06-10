@@ -1,9 +1,0 @@
-Tadbulb
-0
-12
-35
-SWAMP
-RIVER
-NONE
-NONE
-------------------------------

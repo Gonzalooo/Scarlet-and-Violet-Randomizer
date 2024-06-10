@@ -1,9 +1,0 @@
-Magikarp
-0
-2
-39
-LAKE
-OSEAN
-RIVER
-NONE
-------------------------------
