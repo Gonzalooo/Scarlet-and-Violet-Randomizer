@@ -532,6 +532,33 @@ def patch_titans_and_arven_titans():
                 indexes = [
                     9969
                 ]
+            elif Titans == "Arven":
+                # Get Pokemon from Arven's fight
+                titans_files = [
+                    f"HaganeRockClashEvent_{i}_clean.trscn",
+                    f"HikoRockClashEvent_{i}_clean.trscn",
+                    f"JimenRockClashEvent_{i}_clean.trscn",
+                    f"DragonRockClashEvent_{i}_clean.trscn",
+                    f"RockClashEvent_{i}_clean.trscn",
+                    f"nushi_dragon_020_pre_start_{i}_clean.trsog"
+                ]
+                titans_save_files = [
+                    f"HaganeRockClashEvent_{i}.trscn",
+                    f"HikoRockClashEvent_{i}.trscn",
+                    f"JimenRockClashEvent_{i}.trscn",
+                    f"DragonRockClashEvent_{i}.trscn",
+                    f"RockClashEvent_{i}.trscn",
+                    f"nushi_dragon_020_pre_start_{i}.trsog"
+                ]
+                offsets = [
+                    [],
+                    [],
+                    [],
+                    [],
+                    [],
+                    []
+                ]
+                indexes = []
 
             for files in range(0, len(titans_files)):
                 game_scene = open(
@@ -1177,7 +1204,7 @@ def patch_all_legendaries():
                     game_scene_bytes = game_scene.read()
                     game_scene.close()
 
-                    with open(os.getcwd() + f"/Randomizer/Scenes/Legendaries/{fights}/{legends_scenes[files]}",
+                    with open(os.getcwd() + f"/Randomizer/Scenes/Legendaries/{fights}/{legends_saves[files]}",
                               "w+b") as file:
                         file.write(game_scene_bytes)
                         for j in range(0, len(offsets[files])):
@@ -1189,7 +1216,7 @@ def patch_all_legendaries():
 
 
 def patch_kitakami_legends():
-    kitakami_legends = ["Fenzadipiti", "Monkidori", "Okidogi"]
+    kitakami_legends = ["Fenzadipiti", "Monkidori", "Okidogi", "Shared_Kita"]
 
     kita_legends = open(os.getcwd() + "/Randomizer/StaticFights/" + "eventBattlePokemon_array.json", "r")
     kita_legendaries = json.load(kita_legends)
@@ -1202,20 +1229,7 @@ def patch_kitakami_legends():
         if kita_legendaries['values'][indices[i]]['pokeData']['rareType'] == "RARE":
             shiny = True
         patch_poke_catalog(poke_catalog, kita_legendaries, fake_pokemon_list[i], indices[i], shiny)
-    shared_files = [
-        f"sdc01_0330_always_{i}_clean.trsog",
-        f"sdc01_0360_pre_start_{i}_clean.trsog"
-        f"sdc01_0400_main_{i}_clean.trsog",
-        f"sdc01_0410_main_{i}_clean.trsog",
-        f"sdc01_0420_main_{i}_clean.trsog",
-    ]
-    shared_save_files = [
-        f"sdc01_0330_always_{i}.trsog",
-        f"sdc01_0360_pre_start_{i}.trsog"
-        f"sdc01_0400_main_{i}.trsog",
-        f"sdc01_0410_main_{i}.trsog",
-        f"sdc01_0420_main_{i}.trsog",
-    ]
+
     # 18 00 00 00 74 69 5F 46 69 65 6C 64 50 6F 6B 65 6D 6F 6E 43 6F 6D 70 6F 6E 65 6E 74
     for Legends in kitakami_legends:
         for i in range(0, 2):
@@ -1274,6 +1288,30 @@ def patch_kitakami_legends():
                 indexes = [
                     9928
                 ]
+            elif Legends == "Shared_Kita":
+                legends_files = [
+                    f"sdc01_0330_always_{i}_clean.trsog",
+                    f"sdc01_0360_pre_start_{i}_clean.trsog",
+                    f"sdc01_0400_main_{i}_clean.trsog",
+                    f"sdc01_0410_main_{i}_clean.trsog",
+                    f"sdc01_0420_main_{i}_clean.trsog",
+                ]
+                legends_save_files = [
+                    f"sdc01_0330_always_{i}.trsog",
+                    f"sdc01_0360_pre_start_{i}.trsog",
+                    f"sdc01_0400_main_{i}.trsog",
+                    f"sdc01_0410_main_{i}.trsog",
+                    f"sdc01_0420_main_{i}.trsog",
+                ]
+                # Fezan - F803 Munki - F703 Oki - F603
+                offsets = [
+                    [0x07D6, 0X1D02, 0X3236],
+                    [0X0D7E, 0X22AA, 0X37D6],  # 4D0A - OGERPON
+                    [0X321A, 0X1CFE, 0x07E2],  # 4D16
+                    [0X321A, 0X1CFE, 0X07E2],  # 4D16
+                    [0X36A6, 0X218A, 0X0C6E]   # 6DD6
+                ]
+                indexes = [9926, 9927, 9928]
 
             for files in range(0, len(legends_files)):
                 game_scene = open(
@@ -1286,7 +1324,90 @@ def patch_kitakami_legends():
                     file.write(game_scene_bytes)
                     for j in range(0, len(offsets[files])):
                         file.seek(offsets[files][j])
-                        file.write(bytearray.fromhex(int(indexes[0]).to_bytes(2, byteorder='little').hex()))
+                        if Legends != "Shared_Kita":
+                            file.write(bytearray.fromhex(int(indexes[0]).to_bytes(2, byteorder='little').hex()))
+                        else:
+                            file.write(bytearray.fromhex(int(indexes[j]).to_bytes(2, byteorder='little').hex()))
     print("Patched Loyal Three")
+    save_poke_catalog()
+
+
+def patch_kora_miraidon():
+    legend_file = open(os.getcwd() + "/Randomizer/StaticFights/" + "eventBattlePokemon_array.json", "r")
+    legends = json.load(legend_file)
+    legend_file.close()
+
+    fake_pokemon_number = [9925, 9924]
+    indexes = [115, 116]
+    for i in range(0, 2):
+        shiny = False
+        if legends['values'][indexes[i]]['pokeData']['rareType'] == "RARE":
+            shiny = True
+        patch_poke_catalog(poke_catalog, legends, fake_pokemon_number[i], indexes[i], shiny)
+
+    for i in range(0, 2):
+        game_scene = open(os.getcwd() + f"/Randomizer/Scenes/Koraidon-Miraidon-Catch/sub_018_pre_start_{str(i)}_clean.trsog", "rb")
+        game_scene_bytes = game_scene.read()
+        game_scene.close()
+
+        offset = [0x0098, 0x08E2]
+
+        with open(os.getcwd() + f"/Randomizer/Scenes/Koraidon-Miraidon-Catch/sub_018_pre_start_{str(i)}.trsog", "w+b") as file:
+            file.write(game_scene_bytes)
+            for j in range(0, len(offset)):
+                file.seek(offset[j])
+                file.write(bytearray.fromhex(int(fake_pokemon_number[i]).to_bytes(2,
+                                                                                            byteorder='little').hex()))
+
+    print("Patched Koraidon and Miraidon in overworld")
+    save_poke_catalog()
+
+
+def patch_misc_pokemon():
+    legend_file = open(os.getcwd() + "/Randomizer/StaticFights/" + "eventBattlePokemon_array.json", "r")
+    legends = json.load(legend_file)
+    legend_file.close()
+
+    fake_pokemon_number = [9923, 9922]
+    indexes = [25, 26]
+    for i in range(0, 2):
+        shiny = False
+        if legends['values'][indexes[i]]['pokeData']['rareType'] == "RARE":
+            shiny = True
+        patch_poke_catalog(poke_catalog, legends, fake_pokemon_number[i], indexes[i], shiny)
+
+    misc_pokemon = ["Houndoom", "Sunflora"]
+    for pokemon in misc_pokemon:
+        for i in range(0, 2):
+            files = []
+            files_save = []
+            offset = []
+            indexes = []
+            if pokemon == "Houndoom":
+                files = [f"common_0150_main_{i}_clean.trsog"]
+                files_save = [f"common_0150_main_{i}.trsog"]
+                offset = [0x0996]
+                indexes = [9923]
+            elif pokemon == "Sunflora":
+                files = [f"pokes_{i}_clean.trsog"]
+                files_save = [f"pokes_{i}.trsog"]
+                offset = [0x04D2, 0x162E, 0X278A, 0X38EA, 0X4A4A, 0X5BAA, 0X6D0A, 0X7E66, 0X8FC6,
+                          0XA126, 0XB282, 0XC3E2, 0XD53E, 0XE69E, 0XF7FE, 0X0001095E, 0X00011ABE,
+                          0X00012C1A, 0X00013D7A, 0X00014EDA, 0X0001603A, 0X0001719A, 0X000182FE,
+                          0X00019462, 0X0001A5C2, 0X0001B7E2, 0X0001C946, 0X0001DAA2, 0X0001EBFE,
+                          0X0001FD5A]
+                indexes = [9922]
+            for k in range(0, len(files)):
+                game_scene = open(os.getcwd() + f"/Randomizer/Scenes/Misc/{pokemon}/{files[k]}", "rb")
+                game_scene_bytes = game_scene.read()
+                game_scene.close()
+
+                with open(os.getcwd() + f"/Randomizer/Scenes/Misc/{pokemon}/{files_save[k]}", "w+b") as file:
+                    file.write(game_scene_bytes)
+                    for j in range(0, len(offset)):
+                        file.seek(offset[j])
+                        file.write(bytearray.fromhex(int(indexes[0]).to_bytes(2, byteorder='little').hex()))
+
+    print("Patched Misc Pokemon in overworld")
     save_poke_catalog()
 

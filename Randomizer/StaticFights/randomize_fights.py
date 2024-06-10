@@ -18,7 +18,10 @@ paths = {
     "ting-lu": "world/scene/parts/event/event_scenario/sub_scenario/sub_014_/",
     "chien-pao": "world/scene/parts/event/event_scenario/sub_scenario/sub_015_/",
     "wo-chien": "world/scene/parts/event/event_scenario/sub_scenario/sub_016_/",
-    "chi-yu": "world/scene/parts/event/event_scenario/sub_scenario/sub_017_/"
+    "chi-yu": "world/scene/parts/event/event_scenario/sub_scenario/sub_017_/",
+    "koraidon-miraidon": "world/scene/parts/event/event_scenario/sub_scenario/sub_018_/",
+    'houndoom': "world/scene/parts/event/event_scenario/main_scenario/common_0150_/",
+    'sunflora': "world/scene/parts/event/event_scenario/main_scenario/gym_kusa_poke_finding_/"
 }
 
 titans_fights = {
@@ -51,7 +54,13 @@ titans_fights = {
     'bombirdier_sub': "world/scene/parts/event/event_scenario/sub_scenario/sub_038_/",
     'bombirdier_main': "world/scene/parts/event/event_scenario/main_scenario/nushi_hikou_010_/",
     'bombirdier_main_2': "world/scene/parts/event/event_scenario/main_scenario/nushi_hikou_020_/",
-    'bombirdier_field': "world/scene/parts/field/field_contents/nushi/hiko/HikoNushi_/"
+    'bombirdier_field': "world/scene/parts/field/field_contents/nushi/hiko/HikoNushi_/",
+    "arven_toad": "world/scene/parts/field/field_contents/nushi/hagane/HaganeRockClashEvent_/",
+    "arven_nacli": "world/scene/parts/field/field_contents/nushi/hiko/HikoRockClashEvent_/",
+    "arven_villan": "world/scene/parts/field/field_contents/nushi/jimen/JimenRockClashEvent_/",
+    "arven_greedent": "world/scene/parts/field/field_contents/nushi/dragon/DragonRockClashEvent_/",
+    "arven_shellder": "world/scene/parts/field/field_contents/nushi/common/RockClashEvent_/",
+    "arven_greedent_2": "world/scene/parts/event/event_scenario/main_scenario/nushi_dragon_020_/"
 }
 
 kitakami_files = {
@@ -83,6 +92,11 @@ hidden_paths = {
     'sandythorns': "world/scene/parts/event/event_scenario/main_scenario/sdc02_0265_/"
 }
 
+special_legends = {
+    'pecharunt_1': "world/scene/parts/event/event_scenario/sub_scenario/s2_side01_0160_/",
+    'pecharunt_2': "world/scene/parts/event/event_scenario/sub_scenario/s2_side01_0180_/",
+    'meloetta': "world/scene/parts/event/event_scenario/sub_scenario/s2_sub_003_pop_/"
+}
 
 def randomize_specific_fight(pokedata, allowed_pokemon: list):
     choice = random.randint(1, 1025)
@@ -129,9 +143,9 @@ def randomize_static_fights(config):
         # Wo-Chien -> 51 (semi_legend_996) - Done
         # Chi-Yu -> 52 (semi_legend_997) - Done
         # Monkidori (cave-fight) -> 53/54 (sdc01_dokuzaru)
-        # Okidogi  -> 55 (SDC01_get_dokuinu)
-        # Fezandipiti -> 56 (SDC01_get_dokuinu)
-        # Monkidori  -> 57 (SDC01_get_dkuzaru)
+        # Okidogi  -> 55 (SDC01_get_dokuinu) - Done
+        # Fezandipiti -> 56 (SDC01_get_dokuinu) - Done
+        # Monkidori  -> 57 (SDC01_get_dkuzaru) - Done
         # Ogerpon-fire (Titan) -> 58/59 (SDC01_kamenoni_1)
         # Ogerpon-teal (Titan) -> 60/61 (SDC01_kamenoni_2)
         # Ogerpon-rock (Titan) -> 62/63 (SDC01_kamenoni_3)
@@ -161,9 +175,11 @@ def randomize_static_fights(config):
         if config['randomize_all'] == "yes":
             for i in range(0, len(file_json['values'])):
                 # Also all DLC Fights
+                if i == 31 or i == 32:
+                    continue
                 if 58 <= i <= 65:
                     continue
-                if i == 87 or i == 8:
+                if i == 87 or i == 88:
                     continue
                 if 12 <= i <= 23:
                     file_json['values'][i]['pokeData']['devId'] = file_json['values'][11]['pokeData']['devId']
@@ -172,6 +188,15 @@ def randomize_static_fights(config):
                     file_json['values'][i]['pokeData']['item'] = file_json['values'][11]['pokeData']['item']
                     file_json['values'][i]['pokeData']['wazaType'] = "DEFAULT"
                     file_json['values'][i]['pokeData']['rareType'] = file_json['values'][11]['pokeData']['rareType']
+                    for k in range(1, 5):
+                        file_json['values'][i]['pokeData'][f'waza{str(k)}']['wazaId'] = "WAZA_NULL"
+                elif 27 <= i <= 30:
+                    file_json['values'][i]['pokeData']['devId'] = file_json['values'][26]['pokeData']['devId']
+                    file_json['values'][i]['pokeData']['formId'] = file_json['values'][26]['pokeData']['formId']
+                    file_json['values'][i]['pokeData']['sex'] = "DEFAULT"
+                    file_json['values'][i]['pokeData']['item'] = file_json['values'][26]['pokeData']['item']
+                    file_json['values'][i]['pokeData']['wazaType'] = "DEFAULT"
+                    file_json['values'][i]['pokeData']['rareType'] = file_json['values'][26]['pokeData']['rareType']
                     for k in range(1, 5):
                         file_json['values'][i]['pokeData'][f'waza{str(k)}']['wazaId'] = "WAZA_NULL"
                 elif 33 <= i <= 48:
@@ -246,6 +271,24 @@ def randomize_static_fights(config):
                     file_json['values'][i]['pokeData']['rareType'] = file_json['values'][66]['pokeData']['rareType']
                     for k in range(1, 5):
                         file_json['values'][i]['pokeData'][f'waza{str(k)}']['wazaId'] = "WAZA_NULL"
+                # elif i == 115:
+                #     file_json['values'][i]['pokeData']['devId'] = file_json['values'][31]['pokeData']['devId']
+                #     file_json['values'][i]['pokeData']['formId'] = file_json['values'][31]['pokeData']['formId']
+                #     file_json['values'][i]['pokeData']['sex'] = "DEFAULT"
+                #     file_json['values'][i]['pokeData']['item'] = file_json['values'][31]['pokeData']['item']
+                #     file_json['values'][i]['pokeData']['wazaType'] = "DEFAULT"
+                #     file_json['values'][i]['pokeData']['rareType'] = file_json['values'][31]['pokeData']['rareType']
+                #     for k in range(1, 5):
+                #         file_json['values'][i]['pokeData'][f'waza{str(k)}']['wazaId'] = "WAZA_NULL"
+                # elif i == 116:
+                #     file_json['values'][i]['pokeData']['devId'] = file_json['values'][32]['pokeData']['devId']
+                #     file_json['values'][i]['pokeData']['formId'] = file_json['values'][32]['pokeData']['formId']
+                #     file_json['values'][i]['pokeData']['sex'] = "DEFAULT"
+                #     file_json['values'][i]['pokeData']['item'] = file_json['values'][32]['pokeData']['item']
+                #     file_json['values'][i]['pokeData']['wazaType'] = "DEFAULT"
+                #     file_json['values'][i]['pokeData']['rareType'] = file_json['values'][32]['pokeData']['rareType']
+                #     for k in range(1, 5):
+                #         file_json['values'][i]['pokeData'][f'waza{str(k)}']['wazaId'] = "WAZA_NULL"
                 else:
                     randomize_specific_fight(file_json['values'][i], allowed_pokemon)
 
@@ -428,7 +471,7 @@ def randomize_static_fights(config):
             for kita in kitakami_files:
                 HelperFunctions.create_folder_hierarchy(os.getcwd() + '/output/romfs/' + kitakami_files[kita])
 
-            kitakami_scenes = ["Ariados", "Fenzadipiti", "Milotic", "Monkidori", "Okidogi", "Ursaluna"]
+            kitakami_scenes = ["Ariados", "Fenzadipiti", "Milotic", "Monkidori", "Okidogi", "Ursaluna", "Shared_Kita"]
 
             for pokemons in kitakami_scenes:
                 for i in range(0, 2):
@@ -483,6 +526,21 @@ def randomize_static_fights(config):
                         ]
                         k_paths = [
                             kitakami_files['bloodmon']
+                        ]
+                    elif pokemons == "Shared_Kita":
+                        k_files = [
+                            f"sdc01_0330_always_{i}.trsog",
+                            f"sdc01_0360_pre_start_{i}.trsog",
+                            f"sdc01_0400_main_{i}.trsog",
+                            f"sdc01_0410_main_{i}.trsog",
+                            f"sdc01_0420_main_{i}.trsog",
+                        ]
+                        k_paths = [
+                            kitakami_files['shared_1'],
+                            kitakami_files['shared_2'],
+                            kitakami_files['shared_3'],
+                            kitakami_files['shared_4'],
+                            kitakami_files['shared_5']
                         ]
 
                     for j in range(0, len(k_files)):
@@ -577,6 +635,56 @@ def randomize_static_fights(config):
                     }
                     shutil.copyfile(os.getcwd() + f"/Randomizer/Scenes/Legendaries/{legends_scenes[legend]}/s2_sub_0{index[legend]}_pre_start_{i}.trsog",
                                     os.getcwd() + "/output/romfs/" + legend_path['legend'] + f"s2_sub_0{index[legend]}_pre_start_{i}.trsog")
+
+            for treasures in special_legends:
+                HelperFunctions.create_folder_hierarchy(os.getcwd() + '/output/romfs/' + special_legends[treasures])
+            special_leg = ["Pecharunt", "Meloetta"]
+
+            for specialleg in special_leg:
+                leg_files = []
+                leg_paths = []
+                if specialleg == "Pecharunt":
+                    leg_files = [
+                        f"s2_side01_0160_always_{i}.trsog",
+                        f"s2_side01_0180_always_{i}.trsog"
+                    ]
+                    leg_paths = [
+                        special_legends['pecharunt_1'],
+                        special_legends['pecharunt_2']
+                    ]
+                if specialleg == "Meloetta":
+                    leg_files = [
+                        f"s2_sub_003_pop_{i}.trscn"
+                    ]
+                    leg_paths = [
+                        special_legends['meloetta'],
+                    ]
+                for j in range(0, len(leg_files)):
+                    shutil.copyfile(
+                        os.getcwd() + f"/Randomizer/Scenes/Legendaries/{specialleg}/{leg_files[j]}",
+                        os.getcwd() + "/output/romfs/" + leg_paths[j] + leg_files[j])
+
+            ChangeScenes.patch_kora_miraidon()
+            HelperFunctions.create_folder_hierarchy(os.getcwd() + '/output/romfs/' + paths['koraidon-miraidon'])
+            shutil.copyfile(os.getcwd() + "/Randomizer/Scenes/Koraidon-Miraidon-Catch/sub_018_pre_start_0.trsog",
+                            os.getcwd() + "/output/romfs/" + paths['koraidon-miraidon'] + 'sub_018_pre_start_0.trsog')
+            shutil.copyfile(os.getcwd() + "/Randomizer/Scenes/Koraidon-Miraidon-Catch/sub_018_pre_start_1.trsog",
+                            os.getcwd() + "/output/romfs/" + paths['koraidon-miraidon'] + 'sub_018_pre_start_1.trsog')
+
+            ChangeScenes.patch_misc_pokemon()
+            HelperFunctions.create_folder_hierarchy(os.getcwd() + '/output/romfs/' + paths['houndoom'])
+            shutil.copyfile(os.getcwd() + "/Randomizer/Scenes/Misc/Houndoom/common_0150_main_0.trsog",
+                            os.getcwd() + "/output/romfs/" + paths['houndoom'] + 'common_0150_main_0.trsog')
+            shutil.copyfile(os.getcwd() + "/Randomizer/Scenes/Misc/Houndoom/common_0150_main_1.trsog",
+                            os.getcwd() + "/output/romfs/" + paths['houndoom'] + 'common_0150_main_1.trsog')
+
+            HelperFunctions.create_folder_hierarchy(os.getcwd() + '/output/romfs/' + paths['sunflora'])
+            shutil.copyfile(os.getcwd() + "/Randomizer/Scenes/Misc/Sunflora/pokes_0.trsog",
+                            os.getcwd() + "/output/romfs/" + paths['sunflora'] + 'pokes_0.trsog')
+            shutil.copyfile(os.getcwd() + "/Randomizer/Scenes/Misc/Sunflora/pokes_1.trsog",
+                            os.getcwd() + "/output/romfs/" + paths['sunflora'] + 'pokes_1.trsog')
+
+
         print("Randomization Of Static Fights Pokemon Done!")
         return True
     return False

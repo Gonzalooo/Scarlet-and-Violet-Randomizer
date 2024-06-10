@@ -24,7 +24,7 @@ def check_updates():
     formated_response = scrapped_response.json()
     latest = formated_response['tag_name']
 
-    if latest != '1.1.0-Beta-3':
+    if latest != '1.1.0-release':
         print(f"Version {latest} is NOW available please download it for best experience.")
     else:
         print("Already have the latest version of the randomizer.")
