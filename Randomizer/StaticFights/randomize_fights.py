@@ -109,7 +109,6 @@ def randomize_specific_fight(pokedata, allowed_pokemon: list):
     pokedata['pokeData']['item'] = HelperFunctions.get_pokemon_item_form(choice, form_id)[0]
     pokedata['pokeData']['wazaType'] = "DEFAULT"
     shiny_change = random.randint(1, 10)
-    shiny_change = 7
     if shiny_change == 7:
         pokedata['pokeData']['rareType'] = "RARE"
     for i in range(1, 5):
