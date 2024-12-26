@@ -35,6 +35,18 @@ def retrieve_catalog_entry(catalog: dict, species, form, fake_catalog_index):
 def create_new_file_for_shiny(catalog: dict, key_change: str, file_num: int):
     # print(key_change)
     # print(file_num)
+    if catalog is None:
+        print("'Random' Error Caught, currently unsure of the cause")
+        print("currently no fix other than to close window and try with a new seed sorry")
+        breakpoint()
+    if key_change is None:
+        print("'Random' Error Caught, currently unsure of the cause")
+        print("currently no fix other than to close window and try with a new seed sorry")
+        breakpoint()
+    if key_change not in catalog:
+        print("'Random' Error Caught, currently unsure of the cause")
+        print("currently no fix other than to close window and try with a new seed sorry")
+        breakpoint()
     new_file_name = catalog[key_change].split('/')
     new_file_name[0] = f'pm{file_num}'
     new_file_name = '/'.join(new_file_name)
@@ -82,9 +94,10 @@ def flip_starter_texture(starter_num: int, fake_entry: int):
                     shutil.copy2(ogfiledir, newfiledir)
         return True
     except Exception as e:
-        print(f'ERROR FOR: {pokemon_file} - the fake entry of {fake_entry}')
-        print("ERROR - NO FILES IN POKEMON_CLEAN - SHINY STARTER WILL USE REGULAR TEXTURE - FIX FOR NEXT TIME.")
-        print(traceback.print_exc())
+        print(f'Missing folder: {pokemon_file} - the fake entry of {fake_entry}')
+        print("Optional pokemon_clean folder not setup or incomplete")
+        print("Model may not appear changed/shiny until caught")
+        #print(traceback.print_exc())
     return False
 
 

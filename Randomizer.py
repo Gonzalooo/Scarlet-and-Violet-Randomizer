@@ -16,10 +16,11 @@ import Randomizer.helper_function as HelperFunctions
 import Randomizer.TMs.randomize_tms as TMsRandomizer
 import shutil
 
-current_version_txt = '1.1.3-re-release'
+current_version_txt = '1.1.4a-OndoBranch'
 
 def check_updates():
     print("Checking for Updates")
+    print("Current version: " +current_version_txt)
     url = "https://api.github.com/repos/Gonzalooo/Scarlet-and-Violet-Randomizer/releases/latest"
     scrapped_response = requests.get(url)
     formated_response = scrapped_response.json()

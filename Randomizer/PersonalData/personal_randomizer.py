@@ -51,13 +51,33 @@ def randomize_pokemon_abilities(pokemon):
                     i = i + 1
     return pokemon
 
+def is_allowed_to_learn(species, form, moveid):
+    match moveid:
+        case 464:#Dark Void
+            if species != 491 :#Darkrai
+                print("NOT ALLOWED 2 LEARN THAT")
+                return False
+        case 621:#Hyperspace Fury
+            if species == 720:#Hoopa
+                if form != 1:#unbound
+                    print("NOT ALLOWED 2 LEARN THAT")
+                    return False
+            else:
+                print("NOT ALLOWED 2 LEARN THAT")
+                return False
+        case 783:#Aura Wheel
+            if species != 877:#Morpeko
+                return False
+    return True
 
 def randomize_pokemon_moves(pokemon):
     current_moves = []
+    species = pokemon['species']['species']
+    form = pokemon['species']['form']
     if pokemon['is_present'] is True:
         for move in pokemon['levelup_moves']:
             index = random.randint(0, len(SharedVariables.allowed_moves) - 1)
-            while SharedVariables.allowed_moves[index] in current_moves:
+            while (SharedVariables.allowed_moves[index] in current_moves) and (is_allowed_to_learn(species, form, index) == True):
                 index = random.randint(0, len(SharedVariables.allowed_moves) - 1)
             move['move'] = SharedVariables.allowed_moves[index]
             current_moves.append(SharedVariables.allowed_moves[index])
@@ -65,7 +85,7 @@ def randomize_pokemon_moves(pokemon):
         current_moves = []
         for i in range(0, len(pokemon['reminder_moves'])):
             index = random.randint(0, len(SharedVariables.allowed_moves) - 1)
-            while SharedVariables.allowed_moves[index] in current_moves:
+            while (SharedVariables.allowed_moves[index] in current_moves) and (is_allowed_to_learn(species, form, index) == True):
                 index = random.randint(0, len(SharedVariables.allowed_moves) - 1)
             current_moves.append(SharedVariables.allowed_moves[index])
         pokemon['reminder_moves'] = []
@@ -74,22 +94,24 @@ def randomize_pokemon_moves(pokemon):
         current_moves = []
         for i in range(0, len(pokemon['egg_moves'])):
             index = random.randint(0, len(SharedVariables.allowed_moves) - 1)
-            while SharedVariables.allowed_moves[index] in current_moves:
+            while (SharedVariables.allowed_moves[index] in current_moves) and (is_allowed_to_learn(species, form, index) == True):
                 index = random.randint(0, len(SharedVariables.allowed_moves) - 1)
             current_moves.append(SharedVariables.allowed_moves[index])
         pokemon['egg_moves'] = []
         pokemon['egg_moves'].extend(current_moves)
-
     return pokemon
 
 
-def randomize_pokemon_types(pokemon, typecount):
+def randomize_pokemon_types(pokemon, chancedual):
     if pokemon['is_present'] is True:
-        pokemon['type_1'] = random.randint(1, 17)#1 not 0, actually give it a type
-        if typecount == 2:
+        pokemon['type_1'] = random.randint(0, 17)
+        
+        if random.randint(1, 100) <= chancedual:
             pokemon['type_2'] = random.randint(0, 17)
+            while (pokemon['type_1'] == pokemon['type_2']):
+                pokemon['type_2'] = random.randint(0, 17)
         else:
-            pokemon['type_2'] = 0
+            pokemon['type_2'] = pokemon['type_1']
     return pokemon
 
 
@@ -251,6 +273,18 @@ def fix_evolutions(pokemon, ind):
             "form": 1
         }
         pokemon['evolutions'].append(template_evolution)
+    elif pokemon['species']['species'] == 109:
+        template_evolution = {
+            "level": 36,
+            "condition": 4,
+            "parameter": 0,
+            "reserved3": 0,
+            "reserved4": 0,
+            "reserved5": 0,
+            "species": 110,
+            "form": 1
+        }
+        pokemon['evolutions'].append(template_evolution)
     elif pokemon['species']['species'] == 156:
         template_evolution = {
             "level": 36,
@@ -402,6 +436,8 @@ def randomize_pokemon_stats(config, tms_randomized):
             banned_abilities.append(25)
 
         for pokemon in data['entry']:
+            if pokemon['is_present'] is False:
+                continue
             if pokemon['species']['species'] in SharedVariables.pokemon_with_regional_evolutions:
                 if pokemon['species']['species'] == 217:
                     pokemon = fix_evolutions(pokemon, [0, 1])
@@ -423,15 +459,18 @@ def randomize_pokemon_stats(config, tms_randomized):
             spoilers.write(HelperFunctions.get_monname(pokemon['species']['species'])+HelperFunctions.get_form_txt(pokemon['species']['form'])+"\n")
             if config['randomize_abilities'] == "yes":
                 pokemon = randomize_pokemon_abilities(pokemon)
-                spoilers.write("Abilities 1: "+str(pokemon['ability_1'])+" 2: "+str(pokemon['ability_2'])+" Hidden: "+str(pokemon['ability_hidden'])+"\n")
+                spoilers.write("Abilities 1: "+SharedVariables.ability_list[pokemon['ability_1']]+" | 2: "+SharedVariables.ability_list[pokemon['ability_2']]+" | Hidden: "+SharedVariables.ability_list[pokemon['ability_hidden']]+"\n")
             if config['randomize_types'] == "yes":
-                pokemon = randomize_pokemon_types(pokemon, config['randomize_types_count'])
-                spoilers.write("Type: "+str(pokemon['type_1'])+" - "+str(pokemon['type_2'])+"\n")
+                pokemon = randomize_pokemon_types(pokemon, config['percent_chance_dual_type'])
+                spoilers.write("Type: "+HelperFunctions.get_type_txt(pokemon['type_1'])+" - "+HelperFunctions.get_type_txt(pokemon['type_2'])+"\n")
             if config['randomize_movesets'] == "yes":
                 pokemon = randomize_pokemon_moves(pokemon)
                 spoilers.write("---Level up moves---\n")
                 for move in pokemon['levelup_moves']:
-                    spoilers.write('Lvl '+str(move['level'])+": "+HelperFunctions.get_movename(move['move'])+"\n")
+                    if (move['level'] == 253):
+                        spoilers.write("On Evolution: "+HelperFunctions.get_movename(move['move'])+"\n")
+                    else:    
+                        spoilers.write('Lvl '+str(move['level'])+": "+HelperFunctions.get_movename(move['move'])+"\n")
                 spoilers.write("---Egg moves---\n")
                 for move in pokemon['egg_moves']:
                     spoilers.write(HelperFunctions.get_movename(move)+"\n")

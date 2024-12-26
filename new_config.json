@@ -11,7 +11,7 @@
   "_comment5": "NOTE: the seeds gained from bulk/batch are different than single generation, only the first in the series will match",
   "bulk_creation": {
     "is_enabled": "no",
-    "number_of_unique_randomizers_to_create": 3
+    "number_of_unique_randomizers_to_create": 10
   },
   "items_randomizer": {
     "_comment": "Only works on hidden items - I can't find file for overworld items.",
@@ -27,7 +27,7 @@
       "is_enabled": "yes",
       "randomize_abilities": "yes",
       "randomize_types": "yes",
-      "randomize_types_count": 2,
+      "percent_chance_dual_type": 60,
       "ban_wonder_guard": "yes",
       "randomize_movesets": "yes",
       "randomize_stats_with_same_total": "no",
@@ -118,8 +118,17 @@
         "allow_shiny_pokemon": "yes",
         "randomnly_choose_single_or_doubles": "no",
         "only_double_battles": "no",
+		"boostlevels": "yes",
+		"boostpercent": 10,
+		"useondomathforboost": "no",
+		"boost_min": 1,
+		"boost_max": 10,
         "_comment": "working on similar BST option",
-        "_comment1": "missing option to have rival starter evolve"
+        "_comment1": "missing option to have rival starter evolve",
+        "_comment2": "boostlevels works on a range, scaling up from lvl 1 to (100 minus boost_max)",
+        "_comment3": "a range of 1 to 10 will mean at lvl 1 they get +1 scaling to at 90 they get +10",
+        "_comment4": "a range of 3 to 25 will mean at lvl 1 they get +3 scaling to at 75 they get +25"
+		
       },
       "rival_randomizer": {
         "_comment": "Includes: Penny, All of TS, Arven, Clavell, and Nemona",
@@ -234,6 +243,11 @@
         "allow_shiny_pokemon": "no",
         "randomnly_choose_single_or_doubles": "no",
         "only_double_battles": "no",
+		"boostlevels": "yes",
+		"boostpercent": 10,
+		"useondomathforboost": "no",
+		"boost_min": 1,
+		"boost_max": 10,
         "_comment": "working on similar BST option"
       },
       "important_trainers_randomizer": {
@@ -327,6 +341,11 @@
         "allow_shiny_pokemon": "no",
         "randomnly_choose_single_or_doubles": "no",
         "only_double_battles": "no",
+		"boostlevels": "yes",
+		"boostpercent": 10,
+		"useondomathforboost": "no",
+		"boost_min": 1,
+		"boost_max": 10,
         "_comment": "working on similar BST option"
       },
       "important_trainers_randomizer": {
