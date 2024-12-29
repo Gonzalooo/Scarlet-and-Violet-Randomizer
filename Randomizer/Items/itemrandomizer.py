@@ -42,6 +42,7 @@ def randomizeHiddenItems():
     spoilers = HelperFunctions.spoilerlog("Hidden Items")
     spoilers.write("\n-----------------\nPaldea Hidden\n-----------------\n")
     for i in range(0, len(paldeaItems['values'])):
+        spoilers.write("Group "+str(i)+"\n")
         for j in range(1, 11):
             itemChoice = random.randint(1, 1090)
             while (itemData['items'][itemChoice]['ItemType'] == "ITEMTYPE_MATERIAL" or
@@ -54,11 +55,12 @@ def randomizeHiddenItems():
             paldeaItems['values'][i][f'item_{str(j)}']['itemId'] = picked_devname
             paldeaItems['values'][i][f'item_{str(j)}']['emergePercent'] = random.randint(100, 1000)
             paldeaItems['values'][i][f'item_{str(j)}']['dropCount'] = random.randint(1, 20)
-            spoilers.write(HelperFunctions.get_itemname(HelperFunctions.get_itemid(picked_devname))+' | '+str(paldeaItems['values'][i][f'item_{str(j)}']['dropCount'])+' | '+str(paldeaItems['values'][i][f'item_{str(j)}']['emergePercent'])+'\n')
+            spoilers.write(str(paldeaItems['values'][i][f'item_{str(j)}']['emergePercent']/10)+"% "+HelperFunctions.get_itemname(HelperFunctions.get_itemid(picked_devname))+' x'+str(paldeaItems['values'][i][f'item_{str(j)}']['dropCount'])+'\n')
         #print(paldeaItems['values'][i])
 
     spoilers.write("\n-----------------\nKitaKami Hidden\n-----------------\n")
     for i in range(0, len(kitakamiItems['values'])):
+        spoilers.write("Group "+str(i)+"\n")
         for j in range(1, 11):
             itemChoice = random.randint(1, 1090)
             while (itemData['items'][itemChoice]['ItemType'] == "ITEMTYPE_MATERIAL" or
@@ -71,11 +73,12 @@ def randomizeHiddenItems():
             kitakamiItems['values'][i][f'item_{str(j)}']['itemId'] = picked_devname
             kitakamiItems['values'][i][f'item_{str(j)}']['emergePercent'] = random.randint(100, 1000)
             kitakamiItems['values'][i][f'item_{str(j)}']['dropCount'] = random.randint(1, 20)
-            spoilers.write(HelperFunctions.get_itemname(HelperFunctions.get_itemid(picked_devname))+' | '+str(kitakamiItems['values'][i][f'item_{str(j)}']['dropCount'])+' | '+str(kitakamiItems['values'][i][f'item_{str(j)}']['emergePercent'])+'\n')
+            spoilers.write(str(kitakamiItems['values'][i][f'item_{str(j)}']['emergePercent']/10)+"% "+HelperFunctions.get_itemname(HelperFunctions.get_itemid(picked_devname))+' x'+str(kitakamiItems['values'][i][f'item_{str(j)}']['dropCount'])+'\n')
         #print(kitakamiItems['values'][i])
 
     spoilers.write("\n-----------------\nBlueberry Hidden\n-----------------\n")
     for i in range(0, len(blueberryItems['values'])):
+        spoilers.write("Group "+str(i)+"\n")
         for j in range(1, 11):
             itemChoice = random.randint(1, 1090)
             while (itemData['items'][itemChoice]['ItemType'] == "ITEMTYPE_MATERIAL" or
@@ -88,11 +91,12 @@ def randomizeHiddenItems():
             blueberryItems['values'][i][f'item_{str(j)}']['itemId'] = picked_devname
             blueberryItems['values'][i][f'item_{str(j)}']['emergePercent'] = random.randint(100, 1000)
             blueberryItems['values'][i][f'item_{str(j)}']['dropCount'] = random.randint(1, 20)
-            spoilers.write(HelperFunctions.get_itemname(HelperFunctions.get_itemid(picked_devname))+' | '+str(blueberryItems['values'][i][f'item_{str(j)}']['dropCount'])+' | '+str(blueberryItems['values'][i][f'item_{str(j)}']['emergePercent'])+'\n')
+            spoilers.write(str(blueberryItems['values'][i][f'item_{str(j)}']['emergePercent']/10)+"% "+HelperFunctions.get_itemname(HelperFunctions.get_itemid(picked_devname))+' x'+str(blueberryItems['values'][i][f'item_{str(j)}']['dropCount'])+'\n')
         #print(blueberryItems['values'][i])
 
     spoilers.write("\n-----------------\nLC Hidden\n-----------------\n")
     for i in range(0, len(lcItems['values'])):
+        spoilers.write("Group "+str(i)+"\n")
         for j in range(1, 11):
             itemChoice = random.randint(1, 1090)
             while (itemData['items'][itemChoice]['ItemType'] == "ITEMTYPE_MATERIAL" or
@@ -105,7 +109,7 @@ def randomizeHiddenItems():
             lcItems['values'][i][f'item_{str(j)}']['itemId'] = picked_devname
             lcItems['values'][i][f'item_{str(j)}']['emergePercent'] = random.randint(100, 1000)
             lcItems['values'][i][f'item_{str(j)}']['dropCount'] = random.randint(1, 20)
-            spoilers.write(HelperFunctions.get_itemname(HelperFunctions.get_itemid(picked_devname))+' | '+str(lcItems['values'][i][f'item_{str(j)}']['dropCount'])+' | '+str(lcItems['values'][i][f'item_{str(j)}']['emergePercent'])+'\n')
+            spoilers.write(str((lcItems['values'][i][f'item_{str(j)}']['emergePercent']/10))+"% "+HelperFunctions.get_itemname(HelperFunctions.get_itemid(picked_devname))+' x'+str(lcItems['values'][i][f'item_{str(j)}']['dropCount'])+'\n')
         #print(lcItems['values'][i])
 
     outdata = json.dumps(lcItems, indent=2)

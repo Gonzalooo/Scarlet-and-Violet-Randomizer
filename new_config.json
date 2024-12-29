@@ -1,20 +1,13 @@
 {
   "auto-patch-romfs": "yes",
   "use_paldea_settings_for_all": "yes",
-  "kaizo_ironmon_mode": "no",
   "shiny_boosted_rate": 10,
-  "_comment1": "boosted rate (1 in x, default 10) only for specific things not wild spawns",
-  "_comment2": "setting boosted rate to 0 will default to 1 in 4096",
   "fixed_seed": 0,
-  "_comment3": "leave it 0 or an empty string for random seed, if sharing your seed, enter seed from spoiler log and give config",
-  "_comment4": "the seed and config both need to be the same for the same generation to occur",
-  "_comment5": "NOTE: the seeds gained from bulk/batch are different than single generation, only the first in the series will match",
   "bulk_creation": {
     "is_enabled": "no",
-    "number_of_unique_randomizers_to_create": 3
+    "number_of_unique_randomizers_to_create": 10
   },
   "items_randomizer": {
-    "_comment": "Only works on hidden items - I can't find file for overworld items.",
     "is_enabled": "yes",
     "randomize_hidden_items": "yes",
     "randomize_items_from_pickup_ability": "yes",
@@ -27,12 +20,11 @@
       "is_enabled": "yes",
       "randomize_abilities": "yes",
       "randomize_types": "yes",
-      "randomize_types_count": 2,
+      "percent_chance_dual_type": 60,
       "ban_wonder_guard": "yes",
       "randomize_movesets": "yes",
       "randomize_stats_with_same_total": "no",
       "randomize_stats_with_different_total": "no",
-      "_comment1": "Generation Limiter only affects potential evolutions",
       "generation_limiter": [],
       "randomize_evolutions": "no",
       "let_pokemon_evolve_every_level": "no",
@@ -44,8 +36,7 @@
       "randomize_tera_types": "yes",
       "only_legendary_pokemon": "yes",
       "only_paradox_pokemon": "no",
-      "only_legendary_and_paradox": "no",
-      "_comment": "working on similar BST feature"
+      "only_legendary_and_paradox": "no"
     },
   "starter_pokemon_randomizer":{
       "is_enabled": "yes",
@@ -56,17 +47,12 @@
       "show_starters_in_overworld": "yes",
       "randomize_starters_tera_type": "yes",
       "ball_for_starter": "Beast Ball",
-      "_comment1": "This next option should remain off if pokemon_clean is empty",
       "ban_stage1_pokemon": "no",
       "ban_stage2_pokemon": "no",
       "ban_single_stage_pokemon": "no",
       "only_legendary_pokemon": "no",
       "only_paradox_pokemon": "no",
       "only_legendary_and_paradox": "no",
-      "_comment2": "As long as the force_starter is a dex number or a valid english pokemon name",
-      "_comment3": "Ex: 1024, Tera Pagos, teRapagos, t e r a pa gos are all valid for Terapagos",
-      "_comment4": "However 1 0 2 4 is not a valid input for terapagos",
-      "_comment5": "Similarly tera_paGos is not a valid input for terapagos",
       "force_starter_1": 0,
       "force_starter_2": 0,
       "force_starter_3": 0
@@ -78,22 +64,18 @@
     },
   "boss_pokemon_randomizer": {
       "is_enabled": "yes",
-      "_comment": "Note: Models are automatically changed in overworld.",
       "generation_limiter": [],
       "only_legendary_pokemon": "no",
       "ban_stage1_pokemon": "no",
       "ban_stage2_pokemon": "no",
       "ban_single_stage_pokemon": "no",
-      "randomize_all": "yes",
-      "_comment1": "Getting softlocked so the following are not randomized: Professor Kora/Miraidon, Ogerpon and Terapagos",
-      "_comment2": "Note: Static Kora/Miraidon are randomized"
+      "randomize_all": "yes"
     },
   "paldea_settings": {
     "wild_randomizer": {
       "is_enabled": "yes",
       "generation_limiter": [],
       "exclude_legendaries": "no",
-      "_comment2": "Enabling the following settings with gen_limiter will lead to little to no spawns",
       "only_legendary_pokemon": "no",
       "only_paradox_pokemon": "no",
       "only_legends_and_paradox": "no",
@@ -118,17 +100,18 @@
         "allow_shiny_pokemon": "yes",
         "randomnly_choose_single_or_doubles": "no",
         "only_double_battles": "no",
-        "_comment": "working on similar BST option",
-        "_comment1": "missing option to have rival starter evolve"
+		"boostlevels": "yes",
+		"boostpercent": 10,
+		"useondomathforboost": "no",
+		"boost_min": 1,
+		"boost_max": 10
       },
       "rival_randomizer": {
-        "_comment": "Includes: Penny, All of TS, Arven, Clavell, and Nemona",
         "is_enabled": "yes",
         "force_6_pokemon": "no",
         "add_extra_pokemon": "yes",
         "force_perfect_ivs": "no",
         "make_ai_smart": "yes",
-        "_comment1": "If no in allow_tera - then those that can tera will still tera.",
         "allow_terastalization": "yes",
         "only_legendary_pokemon": "no",
         "only_paradox_pokemon": "no",
@@ -209,7 +192,6 @@
       "is_enabled": "yes",
       "generation_limiter": [],
       "exclude_legendaries": "no",
-      "_comment2": "Enabling the following settings with gen_limiter will lead to little to no spawns",
       "only_legendary_pokemon": "no",
       "only_paradox_pokemon": "no",
       "only_legends_and_paradox": "no",
@@ -234,11 +216,13 @@
         "allow_shiny_pokemon": "no",
         "randomnly_choose_single_or_doubles": "no",
         "only_double_battles": "no",
-        "_comment": "working on similar BST option"
+		"boostlevels": "yes",
+		"boostpercent": 10,
+		"useondomathforboost": "no",
+		"boost_min": 1,
+		"boost_max": 10
       },
       "important_trainers_randomizer": {
-        "_comment": "Includes: Kieran, Carmine, Perrin, Billy and O'Nare",
-        "_comment1": "Uses Rival Settings if paldea_settings for all is enabled",
         "is_enabled": "yes",
         "force_6_pokemon": "no",
         "add_extra_pokemon": "no",
@@ -270,7 +254,6 @@
       },
       "ogre_clan_randomizer": {
         "is_enabled": "yes",
-        "_comment": "Uses Paldea E4 settings if paldea_settings_forall is enabled",
         "force_6_pokemon": "no",
         "add_extra_pokemon": "no",
         "force_perfect_ivs": "no",
@@ -301,7 +284,6 @@
     "wild_randomizer": {
       "is_enabled": "yes",
       "generation_limiter": [],
-      "_comment2": "Enabling the following settings with gen_limiter will lead to little to no spawns",
       "exclude_legendaries": "no",
       "only_legendary_pokemon": "no",
       "only_paradox_pokemon": "no",
@@ -327,11 +309,13 @@
         "allow_shiny_pokemon": "no",
         "randomnly_choose_single_or_doubles": "no",
         "only_double_battles": "no",
-        "_comment": "working on similar BST option"
+		"boostlevels": "yes",
+		"boostpercent": 10,
+		"useondomathforboost": "no",
+		"boost_min": 1,
+		"boost_max": 10
       },
       "important_trainers_randomizer": {
-        "_comment": "Includes: Kieran, Carmine, BBE4 ",
-        "_comment1": "Uses Rival Settings if paldea_settings for all is enabled",
         "is_enabled": "yes",
         "force_6_pokemon": "no",
         "add_extra_pokemon": "no",
@@ -362,8 +346,6 @@
         "ban_single_stage_pokemon": "no"
       },
       "bb4_league_randomizer": {
-        "_comment": "All BB Club Fights",
-        "_comment1": "Uses Champion settings if paldea_settings_forall is enabled",
         "is_enabled": "yes",
         "force_6_pokemon": "no",
         "add_extra_pokemon": "no",

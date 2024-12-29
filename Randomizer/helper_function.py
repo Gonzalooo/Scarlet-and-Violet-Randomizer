@@ -664,7 +664,7 @@ def generate_binary(schema: str, json_file: str, path: str, debug=False):
     return proc
 
 def spoilerindex(rngseed, versiontxt):
-    f = open("spoilers.log", "a")#Open/create spoiler log and start new header
+    f = open("spoilers.log", "a", encoding='utf-8')#Open/create spoiler log and start new header
     f.write("\n\n---------------------------\n"+
 "Spoiler Log Index"+
 "\n---------------------------\n"+
@@ -701,7 +701,7 @@ def spoilerindex(rngseed, versiontxt):
 
 
 def spoilerlog(title: str):
-    f = open("spoilers.log", "a")#Open/create spoiler log and start new header
+    f = open("spoilers.log", "a", encoding='utf-8')#Open/create spoiler log and start new header
     f.write("\n\n---------------------------\n")
     f.write("| "+title+" |\n")
     f.write("---------------------------\n")
@@ -770,6 +770,9 @@ def get_monid(devname: str):
     else:
         return SharedVariables.monids[devname]
         
+def get_type_txt(montype: int):
+    return SharedVariables.tera_types_eng[montype]
+    
 def get_gem_txt(gem: str):
     if gem.lower() == "default":
         return gem
@@ -808,6 +811,13 @@ def basestat_txt(stats):
 def fix_config(config):
     if "shiny_boosted_rate" not in config:
         config["shiny_boosted_rate"] = 10
+        print("config option not found: 'shiny_boosted_rate'")
+        print("defaulting to 1 in 10 chance to be shiny... where possible")
+        
+    if "percent_chance_dual_type" not in config['pokemon_stats_randomizer']:
+        config['pokemon_stats_randomizer']["percent_chance_dual_type"] = 60
+        print("config option not found: 'pokemon_stats_randomizer''percent_chance_dual_type'")
+        print("defaulting to 60% chance to be dual type")
         
     if "exclude_legendaries" not in config['kitakami_settings']['wild_randomizer']:
         if "exclude_legendary" in config['kitakami_settings']['wild_randomizer']:
@@ -829,7 +839,43 @@ def fix_config(config):
         else:
             _gettxt = "no"
         config['starter_pokemon_randomizer']['show_shiny_starters_in_overworld'] = _gettxt
-    
+        
+    isthere = False
+    if "boostpercent" not in config["paldea_settings"]["trainers_randomizer"]["all_trainers_settings"]:
+        config["paldea_settings"]["trainers_randomizer"]["all_trainers_settings"]["boostpercent"] = 10
+        isthere = True
+    if "boostpercent" not in config["kitakami_settings"]["trainers_randomizer"]["all_trainers_settings"]:
+        config["kitakami_settings"]["trainers_randomizer"]["all_trainers_settings"]["boostpercent"] = 10
+        isthere = True
+    if "boostpercent" not in config["blueberry_settings"]["trainers_randomizer"]["all_trainers_settings"]:
+        config["blueberry_settings"]["trainers_randomizer"]["all_trainers_settings"]["boostpercent"] = 10
+        isthere = True
+    if isthere == True:
+        print("config option not found: 'boostpercent' in 'all_trainers_settings' section(s)")
+        print("defaulting to 10% boost")
+        print("NOTE: boostlevels still needs to be yes for this to apply")
+        
+    isthere = False
+    if "boostlevels" not in config["paldea_settings"]["trainers_randomizer"]["all_trainers_settings"]:
+        config["paldea_settings"]["trainers_randomizer"]["all_trainers_settings"]["boostlevels"] = "no"
+        isthere = True
+    if "boostlevels" not in config["kitakami_settings"]["trainers_randomizer"]["all_trainers_settings"]:
+        config["kitakami_settings"]["trainers_randomizer"]["all_trainers_settings"]["boostlevels"] = "no"
+        isthere = True
+    if "boostlevels" not in config["blueberry_settings"]["trainers_randomizer"]["all_trainers_settings"]:
+        config["blueberry_settings"]["trainers_randomizer"]["all_trainers_settings"]["boostlevels"] = "no"
+        isthere = True
+    if isthere == True:
+        print("config option not found: 'boostlevels' in 'all_trainers_settings' section(s)")
+        print("defaulting to no level boosting for trainers")
+        
+    if "useondomathforboost" not in config["paldea_settings"]["trainers_randomizer"]["all_trainers_settings"]:
+        config["paldea_settings"]["trainers_randomizer"]["all_trainers_settings"]["useondomathforboost"] = "no"
+    if "useondomathforboost" not in config["kitakami_settings"]["trainers_randomizer"]["all_trainers_settings"]:
+        config["kitakami_settings"]["trainers_randomizer"]["all_trainers_settings"]["useondomathforboost"] = "no"
+    if "useondomathforboost" not in config["blueberry_settings"]["trainers_randomizer"]["all_trainers_settings"]:
+        config["blueberry_settings"]["trainers_randomizer"]["all_trainers_settings"]["useondomathforboost"] = "no"
+        
     #writes the changes to file, writes to the bottom of file unsure if there is a way around it to make it more user friendly, disabled for now
     #with open('new_config.json', 'w', encoding='utf-8') as f:
     #    json.dump(config, f, ensure_ascii=False, indent=2)
