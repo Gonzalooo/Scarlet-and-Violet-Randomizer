@@ -1,5 +1,5 @@
 --- Pokemon Scarlet and Violet Randomizer by xLuma updated by Gonzalo----
-Go to: https://github.com/Gonzalooo/Scarlet-and-Violet-Randomizer for latest Version.
+Go to: https://github.com/Gonzalooo/Pokemon-Randomizer for latest Version. Python code is out of data and no longer supported
 
 ***IMPORTANT: GO TO Randomizer/StartersGifts/pokemon_clean before running the randomizer***
 Trinity Loader Nightly Version: https://github.com/pkZukan/gftool/releases/tag/nightly (Needed for the first steps - nightly version automatically updates so it has the stuff you need)
